@@ -17,12 +17,12 @@ LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
 AGENT_SCRIPTS = {
     "nova-system":   AGENTS_DIR / "nova-system/nova-system.py",
     "nova-ops":      AGENTS_DIR / "nova-ops/nova-ops.py",
-    "nova-research": None,
-    "nova-memory":   None,
-    "nova-comms":    None,
-    "nova-files":    None,
-    "nova-code":     None,
-    "nova":          None,  # main Nova — handled by OpenClaw directly
+    "nova-research": AGENTS_DIR / "nova-research/nova-research.py",
+    "nova-memory":   AGENTS_DIR / "nova-memory/nova-memory.py",
+    "nova-comms":    AGENTS_DIR / "nova-comms/nova-comms.py",
+    "nova-files":    AGENTS_DIR / "nova-files/nova-files.py",
+    "nova-code":     AGENTS_DIR / "nova-code/nova-code.py",
+    "nova":          None,  # main Nova — handled by OpenClaw directly (fallback)
 }
 
 def utcnow():
