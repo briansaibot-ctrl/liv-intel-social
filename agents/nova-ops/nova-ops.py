@@ -9,16 +9,13 @@ import json
 import sys
 import subprocess
 import shlex
-import time
-from datetime import datetime, timezone
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from shared.utils import safe_request, build_queue, run_queue, get_cached, save_cache, utcnow
 
 LOG_PATH = Path("/Users/jarvis/.openclaw/logs/nova-ops.log")
 WORKSPACE = Path("/Users/jarvis/.openclaw/workspace")
 LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-def utcnow():
-    return datetime.now(timezone.utc).isoformat()
 
 def log(entry: dict):
     with open(LOG_PATH, "a") as f:
