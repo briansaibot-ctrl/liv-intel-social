@@ -16,7 +16,7 @@ LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 AGENT_SCRIPTS = {
     "nova-system":   AGENTS_DIR / "nova-system/nova-system.py",
-    "nova-ops":      None,  # not yet built
+    "nova-ops":      AGENTS_DIR / "nova-ops/nova-ops.py",
     "nova-research": None,
     "nova-memory":   None,
     "nova-comms":    None,
