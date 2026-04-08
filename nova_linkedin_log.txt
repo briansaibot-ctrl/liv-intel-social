@@ -1,0 +1,6 @@
+# Nova LinkedIn Log
+# Format: [ISO-8601 timestamp] | [URL] | [status: approved|posted|skipped]
+# This file is the canonical duplicate check for all article URLs processed.
+# Never delete or reset this file.
+
+# Log starts: 2026-04-07
