@@ -164,7 +164,10 @@ def post_to_linkedin(article: dict) -> bool:
     # Placeholder — in production, use Selenium or Playwright to automate posting
     log({"action": "post_attempted", "url": url, "timestamp": utcnow()})
     
-    # For now, just return success (user will manually post)
+    # After posting, send screenshot request
+    msg = f"📸 Please take a screenshot of the live LinkedIn post and send it to confirm formatting."
+    run_cmd(f"openclaw agent --agent main --to +17023402622 -m '{msg}'", timeout=30)
+    
     return True
 
 def send_weekly_summary(scanned: int, filtered: int, approved: int, posted: int, issues: list):
