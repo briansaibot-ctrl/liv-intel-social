@@ -646,9 +646,9 @@
     if (trendsData.trending_audio && trendsData.trending_audio.length) {
       html += '<div class="card">';
       trendsData.trending_audio.forEach(a => {
-        const q = encodeURIComponent((a.sound || '') + ' ' + (a.artist || '') + ' tiktok');
+        const q = encodeURIComponent((a.sound || '') + ' ' + (a.artist || '') + ' tiktok sound');
         const audioUrl = `https://www.google.com/search?q=${q}`;
-        html += `<div class="audio-item">${linkWrap(audioUrl, `<div class="audio-info"><div class="audio-name">${escapeHTML(a.sound)}</div><div class="audio-artist">${escapeHTML(a.artist)}</div><div class="audio-relevance">${escapeHTML(a.relevance)}</div></div>`)}${platformBadgeHTML(a.platform)}</div>`;
+        html += `<a href="${audioUrl}" target="_blank" rel="noopener" class="audio-item-link"><div class="audio-item"><div class="audio-info"><div class="audio-name">${escapeHTML(a.sound)}</div><div class="audio-artist">${escapeHTML(a.artist)}</div><div class="audio-relevance">${escapeHTML(a.relevance)}</div></div>${platformBadgeHTML(a.platform)}</div></a>`;
       });
       html += '</div>';
     } else { html += '<div class="card"><div class="no-posts">No standout audio trends this cycle</div></div>'; }

@@ -516,6 +516,16 @@ body {
 }
 
 /* ===== Trending Audio ===== */
+.audio-item-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: rgba(201, 168, 76, 0.15);
+}
+.audio-item-link:active .audio-name {
+  color: var(--gold);
+}
+
 .audio-item {
   display: flex;
   align-items: flex-start;
@@ -523,6 +533,7 @@ body {
   padding: 10px 0;
   border-bottom: 1px solid var(--border);
 }
+.audio-item-link:last-child .audio-item { border-bottom: none; }
 .audio-item:last-child { border-bottom: none; }
 
 .audio-info { flex: 1; min-width: 0; }
