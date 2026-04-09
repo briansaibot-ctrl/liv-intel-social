@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0F0F0F">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="LIV Social">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="icon" type="image/png" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>LIV Intel Social</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <h1 class="header-title">LIV Intel Social</h1>
+    </div>
+    <div class="header-right">
+      <span class="freshness-dot" id="freshnessDot"></span>
+      <span class="header-timestamp" id="headerTimestamp">Loading...</span>
+    </div>
+  </header>
+
+  <!-- Offline Banner -->
+  <div class="offline-banner" id="offlineBanner" hidden>
+    Showing cached data — connect to refresh
+  </div>
+
+  <!-- Tab Content -->
+  <main class="tab-content">
+    <!-- Social Feed Tab -->
+    <section class="tab-pane active" id="tabFeed">
+      <div id="feedContent">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+    </section>
+
+    <!-- Trends Tab -->
+    <section class="tab-pane" id="tabTrends">
+      <div id="trendsContent">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Tab Bar -->
+  <nav class="tab-bar">
+    <button class="tab-btn active" data-tab="tabFeed">
+      <span class="tab-icon">&#x1F4E1;</span>
+      <span class="tab-label">Social Feed</span>
+    </button>
+    <button class="tab-btn" data-tab="tabTrends">
+      <span class="tab-icon">&#x1F4C8;</span>
+      <span class="tab-label">Trends</span>
+    </button>
+  </nav>
+
+  <script src="./assets/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js');
+    }
+  </script>
+</body>
+</html>

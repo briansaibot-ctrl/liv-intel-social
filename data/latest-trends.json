@@ -1,0 +1,113 @@
+{
+  "week_of": "2026-04-06",
+  "generated_at": "2026-04-08T23:45:00-07:00",
+  "platform_updates": [
+    {
+      "platform": "Instagram",
+      "update": "Your Algo control feature rolling out for Reels; Instagram Rings award for creators",
+      "action_required": true,
+      "detail": "Emphasize creator-friendly positioning in LIV's content; leverage algorithm transparency to tailor DJ/venue content to specific audience interests"
+    },
+    {
+      "platform": "TikTok",
+      "update": "Grid feature launch; trending sounds drive ~50% of algorithm reach",
+      "action_required": true,
+      "detail": "Prioritize audio strategy for LIV—use trending nightlife sounds (especially Turn The Lights Off) in every Reels/TikTok post; don't skimp on audio choice"
+    },
+    {
+      "platform": "X/Twitter",
+      "update": "Visual content and hashtags key; engagement concentrated on verified accounts",
+      "action_required": false,
+      "detail": "LIV should maintain visual-first Twitter strategy; focus on high-quality venue/DJ imagery"
+    }
+  ],
+  "top_content_formats": [
+    {
+      "format": "Short-Form Video (Reels/TikTok)",
+      "why_it_works": "2.5× more engagement than long-form; TikTok dominates at 3.70% engagement (up 49% YoY); Reels generate 2.25× more reach than carousels",
+      "liv_application": "Shift primary content focus to 15–30sec Reels/TikTok shorts. Capture crowd energy, DJ booth moments, crowd reactions, transitions with trending audio"
+    },
+    {
+      "format": "Carousel Posts (Instagram Feed)",
+      "why_it_works": "Highest engagement rate for static content at 1.36%; humanizes multi-moment narratives",
+      "liv_application": "Use carousels for before/after event narratives, guest DJ spotlights, VIP moments—pair with short-form Reels to maximize reach"
+    },
+    {
+      "format": "Behind-the-Scenes/Authenticity",
+      "why_it_works": "21–35 demo responds to genuine, unfiltered moments; surprise-and-delight moments are top engagement driver",
+      "liv_application": "Capture raw crowd energy, unexpected DJ moments, bartender creations, setup footage—don't over-produce; authenticity > polish"
+    }
+  ],
+  "trending_audio": [
+    {
+      "sound": "Turn The Lights Off",
+      "artist": "KATO feat. Jon",
+      "platform": "TT/IG",
+      "relevance": "Nightclub nostalgia (Jon Hamm dancing clip); resonates deeply with 21–35 demo seeking escapism and calming moments. Perfect for LIV's vibe moments and crowd capture"
+    },
+    {
+      "sound": "You Can't Hurry Love",
+      "artist": "Olivia Dean (cover)",
+      "platform": "IG/TT",
+      "relevance": "Emotional, relatable; works for party atmosphere, outfit posts, VIP moments. Festival season energy"
+    },
+    {
+      "sound": "Black Beatles",
+      "artist": "Rae Sremmurd",
+      "platform": "TT/IG",
+      "relevance": "Nostalgia resurgence ('2026 is the new 2016'); Y2K aesthetic appeal. Strong for event highlight reels"
+    }
+  ],
+  "viral_nightlife_content": {
+    "summary": "Viral nightlife content in April 2026 centers on authentic crowd energy and nostalgia-driven aesthetics. CTRL Room (Dallas) exemplifies the shift toward intentional, curated programming. Coachella afterparties (Apr 10–12 & 17–19) are generating high-profile social moments. The 'Beach Takeover' trend shows that organic crowd-driven events resonate more than polished brand moments. Behind-the-scenes venue access—lighting, crowd reactions, DJ energy—outperforms promotional content.",
+    "standout_example": "Jon Hamm nightclub clip (Turn The Lights Off trend) paired with real crowd moments; Coachella afterparty social circuits; high-energy audience footage with vibrant stage lighting capturing authentic engagement",
+    "theme": "Authenticity"
+  },
+  "audience_signals": {
+    "behavior_shift": "21–35 year olds are seeking niche-focused, immersive content delivered in intimate spaces (smaller broadcast channels). They respond to surprise-and-delight moments over polished brand messaging. Y2K/early-2010s nostalgia dominates aesthetics (fashion, music, venue vibes)",
+    "upcoming_moments": [
+      "Coachella 2026 festival circuit (Apr 10–12 & 17–19) — peak social moment for nightlife/music content",
+      "Festival season ramp-up (May–June concerts, outdoor events)",
+      "Summer travel planning season (May–July)",
+      "Memorial Day weekend (May 26) — major party/event trigger"
+    ]
+  },
+  "this_week_recommendations": [
+    {
+      "priority": "HIGH",
+      "action": "Launch TikTok/Reels short-form series using 'Turn The Lights Off' audio paired with LIV crowd/DJ moments. Target 15–30sec clips of authentic energy—no scripting, real reactions",
+      "platform": "TT/IG",
+      "rationale": "Audio drives 50% of TikTok reach. This sound is peaking in nostalgia appeal and nightlife resonance. LIV can own this niche immediately by being first mover with venue-specific content"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Create behind-the-scenes content series: DJ booth setup, crowd building energy, bartender moments, lighting setup. Post to Stories/Reels daily during event hours",
+      "platform": "IG/TT",
+      "rationale": "Audience wants intimacy and authenticity. Behind-the-scenes content generates 2–3× engagement vs. polished promos. Feeds the algorithmic preference for time-spent-on-post"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Plan Coachella-adjacent content (Apr 10–19): highlight LIV as a pre/post-festival destination. Partner with DJs performing Coachella afterparties; create 'Coachella Afterparty' story series",
+      "platform": "IG/TT",
+      "rationale": "Coachella generates massive social engagement for nightlife venues. Las Vegas proximity = natural audience. This is a 2-week content sprint with built-in viral potential"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Develop carousel posts for IG feed: multi-moment event narratives (before/during/after). Use original trending audio or Olivia Dean's 'You Can't Hurry Love' cover for emotional resonance",
+      "platform": "IG",
+      "rationale": "Carousels achieve 1.36% engagement; Reels get more reach but carousels build deeper narrative connection. Pair them: Reels for reach, carousels for storytelling"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Test 'crowd voting' interactive Stories (polls on format, music, next DJ). Audience wants immersive tools and surprise moments",
+      "platform": "IG",
+      "rationale": "Gen Z prioritizes interactive, immersive engagement. Simple polls on Stories drive 2–3× engagement and create sense of ownership"
+    },
+    {
+      "priority": "LOW",
+      "action": "Audit LIV's audio library: replace generic club music with trending TikTok sounds (Black Beatles, Olivia Dean, Turn The Lights Off). Repost user-generated content using these audios",
+      "platform": "TT/IG",
+      "rationale": "UGC using trending sounds outperforms brand content. Encourages community participation; increases algorithmic reach exponentially"
+    }
+  ]
+}
