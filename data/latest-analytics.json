@@ -1,0 +1,192 @@
+{
+  "week_of": "2026-04-06",
+  "generated_at": "2026-04-06T09:00:00-07:00",
+  "liv_accounts": {
+    "liv_nightclub": {
+      "instagram": { "handle": "@livnightclub", "followers": 892000, "follower_30d_delta": 12400, "follower_trend": "up", "posts_per_week": 8.2, "engagement_rate_pct": 3.1 },
+      "tiktok": { "handle": "@livnightclub", "followers": 445000, "follower_30d_delta": 28100, "follower_trend": "up", "posts_per_week": 5.0, "engagement_rate_pct": 5.8 },
+      "x": { "handle": "@LIVNightclub", "followers": 156000, "follower_30d_delta": -1200, "follower_trend": "down", "posts_per_week": 3.0, "engagement_rate_pct": 0.9 },
+      "vs_market": { "follower_rank": 1, "engagement_rank": 2, "posting_frequency_rank": 1, "top_post_views_rank": 1 }
+    },
+    "liv_beach": {
+      "instagram": { "handle": "@livbeachlasvegas", "followers": 124000, "follower_30d_delta": 3800, "follower_trend": "up", "posts_per_week": 4.5, "engagement_rate_pct": 2.8 },
+      "tiktok": { "handle": "@livbeachlasvegas", "followers": 67000, "follower_30d_delta": 8200, "follower_trend": "up", "posts_per_week": 3.0, "engagement_rate_pct": 4.1 },
+      "x": { "handle": "@LIVBeachLV", "followers": 28000, "follower_30d_delta": 400, "follower_trend": "flat", "posts_per_week": 1.5, "engagement_rate_pct": 0.6 },
+      "vs_market": { "follower_rank": 5, "engagement_rank": 4, "posting_frequency_rank": 6, "top_post_views_rank": 5 }
+    }
+  },
+  "venues": [
+    {
+      "name": "XS Nightclub",
+      "confidence": "high",
+      "accounts": {
+        "instagram": { "followers": 520000, "follower_30d_delta": 8200, "follower_trend": "up", "posts_per_week": 6.5, "days_since_last_post": 1, "engagement_rate_pct": 2.4 },
+        "tiktok": { "followers": 310000, "follower_30d_delta": 15000, "follower_trend": "up", "posts_per_week": 4.0, "days_since_last_post": 2, "engagement_rate_pct": 4.2 },
+        "x": { "followers": 89000, "follower_30d_delta": 500, "follower_trend": "flat", "posts_per_week": 2.0, "days_since_last_post": 3, "engagement_rate_pct": 0.6 }
+      },
+      "top_posts": [
+        { "platform": "IG", "content_summary": "SOFI TUKKER announcement reel with crowd reaction", "engagement_rate": 5.2, "estimated_reach": "120K", "posted_date": "2026-04-08", "comment_sentiment": { "overall": "positive", "score": 8, "themes": ["hype", "artist praise", "crowd energy"], "negative_signals": [], "opportunity": false } },
+        { "platform": "TT", "content_summary": "Backstage walkthrough of new VIP section reveal", "engagement_rate": 4.1, "estimated_reach": "95K", "posted_date": "2026-04-07", "comment_sentiment": { "overall": "positive", "score": 7, "themes": ["luxury", "exclusive access"], "negative_signals": [], "opportunity": false } }
+      ],
+      "posting_patterns": { "peak_days": ["Friday", "Saturday"], "peak_time_estimate": "8pm-10pm PT", "went_dark": false, "content_mix": { "reels_pct": 55, "static_pct": 15, "carousel_pct": 30 } },
+      "reviews": { "google_rating": 4.2, "yelp_rating": 3.8, "tripadvisor_rating": 4.0, "velocity": "accelerating", "new_reviews_estimate": "15-20 this month", "positive_themes": ["DJ quality", "bottle service"], "negative_themes": ["long lines", "cover price"], "incident_flag": false, "incident_detail": null },
+      "consistency_score": { "score": 5, "label": "Partially Tailored", "platforms_active": ["instagram", "tiktok", "x"], "tailoring_signals": ["Uses Reels on IG, native TikTok format", "Same captions across platforms"], "opportunity": "XS posts identical content on all platforms — LIV can differentiate by tailoring per platform" }
+    },
+    {
+      "name": "Encore Beach Club",
+      "confidence": "medium",
+      "accounts": {
+        "instagram": { "followers": 385000, "follower_30d_delta": 2100, "follower_trend": "flat", "posts_per_week": 1.5, "days_since_last_post": 5, "engagement_rate_pct": 1.8 },
+        "tiktok": { "followers": 145000, "follower_30d_delta": 4500, "follower_trend": "up", "posts_per_week": 1.0, "days_since_last_post": 7, "engagement_rate_pct": 2.9 },
+        "x": { "followers": 52000, "follower_30d_delta": -200, "follower_trend": "down", "posts_per_week": 0.5, "days_since_last_post": 10, "engagement_rate_pct": 0.3 }
+      },
+      "top_posts": [
+        { "platform": "IG", "content_summary": "Throwback photo set from 2025 season finale", "engagement_rate": 2.1, "estimated_reach": "45K", "posted_date": "2026-04-04", "comment_sentiment": { "overall": "mixed", "score": 5, "themes": ["nostalgia", "season opening questions"], "negative_signals": ["when does it open?"], "opportunity": false } }
+      ],
+      "posting_patterns": { "peak_days": ["Saturday"], "peak_time_estimate": "11am-1pm PT", "went_dark": true, "content_mix": { "reels_pct": 30, "static_pct": 50, "carousel_pct": 20 } },
+      "reviews": { "google_rating": 4.0, "yelp_rating": 3.5, "tripadvisor_rating": 3.8, "velocity": "slowing", "new_reviews_estimate": "5-8 this month", "positive_themes": ["pool atmosphere", "day parties"], "negative_themes": ["overpriced drinks", "crowded"], "incident_flag": false, "incident_detail": null },
+      "consistency_score": { "score": 3, "label": "Copy-Paste", "platforms_active": ["instagram"], "tailoring_signals": ["Only active on Instagram", "TikTok and X dormant for weeks"], "opportunity": "EBC completely absent from TikTok — their audience is on the platform but venue isn't" }
+    },
+    {
+      "name": "OMNIA Nightclub",
+      "confidence": "high",
+      "accounts": {
+        "instagram": { "followers": 610000, "follower_30d_delta": 11500, "follower_trend": "up", "posts_per_week": 7.0, "days_since_last_post": 0, "engagement_rate_pct": 3.4 },
+        "tiktok": { "followers": 280000, "follower_30d_delta": 19000, "follower_trend": "up", "posts_per_week": 5.5, "days_since_last_post": 1, "engagement_rate_pct": 5.1 },
+        "x": { "followers": 95000, "follower_30d_delta": 800, "follower_trend": "flat", "posts_per_week": 3.0, "days_since_last_post": 1, "engagement_rate_pct": 0.8 }
+      },
+      "top_posts": [
+        { "platform": "IG", "content_summary": "Fisher lineup announce reel with cinematic buildup", "engagement_rate": 6.8, "estimated_reach": "185K", "posted_date": "2026-04-09", "comment_sentiment": { "overall": "positive", "score": 9, "themes": ["Fisher hype", "ticket demand", "weekend plans"], "negative_signals": [], "opportunity": false } },
+        { "platform": "TT", "content_summary": "DJ Pauly D crowd interaction compilation", "engagement_rate": 4.5, "estimated_reach": "130K", "posted_date": "2026-04-08", "comment_sentiment": { "overall": "positive", "score": 7, "themes": ["entertainment value", "crowd energy"], "negative_signals": [], "opportunity": false } },
+        { "platform": "IG", "content_summary": "DESEO Latin Sundays promo with dance moments", "engagement_rate": 3.2, "estimated_reach": "78K", "posted_date": "2026-04-07", "comment_sentiment": { "overall": "positive", "score": 7, "themes": ["latin music love", "weekly regular"], "negative_signals": [], "opportunity": false } }
+      ],
+      "posting_patterns": { "peak_days": ["Thursday", "Friday", "Saturday"], "peak_time_estimate": "7pm-9pm PT", "went_dark": false, "content_mix": { "reels_pct": 60, "static_pct": 10, "carousel_pct": 30 } },
+      "reviews": { "google_rating": 4.3, "yelp_rating": 4.0, "tripadvisor_rating": 4.2, "velocity": "accelerating", "new_reviews_estimate": "25-30 this month", "positive_themes": ["production value", "DJ lineup", "VIP experience"], "negative_themes": ["expensive", "strict dress code"], "incident_flag": false, "incident_detail": null },
+      "consistency_score": { "score": 7, "label": "Well Tailored", "platforms_active": ["instagram", "tiktok", "x"], "tailoring_signals": ["Different edit styles per platform", "TikTok uses trending audio, IG uses original audio", "X focuses on announcements only"], "opportunity": "OMNIA's strong cross-platform presence makes them the benchmark to beat" }
+    },
+    {
+      "name": "Omnia Beach Club",
+      "confidence": "low",
+      "accounts": {
+        "instagram": { "followers": 15000, "follower_30d_delta": 8500, "follower_trend": "up", "posts_per_week": 2.0, "days_since_last_post": 7, "engagement_rate_pct": 4.5 },
+        "tiktok": { "followers": 3000, "follower_30d_delta": 2800, "follower_trend": "up", "posts_per_week": 0.5, "days_since_last_post": 14, "engagement_rate_pct": 3.2 },
+        "x": { "followers": 1200, "follower_30d_delta": 1100, "follower_trend": "up", "posts_per_week": 0.5, "days_since_last_post": 12, "engagement_rate_pct": 1.1 }
+      },
+      "top_posts": [
+        { "platform": "PR/News", "content_summary": "Opening announcement: May 15, 2026 — 46,000 sq ft venue at Caesars Palace", "engagement_rate": 8.2, "estimated_reach": "250K", "posted_date": "2026-04-02", "comment_sentiment": { "overall": "positive", "score": 9, "themes": ["excitement", "major opening", "DJ lineup hype"], "negative_signals": [], "opportunity": false } }
+      ],
+      "posting_patterns": { "peak_days": ["Monday"], "peak_time_estimate": "12pm PT", "went_dark": false, "content_mix": { "reels_pct": 40, "static_pct": 40, "carousel_pct": 20 } },
+      "reviews": { "google_rating": null, "yelp_rating": null, "tripadvisor_rating": null, "velocity": "new", "new_reviews_estimate": "Pre-launch", "positive_themes": ["anticipation", "venue design"], "negative_themes": [], "incident_flag": false, "incident_detail": null },
+      "consistency_score": { "score": 2, "label": "Pre-Launch", "platforms_active": ["instagram"], "tailoring_signals": ["New accounts, minimal content", "Pre-launch phase — building audience"], "opportunity": "New competitor entering market — monitor closely post-May 15" }
+    },
+    {
+      "name": "Zouk Nightclub",
+      "confidence": "high",
+      "accounts": {
+        "instagram": { "followers": 420000, "follower_30d_delta": 14200, "follower_trend": "up", "posts_per_week": 5.5, "days_since_last_post": 1, "engagement_rate_pct": 3.8 },
+        "tiktok": { "followers": 385000, "follower_30d_delta": 32000, "follower_trend": "up", "posts_per_week": 6.0, "days_since_last_post": 0, "engagement_rate_pct": 6.2 },
+        "x": { "followers": 68000, "follower_30d_delta": 1500, "follower_trend": "up", "posts_per_week": 2.5, "days_since_last_post": 2, "engagement_rate_pct": 1.0 }
+      },
+      "top_posts": [
+        { "platform": "TT", "content_summary": "RL Grime crowd moment with bass drop reaction", "engagement_rate": 5.9, "estimated_reach": "210K", "posted_date": "2026-04-06", "comment_sentiment": { "overall": "positive", "score": 9, "themes": ["bass music love", "epic moment", "best venue"], "negative_signals": [], "opportunity": false } },
+        { "platform": "IG", "content_summary": "RL Grime dual dates announcement carousel", "engagement_rate": 4.8, "estimated_reach": "145K", "posted_date": "2026-04-05", "comment_sentiment": { "overall": "positive", "score": 8, "themes": ["ticket demand", "repeat booking hype"], "negative_signals": [], "opportunity": false } }
+      ],
+      "posting_patterns": { "peak_days": ["Friday", "Saturday", "Sunday"], "peak_time_estimate": "9pm-11pm PT", "went_dark": false, "content_mix": { "reels_pct": 65, "static_pct": 10, "carousel_pct": 25 } },
+      "reviews": { "google_rating": 4.4, "yelp_rating": 4.1, "tripadvisor_rating": 4.3, "velocity": "accelerating", "new_reviews_estimate": "20-25 this month", "positive_themes": ["sound system", "modern vibe", "Gen Z friendly"], "negative_themes": ["far from strip center", "pricey cover"], "incident_flag": false, "incident_detail": null },
+      "consistency_score": { "score": 8, "label": "Fully Tailored", "platforms_active": ["instagram", "tiktok", "x"], "tailoring_signals": ["TikTok-native content (trending sounds, effects)", "IG uses polished brand aesthetic", "X for real-time updates", "Staggered posting times per platform"], "opportunity": "Zouk is the platform strategy leader — study their approach" }
+    },
+    {
+      "name": "Hakkasan Nightclub",
+      "confidence": "high",
+      "accounts": {
+        "instagram": { "followers": 480000, "follower_30d_delta": 3200, "follower_trend": "flat", "posts_per_week": 4.0, "days_since_last_post": 1, "engagement_rate_pct": 1.9 },
+        "tiktok": { "followers": 195000, "follower_30d_delta": 6800, "follower_trend": "up", "posts_per_week": 2.5, "days_since_last_post": 2, "engagement_rate_pct": 3.1 },
+        "x": { "followers": 72000, "follower_30d_delta": -300, "follower_trend": "down", "posts_per_week": 1.5, "days_since_last_post": 3, "engagement_rate_pct": 0.4 }
+      },
+      "top_posts": [
+        { "platform": "IG", "content_summary": "R&Bae Wednesdays vibe reel with smooth transitions", "engagement_rate": 2.8, "estimated_reach": "65K", "posted_date": "2026-04-08", "comment_sentiment": { "overall": "positive", "score": 6, "themes": ["chill vibes", "R&B love"], "negative_signals": ["sound quality complaints"], "opportunity": false } },
+        { "platform": "X", "content_summary": "Laidback Luke booking announcement with ticket link", "engagement_rate": 1.5, "estimated_reach": "22K", "posted_date": "2026-04-09", "comment_sentiment": { "overall": "mixed", "score": 5, "themes": ["nostalgia", "ticket prices"], "negative_signals": ["too expensive", "not worth the cover"], "opportunity": true } }
+      ],
+      "posting_patterns": { "peak_days": ["Wednesday", "Thursday"], "peak_time_estimate": "6pm-8pm PT", "went_dark": false, "content_mix": { "reels_pct": 45, "static_pct": 25, "carousel_pct": 30 } },
+      "reviews": { "google_rating": 3.9, "yelp_rating": 3.4, "tripadvisor_rating": 3.7, "velocity": "slowing", "new_reviews_estimate": "8-12 this month", "positive_themes": ["iconic venue", "music selection"], "negative_themes": ["service speed", "outdated decor", "price complaints"], "incident_flag": true, "incident_detail": "Multiple recent reviews mentioning poor service and long drink waits at bar" },
+      "consistency_score": { "score": 4, "label": "Partially Tailored", "platforms_active": ["instagram", "tiktok"], "tailoring_signals": ["X presence declining", "Similar content on IG and TT", "No platform-specific strategy visible"], "opportunity": "Hakkasan's declining engagement + negative review trend = vulnerability LIV can exploit" }
+    }
+  ],
+  "cross_venue_rankings": {
+    "top_3_posts_overall": [
+      { "venue": "OMNIA Nightclub", "platform": "IG", "summary": "Fisher lineup announce reel", "engagement_rate": 6.8, "reach": "185K" },
+      { "venue": "Zouk Nightclub", "platform": "TT", "summary": "RL Grime crowd moment", "engagement_rate": 5.9, "reach": "210K" },
+      { "venue": "XS Nightclub", "platform": "IG", "summary": "SOFI TUKKER announcement", "engagement_rate": 5.2, "reach": "120K" }
+    ],
+    "fastest_growing_account": { "venue": "Zouk Nightclub", "platform": "TikTok", "growth_rate": "+22% MoM" },
+    "most_active_venue": { "venue": "OMNIA Nightclub", "total_posts": 14 },
+    "went_dark": [{ "venue": "Encore Beach Club", "days_silent": 5, "last_post": "2026-04-04" }]
+  },
+  "weekly_ai_insight": {
+    "competitive_takeaway": "OMNIA is dominating Q2 with aggressive multi-genre programming (EDM + Latin). Zouk's dual RL Grime booking signals strong ticket demand. XS maintaining steady presence but not innovating content formats. Hakkasan showing vulnerability with declining engagement and negative review trends.",
+    "biggest_opportunity_for_liv": "The Coachella overlap (Apr 10-19) creates a unique window. Competitors are focused on their own lineups. LIV can capture festival-adjacent social traffic by positioning as the after-Coachella destination.",
+    "who_to_watch": { "venue": "Zouk Nightclub", "reason": "Fastest TikTok growth (+22% MoM) and aggressive booking strategy. Building the strongest Gen Z audience in Vegas nightlife." },
+    "content_format_winner": { "format": "Short-form Reels", "why": "Reels accounted for 68% of top-performing posts across all venues. TikTok-native content growing fastest but IG Reels still drives more venue-attributable engagement." }
+  },
+  "event_discovery": [
+    { "venue": "OMNIA Nightclub", "event_date": "2026-04-10", "talent": "Fisher", "source": "social", "first_detected": "2026-04-06", "announced_on_social": true, "days_until_event": 1, "lead_time_days": 4 },
+    { "venue": "Zouk Nightclub", "event_date": "2026-04-10", "talent": "RL Grime", "source": "ticketing", "first_detected": "2026-04-03", "announced_on_social": true, "days_until_event": 1, "lead_time_days": 7 },
+    { "venue": "OMNIA Nightclub", "event_date": "2026-04-11", "talent": "DESEO: Latin Sundays", "source": "social", "first_detected": "2026-04-07", "announced_on_social": true, "days_until_event": 2, "lead_time_days": 4 },
+    { "venue": "Zouk Nightclub", "event_date": "2026-04-24", "talent": "RL Grime (Return)", "source": "ticketing", "first_detected": "2026-04-06", "announced_on_social": true, "days_until_event": 15, "lead_time_days": 3 },
+    { "venue": "XS Nightclub", "event_date": "2026-04-18", "talent": "Deadmau5", "source": "discotech", "first_detected": "2026-04-08", "announced_on_social": false, "days_until_event": 9, "lead_time_days": 1 },
+    { "venue": "Hakkasan Nightclub", "event_date": "2026-04-17", "talent": "Tiesto", "source": "vegas.com", "first_detected": "2026-04-07", "announced_on_social": false, "days_until_event": 8, "lead_time_days": 2 }
+  ],
+  "social_dark_events": [
+    { "venue": "XS Nightclub", "event_date": "2026-04-18", "talent": "Deadmau5", "source": "discotech", "first_detected": "2026-04-08", "days_until_event": 9 },
+    { "venue": "Hakkasan Nightclub", "event_date": "2026-04-17", "talent": "Tiesto", "source": "vegas.com", "first_detected": "2026-04-07", "days_until_event": 8 }
+  ],
+  "hashtag_tracker": {
+    "competitor_hashtags": [
+      { "tag": "#xsnightclub", "venue": "XS Nightclub", "monthly_volume": "high", "trend": "up", "liv_using": false },
+      { "tag": "#omnianightclub", "venue": "OMNIA Nightclub", "monthly_volume": "high", "trend": "up", "liv_using": false },
+      { "tag": "#zouklasvegas", "venue": "Zouk Nightclub", "monthly_volume": "medium", "trend": "up", "liv_using": false },
+      { "tag": "#hakkasan", "venue": "Hakkasan Nightclub", "monthly_volume": "medium", "trend": "stable", "liv_using": false },
+      { "tag": "#encorebeachclub", "venue": "Encore Beach Club", "monthly_volume": "low", "trend": "down", "liv_using": false }
+    ],
+    "market_hashtags": [
+      { "tag": "#lasvegasnightlife", "venue": null, "monthly_volume": "high", "trend": "up", "liv_using": true },
+      { "tag": "#vegasnightlife", "venue": null, "monthly_volume": "high", "trend": "stable", "liv_using": true },
+      { "tag": "#vegasdayclub", "venue": null, "monthly_volume": "medium", "trend": "up", "liv_using": false },
+      { "tag": "#stripnightlife", "venue": null, "monthly_volume": "low", "trend": "stable", "liv_using": false }
+    ],
+    "liv_hashtags": [
+      { "tag": "#livnightclub", "venue": "LIV", "monthly_volume": "high", "trend": "up", "liv_using": true },
+      { "tag": "#livbeach", "venue": "LIV Beach", "monthly_volume": "medium", "trend": "up", "liv_using": true },
+      { "tag": "#livlasvegas", "venue": "LIV", "monthly_volume": "medium", "trend": "stable", "liv_using": true },
+      { "tag": "#fontainebleaulasvegas", "venue": "LIV", "monthly_volume": "high", "trend": "up", "liv_using": true }
+    ],
+    "untapped_opportunities": [
+      { "tag": "#coachellaafterparty", "monthly_volume": "high", "growth_pct": 320, "suggestion": "Use during Apr 10-19 for festival-adjacent content" },
+      { "tag": "#vegasweekend", "monthly_volume": "high", "growth_pct": 55, "suggestion": "Under-used by venues despite massive search volume" },
+      { "tag": "#vegaspoolparty", "monthly_volume": "medium", "growth_pct": 45, "suggestion": "Perfect for LIV Beach positioning as season opens" }
+    ]
+  },
+  "time_intelligence": {
+    "peak_windows_by_platform": {
+      "instagram": { "highest_engagement_time": "7pm-9pm PT", "most_competitive_time": "8pm PT", "opportunity_window": "6pm-7pm PT", "venues_posting_at_peak": ["XS", "OMNIA", "Zouk"], "best_hours": [18, 19, 20], "worst_hours": [6, 7, 8] },
+      "tiktok": { "highest_engagement_time": "9pm-11pm PT", "most_competitive_time": "10pm PT", "opportunity_window": "4pm-5pm PT", "venues_posting_at_peak": ["Zouk", "OMNIA"], "best_hours": [16, 21, 22, 23], "worst_hours": [5, 6, 7] },
+      "x": { "highest_engagement_time": "12pm-1pm PT", "most_competitive_time": "12pm PT", "opportunity_window": "7pm PT", "venues_posting_at_peak": ["XS"], "best_hours": [12, 13, 19, 20], "worst_hours": [3, 4, 5] }
+    },
+    "liv_recommendation": {
+      "instagram": "Post at 6:30pm PT Friday to get ahead of XS and OMNIA who both post at 7-8pm",
+      "tiktok": "Saturday 4pm PT — high engagement window with minimal competitor activity",
+      "x": "Thursday 7pm PT for talent announcements — minimal competition at that time"
+    }
+  },
+  "historical_patterns": [
+    { "venue": "XS Nightclub", "pattern": "Always announces Friday talent on Tuesday at 12pm", "confidence": "high", "based_on_weeks": 8, "next_expected": "2026-04-14T12:00:00-07:00", "actionable": true, "liv_action": "Post competing content Tuesday 11am to own the feed before XS announces" },
+    { "venue": "OMNIA Nightclub", "pattern": "Posts 3x more content during Coachella weeks", "confidence": "high", "based_on_weeks": 6, "next_expected": "2026-04-10", "actionable": true, "liv_action": "Match OMNIA's Coachella cadence — 3x content volume Apr 10-19" },
+    { "venue": "Zouk Nightclub", "pattern": "Goes quiet Sunday-Tuesday then surges Wednesday", "confidence": "medium", "based_on_weeks": 5, "next_expected": "2026-04-15", "actionable": true, "liv_action": "Fill the Monday-Tuesday gap with LIV content when Zouk is silent" },
+    { "venue": "Hakkasan Nightclub", "pattern": "Engagement drops 30% in weeks without marquee talent", "confidence": "high", "based_on_weeks": 8, "next_expected": null, "actionable": false, "liv_action": "Monitor Hakkasan's booking pipeline — their weak weeks are LIV's opportunity" }
+  ],
+  "upcoming_pattern_events": [
+    { "date": "2026-04-10", "venue": "OMNIA Nightclub", "expected_action": "3x content surge begins (Coachella week 1)", "confidence": "high" },
+    { "date": "2026-04-14", "venue": "XS Nightclub", "expected_action": "Tuesday talent announcement for Apr 18 weekend", "confidence": "high" },
+    { "date": "2026-04-15", "venue": "Zouk Nightclub", "expected_action": "Wednesday content surge after quiet period", "confidence": "medium" }
+  ]
+}

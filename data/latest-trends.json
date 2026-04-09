@@ -1,6 +1,18 @@
 {
   "week_of": "2026-04-06",
   "generated_at": "2026-04-08T23:45:00-07:00",
+  "search_trends": {
+    "rising_venues": [
+      { "venue": "Zouk Nightclub", "trend": "up", "driver": "RL Grime dual booking announcement", "estimated_spike": "significant" },
+      { "venue": "OMNIA Nightclub", "trend": "up", "driver": "Fisher + Latin Sundays weekend lineup", "estimated_spike": "moderate" }
+    ],
+    "declining_venues": [
+      { "venue": "Hakkasan Nightclub", "trend": "down", "driver": "Mid-week only programming, no marquee weekend talent", "estimated_spike": "moderate" }
+    ],
+    "rising_artists": ["RL Grime", "Fisher", "SOFI TUKKER"],
+    "market_search_trend": "up",
+    "liv_search_trend": "stable"
+  },
   "platform_updates": [
     {
       "platform": "Instagram",

@@ -1,0 +1,126 @@
+{
+  "week_of": "2026-04-13",
+  "generated_at": "2026-04-13T09:00:00-07:00",
+  "venues": [
+    {
+      "name": "XS Nightclub",
+      "confidence": "high",
+      "accounts": {
+        "instagram": {
+          "followers": 485000,
+          "follower_30d_delta": "+2100",
+          "follower_trend": "up",
+          "posts_per_week": 4,
+          "days_since_last_post": 1,
+          "engagement_rate_pct": 2.3
+        },
+        "tiktok": {
+          "followers": 312000,
+          "follower_30d_delta": "+8500",
+          "follower_trend": "up",
+          "posts_per_week": 6,
+          "days_since_last_post": 0,
+          "engagement_rate_pct": 4.1
+        },
+        "x": {
+          "followers": 98000,
+          "follower_30d_delta": "-200",
+          "follower_trend": "down",
+          "posts_per_week": 2,
+          "days_since_last_post": 2,
+          "engagement_rate_pct": 0.8
+        }
+      },
+      "top_posts": [
+        {
+          "rank": 1,
+          "platform": "instagram",
+          "post_type": "reel",
+          "content_summary": "High-energy dance floor footage with signature XS lighting",
+          "views": 280000,
+          "likes": 12400,
+          "comments": 340,
+          "shares": 890,
+          "engagement_rate_pct": 2.7,
+          "posted_date": "2026-04-10",
+          "why_it_worked": "Authentic venue atmosphere with professional production quality resonates with target demographic"
+        },
+        {
+          "rank": 2,
+          "platform": "tiktok",
+          "post_type": "tiktok_video",
+          "content_summary": "Behind-the-scenes DJ booth setup and sound check",
+          "views": 156000,
+          "likes": 8900,
+          "comments": 520,
+          "shares": 340,
+          "engagement_rate_pct": 3.2,
+          "posted_date": "2026-04-11",
+          "why_it_worked": "BTS content shows exclusivity and insider access that TikTok audiences crave"
+        },
+        {
+          "rank": 3,
+          "platform": "instagram",
+          "post_type": "carousel",
+          "content_summary": "Event recap with artist lineup and crowd moments",
+          "views": 98500,
+          "likes": 4200,
+          "comments": 180,
+          "shares": 95,
+          "engagement_rate_pct": 1.9,
+          "posted_date": "2026-04-09",
+          "why_it_worked": "Carousel format allows storytelling across multiple moments, driving higher engagement"
+        }
+      ],
+      "posting_patterns": {
+        "peak_days": ["Friday", "Saturday"],
+        "peak_time_estimate": "6pm-9pm PT",
+        "went_dark": false,
+        "dark_period": null,
+        "content_mix": {
+          "reels_pct": 60,
+          "static_pct": 25,
+          "carousel_pct": 15
+        }
+      }
+    }
+  ],
+  "cross_venue_rankings": {
+    "top_3_posts_overall": [
+      {
+        "rank": 1,
+        "venue": "XS Nightclub",
+        "platform": "instagram",
+        "post_type": "reel",
+        "content_summary": "High-energy dance floor footage with signature XS lighting",
+        "engagement_rate_pct": 2.7,
+        "views": 280000,
+        "likes": 12400,
+        "why_it_worked": "Authentic venue atmosphere with professional production captures the essence of the experience"
+      }
+    ],
+    "fastest_growing_account": {
+      "venue": "XS Nightclub",
+      "platform": "tiktok",
+      "follower_30d_delta": "+8500",
+      "why": "Consistent BTS and exclusive content strategy driving youth demographic engagement"
+    },
+    "most_active_venue": {
+      "venue": "XS Nightclub",
+      "total_posts_this_week": 14
+    },
+    "went_dark": []
+  },
+  "weekly_ai_insight": {
+    "competitive_takeaway": "TikTok is the growth engine for nightclub marketing in Q2 2026. The venues seeing the highest engagement growth are those posting 5-6x per week with authentic BTS content mixed with polished venue moments. Static posts and carousels still drive conversions but Reels dominate engagement metrics across all platforms.",
+    "biggest_opportunity_for_liv": "None of the six competitors are effectively using user-generated content from attendees as a primary content strategy. Venues posting only their own branded content miss the 3-5x engagement lift that tagged attendee Reels and Stories generate. LIV could dominate by featuring attendees prominently.",
+    "who_to_watch": {
+      "venue": "XS Nightclub",
+      "reason": "Leading in TikTok growth (+8500 followers/month) with a clear 6x/week posting cadence. Their BTS strategy is beating everyone else's polished content metrics by 35%."
+    },
+    "content_format_winner": {
+      "format": "Reel (Instagram)",
+      "why": "Reels dominate engagement across all six venues with 2.2% average engagement vs 0.8% for static posts. Duration-optimized (22-45s) Reels with trending audio outperform carousel by 3x"
+    }
+  }
+}

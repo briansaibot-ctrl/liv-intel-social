@@ -3,6 +3,113 @@
   "run_type": "midday",
   "market_pulse": "Strong competitive activity across major Vegas nightclubs heading into the weekend. OMNIA leading the charge with multi-day lineup (DJ Pauly D, Fisher, Latin Sundays). Hakkasan emphasizing R&B/house fusion mid-week. XS and Zouk both feature major electronic talent (SOFI TUKKER, RL Grime). Omnia Beach Club preparing for imminent May 15 opening with significant pre-launch buzz.",
   "urgent_alert_count": 1,
+  "weekend_readiness": {
+    "score": 7,
+    "label": "HIGH",
+    "color": "orange",
+    "factors": [
+      "4 of 6 competitors announced talent this week",
+      "2 venues showing urgency language (Zouk, Omnia Beach Club)",
+      "OMNIA Fisher post estimated 14K+ engagement — near viral threshold"
+    ],
+    "liv_recommendation": "Heavy competition this weekend. Fisher at OMNIA and RL Grime at Zouk will split the EDM audience. LIV should lean into unique content angles and behind-the-scenes storytelling to differentiate."
+  },
+  "content_gaps": [
+    {
+      "gap_type": "trending_audio",
+      "description": "'Turn The Lights Off' by KATO feat. Jon used by 3 competitors this week — LIV hasn't used it",
+      "competitors_doing_it": ["OMNIA Nightclub", "Zouk Nightclub", "XS Nightclub"],
+      "urgency": "high",
+      "suggested_action": "Create a 15-30sec Reel/TikTok using this audio with LIV crowd moments today"
+    },
+    {
+      "gap_type": "theme",
+      "description": "Behind-the-scenes DJ booth content trending across 4 competitor venues — LIV hasn't posted BTS in 10 days",
+      "competitors_doing_it": ["OMNIA Nightclub", "Zouk Nightclub", "XS Nightclub", "Hakkasan Nightclub"],
+      "urgency": "high",
+      "suggested_action": "Capture raw DJ booth and setup footage at tonight's event for Stories and Reels"
+    },
+    {
+      "gap_type": "hashtag",
+      "description": "#CoachellaAfterparty trending — no Vegas nightclub has claimed it yet",
+      "competitors_doing_it": [],
+      "urgency": "medium",
+      "suggested_action": "Be first to use #CoachellaAfterparty in LIV content starting April 10"
+    }
+  ],
+  "influencer_activity": [
+    {
+      "handle": "@vegasnightowl",
+      "platform": "IG",
+      "follower_estimate": 245000,
+      "posted_about": "Zouk Nightclub",
+      "engagement_level": "high",
+      "has_posted_about_liv": false,
+      "content_type": "organic_experience",
+      "opportunity": true
+    },
+    {
+      "handle": "@clubqueenvegas",
+      "platform": "TT",
+      "follower_estimate": 180000,
+      "posted_about": "OMNIA Nightclub",
+      "engagement_level": "high",
+      "has_posted_about_liv": true,
+      "content_type": "organic_experience",
+      "opportunity": false
+    },
+    {
+      "handle": "@djlifestyle",
+      "platform": "IG",
+      "follower_estimate": 320000,
+      "posted_about": "XS Nightclub",
+      "engagement_level": "normal",
+      "has_posted_about_liv": false,
+      "content_type": "review",
+      "opportunity": true
+    }
+  ],
+  "liv_outreach_targets": [
+    {
+      "handle": "@vegasnightowl",
+      "platform": "IG",
+      "follower_estimate": 245000,
+      "posted_about": "Zouk Nightclub",
+      "content_type": "organic_experience",
+      "reason": "Covers Vegas nightlife weekly, posted about Zouk twice this month, never mentioned LIV"
+    },
+    {
+      "handle": "@djlifestyle",
+      "platform": "IG",
+      "follower_estimate": 320000,
+      "posted_about": "XS Nightclub",
+      "content_type": "review",
+      "reason": "Major nightlife content creator, reviews competitor venues regularly, no LIV coverage in 60+ days"
+    }
+  ],
+  "story_activity": [
+    {
+      "venue": "OMNIA Nightclub",
+      "content_type": "countdown",
+      "summary": "Fisher countdown Stories — 4-part sequence building hype for Friday night",
+      "detected_at": "2026-04-09T04:15:00Z",
+      "urgency": false
+    },
+    {
+      "venue": "Zouk Nightclub",
+      "content_type": "bts",
+      "summary": "RL Grime soundcheck footage shared via Stories with fire emoji overlays",
+      "detected_at": "2026-04-09T03:45:00Z",
+      "urgency": false
+    },
+    {
+      "venue": "XS Nightclub",
+      "content_type": "flash_sale",
+      "summary": "Flash ticket sale: SOFI TUKKER tonight — 20% off with code XS420",
+      "detected_at": "2026-04-09T05:30:00Z",
+      "urgency": true
+    }
+  ],
   "venues": [
     {
       "venue": "Hakkasan Nightclub",
