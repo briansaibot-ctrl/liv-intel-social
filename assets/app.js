@@ -235,11 +235,11 @@
   }
 
   async function loadData() {
-    let offline = false;
-    try { feedData = await fetchJSON('./data/latest.json'); } catch { offline = true; }
-    try { trendsData = await fetchJSON('./data/latest-trends.json'); } catch { offline = true; }
-    try { analyticsData = await fetchJSON('./data/latest-analytics.json'); } catch { offline = true; }
-    offlineBanner.hidden = !offline;
+    let loaded = 0;
+    try { feedData = await fetchJSON('./data/latest.json'); loaded++; } catch {}
+    try { trendsData = await fetchJSON('./data/latest-trends.json'); loaded++; } catch {}
+    try { analyticsData = await fetchJSON('./data/latest-analytics.json'); loaded++; } catch {}
+    offlineBanner.hidden = loaded > 0;
     renderFeed();
     renderTrends();
     if (analyticsRendered) renderAnalytics();
