@@ -1,1 +1,1 @@
-# liv-intel-social
+LIV Intel Social Competitor Monitor
