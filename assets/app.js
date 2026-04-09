@@ -25,6 +25,46 @@
     'Ticket': { icon: null, label: 'TKT', cls: 'ticket' }, 'Eventbrite': { icon: null, label: 'TKT', cls: 'ticket' },
     'PR': { icon: null, label: 'PR', cls: 'pr' }, 'News': { icon: null, label: 'NEWS', cls: 'pr' }
   };
+  // Social profile URLs for venues (used by leaderboard links)
+  const VENUE_SOCIALS = {
+    'liv nightclub': { ig: 'livnightclub', tt: 'livnightclub', x: 'LIVNightclub' },
+    'liv beach': { ig: 'livbeachlasvegas', tt: 'livbeachlasvegas', x: 'LIVBeachLV' },
+    'xs nightclub': { ig: 'xslasvegas', tt: 'xslasvegas' },
+    'encore beach club': { ig: 'encorebeachclub', tt: 'encorebeachclub' },
+    'omnia nightclub': { ig: 'omnianightclub', tt: 'omnianightclub' },
+    'omnia beach club': { ig: 'omnianightclub' },
+    'zouk nightclub': { ig: 'zoukgrouplv', tt: 'zouklasvegas' },
+    'hakkasan nightclub': { ig: 'hakkasannightclub', tt: 'hakkasanlv' },
+    'palm tree': { ig: 'palmtreebeachclub', tt: 'palmtreebeachclub' },
+    'tao beach': { ig: 'taobeach', tt: 'taobeach' }
+  };
+
+  function profileUrl(platform, handle) {
+    if (!handle) return '';
+    const h = handle.replace(/^@/, '');
+    const p = (platform || '').toLowerCase();
+    if (p.includes('tiktok') || p === 'tt') return `https://www.tiktok.com/@${h}`;
+    if (p.includes('instagram') || p === 'ig') return `https://www.instagram.com/${h}/`;
+    if (p === 'x' || p.includes('twitter')) return `https://x.com/${h}`;
+    // Default to IG
+    return `https://www.instagram.com/${h}/`;
+  }
+
+  function venueProfileUrl(venueName, platform) {
+    const socials = VENUE_SOCIALS[(venueName || '').toLowerCase()];
+    if (!socials) return '';
+    const p = (platform || '').toLowerCase();
+    if ((p.includes('tiktok') || p === 'tt') && socials.tt) return `https://www.tiktok.com/@${socials.tt}`;
+    if ((p === 'x' || p.includes('twitter')) && socials.x) return `https://x.com/${socials.x}`;
+    if (socials.ig) return `https://www.instagram.com/${socials.ig}/`;
+    return '';
+  }
+
+  function linkWrap(url, innerHtml) {
+    if (!url) return innerHtml;
+    return `<a href="${url}" target="_blank" rel="noopener" class="card-link">${innerHtml}</a>`;
+  }
+
   const SETTINGS_DEFAULTS = {
     slackWebhookUrl: '', whatsappNumber: '',
     alertsEnabled: true, weekendReadinessEnabled: true,
@@ -415,7 +455,9 @@
         if (atMatch) name = atMatch[0];
       }
       const platformHtml = platformBadgeHTML(inf.platform);
-      html += `<div class="trending-influencer"><span class="trending-influencer-rank">${i + 1}</span><div class="trending-influencer-info"><div class="trending-influencer-name">${name ? escapeHTML(name) + ' ' : ''}${platformHtml} ${engagementBadgeHTML(inf.engagement_level || 'Normal')}</div><div class="trending-influencer-why">${escapeHTML(mention)}</div></div></div>`;
+      const url = name ? profileUrl(inf.platform, name) : '';
+      const nameHtml = name ? linkWrap(url, escapeHTML(name)) + ' ' : '';
+      html += `<div class="trending-influencer"><span class="trending-influencer-rank">${i + 1}</span><div class="trending-influencer-info"><div class="trending-influencer-name">${nameHtml}${platformHtml} ${engagementBadgeHTML(inf.engagement_level || 'Normal')}</div><div class="trending-influencer-why">${escapeHTML(mention)}</div></div></div>`;
     });
     html += '</div>';
     return html;
@@ -452,9 +494,11 @@
         const engNorm = engLevel.charAt(0).toUpperCase() + engLevel.slice(1).toLowerCase();
         const followersLine = inf.follower_estimate ? `<div class="creator-followers">${formatNum(inf.follower_estimate)} followers</div>` : '';
         const postsLine = inf.posts_found ? `<div class="creator-followers">${inf.posts_found} post${inf.posts_found !== 1 ? 's' : ''} found</div>` : '';
+        const chipUrl = displayName ? profileUrl(inf.platform, displayName) : '';
+        const chipNameHtml = displayName ? linkWrap(chipUrl, escapeHTML(displayName)) + ' ' : '';
         html += `
           <div class="creator-chip">
-            <div class="creator-handle">${displayName ? escapeHTML(displayName) + ' ' : ''}${platformBadgeHTML(inf.platform)}</div>
+            <div class="creator-handle">${chipNameHtml}${platformBadgeHTML(inf.platform)}</div>
             ${followersLine || postsLine}
             <div class="creator-mention">${escapeHTML(mentionText)}</div>
             ${engagementBadgeHTML(engNorm === 'High' ? 'High' : engNorm === 'Low' ? 'Low' : 'Normal')}
@@ -545,7 +589,10 @@
     if (trendsData.trending_audio && trendsData.trending_audio.length) {
       html += '<div class="card">';
       trendsData.trending_audio.forEach(a => {
-        html += `<div class="audio-item"><div class="audio-info"><div class="audio-name">${escapeHTML(a.sound)}</div><div class="audio-artist">${escapeHTML(a.artist)}</div><div class="audio-relevance">${escapeHTML(a.relevance)}</div></div>${platformBadgeHTML(a.platform)}</div>`;
+        const q = encodeURIComponent((a.sound || '') + ' ' + (a.artist || ''));
+        const audioUrl = (a.platform || '').toLowerCase().includes('tt') || (a.platform || '').toLowerCase().includes('tiktok')
+          ? `https://www.tiktok.com/search?q=${q}` : `https://www.instagram.com/explore/tags/${encodeURIComponent((a.sound || '').replace(/\s+/g, '').toLowerCase())}/`;
+        html += `<div class="audio-item">${linkWrap(audioUrl, `<div class="audio-info"><div class="audio-name">${escapeHTML(a.sound)}</div><div class="audio-artist">${escapeHTML(a.artist)}</div><div class="audio-relevance">${escapeHTML(a.relevance)}</div></div>`)}${platformBadgeHTML(a.platform)}</div>`;
       });
       html += '</div>';
     } else { html += '<div class="card"><div class="no-posts">No standout audio trends this cycle</div></div>'; }
@@ -682,7 +729,8 @@
     let html = '<div class="section-header">&#x1F3C6; Leaderboard</div>';
     if (rankings.top_3_posts_overall) {
       rankings.top_3_posts_overall.forEach((p, i) => {
-        html += `<div class="card ranked-card"><div class="rank-number rank-${i + 1}">${i + 1}</div><div class="ranked-body"><div class="ranked-venue">${escapeHTML(p.venue)}</div><div class="ranked-summary">${escapeHTML(p.summary)}</div><div class="ranked-meta">${platformBadgeHTML(p.platform)} <span>${p.engagement_rate}% eng</span> <span>${escapeHTML(p.reach)} reach</span></div></div></div>`;
+        const vUrl = venueProfileUrl(p.venue, p.platform);
+        html += `<div class="card ranked-card"><div class="rank-number rank-${i + 1}">${i + 1}</div><div class="ranked-body"><div class="ranked-venue">${linkWrap(vUrl, escapeHTML(p.venue))}</div><div class="ranked-summary">${escapeHTML(p.summary)}</div><div class="ranked-meta">${platformBadgeHTML(p.platform)} <span>${p.engagement_rate}% eng</span> <span>${escapeHTML(p.reach)} reach</span></div></div></div>`;
       });
     }
     let statsHTML = '<div class="card">';
