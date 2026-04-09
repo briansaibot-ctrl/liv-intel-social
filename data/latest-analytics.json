@@ -110,6 +110,32 @@
       "posting_patterns": { "peak_days": ["Wednesday", "Thursday"], "peak_time_estimate": "6pm-8pm PT", "went_dark": false, "content_mix": { "reels_pct": 45, "static_pct": 25, "carousel_pct": 30 } },
       "reviews": { "google_rating": 3.9, "yelp_rating": 3.4, "tripadvisor_rating": 3.7, "velocity": "slowing", "new_reviews_estimate": "8-12 this month", "positive_themes": ["iconic venue", "music selection"], "negative_themes": ["service speed", "outdated decor", "price complaints"], "incident_flag": true, "incident_detail": "Multiple recent reviews mentioning poor service and long drink waits at bar" },
       "consistency_score": { "score": 4, "label": "Partially Tailored", "platforms_active": ["instagram", "tiktok"], "tailoring_signals": ["X presence declining", "Similar content on IG and TT", "No platform-specific strategy visible"], "opportunity": "Hakkasan's declining engagement + negative review trend = vulnerability LIV can exploit" }
+    },
+    {
+      "name": "Palm Tree",
+      "confidence": "low",
+      "accounts": {
+        "instagram": { "followers": 42000, "follower_30d_delta": 18000, "follower_trend": "up", "posts_per_week": 3.0, "days_since_last_post": 2, "engagement_rate_pct": 5.2 },
+        "tiktok": { "followers": 12000, "follower_30d_delta": 9000, "follower_trend": "up", "posts_per_week": 2.0, "days_since_last_post": 3, "engagement_rate_pct": 4.8 },
+        "x": { "followers": 5000, "follower_30d_delta": 3200, "follower_trend": "up", "posts_per_week": 1.0, "days_since_last_post": 5, "engagement_rate_pct": 1.2 }
+      },
+      "top_posts": [],
+      "posting_patterns": { "peak_days": ["Friday"], "peak_time_estimate": "12pm PT", "went_dark": false, "content_mix": { "reels_pct": 60, "static_pct": 20, "carousel_pct": 20 } },
+      "reviews": { "google_rating": null, "yelp_rating": null, "tripadvisor_rating": null, "velocity": "new", "new_reviews_estimate": "Pre-launch", "positive_themes": ["new venue buzz"], "negative_themes": [], "incident_flag": false, "incident_detail": null },
+      "consistency_score": { "score": 3, "label": "Pre-Launch", "platforms_active": ["instagram", "tiktok"], "tailoring_signals": ["New accounts building audience", "Pre-launch teaser content"], "opportunity": "New dayclub entrant at The Venetian — monitor launch strategy" }
+    },
+    {
+      "name": "Tao Beach",
+      "confidence": "medium",
+      "accounts": {
+        "instagram": { "followers": 185000, "follower_30d_delta": 1500, "follower_trend": "flat", "posts_per_week": 2.0, "days_since_last_post": 8, "engagement_rate_pct": 1.6 },
+        "tiktok": { "followers": 65000, "follower_30d_delta": 3200, "follower_trend": "up", "posts_per_week": 1.0, "days_since_last_post": 10, "engagement_rate_pct": 2.4 },
+        "x": { "followers": 32000, "follower_30d_delta": -100, "follower_trend": "down", "posts_per_week": 0.5, "days_since_last_post": 14, "engagement_rate_pct": 0.3 }
+      },
+      "top_posts": [],
+      "posting_patterns": { "peak_days": ["Saturday"], "peak_time_estimate": "11am PT", "went_dark": true, "content_mix": { "reels_pct": 35, "static_pct": 40, "carousel_pct": 25 } },
+      "reviews": { "google_rating": 3.8, "yelp_rating": 3.3, "tripadvisor_rating": 3.6, "velocity": "slowing", "new_reviews_estimate": "3-5 this month", "positive_themes": ["pool atmosphere", "location"], "negative_themes": ["service", "overpriced"], "incident_flag": false, "incident_detail": null },
+      "consistency_score": { "score": 3, "label": "Copy-Paste", "platforms_active": ["instagram"], "tailoring_signals": ["Minimal TikTok presence", "X essentially dormant"], "opportunity": "Tao Beach social presence is weak — LIV Beach can dominate the dayclub conversation" }
     }
   ],
   "cross_venue_rankings": {

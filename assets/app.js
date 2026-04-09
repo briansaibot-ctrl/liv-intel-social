@@ -5,17 +5,19 @@
   const VENUE_ORDER = [
     'LIV Nightclub', 'LIV Beach',
     'XS Nightclub', 'Encore Beach Club', 'OMNIA Nightclub',
-    'Omnia Beach Club', 'Zouk Nightclub', 'Hakkasan Nightclub'
+    'Omnia Beach Club', 'Zouk Nightclub', 'Hakkasan Nightclub',
+    'Palm Tree', 'Tao Beach'
   ];
   const LIV_VENUES = ['liv nightclub', 'liv beach'];
+  const BEACH_VENUES = ['liv beach', 'encore beach club', 'omnia beach club', 'palm tree', 'tao beach'];
   const SEASONAL_OFF_MONTHS = [11, 12, 1, 2, 3];
   const REFRESH_INTERVAL = 30 * 60 * 1000;
   const ENGAGEMENT_RANK = { High: 3, Normal: 2, Low: 1 };
   const PRIORITY_ORDER = { HIGH: 0, MEDIUM: 1, LOW: 2 };
   // SVG icons for platforms (16x16 viewBox, white fill)
-  const IG_ICON = '<svg width="14" height="14" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/></svg>';
-  const TT_ICON = '<svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z" fill="white"/></svg>';
-  const X_ICON = '<svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"/></svg>';
+  const IG_ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/></svg>';
+  const TT_ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z" fill="white"/></svg>';
+  const X_ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"/></svg>';
   const PLATFORM_MAP = {
     'IG': { icon: IG_ICON, cls: 'ig' }, 'Instagram': { icon: IG_ICON, cls: 'ig' },
     'TT': { icon: TT_ICON, cls: 'tt' }, 'TikTok': { icon: TT_ICON, cls: 'tt' },
@@ -27,7 +29,7 @@
     slackWebhookUrl: '', whatsappNumber: '',
     alertsEnabled: true, weekendReadinessEnabled: true,
     mondayDigestEnabled: true, sundayAnalyticsEnabled: true,
-    seasonalAutoHide: true
+    showBeachClubs: true
   };
 
   // ===== State =====
@@ -148,6 +150,15 @@
 
   function isLivVenue(name) {
     return LIV_VENUES.includes((name || '').toLowerCase());
+  }
+
+  function isBeachVenue(name) {
+    return BEACH_VENUES.includes((name || '').toLowerCase());
+  }
+
+  function shouldShowVenue(name) {
+    if (!isBeachVenue(name)) return true;
+    return getSettings().showBeachClubs;
   }
 
   function isStalePost(postedAt) {
@@ -300,7 +311,7 @@
 
     // Venue Cards
     html += '<div class="section-header">&#x1F4CA; Top Posts by Venue</div>';
-    const sorted = [...feedData.venues].sort((a, b) => venueIndex(a.venue) - venueIndex(b.venue));
+    const sorted = [...feedData.venues].filter(v => shouldShowVenue(v.venue)).sort((a, b) => venueIndex(a.venue) - venueIndex(b.venue));
     sorted.forEach(v => { html += renderVenueCard(v); });
 
     feedContent.innerHTML = html;
@@ -351,7 +362,7 @@
 
   function renderTop3() {
     const allPosts = [];
-    (feedData.venues || []).forEach(v => {
+    (feedData.venues || []).filter(v => shouldShowVenue(v.venue)).forEach(v => {
       (v.raw_posts || []).forEach(p => { allPosts.push({ ...p, venue: v.venue, venueUrgent: v.urgent }); });
     });
     allPosts.sort((a, b) => {
@@ -774,7 +785,7 @@
 
   function renderAnalyticsVenues(venues) {
     let html = '<div class="section-header">&#x1F3E2; Venue Deep Dive</div>';
-    const sorted = [...venues].sort((a, b) => venueIndex(a.name) - venueIndex(b.name));
+    const sorted = [...venues].filter(v => shouldShowVenue(v.name)).sort((a, b) => venueIndex(a.name) - venueIndex(b.name));
 
     sorted.forEach(v => {
       const ig = v.accounts?.instagram || {};
@@ -874,7 +885,7 @@
 
     // Display
     html += '<div class="card settings-group"><div class="settings-group-title">Display</div>';
-    html += `<div class="settings-item"><div><div class="settings-label">Seasonal auto-hide</div><div class="settings-label-sub">Hide Omnia Beach Club Nov–Mar</div></div><label class="settings-toggle"><input type="checkbox" data-key="seasonalAutoHide" ${s.seasonalAutoHide ? 'checked' : ''}><span class="toggle-track"><span class="toggle-thumb"></span></span></label></div>`;
+    html += `<div class="settings-item"><div><div class="settings-label">Show Beach Clubs</div><div class="settings-label-sub">LIV Beach, Encore Beach, Omnia Beach, Palm Tree, Tao Beach</div></div><label class="settings-toggle"><input type="checkbox" data-key="showBeachClubs" ${s.showBeachClubs ? 'checked' : ''}><span class="toggle-track"><span class="toggle-thumb"></span></span></label></div>`;
     html += '</div>';
 
     // Data
@@ -902,7 +913,11 @@
     if (whatsInput) whatsInput.addEventListener('change', () => saveSetting('whatsappNumber', whatsInput.value));
 
     settingsContent.querySelectorAll('.settings-toggle input').forEach(tog => {
-      tog.addEventListener('change', () => saveSetting(tog.dataset.key, tog.checked));
+      tog.addEventListener('change', () => {
+        saveSetting(tog.dataset.key, tog.checked);
+        // Re-render tabs when display settings change
+        if (tog.dataset.key === 'showBeachClubs') { renderFeed(); renderTrends(); if (analyticsRendered) renderAnalytics(); }
+      });
     });
 
     // Force refresh button removed — auto-refresh only

@@ -272,6 +272,30 @@
           "flags": ["urgent", "promo_offer"]
         }
       ]
+    },
+    {
+      "venue": "Palm Tree",
+      "posts_found": 1,
+      "urgent": false,
+      "summary": "New dayclub at The Venetian. Pre-season content building buzz with venue walk-throughs and DJ confirmations.",
+      "flags": ["talent_announcement"],
+      "raw_posts": [
+        {
+          "platform": "IG",
+          "content_summary": "Palm Tree Las Vegas teasing opening weekend lineup at The Venetian. Drone footage of the pool complex and stage setup.",
+          "posted_at": "2026-04-07",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        }
+      ]
+    },
+    {
+      "venue": "Tao Beach",
+      "posts_found": 0,
+      "urgent": false,
+      "summary": "No recent social posts detected. Tao Beach at The Venetian appears in pre-season mode with minimal activity.",
+      "flags": [],
+      "raw_posts": []
     }
   ]
 }
