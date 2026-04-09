@@ -277,9 +277,10 @@ body {
 }
 
 .venue-chevron {
-  font-size: 14px;
+  font-size: 20px;
   color: var(--text-secondary);
   transition: transform 0.2s;
+  line-height: 1;
 }
 
 .venue-card.expanded .venue-chevron {

@@ -410,12 +410,18 @@
       html += '<div class="section-header" style="font-size:13px;margin-top:8px">&#x1F4F1; Active This Cycle</div>';
       html += '<div class="creator-scroll">';
       influencers.forEach(inf => {
+        // Support both {handle, posted_about, follower_estimate} and {mention, posts_found} schemas
+        const displayName = inf.handle || '';
+        const mentionText = inf.posted_about || inf.mention || '';
+        const engLevel = (inf.engagement_level || 'Normal');
+        const engNorm = engLevel.charAt(0).toUpperCase() + engLevel.slice(1).toLowerCase();
+        const followersLine = inf.follower_estimate ? `<div class="creator-followers">${formatNum(inf.follower_estimate)} followers</div>` : '';
         html += `
           <div class="creator-chip">
-            <div class="creator-handle">${escapeHTML(inf.handle)} ${platformBadgeHTML(inf.platform)}</div>
-            <div class="creator-followers">${formatNum(inf.follower_estimate)} followers</div>
-            <div class="creator-mention">Posted about: ${escapeHTML(inf.posted_about)}</div>
-            ${engagementBadgeHTML(inf.engagement_level === 'high' ? 'High' : inf.engagement_level === 'low' ? 'Low' : 'Normal')}
+            <div class="creator-handle">${displayName ? escapeHTML(displayName) + ' ' : ''}${platformBadgeHTML(inf.platform)}</div>
+            ${followersLine}
+            <div class="creator-mention">${escapeHTML(mentionText)}</div>
+            ${engagementBadgeHTML(engNorm === 'High' ? 'High' : engNorm === 'Low' ? 'Low' : 'Normal')}
           </div>`;
       });
       html += '</div>';
