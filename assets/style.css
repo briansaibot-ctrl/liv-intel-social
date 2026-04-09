@@ -148,21 +148,22 @@ body {
 /* ===== Market Pulse ===== */
 .market-pulse {
   border-left: 3px solid var(--gold);
-  padding-left: 14px;
+  padding: 10px 14px;
 }
 
 .market-pulse .label {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .market-pulse .pulse-text {
-  font-size: 15px;
-  line-height: 1.55;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--text-secondary);
 }
 
 /* ===== Section Headers ===== */
@@ -810,9 +811,9 @@ body {
   flex-shrink: 0;
   background: var(--card-bg);
   border-radius: var(--radius);
-  padding: 10px 14px;
-  width: 180px;
-  max-width: 180px;
+  padding: 8px 12px;
+  width: 150px;
+  max-width: 150px;
   border: 1px solid var(--border);
 }
 
@@ -835,6 +836,40 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.trending-influencer {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.trending-influencer:last-child { border-bottom: none; }
+
+.trending-influencer-rank {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gold);
+  min-width: 18px;
+  padding-top: 1px;
+}
+
+.trending-influencer-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.trending-influencer-name {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.trending-influencer-why {
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.4;
 }
 
 .outreach-item {

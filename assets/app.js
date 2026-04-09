@@ -295,6 +295,11 @@
       html += renderContentGaps(feedData.content_gaps);
     }
 
+    // Trending Influencers — top 3 from influencer_activity sorted by engagement
+    if (feedData.influencer_activity && feedData.influencer_activity.length) {
+      html += renderTrendingInfluencers(feedData.influencer_activity);
+    }
+
     // Top 3 Posts
     html += renderTop3();
 
@@ -388,6 +393,31 @@
           </div>
         </div>`;
     });
+    return html;
+  }
+
+  function renderTrendingInfluencers(influencers) {
+    // Pick top 3 by engagement (High > Normal > Low), then by posts_found
+    const ranked = [...influencers].sort((a, b) => {
+      const engA = ENGAGEMENT_RANK[(a.engagement_level || 'Normal')] || 2;
+      const engB = ENGAGEMENT_RANK[(b.engagement_level || 'Normal')] || 2;
+      if (engB !== engA) return engB - engA;
+      return (b.posts_found || 0) - (a.posts_found || 0);
+    }).slice(0, 3);
+
+    if (!ranked.length) return '';
+    let html = '<div class="section-header">&#x1F31F; Trending Creators</div><div class="card">';
+    ranked.forEach((inf, i) => {
+      const mention = inf.mention || inf.posted_about || '';
+      let name = inf.handle || '';
+      if (!name && mention) {
+        const atMatch = mention.match(/@[\w.]+/);
+        if (atMatch) name = atMatch[0];
+      }
+      const platformHtml = platformBadgeHTML(inf.platform);
+      html += `<div class="trending-influencer"><span class="trending-influencer-rank">${i + 1}</span><div class="trending-influencer-info"><div class="trending-influencer-name">${name ? escapeHTML(name) + ' ' : ''}${platformHtml} ${engagementBadgeHTML(inf.engagement_level || 'Normal')}</div><div class="trending-influencer-why">${escapeHTML(mention)}</div></div></div>`;
+    });
+    html += '</div>';
     return html;
   }
 
