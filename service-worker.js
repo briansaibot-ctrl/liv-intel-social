@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'liv-intel-v1';
+const CACHE_VERSION = 'liv-intel-v2';
 const SHELL_ASSETS = [
   './',
   './index.html',
@@ -10,7 +10,8 @@ const SHELL_ASSETS = [
 ];
 const DATA_FILES = [
   './data/latest.json',
-  './data/latest-trends.json'
+  './data/latest-trends.json',
+  './data/latest-analytics.json'
 ];
 
 // Install: cache app shell
