@@ -1,0 +1,124 @@
+{
+  "run_at": "2026-04-09T06:42:00.000Z",
+  "run_type": "midday",
+  "market_pulse": "Strong competitive activity across major Vegas nightclubs heading into the weekend. OMNIA leading the charge with multi-day lineup (DJ Pauly D, Fisher, Latin Sundays). Hakkasan emphasizing R&B/house fusion mid-week. XS and Zouk both feature major electronic talent (SOFI TUKKER, RL Grime). Omnia Beach Club preparing for imminent May 15 opening with significant pre-launch buzz.",
+  "urgent_alert_count": 1,
+  "venues": [
+    {
+      "venue": "Hakkasan Nightclub",
+      "posts_found": 2,
+      "urgent": false,
+      "summary": "R&Bae Wednesdays tonight with DJ Franzen; Laidback Luke takes over Thursday. Strong mid-week programming driving traffic.",
+      "flags": ["talent_announcement"],
+      "raw_posts": [
+        {
+          "platform": "IG",
+          "content_summary": "R&Bae Wednesdays w/ DJ Franzen. Wednesday, April 8, 2026 10:30 PM - Thursday, April 9, 2026 4:00 AM. R&B-focused event at Hakkasan inside MGM Grand.",
+          "posted_at": "2026-04-08",
+          "engagement_note": "Normal",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "X/Ticket",
+          "content_summary": "Laidback Luke confirmed for Thursday night at Hakkasan. Thursday, April 9, 2026 10:30 PM - Friday, April 10, 2026 4:00 AM. House/electronic set.",
+          "posted_at": "2026-04-09",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        }
+      ]
+    },
+    {
+      "venue": "OMNIA Nightclub",
+      "posts_found": 3,
+      "urgent": false,
+      "summary": "Strong weekend lineup: DJ Pauly D (Thu 4/9), Fisher (Fri 4/10), DESEO: Latin Sundays (Sat 4/11). High-caliber talent rotation maintaining market presence.",
+      "flags": ["talent_announcement", "promo_offer"],
+      "raw_posts": [
+        {
+          "platform": "IG",
+          "content_summary": "DJ Pauly D confirmed for Thursday, April 9th, 2026. Part of OMNIA's regular Thursday night rotation. Electronic/dance music.",
+          "posted_at": "2026-04-09",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "IG",
+          "content_summary": "Fisher headlining Friday, April 10th, 2026. Fisher is a major electronic artist with strong Vegas draw. Expected high attendance.",
+          "posted_at": "2026-04-10",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "IG",
+          "content_summary": "DESEO: Latin Sundays returning Saturday, April 11th, 2026. Recurring Latin/reggaeton-focused event. Strong weekend closer.",
+          "posted_at": "2026-04-11",
+          "engagement_note": "Normal",
+          "flags": ["promo_offer"]
+        }
+      ]
+    },
+    {
+      "venue": "XS Nightclub",
+      "posts_found": 1,
+      "urgent": false,
+      "summary": "SOFI TUKKER confirmed for April 10-11 weekend. Electronic dance duo bringing mainstream appeal to Wynn venue.",
+      "flags": ["talent_announcement"],
+      "raw_posts": [
+        {
+          "platform": "IG/Ticket",
+          "content_summary": "SOFI TUKKER performing April 10-11, 2026 at XS inside Wynn Las Vegas. Known for high-energy electronic sets and strong fan base.",
+          "posted_at": "2026-04-10",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        }
+      ]
+    },
+    {
+      "venue": "Zouk Nightclub",
+      "posts_found": 2,
+      "urgent": true,
+      "summary": "RL Grime scheduled for April 10 AND April 24, 2026. Dual-date booking shows strong demand and competitive positioning at Resorts World.",
+      "flags": ["talent_announcement", "urgent"],
+      "raw_posts": [
+        {
+          "platform": "Ticket/Eventbrite",
+          "content_summary": "RL Grime at Zouk Nightclub, Friday, April 10, 2026, 10:30 PM. Major electronic/trap artist driving ticket sales.",
+          "posted_at": "2026-04-10",
+          "engagement_note": "High",
+          "flags": ["talent_announcement", "urgent"]
+        },
+        {
+          "platform": "Ticket/Eventbrite",
+          "content_summary": "RL Grime return booking confirmed for Friday, April 24, 2026, 10:30 PM. Secondary date indicates strong sell-through on first show.",
+          "posted_at": "2026-04-24",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        }
+      ]
+    },
+    {
+      "venue": "Encore Beach Club",
+      "posts_found": 0,
+      "urgent": false,
+      "summary": "No recent social media posts captured in last 8 hours. Seasonal daytime venue; minimal activity at this hour expected.",
+      "flags": [],
+      "raw_posts": []
+    },
+    {
+      "venue": "Omnia Beach Club",
+      "posts_found": 1,
+      "urgent": true,
+      "summary": "Major announcement: Omnia Beach Club opens May 15, 2026 at Caesars Palace. 46,000 sq ft venue with significant pre-launch marketing underway.",
+      "flags": ["urgent", "promo_offer"],
+      "raw_posts": [
+        {
+          "platform": "PR/News",
+          "content_summary": "Omnia Dayclub & Skybar opening announcement for May 15, 2026. 46,000 square foot Roman palace-inspired venue at Caesars Palace. Major seasonal dayclub launch with world-class DJ lineup (Rufus du Sol, Martin Garrix, Justin Mylo confirmed).",
+          "posted_at": "2026-04-02",
+          "engagement_note": "High",
+          "flags": ["urgent", "promo_offer"]
+        }
+      ]
+    }
+  ]
+}
