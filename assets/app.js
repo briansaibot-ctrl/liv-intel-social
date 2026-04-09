@@ -287,6 +287,25 @@
 
   // ===== Tab Routing =====
 
+  const TAB_ORDER = ['tabFeed', 'tabTrends', 'tabAnalytics', 'tabSettings'];
+
+  function switchToTab(tabId) {
+    const btn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
+    if (!btn) return;
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    $('#' + tabId).classList.add('active');
+    window.scrollTo(0, 0);
+    if (tabId === 'tabAnalytics' && !analyticsRendered) { renderAnalytics(); analyticsRendered = true; }
+    if (tabId === 'tabSettings' && !settingsRendered) { renderSettings(); settingsRendered = true; }
+  }
+
+  function getActiveTabIndex() {
+    const active = document.querySelector('.tab-btn.active');
+    return active ? TAB_ORDER.indexOf(active.dataset.tab) : 0;
+  }
+
   function initTabs() {
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -295,15 +314,33 @@
           window.scrollTo({ top: 0, behavior: 'smooth' });
           return;
         }
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
-        btn.classList.add('active');
-        $('#' + btn.dataset.tab).classList.add('active');
-        window.scrollTo(0, 0);
-        if (btn.dataset.tab === 'tabAnalytics' && !analyticsRendered) { renderAnalytics(); analyticsRendered = true; }
-        if (btn.dataset.tab === 'tabSettings' && !settingsRendered) { renderSettings(); settingsRendered = true; }
+        switchToTab(btn.dataset.tab);
       });
     });
+
+    // Swipe navigation between tabs
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let swiping = false;
+    const minSwipe = 60;
+    const maxVertical = 80;
+
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      swiping = true;
+    }, { passive: true });
+
+    document.addEventListener('touchend', (e) => {
+      if (!swiping) return;
+      swiping = false;
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      const dy = e.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(dx) < minSwipe || Math.abs(dy) > maxVertical) return;
+      const idx = getActiveTabIndex();
+      if (dx < 0 && idx < TAB_ORDER.length - 1) switchToTab(TAB_ORDER[idx + 1]);
+      if (dx > 0 && idx > 0) switchToTab(TAB_ORDER[idx - 1]);
+    }, { passive: true });
   }
 
   // ===== Social Feed Rendering =====
@@ -333,6 +370,11 @@
     // Content Gaps (Feature 3)
     if (feedData.content_gaps && feedData.content_gaps.length) {
       html += renderContentGaps(feedData.content_gaps);
+    }
+
+    // Dark Events — events on ticketing but NOT on social (from analytics data)
+    if (analyticsData && analyticsData.social_dark_events && analyticsData.social_dark_events.length) {
+      html += renderFeedDarkEvents(analyticsData.social_dark_events);
     }
 
     // Trending Influencers — top 3 from influencer_activity sorted by engagement
@@ -433,6 +475,21 @@
           </div>
         </div>`;
     });
+    return html;
+  }
+
+  function renderFeedDarkEvents(darkEvents) {
+    // Show top 3 dark events sorted by soonest date
+    const upcoming = [...darkEvents].sort((a, b) => new Date(a.event_date) - new Date(b.event_date)).slice(0, 3);
+    if (!upcoming.length) return '';
+    let html = '<div class="section-header" style="color:var(--orange)">&#x1F440; Not Yet On Social</div>';
+    html += '<div class="card dark-feed-card">';
+    html += '<div class="dark-feed-note">Listed on ticketing sites but competitors haven\'t posted yet</div>';
+    upcoming.forEach(de => {
+      const vUrl = venueProfileUrl(de.venue, 'ig');
+      html += `<div class="dark-feed-item"><div class="dark-feed-venue">${linkWrap(vUrl, escapeHTML(de.venue))}</div><div class="dark-feed-talent">${escapeHTML(de.talent)}</div><div class="dark-feed-date">${formatShortDate(de.event_date)} · ${de.days_until_event != null ? de.days_until_event + 'd away' : ''}</div></div>`;
+    });
+    html += '</div>';
     return html;
   }
 
@@ -589,9 +646,8 @@
     if (trendsData.trending_audio && trendsData.trending_audio.length) {
       html += '<div class="card">';
       trendsData.trending_audio.forEach(a => {
-        const q = encodeURIComponent((a.sound || '') + ' ' + (a.artist || ''));
-        const audioUrl = (a.platform || '').toLowerCase().includes('tt') || (a.platform || '').toLowerCase().includes('tiktok')
-          ? `https://www.tiktok.com/search?q=${q}` : `https://www.instagram.com/explore/tags/${encodeURIComponent((a.sound || '').replace(/\s+/g, '').toLowerCase())}/`;
+        const q = encodeURIComponent((a.sound || '') + ' ' + (a.artist || '') + ' tiktok');
+        const audioUrl = `https://www.google.com/search?q=${q}`;
         html += `<div class="audio-item">${linkWrap(audioUrl, `<div class="audio-info"><div class="audio-name">${escapeHTML(a.sound)}</div><div class="audio-artist">${escapeHTML(a.artist)}</div><div class="audio-relevance">${escapeHTML(a.relevance)}</div></div>`)}${platformBadgeHTML(a.platform)}</div>`;
       });
       html += '</div>';
