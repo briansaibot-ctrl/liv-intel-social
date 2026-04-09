@@ -411,15 +411,21 @@
       html += '<div class="creator-scroll">';
       influencers.forEach(inf => {
         // Support both {handle, posted_about, follower_estimate} and {mention, posts_found} schemas
-        const displayName = inf.handle || '';
+        // Extract @handle from mention text if no explicit handle field
+        let displayName = inf.handle || '';
         const mentionText = inf.posted_about || inf.mention || '';
+        if (!displayName && mentionText) {
+          const atMatch = mentionText.match(/@[\w.]+/);
+          if (atMatch) displayName = atMatch[0];
+        }
         const engLevel = (inf.engagement_level || 'Normal');
         const engNorm = engLevel.charAt(0).toUpperCase() + engLevel.slice(1).toLowerCase();
         const followersLine = inf.follower_estimate ? `<div class="creator-followers">${formatNum(inf.follower_estimate)} followers</div>` : '';
+        const postsLine = inf.posts_found ? `<div class="creator-followers">${inf.posts_found} post${inf.posts_found !== 1 ? 's' : ''} found</div>` : '';
         html += `
           <div class="creator-chip">
             <div class="creator-handle">${displayName ? escapeHTML(displayName) + ' ' : ''}${platformBadgeHTML(inf.platform)}</div>
-            ${followersLine}
+            ${followersLine || postsLine}
             <div class="creator-mention">${escapeHTML(mentionText)}</div>
             ${engagementBadgeHTML(engNorm === 'High' ? 'High' : engNorm === 'Low' ? 'Low' : 'Normal')}
           </div>`;
