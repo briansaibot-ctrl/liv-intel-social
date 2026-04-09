@@ -112,6 +112,52 @@
   ],
   "venues": [
     {
+      "venue": "LIV Nightclub",
+      "posts_found": 3,
+      "urgent": false,
+      "summary": "Strong content week: Behind-the-scenes DJ prep reel, crowd energy compilation, and Friday lineup teaser all performing well. Engagement trending up across IG and TT.",
+      "flags": ["talent_announcement"],
+      "raw_posts": [
+        {
+          "platform": "IG",
+          "content_summary": "Behind-the-scenes DJ booth setup timelapse for Friday night. Raw, unscripted production footage showing lighting tests and soundcheck.",
+          "posted_at": "2026-04-08",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "TT",
+          "content_summary": "Crowd energy compilation from Saturday night set with trending audio. 22-second clip capturing genuine audience reactions.",
+          "posted_at": "2026-04-07",
+          "engagement_note": "High",
+          "flags": []
+        },
+        {
+          "platform": "IG",
+          "content_summary": "Friday lineup teaser carousel — 3 slides building anticipation for weekend headliner reveal.",
+          "posted_at": "2026-04-09",
+          "engagement_note": "Normal",
+          "flags": ["talent_announcement"]
+        }
+      ]
+    },
+    {
+      "venue": "LIV Beach",
+      "posts_found": 1,
+      "urgent": false,
+      "summary": "Season opener content — pool setup and first-look at new cabana layouts. Building pre-season anticipation.",
+      "flags": [],
+      "raw_posts": [
+        {
+          "platform": "IG",
+          "content_summary": "First look at LIV Beach 2026 season setup — new cabana designs, refreshed pool deck, drone flyover of the venue getting ready.",
+          "posted_at": "2026-04-08",
+          "engagement_note": "High",
+          "flags": []
+        }
+      ]
+    },
+    {
       "venue": "Hakkasan Nightclub",
       "posts_found": 2,
       "urgent": false,

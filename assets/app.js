@@ -3,19 +3,25 @@
 
   // ===== Constants =====
   const VENUE_ORDER = [
+    'LIV Nightclub', 'LIV Beach',
     'XS Nightclub', 'Encore Beach Club', 'OMNIA Nightclub',
     'Omnia Beach Club', 'Zouk Nightclub', 'Hakkasan Nightclub'
   ];
+  const LIV_VENUES = ['liv nightclub', 'liv beach'];
   const SEASONAL_OFF_MONTHS = [11, 12, 1, 2, 3];
   const REFRESH_INTERVAL = 30 * 60 * 1000;
   const ENGAGEMENT_RANK = { High: 3, Normal: 2, Low: 1 };
   const PRIORITY_ORDER = { HIGH: 0, MEDIUM: 1, LOW: 2 };
+  // SVG icons for platforms (16x16 viewBox, white fill)
+  const IG_ICON = '<svg width="14" height="14" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/></svg>';
+  const TT_ICON = '<svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z" fill="white"/></svg>';
+  const X_ICON = '<svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"/></svg>';
   const PLATFORM_MAP = {
-    'IG': { label: 'IG', cls: 'ig' }, 'Instagram': { label: 'IG', cls: 'ig' },
-    'TT': { label: 'TT', cls: 'tt' }, 'TikTok': { label: 'TT', cls: 'tt' },
-    'X': { label: 'X', cls: 'x' }, 'Twitter': { label: 'X', cls: 'x' },
-    'Ticket': { label: 'TKT', cls: 'ticket' }, 'Eventbrite': { label: 'TKT', cls: 'ticket' },
-    'PR': { label: 'PR', cls: 'pr' }, 'News': { label: 'NEWS', cls: 'pr' }
+    'IG': { icon: IG_ICON, cls: 'ig' }, 'Instagram': { icon: IG_ICON, cls: 'ig' },
+    'TT': { icon: TT_ICON, cls: 'tt' }, 'TikTok': { icon: TT_ICON, cls: 'tt' },
+    'X': { icon: X_ICON, cls: 'x' }, 'Twitter': { icon: X_ICON, cls: 'x' },
+    'Ticket': { icon: null, label: 'TKT', cls: 'ticket' }, 'Eventbrite': { icon: null, label: 'TKT', cls: 'ticket' },
+    'PR': { icon: null, label: 'PR', cls: 'pr' }, 'News': { icon: null, label: 'NEWS', cls: 'pr' }
   };
   const SETTINGS_DEFAULTS = {
     slackWebhookUrl: '', whatsappNumber: '',
@@ -44,14 +50,17 @@
   // ===== Utilities =====
 
   function parsePlatform(raw) {
-    if (!raw) return [{ label: raw || '?', cls: 'pr' }];
+    if (!raw) return [{ icon: null, label: raw || '?', cls: 'pr' }];
     const first = raw.split('/')[0].trim();
     const mapped = PLATFORM_MAP[first];
-    return [mapped || { label: first.substring(0, 4).toUpperCase(), cls: 'pr' }];
+    return [mapped || { icon: null, label: first.substring(0, 4).toUpperCase(), cls: 'pr' }];
   }
 
   function platformBadgeHTML(raw) {
-    return parsePlatform(raw).map(p => `<span class="platform-badge ${p.cls}">${p.label}</span>`).join('');
+    return parsePlatform(raw).map(p => {
+      const content = p.icon || escapeHTML(p.label || '');
+      return `<span class="platform-badge ${p.cls}">${content}</span>`;
+    }).join('');
   }
 
   function engagementBadgeHTML(note) {
@@ -137,6 +146,60 @@
     return d === 0 || d === 5 || d === 6;
   }
 
+  function isLivVenue(name) {
+    return LIV_VENUES.includes((name || '').toLowerCase());
+  }
+
+  function isStalePost(postedAt) {
+    if (!postedAt) return false;
+    return getHoursAgo(postedAt) > 7 * 24;
+  }
+
+  function stalePostBadge(postedAt) {
+    return isStalePost(postedAt) ? ' <span class="stale-post-badge">older post</span>' : '';
+  }
+
+  // Countdown timer — calculates next 12pm or 8pm PT
+  let countdownInterval = null;
+  function getNextRunTime() {
+    const now = new Date();
+    // Convert to PT (approximate: UTC-7 for PDT)
+    const ptOffset = -7;
+    const utcH = now.getUTCHours();
+    const ptH = (utcH + ptOffset + 24) % 24;
+    const ptNow = new Date(now);
+
+    // Next run times in PT: 12pm (12) or 8pm (20)
+    const runs = [12, 20];
+    let nextPtH = null;
+    let addDays = 0;
+    for (const rh of runs) {
+      if (ptH < rh || (ptH === rh && now.getUTCMinutes() < 5)) { nextPtH = rh; break; }
+    }
+    if (nextPtH === null) { nextPtH = 12; addDays = 1; }
+
+    const next = new Date(now);
+    next.setUTCHours(nextPtH - ptOffset, 0, 0, 0);
+    if (addDays) next.setUTCDate(next.getUTCDate() + 1);
+    return next;
+  }
+
+  function startCountdown() {
+    if (countdownInterval) clearInterval(countdownInterval);
+    function update() {
+      const next = getNextRunTime();
+      const diff = next - Date.now();
+      if (diff <= 0) { headerTimestamp.textContent = 'Updating soon'; return; }
+      const h = Math.floor(diff / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      if (h > 0) headerTimestamp.textContent = `Next update ${h}h ${m}m`;
+      else headerTimestamp.textContent = `Next update ${m}:${s.toString().padStart(2, '0')}`;
+    }
+    update();
+    countdownInterval = setInterval(update, 1000);
+  }
+
   // ===== Settings Manager =====
 
   function getSettings() {
@@ -176,10 +239,16 @@
   function initTabs() {
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.addEventListener('click', () => {
+        // If tapping the already-active tab, scroll to top
+        if (btn.classList.contains('active')) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          return;
+        }
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
         document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
         btn.classList.add('active');
         $('#' + btn.dataset.tab).classList.add('active');
+        window.scrollTo(0, 0);
         if (btn.dataset.tab === 'tabAnalytics' && !analyticsRendered) { renderAnalytics(); analyticsRendered = true; }
         if (btn.dataset.tab === 'tabSettings' && !settingsRendered) { renderSettings(); settingsRendered = true; }
       });
@@ -198,7 +267,7 @@
 
     const hoursAgo = getHoursAgo(feedData.run_at);
     freshnessDot.className = `freshness-dot ${freshnessClass(hoursAgo)}`;
-    headerTimestamp.textContent = formatTimestamp(feedData.run_at);
+    startCountdown();
 
     let html = '';
 
@@ -304,7 +373,7 @@
           <div class="ranked-body">
             <div class="ranked-venue">${escapeHTML(post.venue)}</div>
             <div class="ranked-summary">${escapeHTML(post.content_summary)}</div>
-            <div class="ranked-meta">${platformBadgeHTML(post.platform)} ${engagementBadgeHTML(post.engagement_note)} <span>${formatDate(post.posted_at)}</span></div>
+            <div class="ranked-meta">${platformBadgeHTML(post.platform)} ${engagementBadgeHTML(post.engagement_note)} <span>${formatDate(post.posted_at)}${stalePostBadge(post.posted_at)}</span></div>
           </div>
         </div>`;
     });
@@ -361,17 +430,20 @@
   function renderVenueCard(venue) {
     const showSeasonal = isSeasonalOff(venue.venue) && venue.posts_found === 0 && !venue.urgent;
     const urgentDot = venue.urgent ? '<span class="urgent-dot"></span>' : '';
+    const isLiv = isLivVenue(venue.venue);
+    const livCls = isLiv ? ' liv' : '';
+    const livBadge = isLiv ? '<span class="liv-badge">LIV</span>' : '';
     let postsHTML = '';
     if (venue.raw_posts && venue.raw_posts.length > 0) {
       venue.raw_posts.forEach(p => {
-        postsHTML += `<div class="venue-post"><div class="venue-post-meta">${platformBadgeHTML(p.platform)} ${engagementBadgeHTML(p.engagement_note)} <span>${formatDate(p.posted_at)}</span></div><div class="venue-post-summary">${escapeHTML(p.content_summary)}</div></div>`;
+        postsHTML += `<div class="venue-post"><div class="venue-post-meta">${platformBadgeHTML(p.platform)} ${engagementBadgeHTML(p.engagement_note)} <span>${formatDate(p.posted_at)}${stalePostBadge(p.posted_at)}</span></div><div class="venue-post-summary">${escapeHTML(p.content_summary)}</div></div>`;
       });
     } else {
       postsHTML = '<div class="no-posts">No posts detected this cycle</div>';
     }
     return `
-      <div class="card venue-card">
-        <div class="venue-header">${urgentDot}<span class="venue-name">${escapeHTML(venue.venue)}</span><span class="venue-count">${venue.posts_found} post${venue.posts_found !== 1 ? 's' : ''}</span><span class="venue-chevron">&#x25BE;</span></div>
+      <div class="card venue-card${livCls}">
+        <div class="venue-header">${urgentDot}${livBadge}<span class="venue-name">${escapeHTML(venue.venue)}</span><span class="venue-count">${venue.posts_found} post${venue.posts_found !== 1 ? 's' : ''}</span><span class="venue-chevron">&#x25BE;</span></div>
         ${venue.flags && venue.flags.length ? `<div class="venue-flags">${flagPillsHTML(venue.flags)}</div>` : ''}
         <div class="venue-summary">${escapeHTML(venue.summary)}</div>
         ${showSeasonal ? '<div class="seasonal-banner">Seasonal — Off</div>' : ''}
@@ -810,7 +882,7 @@
     html += `<div class="settings-info"><strong>Social Feed:</strong> ${feedData ? formatTimestamp(feedData.run_at) : 'Not loaded'}</div>`;
     html += `<div class="settings-info"><strong>Trends:</strong> ${trendsData ? 'Week of ' + formatDate(trendsData.week_of) : 'Not loaded'}</div>`;
     html += `<div class="settings-info"><strong>Analytics:</strong> ${analyticsData ? 'Week of ' + formatDate(analyticsData.week_of) : 'Not loaded'}</div>`;
-    html += '<button class="settings-btn" id="settRefresh">Force Refresh All Data</button>';
+    // Force refresh removed per user request — auto-refresh every 30 min only
     html += '</div>';
 
     // Cron Schedule
@@ -833,8 +905,7 @@
       tog.addEventListener('change', () => saveSetting(tog.dataset.key, tog.checked));
     });
 
-    const refreshBtn = $('#settRefresh');
-    if (refreshBtn) refreshBtn.addEventListener('click', () => { loadData(); analyticsRendered = true; });
+    // Force refresh button removed — auto-refresh only
   }
 
   // ===== Init =====
