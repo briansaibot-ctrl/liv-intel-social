@@ -285,9 +285,15 @@
     if (analyticsRendered) renderAnalytics();
   }
 
+  // ===== Analytics Tracking =====
+  function track(event, params) {
+    if (typeof gtag === 'function') gtag('event', event, params);
+  }
+
   // ===== Tab Routing =====
 
   const TAB_ORDER = ['tabFeed', 'tabTrends', 'tabAnalytics', 'tabSettings'];
+  const TAB_LABELS = { tabFeed: 'Feed', tabTrends: 'Trends', tabAnalytics: 'Analytics', tabSettings: 'Settings' };
 
   function switchToTab(tabId) {
     const btn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
@@ -297,6 +303,7 @@
     btn.classList.add('active');
     $('#' + tabId).classList.add('active');
     window.scrollTo(0, 0);
+    track('tab_view', { tab_name: TAB_LABELS[tabId] || tabId });
     if (tabId === 'tabAnalytics' && !analyticsRendered) { renderAnalytics(); analyticsRendered = true; }
     if (tabId === 'tabSettings' && !settingsRendered) { renderSettings(); settingsRendered = true; }
   }
@@ -403,7 +410,18 @@
 
     feedContent.innerHTML = html;
     feedContent.querySelectorAll('.venue-header').forEach(hdr => {
-      hdr.addEventListener('click', () => hdr.closest('.venue-card').classList.toggle('expanded'));
+      hdr.addEventListener('click', () => {
+        const card = hdr.closest('.venue-card');
+        card.classList.toggle('expanded');
+        const name = hdr.querySelector('.venue-name');
+        track('venue_expand', { venue: name ? name.textContent : 'unknown' });
+      });
+    });
+    // Track outbound link clicks
+    feedContent.querySelectorAll('a.card-link, a.audio-item-link').forEach(link => {
+      link.addEventListener('click', () => {
+        track('link_click', { link_url: link.href, link_text: link.textContent.trim().substring(0, 50) });
+      });
     });
   }
 
@@ -677,6 +695,11 @@
     }
 
     trendsContent.innerHTML = html;
+    trendsContent.querySelectorAll('a.card-link, a.audio-item-link').forEach(link => {
+      link.addEventListener('click', () => {
+        track('link_click', { link_url: link.href, link_text: link.textContent.trim().substring(0, 50) });
+      });
+    });
   }
 
   function renderSearchTrends(st) {
@@ -744,7 +767,17 @@
 
     analyticsContent.innerHTML = html;
     analyticsContent.querySelectorAll('.analytics-venue-card .venue-header').forEach(hdr => {
-      hdr.addEventListener('click', () => hdr.closest('.analytics-venue-card').classList.toggle('expanded'));
+      hdr.addEventListener('click', () => {
+        const card = hdr.closest('.analytics-venue-card');
+        card.classList.toggle('expanded');
+        const name = hdr.querySelector('.venue-name');
+        track('venue_expand', { venue: name ? name.textContent : 'unknown', tab: 'Analytics' });
+      });
+    });
+    analyticsContent.querySelectorAll('a.card-link').forEach(link => {
+      link.addEventListener('click', () => {
+        track('link_click', { link_url: link.href, link_text: link.textContent.trim().substring(0, 50) });
+      });
     });
   }
 
