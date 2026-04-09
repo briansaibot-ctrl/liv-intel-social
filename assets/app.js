@@ -76,6 +76,7 @@
   let feedData = null;
   let trendsData = null;
   let analyticsData = null;
+  let historyData = null;
   let analyticsRendered = false;
   let settingsRendered = false;
 
@@ -279,10 +280,61 @@
     try { feedData = await fetchJSON('./data/latest.json'); loaded++; } catch {}
     try { trendsData = await fetchJSON('./data/latest-trends.json'); loaded++; } catch {}
     try { analyticsData = await fetchJSON('./data/latest-analytics.json'); loaded++; } catch {}
+    try { historyData = await fetchJSON('./data/analytics-history.json'); } catch {}
     offlineBanner.hidden = loaded > 0;
     renderFeed();
     renderTrends();
     if (analyticsRendered) renderAnalytics();
+  }
+
+  // ===== Sparkline Renderer =====
+  function sparklineSVG(values, color, w, h) {
+    if (!values || !values.length) return `<svg width="${w}" height="${h}"></svg>`;
+    const filtered = values.filter(v => v != null);
+    if (!filtered.length) return `<svg width="${w}" height="${h}"></svg>`;
+    if (filtered.length === 1) {
+      return `<svg width="${w}" height="${h}"><circle cx="${w/2}" cy="${h/2}" r="3" fill="${color}"/></svg>`;
+    }
+    const min = Math.min(...filtered);
+    const max = Math.max(...filtered);
+    const range = max - min || 1;
+    const pad = 3;
+    const points = filtered.map((v, i) => {
+      const x = pad + (i / (filtered.length - 1)) * (w - pad * 2);
+      const y = pad + (1 - (v - min) / range) * (h - pad * 2);
+      return `${x},${y}`;
+    }).join(' ');
+    const last = filtered[filtered.length - 1];
+    const prev = filtered[filtered.length - 2];
+    const dotColor = last >= prev ? 'var(--green)' : 'var(--red)';
+    const lastX = pad + ((filtered.length - 1) / (filtered.length - 1)) * (w - pad * 2);
+    const lastY = pad + (1 - (last - min) / range) * (h - pad * 2);
+    return `<svg width="${w}" height="${h}"><polyline points="${points}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="${lastX}" cy="${lastY}" r="2.5" fill="${dotColor}"/></svg>`;
+  }
+
+  function getVenueHistory(venueName) {
+    if (!historyData || !historyData.weeks) return null;
+    const weeks = historyData.weeks;
+    const ig = [], tt = [], eng = [];
+    weeks.forEach(w => {
+      // Check both venues and liv sections
+      const d = (w.venues && w.venues[venueName]) || null;
+      const livKey = venueName === 'LIV Nightclub' ? 'liv_nightclub' : venueName === 'LIV Beach' ? 'liv_beach' : null;
+      const ld = livKey && w.liv ? w.liv[livKey] : null;
+      const src = d || ld;
+      if (src) {
+        ig.push(src.ig_followers);
+        tt.push(src.tt_followers);
+        eng.push(src.ig_engage);
+      }
+    });
+    return ig.length ? { ig, tt, eng } : null;
+  }
+
+  function sparklineRow(venueName) {
+    const h = getVenueHistory(venueName);
+    if (!h) return '';
+    return `<div class="sparkline-row"><div class="sparkline-item"><span class="sparkline-label">IG</span>${sparklineSVG(h.ig, 'var(--ig)', 60, 24)}</div><div class="sparkline-item"><span class="sparkline-label">TT</span>${sparklineSVG(h.tt, '#fff', 60, 24)}</div><div class="sparkline-item"><span class="sparkline-label">Eng%</span>${sparklineSVG(h.eng, 'var(--gold)', 60, 24)}</div></div>`;
   }
 
   // ===== Analytics Tracking =====
@@ -350,6 +402,54 @@
     }, { passive: true });
   }
 
+  // ===== AI Daily Brief =====
+
+  function renderDailyBrief() {
+    const bullets = [];
+
+    // 1. Urgent alerts
+    if (feedData.urgent_alert_count > 0) {
+      const urgentVenues = (feedData.venues || []).filter(v => v.urgent).map(v => v.venue);
+      bullets.push({ icon: '&#x1F6A8;', text: `${feedData.urgent_alert_count} urgent signal${feedData.urgent_alert_count > 1 ? 's' : ''}: ${urgentVenues.join(', ')}` });
+    }
+
+    // 2. Dark events (from analytics)
+    if (analyticsData && analyticsData.social_dark_events && analyticsData.social_dark_events.length) {
+      const de = analyticsData.social_dark_events[0];
+      bullets.push({ icon: '&#x1F440;', text: `${de.venue} has ${de.talent} (${formatShortDate(de.event_date)}) — not posted yet` });
+    }
+
+    // 3. Top content gap
+    if (feedData.content_gaps && feedData.content_gaps.length) {
+      const top = feedData.content_gaps.sort((a, b) => (a.urgency === 'high' ? 0 : 1) - (b.urgency === 'high' ? 0 : 1))[0];
+      bullets.push({ icon: '&#x26A1;', text: top.suggested_action || top.description });
+    }
+
+    // 4. Trending creator
+    if (feedData.influencer_activity && feedData.influencer_activity.length) {
+      const top = [...feedData.influencer_activity].sort((a, b) => (ENGAGEMENT_RANK[b.engagement_level] || 0) - (ENGAGEMENT_RANK[a.engagement_level] || 0))[0];
+      const name = top.handle || (top.mention && top.mention.match(/@[\w.]+/) || [''])[0] || 'Creator';
+      bullets.push({ icon: '&#x1F31F;', text: `${name} driving ${top.posts_found || ''} post${(top.posts_found || 0) !== 1 ? 's' : ''} — ${top.engagement_level} engagement` });
+    }
+
+    // 5. AI insight fallback
+    if (analyticsData && analyticsData.weekly_ai_insight && bullets.length < 3) {
+      const ins = analyticsData.weekly_ai_insight;
+      if (ins.who_to_watch) bullets.push({ icon: '&#x1F50D;', text: `Watch ${ins.who_to_watch.venue}: ${ins.who_to_watch.reason}`.substring(0, 80) });
+    }
+
+    // Take top 3
+    const top3 = bullets.slice(0, 3);
+    if (!top3.length) return '';
+
+    let html = '<div class="card daily-brief"><div class="brief-header">Today\'s Intel</div><div class="brief-bullets">';
+    top3.forEach(b => {
+      html += `<div class="brief-bullet"><span class="brief-icon">${b.icon}</span> ${escapeHTML(b.text)}</div>`;
+    });
+    html += '</div></div>';
+    return html;
+  }
+
   // ===== Social Feed Rendering =====
 
   function renderFeed() {
@@ -365,6 +465,9 @@
     startCountdown();
 
     let html = '';
+
+    // AI Daily Brief
+    html += renderDailyBrief();
 
     // Market Pulse
     html += `<div class="card market-pulse"><div class="label">Market Pulse</div><div class="pulse-text">${escapeHTML(feedData.market_pulse)}</div></div>`;
@@ -807,6 +910,7 @@
       const rankBadge = (r) => { const cls = r <= 2 ? 'top' : r <= 4 ? 'mid' : 'low'; return `<span class="rank-badge ${cls}">#${r} of 8</span>`; };
       html += `<div class="liv-stat"><span class="liv-stat-label">Followers</span>${rankBadge(vm.follower_rank || 0)}</div>`;
       html += `<div class="liv-stat"><span class="liv-stat-label">Engagement</span>${rankBadge(vm.engagement_rank || 0)}</div>`;
+      html += sparklineRow(label);
       html += '</div>';
     });
 
@@ -974,6 +1078,7 @@
 
       // Collapsed stats
       html += `<div class="analytics-stats-row"><span class="analytics-stat-chip"><strong>${formatNum(ig.followers)}</strong> IG</span><span class="analytics-stat-chip"><strong>${formatNum(tt.followers)}</strong> TT</span><span class="analytics-stat-chip"><strong>${ig.engagement_rate_pct || '—'}%</strong> eng</span></div>`;
+      html += sparklineRow(v.name);
 
       // Expanded
       html += '<div class="venue-posts">';

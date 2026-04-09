@@ -166,6 +166,61 @@ body {
   color: var(--text-secondary);
 }
 
+/* ===== AI Daily Brief ===== */
+.daily-brief {
+  border-top: 3px solid var(--gold);
+  padding: 12px 14px;
+}
+
+.brief-header {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.brief-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.brief-bullet {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.brief-icon {
+  margin-right: 2px;
+}
+
+/* ===== Sparklines ===== */
+.sparkline-row {
+  display: flex;
+  gap: 12px;
+  padding: 6px 0 2px;
+}
+
+.sparkline-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sparkline-label {
+  font-size: 9px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  min-width: 22px;
+}
+
+.sparkline-item svg {
+  display: block;
+}
+
 /* ===== Card Links ===== */
 .card-link {
   color: var(--gold);
