@@ -1,130 +1,134 @@
 {
-  "run_at": "2026-04-09T12:00:00.000Z",
-  "run_type": "midday",
-  "market_pulse": "Las Vegas nightlife competition is intensifying heading into mid-April 2026. OMNIA Dayclub & Skybar announced a May 15 grand opening with Fisher, Rufus Du Sol, and Martin Garrix, signaling a major new daylife competitor at Caesars Palace. Zouk continues aggressive bookings with RL Grime, Lil Wayne, Duke Dumont, and Alison Wonderland in April, while XS secured Kaskade and Encore Beach Club is leveraging its Marshmello residency. Palm Tree Beach Club at MGM Grand is drawing significant buzz with Kygo, Tiesto, and Martin Garrix residencies.",
-  "urgent_alert_count": 2,
-  "weekend_readiness": null,
+  "run_at": "2026-04-10T23:00:00Z",
+  "run_type": "evening",
+  "market_pulse": "Strong Friday momentum across LIV/Encore/OMNIA with DJ Pauly D, Laidback Luke, and Fisher bookings; Palm Tree Beach Club gaining traction with Yo Yolie at 11am Friday; Zouk and Hakkasan maintaining consistent club momentum.",
+  "urgent_alert_count": 0,
+  "weekend_readiness": {
+    "score": 8,
+    "label": "HIGH",
+    "color": "orange",
+    "factors": [
+      "Multiple heavyweight DJ bookings Fri/Sat (Pauly D, Laidback Luke, Fisher)",
+      "Pool season momentum with Diplo at Encore Beach Club",
+      "LIV Nightclub stable roster (Tiësto, John Summit, Dom Dolla)",
+      "Capacity pressure expected Sat night at most venues"
+    ],
+    "liv_recommendation": "Lock in Saturday talent NOW. Tiësto or John Summit for night-time draw critical. Monitor Encore/OMNIA capacity fill-rates hourly Fri-Sat."
+  },
   "content_gaps": [
     {
-      "gap_type": "behind_the_scenes",
-      "description": "Competitors like Zouk and OMNIA are generating heavy TikTok buzz with BTS content from DJ sets and venue walkthroughs. LIV's TikTok presence is dominated by promoter guest-list posts rather than organic venue content.",
-      "competitors_doing_it": ["Zouk Nightclub", "OMNIA Nightclub", "Encore Beach Club"],
-      "urgency": "high",
-      "suggested_action": "Create BTS TikTok series showing DJ booth setup, sound checks, and venue prep for upcoming weekend events."
-    },
-    {
-      "gap_type": "event_announcement",
-      "description": "OMNIA Dayclub grand opening on May 15 with Fisher/Rufus Du Sol/Martin Garrix is generating massive PR coverage from Rolling Stone, Las Vegas Weekly, and Caesars newsroom. LIV needs a counter-programming announcement or talent reveal to maintain mindshare.",
-      "competitors_doing_it": ["OMNIA Nightclub", "Omnia Beach Club"],
-      "urgency": "high",
-      "suggested_action": "Announce a headline residency or special event for May to compete with OMNIA Dayclub launch buzz."
-    },
-    {
-      "gap_type": "influencer_content",
-      "description": "Encore Beach Club and Palm Tree Beach Club are getting organic influencer coverage and TikTok reviews. LIV Beach content is mostly promoter-driven rather than influencer-generated.",
-      "competitors_doing_it": ["Encore Beach Club", "Palm Tree"],
+      "gap_type": "trending_audio",
+      "description": "Tech-house and deep house blending trending at Encore Beach Club (Westend residency noted March 27) and Zouk—LIV missing mid-tempo tech content in social reels",
+      "competitors_doing_it": ["Encore Beach Club", "Zouk Nightclub", "Palm Tree Beach Club"],
       "urgency": "medium",
-      "suggested_action": "Invite 5-10 lifestyle/nightlife TikTok creators for hosted LIV Beach experiences to generate organic review content."
+      "suggested_action": "Commission 3-5 tech-house trending audio reels featuring resident DJs. Layer with behind-the-scenes Halo tech setup footage."
     },
     {
-      "gap_type": "pool_season_guide",
-      "description": "Las Vegas Weekly published a comprehensive 2026 pool and dayclub guide featuring competitors prominently. LIV Beach was included but competitors like Palm Tree and OMNIA Dayclub received more editorial coverage.",
-      "competitors_doing_it": ["Palm Tree", "Omnia Beach Club", "Encore Beach Club", "Tao Beach"],
-      "urgency": "medium",
-      "suggested_action": "Pitch exclusive editorial content and press previews to Vegas media outlets to increase LIV Beach coverage in pool season guides."
+      "gap_type": "story_countdown",
+      "description": "OMNIA, Hakkasan, and Zouk heavily leveraging Instagram Stories for Friday night countdowns and last-minute talent reveals; LIV Stories lag frequency",
+      "competitors_doing_it": ["OMNIA Nightclub", "Hakkasan Nightclub", "Zouk Nightclub"],
+      "urgency": "high",
+      "suggested_action": "Launch daily 6pm countdown story poll + 8pm final-lineup reveal. Tie to bottle service promo codes for urgency."
+    },
+    {
+      "gap_type": "guest_reviews",
+      "description": "@globeth0tter (591 likes) posted honest LIV review on TikTok; competitor venues lacking user-generated review content. LIV can capitalize on this.",
+      "competitors_doing_it": ["None detected"],
+      "urgency": "low",
+      "suggested_action": "Repost @globeth0tter with permission. Create hashtag #LIVHonestReview for UGC collection. Seed with 3-5 macro influencers for weekly reviews."
     }
   ],
   "influencer_activity": [
     {
-      "platform": "TikTok",
-      "mention": "User @globeth0tter posted honest review of LIV Nightclub Las Vegas experience",
+      "handle": "@globeth0tter",
+      "platform": "TT",
+      "mention": "Posted honest review of LIV Nightclub as guest-list attendee with 591 likes — high engagement, positive vibe. Notable for credible influencer endorsement.",
+      "posts_found": 1,
+      "engagement_level": "High"
+    },
+    {
+      "handle": "@livlvguestlist",
+      "platform": "TT",
+      "mention": "Edwin Griffiths promoter account posting guest-list promos regularly, 2+ videos per week with detailed door policies and promo codes (GRIFFITHS). Drive significant traffic.",
+      "posts_found": 3,
+      "engagement_level": "High"
+    },
+    {
+      "handle": "@edsonvegasclubpromoter",
+      "platform": "TT",
+      "mention": "Cross-promoting Tao Beach with high-engagement rooftop pool content; mentions Venetian, reaching similar demographic as LIV (daytime + nightlife stack).",
       "posts_found": 1,
       "engagement_level": "Normal"
-    },
-    {
-      "platform": "TikTok",
-      "mention": "John Summit appearances at LIV Beach generating pool party content and user reviews",
-      "posts_found": 2,
-      "engagement_level": "High"
-    },
-    {
-      "platform": "TikTok",
-      "mention": "Promoter accounts (Edwin Griffiths @livlvguestlist) dominating LIV-related TikTok content with guest list posts for Dom Dolla and Sexyy Red events",
-      "posts_found": 4,
-      "engagement_level": "High"
     }
   ],
-  "liv_outreach_targets": [],
+  "liv_outreach_targets": [
+    {
+      "handle": "@globeth0tter",
+      "reason": "Credible TikTok reviewer with honest LIV endorsement; 591 likes = strong engagement. Repost partnership potential.",
+      "suggested_ask": "Feature her full review with permission; offer guest-list + bottle service credit for follow-up content"
+    },
+    {
+      "handle": "@livlvguestlist",
+      "reason": "Edwin Griffiths is LIV's own promoter & amplifier—maximize his reach by providing exclusive promo codes, early talent announcements.",
+      "suggested_ask": "Give him 48-hour exclusive on weekend DJ reveals before public Instagram drop"
+    }
+  ],
   "story_activity": [
     {
       "venue": "OMNIA Nightclub",
-      "content_type": "announcement",
-      "summary": "OMNIA Dayclub & Skybar grand opening announced for May 15, 2026 with Fisher, Rufus Du Sol, and Martin Garrix headlining opening weekend. Major PR push from Caesars Entertainment, Rolling Stone, and Las Vegas Weekly.",
-      "detected_at": "2026-04-09T12:00:00.000Z",
+      "content_type": "countdown",
+      "summary": "Friday night (4/11) DJ Pauly D + Fisher back-to-back Stories with countdown stickers and bottle service call-outs",
+      "detected_at": "2026-04-10T23:00:00Z",
       "urgency": true
     },
     {
-      "venue": "Zouk Nightclub",
+      "venue": "Hakkasan Nightclub",
       "content_type": "announcement",
-      "summary": "Zouk April lineup revealed: Duke Dumont (Apr 3), Alison Wonderland (Apr 11), Noizu (Apr 17), plus RL Grime and Lil Wayne. Aggressive mid-month talent booking.",
-      "detected_at": "2026-04-09T12:00:00.000Z",
+      "summary": "R&Bae Wednesdays feature posts + Friday Laidback Luke + Saturday Chase B Stories (4/08-4/11)",
+      "detected_at": "2026-04-10T23:00:00Z",
       "urgency": false
     },
     {
-      "venue": "Palm Tree",
-      "content_type": "announcement",
-      "summary": "Palm Tree Beach Club promoting 2026 season with Martin Garrix, Tiesto, and Kygo residencies. Featured in Las Vegas Weekly pool guide and Pool Party top 5 dayclubs ranking.",
-      "detected_at": "2026-04-09T12:00:00.000Z",
-      "urgency": false
-    },
-    {
-      "venue": "Encore Beach Club",
-      "content_type": "announcement",
-      "summary": "Marshmello residency confirmed for 2026 season. Venue opened March 7. Featured prominently in Las Vegas Weekly 2026 pool and dayclub guide.",
-      "detected_at": "2026-04-09T12:00:00.000Z",
+      "venue": "Palm Tree Beach Club",
+      "content_type": "flash_sale",
+      "summary": "Yo Yolie Friday 11am daytime Stories with early-bird 15% bottle discount (expires noon)",
+      "detected_at": "2026-04-10T23:00:00Z",
       "urgency": false
     }
   ],
   "venues": [
     {
       "venue": "LIV Nightclub",
-      "posts_found": 8,
+      "posts_found": 4,
       "urgent": false,
-      "summary": "Active TikTok presence driven primarily by promoter guest-list content. Instagram (@livlv) has 87K followers. Recent events include DJ Diesel, Gorgon City, Slander, and Dom Dolla. Sexyy Red event generated strong TikTok promoter engagement. Content skews toward guest-list promotion rather than organic venue content.",
-      "flags": ["promoter_heavy_content", "low_organic_tiktok"],
+      "summary": "Stable Friday momentum with multi-date DJ roster (Tiësto, John Summit confirmed). Instagram 87K followers, 639 posts. TikTok influencer reviews (globeth0tter, 591 likes) indicate strong social proof.",
+      "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "LIV Las Vegas official Instagram promoting upcoming events including DJ Diesel (Apr 2), Gorgon City (Apr 3), Slander (Apr 4).",
-          "posted_at": "2026-04-07",
-          "engagement_note": "Normal",
+          "content_summary": "Post featuring 'Meet us under the Halo🪩' with weekly DJ lineup (Tiësto, John Summit, Dom Dolla). High-quality production photography.",
+          "posted_at": "2026-04-09",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "TT",
+          "content_summary": "Multiple outfit guides and backstage access content; @globeth0tter honest review as guest-list attendee with 591 likes.",
+          "posted_at": "2026-04-08",
+          "engagement_note": "High",
           "flags": []
         },
         {
           "platform": "TT",
-          "content_summary": "Promoter Edwin Griffiths posting Dom Dolla guest list and bottle service details for LIV Nightclub. Heavy promotional format with pricing and entry rules.",
-          "posted_at": "2026-04-08",
-          "engagement_note": "High",
-          "flags": ["promoter_content"]
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Promoter posting Sexyy Red event at LIV with guest list details, ticket promo codes, and early arrival requirements due to capacity concerns.",
+          "content_summary": "Edwin Griffiths (@livlvguestlist) promoter content with guest-list offer details and promo code GRIFFITHS.",
           "posted_at": "2026-04-07",
-          "engagement_note": "High",
-          "flags": ["promoter_content"]
-        },
-        {
-          "platform": "TT",
-          "content_summary": "User @globeth0tter posting honest review of LIV Nightclub Las Vegas experience.",
-          "posted_at": "2026-04-06",
           "engagement_note": "Normal",
-          "flags": ["user_review"]
+          "flags": ["promo_offer"]
         },
         {
-          "platform": "TT",
-          "content_summary": "Multiple TikTok discovery pages active for LIV Nightclub outfit ideas, dress code tips, and guest list info.",
-          "posted_at": "2026-04-08",
+          "platform": "IG",
+          "content_summary": "LIV Beach daytime posts highlighting pool scene and DJ lineups (Westend March 27, Discolines March 28).",
+          "posted_at": "2026-04-05",
           "engagement_note": "Normal",
           "flags": []
         }
@@ -132,59 +136,52 @@
     },
     {
       "venue": "LIV Beach",
-      "posts_found": 6,
+      "posts_found": 3,
       "urgent": false,
-      "summary": "Instagram (@livbeach) has 36K followers. TikTok presence features pool party content, outfit guides, and promoter posts. Recent events include The Westend, Disco Lines, and DJ Vice. Official TikTok account (@livbeachlv) posting summer vibes content. John Summit pool party content generating user engagement.",
-      "flags": ["needs_more_organic_content"],
+      "summary": "36K Instagram followers, 431 posts. Daytime pool momentum building with DJ rotations. March 27-29 lineup (Westend, Discolines, DJ Vice) shows consistent talent booking. Pool season open since March 6.",
+      "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "LIV Beach official Instagram promoting weekend events: The Westend (Mar 27), Disco Lines (Mar 28), DJ Vice (Mar 29) at Fontainebleau Las Vegas.",
-          "posted_at": "2026-04-05",
-          "engagement_note": "Normal",
-          "flags": []
+          "content_summary": "Instagram bio: 'An all-new day life oasis ☀️ Fri, Mar 27- @itsthewestend Sat, Mar 28- @discolines SUN, Mar 29- @djvice'",
+          "posted_at": "2026-04-09",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "Official LIV Beach TikTok (@livbeachlv) posting summer pool party atmosphere content.",
+          "content_summary": "Pool experience reviews and DayClub highlight reels. Influencer promo content for guest-list booking.",
           "posted_at": "2026-04-06",
           "engagement_note": "Normal",
           "flags": []
         },
         {
           "platform": "TT",
-          "content_summary": "Promoter Galantis event guest list post for LIV Beach with detailed entry rules and pricing for dayclub.",
-          "posted_at": "2026-04-07",
+          "content_summary": "Edwin Griffiths guest-list TikTok featuring Galantis event with capacity warnings and early arrival mandate.",
+          "posted_at": "2026-03-28",
           "engagement_note": "Normal",
-          "flags": ["promoter_content"]
-        },
-        {
-          "platform": "TT",
-          "content_summary": "User-generated content featuring John Summit performance at LIV Beach Club pool party.",
-          "posted_at": "2026-04-05",
-          "engagement_note": "High",
-          "flags": []
+          "flags": ["promo_offer"]
         }
       ]
     },
     {
       "venue": "XS Nightclub",
-      "posts_found": 3,
+      "posts_found": 2,
       "urgent": false,
-      "summary": "XS Nightclub at Wynn Las Vegas confirmed Kaskade for April 4, 2026. Venue capacity 3,000. Active event calendar across multiple ticketing platforms including SimpleTix, AXS, and Resident Advisor.",
+      "summary": "XS at Wynn Las Vegas (3000 capacity). Rolling Stone lists Calvin Harris, Chainsmokers, Mau P for 2026. Concert calendars active; no specific posts from this week detected.",
       "flags": [],
       "raw_posts": [
         {
           "platform": "Ticket/Eventbrite",
-          "content_summary": "Kaskade performing at XS Nightclub on Saturday April 4, 2026. Tickets available on SimpleTix.",
-          "posted_at": "2026-04-04",
+          "content_summary": "Event listings on nocovernightclubs.com and concerts.vegas showing XS schedule updated April 9, 2026.",
+          "posted_at": "2026-04-09",
           "engagement_note": "Normal",
-          "flags": []
+          "flags": ["talent_announcement"]
         },
         {
-          "platform": "IG/Ticket",
-          "content_summary": "XS Nightclub event calendar listings across multiple platforms (nocovernightclubs, lasvegascalendars, electronic.vegas) showing April 2026 programming.",
-          "posted_at": "2026-04-08",
+          "platform": "PR/News",
+          "content_summary": "Rolling Stone coverage of Wynn nightlife lineup (Calvin Harris, Chainsmoakers, Mau P, Pete Tong residency noted).",
+          "posted_at": "2026-02-18",
           "engagement_note": "Normal",
           "flags": []
         }
@@ -192,29 +189,29 @@
     },
     {
       "venue": "Encore Beach Club",
-      "posts_found": 5,
+      "posts_found": 3,
       "urgent": false,
-      "summary": "Instagram (@encorebeachclub) has 284K followers - largest social following among dayclubs. Marshmello residency confirmed for 2026 season. Venue opened March 7 for pool season. Featured in Las Vegas Weekly 2026 pool guide. Strong TikTok presence with cabana tours and party content.",
-      "flags": ["strong_social_presence", "residency_announcement"],
+      "summary": "284K Instagram followers, 3,861 posts. Major daytime draw. Diplo confirmed Friday 11am, pool season opened March 7. Search results indicate heavy competitive focus on Encore as premier daytime venue.",
+      "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Encore Beach Club official Instagram (284K followers) promoting 2026 pool season with Marshmello residency and premium daylife experiences at Wynn Las Vegas.",
-          "posted_at": "2026-04-08",
+          "content_summary": "Instagram bio: 'Unforgettable days, Unstoppable nights 🍾💫 Located inside @WynnLasVegas' with high-frequency DJ lineup posts.",
+          "posted_at": "2026-04-09",
           "engagement_note": "High",
-          "flags": ["residency"]
+          "flags": []
         },
         {
-          "platform": "PR/News",
-          "content_summary": "Las Vegas Weekly 2026 pool and dayclub guide featuring Encore Beach Club prominently with March 7 opening date and season details.",
+          "platform": "Ticket/Eventbrite",
+          "content_summary": "Las Vegas Weekly coverage: 'Diplo 11 a.m., Encore Beach Club, wynnsocial.com' — confirmed Friday booking.",
           "posted_at": "2026-04-02",
           "engagement_note": "High",
-          "flags": ["media_coverage"]
+          "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "Multiple TikTok creators posting upper cabana tours and pool party experiences at Encore Beach Club.",
-          "posted_at": "2026-04-07",
+          "content_summary": "Pool season opening recap with 2026 dayclub schedule (Encore Beach: March 7, LIV Beach: March 6, Palm Tree: March 11).",
+          "posted_at": "2026-03-09",
           "engagement_note": "Normal",
           "flags": []
         }
@@ -222,102 +219,59 @@
     },
     {
       "venue": "OMNIA Nightclub",
-      "posts_found": 7,
-      "urgent": true,
-      "summary": "OMNIA has packed April schedule: Fisher (Apr 3/11), DJ Pauly D (Apr 10), Deorro (Apr 18), Justin Mylo (Apr 21). Regular Thursday and Latin Sunday programming. Instagram (@omnianightclub) has 456K followers. MAJOR: OMNIA Dayclub & Skybar grand opening May 15 with Fisher, Rufus Du Sol, Martin Garrix generating massive PR.",
-      "flags": ["major_launch_announcement", "aggressive_booking"],
+      "posts_found": 3,
+      "urgent": false,
+      "summary": "456K Instagram followers, 3,508 posts. Heavy talent announcements. April 10 (TODAY): DJ Pauly D confirmed; April 11: Fisher. Stories showing countdown momentum for Friday night.",
+      "flags": ["talent_announcement", "urgent"],
       "raw_posts": [
         {
-          "platform": "Ticket/Eventbrite",
-          "content_summary": "Fisher performing at OMNIA Nightclub Caesars Palace, Friday April 3, 2026 at 10:30 PM. Eventbrite listing active.",
-          "posted_at": "2026-04-03",
+          "platform": "IG",
+          "content_summary": "Instagram bio: '#OMNIALasVegas 3/27 @djpaulyd 3/28 @tiesto 3/29 #deseolatinsundays 3/31 @mikeyxfrancis' with frequent update pattern.",
+          "posted_at": "2026-04-09",
           "engagement_note": "High",
-          "flags": []
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "PR/News",
+          "content_summary": "Red Carpet VIP listing: 'DJ Pauly D at OMNIA April 10, Fisher at OMNIA April 11, DESEO: Latin Sundays April 11'",
+          "posted_at": "2026-04-09",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
         },
         {
           "platform": "IG/Ticket",
-          "content_summary": "OMNIA April calendar: DJ Pauly D (Apr 10), Fisher (Apr 11), Rob Guson (Apr 14), Deorro (Apr 18), Justin Mylo (Apr 21). Recurring Thursday parties and Deseo Latin Sundays.",
+          "content_summary": "omnia.uvtix.com event listings with OMNIA Nightclub Thursday + DESEO Latin Sundays recurring series.",
           "posted_at": "2026-04-08",
           "engagement_note": "Normal",
           "flags": []
-        },
-        {
-          "platform": "PR/News",
-          "content_summary": "Caesars Entertainment official press release: OMNIA Dayclub & Skybar opening May 15, 2026. Grand opening headliners: Fisher, Rufus Du Sol, Martin Garrix.",
-          "posted_at": "2026-04-02",
-          "engagement_note": "High",
-          "flags": ["major_competitor_launch"]
-        },
-        {
-          "platform": "PR/News",
-          "content_summary": "Las Vegas Weekly feature: Tao Group Hospitality brings OMNIA Dayclub to the Las Vegas Strip. Detailed venue and programming coverage.",
-          "posted_at": "2026-04-02",
-          "engagement_note": "High",
-          "flags": ["media_coverage"]
-        },
-        {
-          "platform": "PR/News",
-          "content_summary": "Rolling Stone feature on OMNIA Dayclub & Skybar with photos, venue details, and DJ performance schedules.",
-          "posted_at": "2026-04-05",
-          "engagement_note": "High",
-          "flags": ["media_coverage"]
         }
       ]
     },
     {
       "venue": "Omnia Beach Club",
-      "posts_found": 4,
-      "urgent": true,
-      "summary": "OMNIA Dayclub & Skybar is a brand new venue opening May 15, 2026 at Caesars Palace. Multi-level venue with two pools, daybeds, cabanas, and VIP plunge pools. Nearly 60,000 sq ft designed by Rockwell Group. Grand opening weekend: Fisher, Rufus Du Sol, Martin Garrix. Major threat to LIV Beach market share.",
-      "flags": ["new_venue_launch", "major_competitor_threat"],
-      "raw_posts": [
-        {
-          "platform": "PR/News",
-          "content_summary": "Caesars Entertainment newsroom: OMNIA Dayclub & Skybar to open at Caesars Palace for 2026 pool season. Opening May 15 with Fisher headlining.",
-          "posted_at": "2026-04-02",
-          "engagement_note": "High",
-          "flags": ["major_competitor_launch"]
-        },
-        {
-          "platform": "PR/News",
-          "content_summary": "Tao Group Hospitality official announcement of OMNIA Dayclub launch. Multi-level upscale daytime and rooftop entertainment destination.",
-          "posted_at": "2026-04-01",
-          "engagement_note": "High",
-          "flags": ["major_competitor_launch"]
-        },
-        {
-          "platform": "IG",
-          "content_summary": "New @omniadayclub social media accounts being promoted across Tao Group channels ahead of May 15 launch.",
-          "posted_at": "2026-04-08",
-          "engagement_note": "Normal",
-          "flags": ["new_account"]
-        }
-      ]
+      "posts_found": 0,
+      "urgent": false,
+      "summary": "Note: OMNIA Dayclub opens June 2026 (not yet active). Search results show OMNIA Nightclub dominating March-April activity; no separate Beach Club posts detected in this cycle.",
+      "flags": [],
+      "raw_posts": []
     },
     {
       "venue": "Zouk Nightclub",
-      "posts_found": 5,
+      "posts_found": 2,
       "urgent": false,
-      "summary": "Zouk Nightclub at Resorts World has strong April lineup: Duke Dumont (Apr 3), Alison Wonderland (Apr 11), Noizu (Apr 17), plus RL Grime and Lil Wayne. Active across multiple ticketing platforms including AXS and Discotech.",
-      "flags": ["strong_talent_lineup"],
+      "summary": "249K Instagram followers, 2,827 posts. Resorts World venue with tech-forward positioning. Resident DJ roster (Illenium, DJ Snake, Deadmau5, Louis the Child, Duke Dumont) strong April momentum expected.",
+      "flags": ["talent_announcement"],
       "raw_posts": [
         {
-          "platform": "IG/Ticket",
-          "content_summary": "Zouk Las Vegas April 2026 event calendar: Duke Dumont (Apr 3), Alison Wonderland (Apr 11), Noizu (Apr 17). All 21+ events.",
-          "posted_at": "2026-04-08",
-          "engagement_note": "Normal",
-          "flags": []
-        },
-        {
-          "platform": "IG/Ticket",
-          "content_summary": "Additional April acts announced: RL Grime, DJ Flight, Estovega, Lil Wayne performing at Zouk throughout the month.",
-          "posted_at": "2026-04-07",
+          "platform": "IG",
+          "content_summary": "Zouk Group official (@zoukgrouplv) with event listings showing April 2026 calendar live on zoukgrouplv.com.",
+          "posted_at": "2026-04-09",
           "engagement_note": "High",
-          "flags": ["hip_hop_crossover"]
+          "flags": ["talent_announcement"]
         },
         {
-          "platform": "Ticket/Eventbrite",
-          "content_summary": "Zouk Nightclub tickets available on AXS for multiple April 2026 dates at Resorts World Las Vegas.",
+          "platform": "PR/News",
+          "content_summary": "Electronic Vegas listing resident DJs (Illenium, DJ Snake, Deadmau5, Louis the Child) with upcoming dates April-May.",
           "posted_at": "2026-04-08",
           "engagement_note": "Normal",
           "flags": []
@@ -326,75 +280,82 @@
     },
     {
       "venue": "Hakkasan Nightclub",
-      "posts_found": 4,
-      "urgent": false,
-      "summary": "Hakkasan at MGM Grand maintains steady programming with TWINSICK, DJ Drama, Steve Aoki, Chase B, Fisher, Tyga, DJ Pauly D. Regular R&Bae Wednesdays and Thursday parties. Consistent weekly programming across 2026 season.",
-      "flags": [],
-      "raw_posts": [
-        {
-          "platform": "IG/Ticket",
-          "content_summary": "Hakkasan 2026 lineup features TWINSICK, DJ Drama, Steve Aoki, Justin Credible, Murda Beatz, Chase B, Fisher, Tyga, DJ Pauly D across multiple weekends.",
-          "posted_at": "2026-04-08",
-          "engagement_note": "Normal",
-          "flags": []
-        },
-        {
-          "platform": "IG/Ticket",
-          "content_summary": "Recurring events: R&Bae Wednesdays with DJ Franzen, Hakkasan Thursday parties, weekend headliner events at MGM Grand.",
-          "posted_at": "2026-04-07",
-          "engagement_note": "Normal",
-          "flags": []
-        }
-      ]
-    },
-    {
-      "venue": "Palm Tree",
-      "posts_found": 5,
-      "urgent": false,
-      "summary": "Palm Tree Beach Club at MGM Grand (Tao Group x Palm Tree Crew) in full 2026 season. Nearly 60,000 sq ft venue with saltwater pool, 3,000 capacity. Residencies: Martin Garrix, Tiesto, Kygo, Zedd. Featured in Las Vegas Weekly 2026 pool guide and Pool Party top 5 ranking. Open Mon/Thu-Sun 11am-5pm.",
-      "flags": ["strong_residency_lineup", "media_coverage"],
-      "raw_posts": [
-        {
-          "platform": "PR/News",
-          "content_summary": "Las Vegas Weekly 2026 pool and dayclub guide featuring Palm Tree Beach Club with Kygo, Tiesto, Martin Garrix residencies at MGM Grand.",
-          "posted_at": "2026-04-02",
-          "engagement_note": "High",
-          "flags": ["media_coverage"]
-        },
-        {
-          "platform": "IG/Ticket",
-          "content_summary": "Palm Tree Beach Club official Tao Group events page listing regular April 2026 programming on Saturdays, Sundays, Wednesdays, and Thursdays.",
-          "posted_at": "2026-04-08",
-          "engagement_note": "Normal",
-          "flags": []
-        },
-        {
-          "platform": "PR/News",
-          "content_summary": "Pool Party ranked Palm Tree Beach Club in top 5 Las Vegas dayclubs for 2026. Highlighted Rockwell Group design and premium cabana experiences.",
-          "posted_at": "2026-04-05",
-          "engagement_note": "Normal",
-          "flags": ["media_coverage"]
-        }
-      ]
-    },
-    {
-      "venue": "Tao Beach",
       "posts_found": 3,
       "urgent": false,
-      "summary": "Tao Beach Dayclub at The Venetian has resident DJs Alesso, Fisher, Chris Lake, Bob Moses, Black Coffee, Alan Walker. Daybreak Thursdays programming active starting April 2. Part of Tao Group Hospitality portfolio.",
+      "summary": "258K Instagram followers, 6,387 posts. High-volume content strategy. April 8-11 shows R&Bae Wednesdays, Laidback Luke (4/9), Franda Lay Bay (4/10), Chase B (4/11). TAO Group Hospitality brand.",
+      "flags": ["talent_announcement"],
+      "raw_posts": [
+        {
+          "platform": "IG",
+          "content_summary": "Hakkasan Instagram: '@taogrouphospitality concept at @mgmgrand UPCOMING 🪩 4/08 R&Bae Wednesdays 4/09 @laidbackluke 4/10 @frandalaybay 4/11 @ogchaseb'",
+          "posted_at": "2026-04-09",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "Ticket/Eventbrite",
+          "content_summary": "Bandsintown listing: Hakkasan April packed with TWINSICK, DJ Drama, Steve Aoki dates.",
+          "posted_at": "2026-04-08",
+          "engagement_note": "Normal",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "PR/News",
+          "content_summary": "TAO Group official event calendar showing R&Bae Wednesdays recurring series with DJ features.",
+          "posted_at": "2026-04-07",
+          "engagement_note": "Normal",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "venue": "Palm Tree Beach Club",
+      "posts_found": 3,
+      "urgent": false,
+      "summary": "232K Instagram followers, 114 posts (newer venue, 2025 launch). 'Vegas' Luxury Daylife Destination @mgmgrand by @TaoGroupHospitality'. Friday (4/11) Yo Yolie daytime. Artists: Kygo, Alesso, Zedd, Martin Garrix, Steve Aoki, Fisher confirmed 2026.",
+      "flags": ["talent_announcement"],
+      "raw_posts": [
+        {
+          "platform": "IG",
+          "content_summary": "Instagram bio: \"Vegas' Luxury Daylife Destination @mgmgrand by @TaoGroupHospitality x @PalmTreeCrew Now Open | Wednesday - Sunday\"",
+          "posted_at": "2026-04-09",
+          "engagement_note": "High",
+          "flags": []
+        },
+        {
+          "platform": "PR/News",
+          "content_summary": "Las Vegas Weekly (April 2, 2026): 'Palm Tree Beach Club took over Wet Republic space, redefines daytime with world-class talent lineup'",
+          "posted_at": "2026-04-02",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "IG/Ticket",
+          "content_summary": "Las Vegas Weekly (April 9, 2026): 'YO YOLIE 11 a.m., Palm Tree Beach Club, taogroup.com' — Friday daytime booking confirmed.",
+          "posted_at": "2026-04-09",
+          "engagement_note": "Normal",
+          "flags": ["talent_announcement"]
+        }
+      ]
+    },
+    {
+      "venue": "Tao Beach (The Venetian)",
+      "posts_found": 2,
+      "urgent": false,
+      "summary": "92K Instagram followers, 460 posts. Rooftop 18K sq ft pool at Venetian. TAO Las Vegas (@taolasvegas) 164K followers shows cross-promotion. Influencer content (Edson Vegas Club Promoter) actively promoting.",
       "flags": [],
       "raw_posts": [
         {
-          "platform": "IG/Ticket",
-          "content_summary": "Tao Beach Dayclub official event calendar listing Daybreak Thursdays starting April 2, 2026 at 11:00 AM at The Venetian.",
-          "posted_at": "2026-04-08",
+          "platform": "IG",
+          "content_summary": "TAO Beach official (@taobeach): 'The Premier Las Vegas Dayclub located inside the Venetian Resort' with regular lineup posts.",
+          "posted_at": "2026-04-09",
           "engagement_note": "Normal",
           "flags": []
         },
         {
-          "platform": "IG/Ticket",
-          "content_summary": "Tao Beach 2026 season featuring resident DJs Alesso, Fisher, Chris Lake, Bob Moses, Black Coffee, Alan Walker.",
-          "posted_at": "2026-04-07",
+          "platform": "TT",
+          "content_summary": "Edson Vegas Club Promoter (@edsonvegasclubpromoter): 'Tao Beach Las Vegas inside Venetian is best rooftop pool party in the city' — cross-promotion with high engagement.",
+          "posted_at": "2026-04-06",
           "engagement_note": "Normal",
           "flags": []
         }
