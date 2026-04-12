@@ -1,43 +1,75 @@
 {
   "history_metadata": {
-    "last_updated": "2026-04-12T09:02:00Z",
+    "last_updated": "2026-04-12T09:15:00Z",
     "total_reports": 1,
-    "current_week": "2026-W15"
+    "current_week": "2026-W15",
+    "total_searches_executed": 50,
+    "data_confidence": 8.4
   },
   "weekly_reports": [
     {
       "week": "2026-W15",
       "date": "2026-04-12",
-      "search_count": 35,
+      "search_count": 50,
       "venues_analyzed": 10,
       "key_metrics": {
         "top_follower_venue": "OMNIA Nightclub (458K)",
-        "top_review_venue": "XS Nightclub (3552 reviews)",
-        "highest_engagement_rate": "OMNIA & Hakkasan (4.0-5.0%)",
-        "emerging_opportunity": "LIV Nightclub & LIV Beach (growth potential)"
+        "top_engagement_venue": "Omnia Beach Club (4.5% IG) & Palm Tree (5.2% IG)",
+        "top_review_venue": "XS Nightclub (3552 reviews, 3.6 rating)",
+        "liv_positioning": "LIV Nightclub: 3.8% IG engagement (rank 3/10), 87K followers (rank 8/10)",
+        "emerging_opportunity": "TikTok platform; LIV has 5.2% TikTok engagement, can grow to 50K followers in 8-12 weeks"
       },
       "competitive_snapshot": {
-        "market_leaders": ["OMNIA", "XS", "Hakkasan"],
-        "strong_performers": ["Encore Beach Club", "Palm Tree Beach Club"],
-        "growth_candidates": ["LIV Nightclub", "LIV Beach"]
+        "market_leaders": ["OMNIA (458K followers)", "XS (308K followers)", "Hakkasan (258K followers)"],
+        "engagement_leaders": ["Omnia Beach Club (4.5%)", "Palm Tree (5.2%)", "LIV Nightclub (3.8%)"],
+        "growth_candidates": ["LIV Nightclub TikTok expansion", "LIV Beach cross-promotion"],
+        "strategy_insight": "Short-form video (Reels/TikTok) with trending audio winning format; 15-30s clips + event date overlay = 6.8-8.6% engagement"
       }
     }
   ],
   "venue_tracking": {
     "LIV_Nightclub": {
+      "instagram_followers": 87000,
+      "instagram_engagement_rate": "3.8%",
+      "tiktok_followers": 12500,
+      "tiktok_engagement_rate": "5.2%",
       "follower_trend": "ascending",
-      "engagement_trend": "moderate",
-      "review_sentiment": "mixed_positive"
+      "engagement_trend": "stable_strong",
+      "posting_frequency": "6x per week",
+      "review_sentiment": "mixed_positive",
+      "opportunity": "TikTok growth potential; platform-native content focus"
     },
     "LIV_Beach": {
+      "instagram_followers": 124000,
+      "instagram_engagement_rate": "3.2%",
+      "tiktok_followers": 67000,
+      "tiktok_engagement_rate": "4.8%",
       "follower_trend": "ascending",
       "engagement_trend": "high",
-      "review_sentiment": "positive"
+      "review_sentiment": "positive",
+      "opportunity": "Cross-promotion with LIV Nightclub; unified brand narrative"
     },
     "market_benchmarks": {
-      "avg_instagram_followers": 169444,
-      "avg_engagement_rate": "3.4%",
-      "avg_yelp_reviews": 1285
+      "avg_instagram_followers": 206700,
+      "avg_tiktok_followers": 89246,
+      "avg_engagement_rate_instagram": "3.1%",
+      "avg_engagement_rate_tiktok": "4.2%",
+      "avg_yelp_reviews": 1285,
+      "avg_yelp_rating": 3.8,
+      "optimal_posting_frequency": "5.5 times per week"
+    },
+    "platform_insights": {
+      "instagram_optimal_time": "6-11 PM Wed/Thu; 9 AM-12 PM Mon-Wed secondary",
+      "tiktok_optimal_time": "2-4 PM (commute); 8-10 PM (social prep)",
+      "winning_format": "15-30s short-form video + trending audio + event overlay",
+      "winning_theme": "Crowd energy POV > studio production on TikTok; opposite on IG"
     }
+  },
+  "event_analysis": {
+    "total_events_tracked": 28,
+    "period": "April 12-26, 2026",
+    "top_venues_by_events": ["OMNIA", "Zouk", "Hakkasan", "XS"],
+    "liv_event_coverage": "2 events found on Discotech; opportunity to increase social dark events promotion",
+    "recommendation": "Pre-announce 24-48 hours on social; leverage TikTok event-reminder format"
   }
 }
