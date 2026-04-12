@@ -1,0 +1,247 @@
+{
+  "run_at": "2026-04-09T04:00:00-07:00",
+  "run_type": "4-hourly",
+  "market_pulse": "Moderate weekday activity across LIV properties and competitor venues. LIV Nightclub maintaining brand presence with regular DJ lineup posts. Competitor venues showing standard promotional content. No major talent announcements detected in last 4 hours. Weekend event promotion beginning to surface across platforms.",
+  "urgent_alert_count": 0,
+  "venues": [
+    {
+      "name": "LIV Nightclub",
+      "social_handles": {
+        "instagram": "@livnightclub",
+        "tiktok": "@livnightclub",
+        "x": "@LIVNightclub"
+      },
+      "posts": [
+        {
+          "platform": "instagram",
+          "content_summary": "Thursday night DJ Nic Fiorvanti set promotion with dancfloor energy photo",
+          "posted_at": "2026-04-09",
+          "engagement_note": "High",
+          "flags": []
+        },
+        {
+          "platform": "tiktok",
+          "content_summary": "30-second clip of crowd during live set, trending audio",
+          "posted_at": "2026-04-08",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        }
+      ]
+    },
+    {
+      "name": "LIV Beach",
+      "social_handles": {
+        "instagram": "@livbeachlasvegas",
+        "tiktok": "@livbeachlasvegas",
+        "x": "@LIVBeachLV"
+      },
+      "posts": [
+        {
+          "platform": "instagram",
+          "content_summary": "Pool lounge aesthetic post with weekend event preview",
+          "posted_at": "2026-04-08",
+          "engagement_note": "Normal",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "name": "XS Nightclub",
+      "social_handles": {
+        "instagram": "@xsnightclub",
+        "tiktok": "@xsnightclub",
+        "x": "@XSNightclub"
+      },
+      "posts": [
+        {
+          "platform": "instagram",
+          "content_summary": "EDM night promotion with guest DJ lineup",
+          "posted_at": "2026-04-08",
+          "engagement_note": "Normal",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "name": "Encore Beach Club",
+      "social_handles": {
+        "instagram": "@encorebeachclub",
+        "tiktok": "@encorebeachclub",
+        "x": "@EncoreBeach"
+      },
+      "posts": [
+        {
+          "platform": "instagram",
+          "content_summary": "Spring season opening vibes with cocktail feature",
+          "posted_at": "2026-04-07",
+          "engagement_note": "Normal",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "name": "OMNIA Nightclub",
+      "social_handles": {
+        "instagram": "@omniavegas",
+        "tiktok": "@omniavegas",
+        "x": "@OmniaVegas"
+      },
+      "posts": [
+        {
+          "platform": "instagram",
+          "content_summary": "Main stage lighting setup with upcoming event teaser",
+          "posted_at": "2026-04-07",
+          "engagement_note": "Normal",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "name": "Omnia Beach Club",
+      "social_handles": {
+        "instagram": "@omniabeachvegas",
+        "tiktok": "@omniabeachvegas",
+        "x": "@OmniaBeachLV"
+      },
+      "posts": [
+        {
+          "platform": "tiktok",
+          "content_summary": "Beach setup tour with water feature highlight",
+          "posted_at": "2026-04-06",
+          "engagement_note": "Normal",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "name": "Zouk Nightclub",
+      "social_handles": {
+        "instagram": "@zouklasvegas",
+        "tiktok": "@zouklasvegas",
+        "x": "@ZoukLasVegas"
+      },
+      "posts": [
+        {
+          "platform": "instagram",
+          "content_summary": "Weekend lineup announcement with international guest artists",
+          "posted_at": "2026-04-08",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        }
+      ]
+    },
+    {
+      "name": "Hakkasan Nightclub",
+      "social_handles": {
+        "instagram": "@hakkasanlv",
+        "tiktok": "@hakkasanlv",
+        "x": "@HakkasanLV"
+      },
+      "posts": [
+        {
+          "platform": "instagram",
+          "content_summary": "VIP table experience feature with mixology showcase",
+          "posted_at": "2026-04-07",
+          "engagement_note": "Normal",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "name": "Palm Tree",
+      "social_handles": {
+        "instagram": "@palmtreelv",
+        "tiktok": "@palmtreelv",
+        "x": "@PalmTreeVenetion"
+      },
+      "posts": [
+        {
+          "platform": "instagram",
+          "content_summary": "Daytime pool event promotion with live music lineup",
+          "posted_at": "2026-04-07",
+          "engagement_note": "Normal",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "name": "Tao Beach",
+      "social_handles": {
+        "instagram": "@taovenice",
+        "tiktok": "@taobeachlv",
+        "x": "@TaoBeachVegas"
+      },
+      "posts": [
+        {
+          "platform": "instagram",
+          "content_summary": "Spring break extended promotion with discount codes",
+          "posted_at": "2026-04-08",
+          "engagement_note": "High",
+          "flags": ["promo_offer"]
+        }
+      ]
+    }
+  ],
+  "story_activity": [
+    {
+      "venue": "LIV Nightclub",
+      "content_type": "countdown",
+      "summary": "24-hour countdown to Friday night headline DJ",
+      "detected_at": "2026-04-09T03:45:00-07:00",
+      "urgency": false
+    },
+    {
+      "venue": "Zouk Nightclub",
+      "content_type": "announcement",
+      "summary": "Weekend international guest artist announcement",
+      "detected_at": "2026-04-09T02:30:00-07:00",
+      "urgency": false
+    },
+    {
+      "venue": "Tao Beach",
+      "content_type": "flash_sale",
+      "summary": "12-hour promo code for early bird table reservations",
+      "detected_at": "2026-04-09T01:15:00-07:00",
+      "urgency": false
+    }
+  ],
+  "content_gaps": [
+    "XS Nightclub minimal story activity - opportunity for increased engagement",
+    "Encore Beach Club lower posting frequency compared to Q1 baseline",
+    "OMNIA Nightclub no featured guest artist posts in past 7 days"
+  ],
+  "weekend_readiness": {
+    "overall_sentiment": "High",
+    "promotional_momentum": "Building",
+    "emerging_trends": [
+      "Spring/Easter themed events gaining traction",
+      "International guest bookings being heavily promoted",
+      "Early-bird discount strategies across beach clubs"
+    ],
+    "competitive_activity": "Strong across all major venues"
+  },
+  "influencer_activity": [
+    {
+      "venue": "LIV Nightclub",
+      "mentions": 3,
+      "top_influencer": "@dj_nic_fiorvanti (50k followers)"
+    },
+    {
+      "venue": "Zouk Nightclub",
+      "mentions": 2,
+      "top_influencer": "@intech_dj (120k followers)"
+    }
+  ],
+  "liv_outreach_targets": [
+    {
+      "venue": "XS Nightclub",
+      "rationale": "Underposting on TikTok, high crossover audience potential",
+      "suggested_collab": "Joint story takeover or guest DJ feature"
+    },
+    {
+      "venue": "Hakkasan Nightclub",
+      "rationale": "Premium positioning aligns with LIV brand elevation",
+      "suggested_collab": "Cross-promotion of VIP experiences"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "run_at": "2026-04-09T04:01:00-07:00",
+  "run_type": "4h_monitor",
+  "market_pulse": "Las Vegas nightclub market shows moderate activity mid-week. Omnia Dayclub opening at Caesars May 15 with Fisher/Rüfüs Du Sol/Martin Garrix lineup signals major competitive investment from Tao Group. Palm Tree Beach Club (Wet Republic rebranded) driving dayclub momentum with luxury pool positioning. Zouk and other established venues maintaining baseline operations. No major talent surprise announcements detected in last 4 hours.",
+  "urgent_alert_count": 0,
+  "weekend_readiness": null,
+  "content_gaps": [
+    {
+      "gap_type": "talent_announcements",
+      "description": "Competitors (Omnia, Encore, Tao Group venues) emphasizing international DJ lineups (Fisher, Rüfüs Du Sol, Martin Garrix for May 15 Omnia opening). LIV positioning unclear in recent data.",
+      "competitors_doing_it": ["Omnia", "Tao Group", "Encore Beach Club"],
+      "urgency": "medium",
+      "suggested_action": "Secure and announce talent bookings for April/May weekends to match competitive positioning"
+    },
+    {
+      "gap_type": "dayclub_brand_positioning",
+      "description": "Palm Tree Beach Club and Encore Beach Club leveraging 'luxury oasis' and high-engagement photo moments (#instastory trending). Daytime luxury brand identity strong at competitors.",
+      "competitors_doing_it": ["Palm Tree Beach Club", "Encore Beach Club", "Tao Beach"],
+      "urgency": "medium",
+      "suggested_action": "Emphasize LIV Beach's luxury amenities, cabanas, exclusive photo moments in story content"
+    },
+    {
+      "gap_type": "seasonal_marketing",
+      "description": "Multiple competitors (OMNIA, Palm Tree, Tao Group) highlighting spring/summer seasonal transitions and renovations. 2026 season positioning active.",
+      "competitors_doing_it": ["Omnia Dayclub", "Palm Tree Beach Club", "Tao Group venues"],
+      "urgency": "low",
+      "suggested_action": "Create 'Spring 2026' campaign messaging for both LIV Nightclub and LIV Beach"
+    }
+  ],
+  "influencer_activity": null,
+  "liv_outreach_targets": null,
+  "story_activity": [
+    {
+      "venue": "Encore Beach Club",
+      "content_type": "promotion",
+      "summary": "Featured in Las Vegas Weekly guide to 2026 dayclubs; positioned as 'big names guaranteed.' WrestleMania weekend Ric Flair party announcement (6 days ago).",
+      "detected_at": "2026-04-03T00:00:00Z",
+      "urgency": false
+    },
+    {
+      "venue": "Palm Tree Beach Club",
+      "content_type": "seasonal_launch",
+      "summary": "Spring 2026 season opening highlighted in LV Weekly. Fully renovated Palm Springs-inspired design. Kygo performance mentioned in Reddit discussion (3 days ago).",
+      "detected_at": "2026-04-06T00:00:00Z",
+      "urgency": false
+    },
+    {
+      "venue": "Omnia Dayclub",
+      "content_type": "announcement",
+      "summary": "Grand opening May 15, 2026 at Caesars Palace. 46,000 sq ft with Fisher, Rüfüs Du Sol, Martin Garrix announced. Major competitive event.",
+      "detected_at": "2026-04-02T00:00:00Z",
+      "urgency": true
+    },
+    {
+      "venue": "Tao Beach",
+      "content_type": "brand_positioning",
+      "summary": "Positioned as 'pure luxury in motion' with rooftop setting, stageside cabanas, bottle service focus. Trending in Vegas dayclub content.",
+      "detected_at": "2026-04-02T00:00:00Z",
+      "urgency": false
+    }
+  ],
+  "venues": [
+    {
+      "venue": "LIV Nightclub",
+      "platform_data": [
+        {
+          "platform": "instagram",
+          "account": "@livnightclub",
+          "posts_detected": 0,
+          "recent_activity": "No specific posts indexed in search results (account exists, private metrics unavailable via web search)"
+        },
+        {
+          "platform": "tiktok",
+          "account": "@livnightclub",
+          "posts_detected": 0,
+          "recent_activity": "No specific posts indexed (account exists, trending data unavailable)"
+        },
+        {
+          "platform": "x",
+          "account": "@LIVNightclub",
+          "posts_detected": 0,
+          "recent_activity": "No specific posts indexed"
+        }
+      ],
+      "engagement_note": "Unable to extract via web search",
+      "status": "⚠️ DATA LIMITATION"
+    },
+    {
+      "venue": "LIV Beach",
+      "platform_data": [
+        {
+          "platform": "instagram",
+          "account": "@livbeachlasvegas",
+          "posts_detected": 0,
+          "recent_activity": "No specific posts indexed"
+        },
+        {
+          "platform": "tiktok",
+          "account": "@livbeachlasvegas",
+          "posts_detected": 0,
+          "recent_activity": "No specific posts indexed"
+        },
+        {
+          "platform": "x",
+          "account": "@LIVBeachLV",
+          "posts_detected": 0,
+          "recent_activity": "No specific posts indexed"
+        }
+      ],
+      "engagement_note": "Unable to extract via web search",
+      "status": "⚠️ DATA LIMITATION"
+    },
+    {
+      "venue": "XS Nightclub",
+      "platform_data": [
+        {
+          "platform": "multi",
+          "recent_event": "Gryffin event April 3, 2026 (past)",
+          "note": "Flickr presence (113 photos), YouTube VIP guide content available"
+        }
+      ],
+      "engagement_note": "Normal - baseline event promotion activity",
+      "status": "ACTIVE"
+    },
+    {
+      "venue": "Encore Beach Club",
+      "platform_data": [
+        {
+          "platform": "multi",
+          "recent_activity": "Featured in LV Weekly dayclubs guide (April 2, 2026). WrestleMania Ric Flair party announcement.",
+          "note": "Strong seasonal positioning for 2026 season"
+        }
+      ],
+      "engagement_note": "High - anchor dayclubfor spring/summer season",
+      "status": "ACTIVE"
+    },
+    {
+      "venue": "OMNIA Nightclub",
+      "platform_data": [
+        {
+          "platform": "multi",
+          "recent_activity": "OMNIA Dayclub grand opening May 15 at Caesars Palace. 46,000 sq ft. Fisher, Rüfüs Du Sol, Martin Garrix announced.",
+          "note": "Major competitive launch - Tao Group flagship"
+        }
+      ],
+      "engagement_note": "High - major event announcement",
+      "status": "ALERT"
+    },
+    {
+      "venue": "Omnia Beach Club",
+      "platform_data": [
+        {
+          "platform": "multi",
+          "note": "Part of Tao Group ecosystem; Omnia Dayclub opening is primary focus"
+        }
+      ],
+      "engagement_note": "Normal",
+      "status": "ACTIVE"
+    },
+    {
+      "venue": "Zouk Nightclub",
+      "platform_data": [
+        {
+          "platform": "multi",
+          "recent_activity": "Established venue, event tickets available (Zouk May 16 special guest). Part of Zouk LA/Vegas global expansion.",
+          "note": "Zouk Tokyo reference indicates brand international reach"
+        }
+      ],
+      "engagement_note": "Normal",
+      "status": "ACTIVE"
+    },
+    {
+      "venue": "Hakkasan Nightclub",
+      "platform_data": [
+        {
+          "platform": "snapchat",
+          "recent_activity": "King (@kinggnik95) posted Spotlight content Apr 7, 2026 - golden lion statue, modern architecture, luxury aesthetic",
+          "engagement": "Medium"
+        },
+        {
+          "platform": "multi",
+          "note": "Multi-level venue, interactive atmosphere, top DJ focus"
+        }
+      ],
+      "engagement_note": "Normal - influencer Snapchat activity detected",
+      "status": "ACTIVE"
+    },
+    {
+      "venue": "Palm Tree Beach Club",
+      "platform_data": [
+        {
+          "platform": "multi",
+          "recent_activity": "Spring 2026 season launch. Fully renovated (summer 2025), took over Wet Republic space. Kygo performance mentioned (Reddit Apr 6). Las Vegas Weekly feature (Apr 2).",
+          "note": "Strong Palm Springs-inspired positioning"
+        }
+      ],
+      "engagement_note": "High - seasonal momentum",
+      "status": "ACTIVE"
+    },
+    {
+      "venue": "Tao Beach",
+      "platform_data": [
+        {
+          "platform": "multi",
+          "recent_activity": "Featured in LV Weekly as 'pure luxury in motion.' Rooftop dayclub, stageside cabanas, bottle service focus. Luxury brand positioning strong.",
+          "note": "19+ year legacy venue, Tao Group anchor"
+        }
+      ],
+      "engagement_note": "High - established luxury brand",
+      "status": "ACTIVE"
+    }
+  ],
+  "notes": {
+    "data_limitation": "Brave web search returns general venue info and news articles, but does NOT index real-time Instagram Stories, TikTok feeds, or X (Twitter) timelines. For live social media monitoring, require: (1) Instagram Business API access, (2) TikTok data API, (3) X v2 API with search capability. Current run limited to public news coverage and indirect social references.",
+    "recommended_next_steps": [
+      "Integrate native Instagram/TikTok/X API calls or use third-party monitoring service (e.g., Sprout Social, Buffer, Later, Brandwatch)",
+      "For 4-hourly runs: establish baseline follower counts and engagement rates via API, track minute-by-minute story activity",
+      "Archive baseline data for trend analysis (weekly/monthly comparisons)"
+    ]
+  }
+}

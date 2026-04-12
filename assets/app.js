@@ -211,28 +211,48 @@
     return isStalePost(postedAt) ? ' <span class="stale-post-badge">older post</span>' : '';
   }
 
-  // Countdown timer — calculates next 12pm or 8pm PT
+  // Countdown timer — calculates next run time (every 4 hours: 12am, 4am, 8am, 12pm, 4pm, 8pm PT)
   let countdownInterval = null;
   function getNextRunTime() {
     const now = new Date();
-    // Convert to PT (approximate: UTC-7 for PDT)
-    const ptOffset = -7;
-    const utcH = now.getUTCHours();
-    const ptH = (utcH + ptOffset + 24) % 24;
-    const ptNow = new Date(now);
-
-    // Next run times in PT: 12pm (12) or 8pm (20)
-    const runs = [12, 20];
+    
+    // Create PT timezone date (using Intl API for accurate DST handling)
+    const formatter = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+    const ptTimeStr = formatter.format(now);
+    const [ptH, ptM] = ptTimeStr.split(':').map(Number);
+    
+    // Next run times in PT: 0 (12am), 4, 8, 12 (noon), 16 (4pm), 20 (8pm)
+    const runs = [0, 4, 8, 12, 16, 20];
     let nextPtH = null;
     let addDays = 0;
+    
+    // Find next run time after current PT time
     for (const rh of runs) {
-      if (ptH < rh || (ptH === rh && now.getUTCMinutes() < 5)) { nextPtH = rh; break; }
+      if (ptH < rh || (ptH === rh && ptM < 1)) {
+        nextPtH = rh;
+        break;
+      }
     }
-    if (nextPtH === null) { nextPtH = 12; addDays = 1; }
+    
+    if (nextPtH === null) {
+      // No more runs today, next one is tomorrow at midnight
+      nextPtH = 0;
+      addDays = 1;
+    }
 
+    // Create next run time in PT timezone
     const next = new Date(now);
-    next.setUTCHours(nextPtH - ptOffset, 0, 0, 0);
-    if (addDays) next.setUTCDate(next.getUTCDate() + 1);
+    next.setHours(next.getHours() + (addDays ? 24 : 0));
+    
+    // Adjust to exact PT hour (this is approximate but close enough for display)
+    const currentPtOffset = now.getTimezoneOffset() / 60; // Gets local offset
+    const hoursToAdd = nextPtH - ptH;
+    const minutesToAdd = -ptM;
+    
+    next.setHours(next.getHours() + hoursToAdd);
+    next.setMinutes(next.getMinutes() + minutesToAdd);
+    next.setSeconds(0);
+    
     return next;
   }
 

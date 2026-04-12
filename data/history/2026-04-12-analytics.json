@@ -1,0 +1,157 @@
+{
+  "metadata": {
+    "report_date": "2026-04-12",
+    "report_time": "09:02 PT",
+    "report_type": "Comprehensive Weekly Snapshot",
+    "module": "Analytics Monitor Module C",
+    "search_count": 35,
+    "venues_analyzed": 10
+  },
+  "venues": {
+    "LIV_Nightclub": {
+      "name": "LIV Nightclub",
+      "location": "Fontainebleau Las Vegas",
+      "social_accounts": {
+        "instagram": {
+          "handle": "@livlv",
+          "followers": 87000,
+          "following": 235,
+          "posts": 641,
+          "engagement_estimated": "high"
+        }
+      },
+      "account_stats": {
+        "posts_per_week": 4,
+        "days_since_last_post": 1,
+        "engagement_rate": "2.5-3.5%"
+      },
+      "reviews": {
+        "platforms": ["Yelp", "TripAdvisor"],
+        "yelp_reviews_count": 146,
+        "sentiment": "mixed",
+        "positive_themes": ["VIPs service", "great atmosphere", "excellent DJs"],
+        "negative_themes": ["staff attitude", "pricing concerns"]
+      },
+      "event_features": {
+        "recent_events": ["Dombresky (4/10)", "Cloonee (4/11)", "Marco Strous (4/12)"]
+      }
+    },
+    "LIV_Beach": {
+      "name": "LIV Beach",
+      "location": "Fontainebleau Las Vegas",
+      "social_accounts": {
+        "instagram": {
+          "handle": "@livbeach",
+          "followers": 36000,
+          "following": 171,
+          "posts": 431,
+          "engagement_estimated": "high"
+        }
+      },
+      "account_stats": {
+        "posts_per_week": 3,
+        "days_since_last_post": 2,
+        "engagement_rate": "3.0-3.8%"
+      }
+    },
+    "XS_Nightclub": {
+      "name": "XS Nightclub",
+      "social_accounts": {
+        "instagram": {
+          "handle": "@xslasvegas",
+          "followers": 308000,
+          "posts": 4190,
+          "engagement_estimated": "very_high"
+        }
+      },
+      "reviews": {
+        "yelp_reviews_count": 3552,
+        "rating_rank": "#1 nightclub Las Vegas and world"
+      }
+    },
+    "OMNIA_Nightclub": {
+      "name": "OMNIA Nightclub",
+      "social_accounts": {
+        "instagram": {
+          "handle": "@omnianightclub",
+          "followers": 458000,
+          "posts": 3513
+        },
+        "tiktok": {
+          "handle": "@omnialasvegas",
+          "followers": 326000
+        }
+      },
+      "account_stats": {
+        "engagement_rate": "4.0-5.0%"
+      }
+    },
+    "Hakkasan_Nightclub": {
+      "name": "Hakkasan Nightclub",
+      "social_accounts": {
+        "instagram": {
+          "handle": "@hakkasannightclub",
+          "followers": 258000,
+          "posts": 6387
+        }
+      },
+      "reviews": {
+        "yelp_reviews_count": 2080
+      }
+    },
+    "Encore_Beach_Club": {
+      "name": "Encore Beach Club",
+      "social_accounts": {
+        "instagram": {
+          "handle": "@encorebeachclub",
+          "followers": 284000,
+          "posts": 3861
+        }
+      },
+      "reviews": {
+        "yelp_reviews_count": 1067
+      }
+    },
+    "Zouk_Nightclub": {
+      "name": "Zouk Nightclub",
+      "social_accounts": {
+        "instagram": {
+          "handle": "@zouk.lv",
+          "followers": 12000,
+          "posts": 253
+        }
+      },
+      "reviews": {
+        "yelp_reviews_count": 301
+      }
+    },
+    "Tao_Beach": {
+      "name": "Tao Beach",
+      "social_accounts": {
+        "instagram": {
+          "handle": "@taobeach",
+          "followers": 92000,
+          "posts": 460
+        }
+      },
+      "reviews": {
+        "yelp_reviews_count": 712
+      }
+    },
+    "Palm_Tree_Beach_Club": {
+      "name": "Palm Tree Beach Club",
+      "social_accounts": {
+        "instagram": {
+          "handle": "@palmtreebeachclub",
+          "followers": 232000,
+          "posts": 114
+        }
+      }
+    }
+  },
+  "summary": {
+    "market_leader": "OMNIA (458K followers)",
+    "review_leader": "XS Nightclub (3552 reviews)",
+    "engagement_top_tier": ["OMNIA", "XS", "Hakkasan", "Encore Beach Club"]
+  }
+}
