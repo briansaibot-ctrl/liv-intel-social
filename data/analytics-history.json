@@ -76,6 +76,90 @@
           "posts_week": 4.5
         }
       }
+    },
+    {
+      "week_of": "2026-04-12",
+      "venues": {
+        "LIV Nightclub": {
+          "ig_followers": 87000,
+          "tt_followers": 12500,
+          "ig_engage": 3.8,
+          "tt_engage": 5.2,
+          "posts_week": 6.0
+        },
+        "XS Nightclub": {
+          "ig_followers": 308000,
+          "tt_followers": 195000,
+          "ig_engage": 2.4,
+          "tt_engage": 4.2,
+          "posts_week": 6.5
+        },
+        "Encore Beach Club": {
+          "ig_followers": 284000,
+          "tt_followers": 145000,
+          "ig_engage": 1.8,
+          "tt_engage": 2.9,
+          "posts_week": 3.0
+        },
+        "OMNIA Nightclub": {
+          "ig_followers": 458000,
+          "tt_followers": 323300,
+          "ig_engage": 3.4,
+          "tt_engage": 5.1,
+          "posts_week": 7.0
+        },
+        "Omnia Beach Club": {
+          "ig_followers": 247000,
+          "tt_followers": 8500,
+          "ig_engage": 4.5,
+          "tt_engage": 3.2,
+          "posts_week": 2.0
+        },
+        "Zouk Nightclub": {
+          "ig_followers": 249000,
+          "tt_followers": 9746,
+          "ig_engage": 3.8,
+          "tt_engage": 6.2,
+          "posts_week": 5.5
+        },
+        "Hakkasan Nightclub": {
+          "ig_followers": 258000,
+          "tt_followers": 48000,
+          "ig_engage": 1.9,
+          "tt_engage": 3.1,
+          "posts_week": 4.0
+        },
+        "Palm Tree Beach Club": {
+          "ig_followers": 232000,
+          "tt_followers": 42000,
+          "ig_engage": 5.2,
+          "tt_engage": 4.8,
+          "posts_week": 3.0
+        },
+        "Tao Beach": {
+          "ig_followers": 92000,
+          "tt_followers": 28000,
+          "ig_engage": 1.6,
+          "tt_engage": 2.4,
+          "posts_week": 2.0
+        }
+      },
+      "liv": {
+        "liv_nightclub": {
+          "ig_followers": 87000,
+          "tt_followers": 12500,
+          "ig_engage": 3.8,
+          "tt_engage": 5.2,
+          "posts_week": 6.0
+        },
+        "liv_beach": {
+          "ig_followers": 124000,
+          "tt_followers": 67000,
+          "ig_engage": 3.2,
+          "tt_engage": 4.8,
+          "posts_week": 4.5
+        }
+      }
     }
   ]
 }
