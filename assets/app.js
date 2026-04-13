@@ -579,6 +579,10 @@
         track('venue_expand', { venue: name ? name.textContent : 'unknown' });
       });
     });
+    // Export creators button
+    const exportBtn = feedContent.querySelector('#exportCreatorsBtn');
+    if (exportBtn) exportBtn.addEventListener('click', (e) => { e.preventDefault(); exportCreators(feedData.influencer_activity || [], feedData.liv_outreach_targets || []); });
+
     // Track outbound link clicks
     feedContent.querySelectorAll('a.card-link, a.audio-item-link').forEach(link => {
       link.addEventListener('click', () => {
@@ -659,22 +663,21 @@
   }
 
   function renderFeedDarkEvents(darkEvents) {
-    // Show top 3 dark events sorted by soonest date
     const upcoming = [...darkEvents].sort((a, b) => new Date(a.event_date) - new Date(b.event_date)).slice(0, 3);
     if (!upcoming.length) return '';
     let html = '<div class="section-header" style="color:var(--orange)">&#x1F440; Not Yet On Social</div>';
     html += '<div class="card dark-feed-card">';
-    html += '<div class="dark-feed-note">Listed on ticketing sites but competitors haven\'t posted yet</div>';
+    html += '<div class="dark-feed-note">Listed on ticketing but not yet posted — LIV opportunity to get ahead</div>';
     upcoming.forEach(de => {
       const vUrl = venueProfileUrl(de.venue, 'ig');
-      html += `<div class="dark-feed-item"><div class="dark-feed-venue">${linkWrap(vUrl, escapeHTML(de.venue))}</div><div class="dark-feed-talent">${escapeHTML(de.talent)}</div><div class="dark-feed-date">${formatShortDate(de.event_date)} · ${de.days_until_event != null ? de.days_until_event + 'd away' : ''}</div></div>`;
+      const why = de.indicator || de.opportunity || '';
+      html += `<div class="dark-feed-item"><div class="dark-feed-venue">${linkWrap(vUrl, escapeHTML(shortVenueName(de.venue)))}</div><div class="dark-feed-talent">${escapeHTML(de.talent || de.indicator || '')}</div>${why ? `<div class="dark-feed-why">${escapeHTML(why)}</div>` : ''}<div class="dark-feed-date">${de.event_date ? formatShortDate(de.event_date) + (de.days_until_event != null ? ' · ' + de.days_until_event + 'd away' : '') : ''}</div></div>`;
     });
     html += '</div>';
     return html;
   }
 
   function renderTrendingInfluencers(influencers) {
-    // Pick top 3 by engagement (High > Normal > Low), then by posts_found
     const ranked = [...influencers].sort((a, b) => {
       const engA = ENGAGEMENT_RANK[(a.engagement_level || 'Normal')] || 2;
       const engB = ENGAGEMENT_RANK[(b.engagement_level || 'Normal')] || 2;
@@ -687,59 +690,67 @@
     ranked.forEach((inf, i) => {
       const mention = inf.mention || inf.posted_about || '';
       let name = inf.handle || '';
-      if (!name && mention) {
-        const atMatch = mention.match(/@[\w.]+/);
-        if (atMatch) name = atMatch[0];
-      }
-      const platformHtml = platformBadgeHTML(inf.platform);
+      if (!name && mention) { const m = mention.match(/@[\w.]+/); if (m) name = m[0]; }
       const url = name ? profileUrl(inf.platform, name) : '';
-      const nameHtml = name ? linkWrap(url, escapeHTML(name)) + ' ' : '';
-      html += `<div class="trending-influencer"><span class="trending-influencer-rank">${i + 1}</span><div class="trending-influencer-info"><div class="trending-influencer-name">${nameHtml}${platformHtml} ${engagementBadgeHTML(inf.engagement_level || 'Normal')}</div><div class="trending-influencer-why">${escapeHTML(mention)}</div></div></div>`;
+      // Whole card clickable
+      const cardTag = url ? `<a href="${url}" target="_blank" rel="noopener" class="card-link trending-influencer clickable-card">` : '<div class="trending-influencer">';
+      const cardEnd = url ? '</a>' : '</div>';
+      html += `${cardTag}<span class="trending-influencer-rank">${i + 1}</span><div class="trending-influencer-info"><div class="trending-influencer-name">${escapeHTML(name)} ${platformBadgeHTML(inf.platform)} ${engagementBadgeHTML(inf.engagement_level || 'Normal')}</div><div class="trending-influencer-why">${escapeHTML(mention)}</div></div>${cardEnd}`;
     });
     html += '</div>';
     return html;
   }
 
+  function exportCreators(influencers, targets) {
+    const rows = [['Handle', 'Platform', 'Engagement', 'Posts', 'Notes', 'Type']];
+    targets.forEach(t => rows.push([t.handle || '', t.platform || '', '', '', t.reason || t.rationale || '', 'Outreach']));
+    influencers.forEach(inf => {
+      let name = inf.handle || '';
+      if (!name) { const m = (inf.mention || '').match(/@[\w.]+/); if (m) name = m[0]; }
+      rows.push([name, inf.platform || '', inf.engagement_level || '', inf.posts_found || '', inf.mention || inf.posted_about || '', 'Active']);
+    });
+    const csv = rows.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(',')).join('\n');
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `liv-creators-${new Date().toISOString().slice(0,10)}.csv`;
+    a.click();
+  }
+
   function renderCreatorActivity(influencers, targets) {
-    let html = '<div class="section-header">&#x1F3A4; Creator Activity</div>';
+    let html = '<div class="section-header">&#x1F3A4; Creator Activity';
+    // Export button in header
+    if (influencers.length || targets.length) {
+      html += '<button class="export-btn" id="exportCreatorsBtn" style="float:right;font-size:11px;padding:2px 8px;margin-top:-2px;background:var(--gold);color:#000;border:none;border-radius:4px;cursor:pointer">&#x2B07; Export</button>';
+    }
+    html += '</div>';
+
     if (targets.length) {
       html += '<div class="section-header" style="font-size:13px;margin-top:8px;color:var(--gold)">&#x1F3AF; Outreach Opportunities</div><div class="card">';
       targets.forEach(t => {
-        html += `
-          <div class="outreach-item">
-            <div class="outreach-handle">${escapeHTML(t.handle)} ${platformBadgeHTML(t.platform)}</div>
-            <div class="creator-followers">${formatNum(t.follower_estimate)} followers</div>
-            <div class="outreach-reason">${escapeHTML(t.reason)}</div>
-            <div class="outreach-never">Never posted about LIV</div>
-          </div>`;
+        const url = t.handle ? profileUrl(t.platform || 'ig', t.handle) : '';
+        const cardTag = url ? `<a href="${url}" target="_blank" rel="noopener" class="outreach-item clickable-card card-link">` : '<div class="outreach-item">';
+        const cardEnd = url ? '</a>' : '</div>';
+        html += `${cardTag}<div class="outreach-handle">${escapeHTML(t.handle)} ${platformBadgeHTML(t.platform)}</div>${t.follower_estimate ? `<div class="creator-followers">${formatNum(t.follower_estimate)} followers</div>` : ''}<div class="outreach-reason">${escapeHTML(t.reason || t.rationale || '')}</div>${cardEnd}`;
       });
       html += '</div>';
     }
+
     if (influencers.length) {
       html += '<div class="section-header" style="font-size:13px;margin-top:8px">&#x1F4F1; Active This Cycle</div>';
       html += '<div class="creator-scroll">';
       influencers.forEach(inf => {
-        // Support both {handle, posted_about, follower_estimate} and {mention, posts_found} schemas
-        // Extract @handle from mention text if no explicit handle field
         let displayName = inf.handle || '';
         const mentionText = inf.posted_about || inf.mention || '';
-        if (!displayName && mentionText) {
-          const atMatch = mentionText.match(/@[\w.]+/);
-          if (atMatch) displayName = atMatch[0];
-        }
+        if (!displayName && mentionText) { const m = mentionText.match(/@[\w.]+/); if (m) displayName = m[0]; }
         const engLevel = (inf.engagement_level || 'Normal');
-        const engNorm = engLevel.charAt(0).toUpperCase() + engLevel.slice(1).toLowerCase();
+        const chipUrl = displayName ? profileUrl(inf.platform, displayName) : '';
+        // Whole chip clickable
+        const chipTag = chipUrl ? `<a href="${chipUrl}" target="_blank" rel="noopener" class="creator-chip clickable-card card-link">` : '<div class="creator-chip">';
+        const chipEnd = chipUrl ? '</a>' : '</div>';
         const followersLine = inf.follower_estimate ? `<div class="creator-followers">${formatNum(inf.follower_estimate)} followers</div>` : '';
         const postsLine = inf.posts_found ? `<div class="creator-followers">${inf.posts_found} post${inf.posts_found !== 1 ? 's' : ''} found</div>` : '';
-        const chipUrl = displayName ? profileUrl(inf.platform, displayName) : '';
-        const chipNameHtml = displayName ? linkWrap(chipUrl, escapeHTML(displayName)) + ' ' : '';
-        html += `
-          <div class="creator-chip">
-            <div class="creator-handle">${chipNameHtml}${platformBadgeHTML(inf.platform)}</div>
-            ${followersLine || postsLine}
-            <div class="creator-mention">${escapeHTML(mentionText)}</div>
-            ${engagementBadgeHTML(engNorm === 'High' ? 'High' : engNorm === 'Low' ? 'Low' : 'Normal')}
-          </div>`;
+        html += `${chipTag}<div class="creator-handle">${escapeHTML(displayName)} ${platformBadgeHTML(inf.platform)}</div>${followersLine || postsLine}<div class="creator-mention">${escapeHTML(mentionText)}</div>${engagementBadgeHTML(engLevel)}${chipEnd}`;
       });
       html += '</div>';
     }
@@ -878,13 +889,13 @@
   function renderSearchTrends(st) {
     let html = '<div class="section-header">&#x1F50D; Search Trends</div><div class="card">';
 
-    // Rising venues — LIV first, then others; max 2 shown as green
+    // Rising venues — sort by highest % spike, max 2 shown as green
     const rising = (st.rising_venues || []);
-    const livFirst = [...rising].sort((a, b) => {
-      const aIsLiv = /liv/i.test(a.venue);
-      const bIsLiv = /liv/i.test(b.venue);
-      return aIsLiv ? -1 : bIsLiv ? 1 : 0;
-    }).slice(0, 2);
+    const parseSpike = (v) => {
+      const m = String(v.estimated_spike || '').match(/([\d.]+)/);
+      return m ? parseFloat(m[1]) : 0;
+    };
+    const livFirst = [...rising].sort((a, b) => parseSpike(b) - parseSpike(a)).slice(0, 2);
     livFirst.forEach(v => {
       const name = shortVenueName(v.venue);
       const spike = v.estimated_spike ? `<span style="color:var(--green);font-weight:600">${escapeHTML(v.estimated_spike)}</span> · ` : '';
@@ -1011,11 +1022,16 @@
 
       if (isNew || acct.follower_count != null) {
         // New schema — flat positioning object
-        const rankBadge = (r) => { if (!r) return ''; const cls = r <= 2 ? 'top' : r <= 4 ? 'mid' : 'low'; return `<span class="rank-badge ${cls}">#${r}</span>`; };
-        html += `<div class="liv-stat"><span class="liv-stat-label">Followers</span><span class="liv-stat-value">${formatNum(acct.follower_count)}${rankBadge(acct.follower_rank)}</span></div>`;
-        html += `<div class="liv-stat"><span class="liv-stat-label">Engagement</span><span class="liv-stat-value">${acct.engagement_rate || '—'}${rankBadge(acct.engagement_rank)}</span></div>`;
-        if (acct.posts_per_week) html += `<div class="liv-stat"><span class="liv-stat-label">Posts/week</span><span class="liv-stat-value">${acct.posts_per_week}</span></div>`;
-        if (acct.competitive_summary) html += `<div class="time-insight" style="margin-top:6px">${escapeHTML(acct.competitive_summary)}</div>`;
+        const rankBadge = (r, total) => { if (!r) return ''; const cls = r <= 2 ? 'top' : r <= 4 ? 'mid' : 'low'; return `<span class="rank-badge ${cls}">#${r}${total ? ' of ' + total : ''}</span>`; };
+        html += `<div class="liv-stat"><span class="liv-stat-label">Followers</span><span class="liv-stat-value">${formatNum(acct.follower_count)} ${rankBadge(acct.follower_rank, 8)}</span></div>`;
+        html += `<div class="liv-stat"><span class="liv-stat-label">Engagement Rate</span><span class="liv-stat-value">${acct.engagement_rate || '—'} ${rankBadge(acct.engagement_rank, 8)}</span></div>`;
+        if (acct.posts_per_week) html += `<div class="liv-stat"><span class="liv-stat-label">Posts / Week</span><span class="liv-stat-value">${acct.posts_per_week}</span></div>`;
+        if (acct.posting_frequency_rank) html += `<div class="liv-stat"><span class="liv-stat-label">Posting Rank</span><span class="liv-stat-value">${rankBadge(acct.posting_frequency_rank, 8)}</span></div>`;
+        if (acct.estimated_avg_top_post_reach) html += `<div class="liv-stat"><span class="liv-stat-label">Avg Top Post Reach</span><span class="liv-stat-value">${escapeHTML(String(acct.estimated_avg_top_post_reach))}</span></div>`;
+        if (acct.top_post_views_rank) html += `<div class="liv-stat"><span class="liv-stat-label">Top Post Reach Rank</span><span class="liv-stat-value">${rankBadge(acct.top_post_views_rank, 8)}</span></div>`;
+        if (acct.rank_context) html += `<div class="time-insight" style="margin-top:4px;font-size:11px">${escapeHTML(acct.rank_context)}</div>`;
+        if (acct.engagement_context) html += `<div class="time-insight" style="margin-top:2px;font-size:11px">${escapeHTML(acct.engagement_context)}</div>`;
+        if (acct.competitive_summary) html += `<div class="time-insight" style="margin-top:6px;font-weight:600">${escapeHTML(acct.competitive_summary)}</div>`;
       } else {
         // Old schema — nested instagram/tiktok/vs_market
         const ig = acct.instagram || {};
@@ -1072,27 +1088,16 @@
 
     if (darkEvents.length) {
       html += '<div class="section-header" style="font-size:13px;color:var(--orange)">&#x1F440; Not Yet On Social</div>';
-      html += '<div class="card dark-event-card"><div class="dark-event-note">Listed on ticketing sites but not yet announced on social media</div>';
+      html += '<div class="card dark-event-card"><div class="dark-event-note">Listed on ticketing but not yet posted — LIV opportunity to get ahead</div>';
       darkEvents.forEach(de => {
-        html += `<div class="event-item"><span class="event-venue">${escapeHTML(de.venue)}</span><span class="event-talent">${escapeHTML(de.talent)}</span><span style="font-size:11px;color:var(--text-secondary)">${formatShortDate(de.event_date)}</span></div>`;
+        const why = de.indicator || de.opportunity || '';
+        const venueName = shortVenueName(de.venue || '');
+        html += `<div class="event-item"><span class="event-venue">${escapeHTML(venueName)}</span><span class="event-talent">${escapeHTML(de.talent || de.indicator || '')}</span>${why && why !== de.talent ? `<div style="font-size:11px;color:var(--text-secondary);margin-top:2px">${escapeHTML(why)}</div>` : ''}<span style="font-size:11px;color:var(--text-secondary)">${de.event_date ? formatShortDate(de.event_date) : ''}</span></div>`;
       });
       html += '</div>';
     }
 
-    if (events.length) {
-      html += '<div class="section-header" style="font-size:13px">&#x1F4C5; Full Calendar</div><div class="card">';
-      const grouped = {};
-      events.forEach(e => { const d = e.event_date; if (!grouped[d]) grouped[d] = []; grouped[d].push(e); });
-      Object.keys(grouped).sort().forEach(date => {
-        html += `<div class="event-date-group"><div class="event-date-label">${formatShortDate(date)}</div>`;
-        grouped[date].forEach(e => {
-          const srcCls = e.source === 'social' ? 'social' : e.source === 'ticketing' ? 'ticketing' : e.source === 'discotech' ? 'discotech' : '';
-          html += `<div class="event-item"><span class="event-venue">${escapeHTML(e.venue)}</span><span class="event-talent">${escapeHTML(e.talent)}</span><span class="source-badge ${srcCls}">${escapeHTML(e.source)}</span></div>`;
-        });
-        html += '</div>';
-      });
-      html += '</div>';
-    }
+    // Full calendar removed — replaced by Not Yet On Social section only
     return html;
   }
 
