@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'liv-intel-v15';
+const CACHE_VERSION = 'liv-intel-v16';
 const SHELL_ASSETS = [
   './',
   './index.html',

@@ -424,6 +424,41 @@
 
   // ===== AI Daily Brief =====
 
+  function renderLivSpotlight() {
+    if (!feedData) return '';
+    const livNight = (feedData.venues || []).find(v => v.venue.toLowerCase().includes('liv nightclub'));
+    const livBeach = (feedData.venues || []).find(v => v.venue.toLowerCase().includes('liv beach'));
+    const topGap = (feedData.content_gaps || []).sort((a, b) => (a.urgency === 'high' ? 0 : 1) - (b.urgency === 'high' ? 0 : 1))[0];
+    const topCreator = (feedData.influencer_activity || []).sort((a, b) => (ENGAGEMENT_RANK[b.engagement_level] || 0) - (ENGAGEMENT_RANK[a.engagement_level] || 0))[0];
+
+    let html = '<div class="section-header">&#x2728; LIV Spotlight</div><div class="card liv-spotlight-card">';
+
+    // LIV Nightclub row
+    if (livNight) {
+      const urgentDot = livNight.urgent ? '<span class="urgent-dot"></span>' : '';
+      html += `<div class="spotlight-venue"><div class="spotlight-venue-name">${urgentDot}LIV Nightclub</div><div class="spotlight-summary">${escapeHTML(livNight.summary)}</div><div class="spotlight-meta">${livNight.posts_found} post${livNight.posts_found !== 1 ? 's' : ''} detected</div></div>`;
+    }
+
+    // LIV Beach row
+    if (livBeach) {
+      html += `<div class="spotlight-venue" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border)"><div class="spotlight-venue-name">LIV Beach</div><div class="spotlight-summary">${escapeHTML(livBeach.summary)}</div><div class="spotlight-meta">${livBeach.posts_found} post${livBeach.posts_found !== 1 ? 's' : ''} detected</div></div>`;
+    }
+
+    // Top content gap
+    if (topGap) {
+      const urgencyColor = topGap.urgency === 'high' ? 'var(--red)' : topGap.urgency === 'medium' ? 'var(--orange)' : 'var(--text-secondary)';
+      html += `<div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border)"><div style="font-size:11px;font-weight:700;color:${urgencyColor};text-transform:uppercase;margin-bottom:4px">&#x26A1; Priority Gap</div><div style="font-size:13px">${escapeHTML(topGap.suggested_action || topGap.description)}</div></div>`;
+    }
+
+    // Top creator mention
+    if (topCreator) {
+      html += `<div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border)"><div style="font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase;margin-bottom:4px">&#x1F31F; Creator Buzz</div><div style="font-size:13px">${escapeHTML(topCreator.handle || '')} — ${escapeHTML(topCreator.mention ? topCreator.mention.substring(0, 80) : '')}</div></div>`;
+    }
+
+    html += '</div>';
+    return html;
+  }
+
   function renderDailyBrief() {
     const bullets = [];
 
@@ -486,48 +521,52 @@
 
     let html = '';
 
-    // AI Daily Brief
+    // ── 1. LIV SPOTLIGHT (always top, always LIV-first) ──────────────────
+    html += renderLivSpotlight();
+
+    // ── 2. TODAY'S INTEL brief ────────────────────────────────────────────
     html += renderDailyBrief();
 
-    // Market Pulse
-    html += `<div class="card market-pulse"><div class="label">Market Pulse</div><div class="pulse-text">${escapeHTML(feedData.market_pulse)}</div></div>`;
+    // ── 3. URGENT ALERTS ─────────────────────────────────────────────────
+    if (feedData.urgent_alert_count > 0) {
+      html += `<div class="card urgent-alert-card"><div class="brief-header">🚨 Urgent Alerts</div>`;
+      feedData.venues.filter(v => v.urgent).forEach(v => {
+        html += `<div class="brief-bullet">🔴 <strong>${escapeHTML(shortVenueName(v.venue))}</strong> — ${escapeHTML(v.summary)}</div>`;
+      });
+      html += '</div>';
+    }
 
-    // Weekend Readiness (Feature 2) — Fri/Sat/Sun only
+    // ── 4. WEEKEND READINESS (Fri/Sat/Sun only) ───────────────────────────
     if (isWeekend() && feedData.weekend_readiness) {
       html += renderWeekendReadiness(feedData.weekend_readiness);
     }
 
-    // Content Gaps (Feature 3)
+    // ── 5. MARKET PULSE ───────────────────────────────────────────────────
+    html += `<div class="card market-pulse"><div class="label">Market Pulse</div><div class="pulse-text">${escapeHTML(feedData.market_pulse)}</div></div>`;
+
+    // ── 6. CONTENT GAPS ───────────────────────────────────────────────────
     if (feedData.content_gaps && feedData.content_gaps.length) {
       html += renderContentGaps(feedData.content_gaps);
     }
 
-    // Dark Events — events on ticketing but NOT on social (from analytics data)
-    if (analyticsData && analyticsData.social_dark_events && analyticsData.social_dark_events.length) {
-      html += renderFeedDarkEvents(analyticsData.social_dark_events);
-    }
-
-    // Trending Influencers — top 3 from influencer_activity sorted by engagement
-    if (feedData.influencer_activity && feedData.influencer_activity.length) {
-      html += renderTrendingInfluencers(feedData.influencer_activity);
-    }
-
-    // Top 3 Posts
-    html += renderTop3();
-
-    // Creator Activity (Feature 5)
-    if ((feedData.influencer_activity && feedData.influencer_activity.length) || (feedData.liv_outreach_targets && feedData.liv_outreach_targets.length)) {
-      html += renderCreatorActivity(feedData.influencer_activity || [], feedData.liv_outreach_targets || []);
-    }
-
-    // Stories (Feature 9)
+    // ── 7. STORIES (time-sensitive — show near top) ────────────────────────
     if (feedData.story_activity && feedData.story_activity.length) {
       const fresh = feedData.story_activity.filter(s => getHoursAgo(s.detected_at) < 8);
       if (fresh.length) html += renderStories(fresh);
     }
 
-    // Venue Cards
-    html += '<div class="section-header">&#x1F4CA; Top Posts by Venue</div>';
+    // ── 8. DARK EVENTS ────────────────────────────────────────────────────
+    if (analyticsData && analyticsData.social_dark_events && analyticsData.social_dark_events.length) {
+      html += renderFeedDarkEvents(analyticsData.social_dark_events);
+    }
+
+    // ── 9. CREATOR ACTIVITY ───────────────────────────────────────────────
+    if ((feedData.influencer_activity && feedData.influencer_activity.length) || (feedData.liv_outreach_targets && feedData.liv_outreach_targets.length)) {
+      html += renderCreatorActivity(feedData.influencer_activity || [], feedData.liv_outreach_targets || []);
+    }
+
+    // ── 10. VENUE CARDS (LIV first, then competitors) ─────────────────────
+    html += '<div class="section-header">&#x1F4CA; Competitor Feed</div>';
     const sorted = [...feedData.venues].filter(v => shouldShowVenue(v.venue)).sort((a, b) => venueIndex(a.venue) - venueIndex(b.venue));
     sorted.forEach(v => { html += renderVenueCard(v); });
 
@@ -763,26 +802,28 @@
     let html = `<div class="trends-header"><span class="trends-title">Weekly Trend Digest</span><span class="trends-week">Week of ${formatDate(weekOf)}</span></div>`;
     if (isStale) html += '<div class="trends-stale-banner">Next digest Monday at 8am PT</div>';
 
-    // Platform Updates
-    html += '<div class="section-header">&#x26A1; Platform Updates</div>';
-    (trendsData.platform_updates || []).forEach(pu => {
-      const actionCls = pu.action_required ? ' action-required' : '';
-      html += `<div class="card platform-update-card${actionCls}"><div class="platform-update-name">${escapeHTML(pu.platform)}${pu.action_required ? ' <span class="action-badge">ACTION REQUIRED</span>' : ''}</div><div class="ranked-summary">${escapeHTML(pu.update)}</div><div class="platform-update-detail">${escapeHTML(pu.detail)}</div></div>`;
-    });
+    // ── 1. THIS WEEK — ACTIONS (most actionable, always first) ─────────────────
+    if (trendsData.this_week_recommendations && trendsData.this_week_recommendations.length) {
+      html += '<div class="section-header">&#x1F3AF; This Week — Act On This</div>';
+      [...trendsData.this_week_recommendations].sort((a, b) => (PRIORITY_ORDER[a.priority] ?? 9) - (PRIORITY_ORDER[b.priority] ?? 9)).forEach(rec => {
+        const pri = (rec.priority || 'MEDIUM').toLowerCase();
+        html += `<div class="card rec-card ${pri}"><div class="rec-header"><span class="priority-badge ${pri}">${rec.priority}</span>${platformBadgeHTML(rec.platform)}</div><div class="rec-action">${escapeHTML(rec.action)}</div><div class="rec-rationale">${escapeHTML(rec.rationale)}</div></div>`;
+      });
+    }
 
-    // Search Trends (Feature 8)
+    // ── 2. SEARCH TRENDS ─────────────────────────────────────────────────
     if (trendsData.search_trends) {
       html += renderSearchTrends(trendsData.search_trends);
     }
 
-    // Content Formats
+    // ── 3. CONTENT FORMATS ─────────────────────────────────────────────
     html += '<div class="section-header">&#x1F3AC; Content Formats Trending Now</div><div class="card">';
     (trendsData.top_content_formats || []).forEach(fmt => {
-      html += `<div class="format-item"><div class="format-name">${escapeHTML(fmt.format)}</div><div class="format-why">${escapeHTML(fmt.why_it_works)}</div><div class="format-liv"><span class="format-liv-prefix">For LIV: </span>${escapeHTML(fmt.liv_application)}</div></div>`;
+      html += `<div class="format-item"><div class="format-name">${escapeHTML(fmt.format)}</div><div class="format-why">${escapeHTML(fmt.why_it_works || fmt.why_effective || '')}</div><div class="format-liv"><span class="format-liv-prefix">For LIV: </span>${escapeHTML(fmt.liv_application)}</div></div>`;
     });
     html += '</div>';
 
-    // Trending Audio
+    // ── 4. TRENDING AUDIO ──────────────────────────────────────────────
     html += '<div class="section-header">&#x1F3B5; Trending Audio</div>';
     if (trendsData.trending_audio && trendsData.trending_audio.length) {
       html += '<div class="card">';
@@ -794,28 +835,27 @@
       html += '</div>';
     } else { html += '<div class="card"><div class="no-posts">No standout audio trends this cycle</div></div>'; }
 
-    // Viral Nightlife
+    // ── 5. WHAT'S WORKING IN NIGHTLIFE ─────────────────────────────
     if (trendsData.viral_nightlife_content) {
       const vnc = trendsData.viral_nightlife_content;
       html += '<div class="section-header">&#x1F525; What\'s Working in Nightlife</div>';
       html += `<div class="card"><div class="viral-summary">${escapeHTML(vnc.summary)}</div>${vnc.standout_example ? `<div class="viral-standout">${escapeHTML(vnc.standout_example)}</div>` : ''}${vnc.theme ? `<span class="theme-pill">${escapeHTML(vnc.theme)}</span>` : ''}</div>`;
     }
 
-    // Audience Signals
+    // ── 6. AUDIENCE SIGNALS ──────────────────────────────────────────────
     if (trendsData.audience_signals) {
       const as = trendsData.audience_signals;
       html += '<div class="section-header">&#x1F465; Audience Signals</div>';
       html += `<div class="card"><div class="audience-behavior">${escapeHTML(as.behavior_shift)}</div>${as.upcoming_moments && as.upcoming_moments.length ? `<div class="moments-scroll">${as.upcoming_moments.map(m => `<span class="moment-pill">${escapeHTML(m)}</span>`).join('')}</div>` : ''}</div>`;
     }
 
-    // Recommendations
-    if (trendsData.this_week_recommendations && trendsData.this_week_recommendations.length) {
-      html += '<div class="section-header">&#x1F3AF; This Week — Act On This</div>';
-      [...trendsData.this_week_recommendations].sort((a, b) => (PRIORITY_ORDER[a.priority] ?? 9) - (PRIORITY_ORDER[b.priority] ?? 9)).forEach(rec => {
-        const pri = (rec.priority || 'MEDIUM').toLowerCase();
-        html += `<div class="card rec-card ${pri}"><div class="rec-header"><span class="priority-badge ${pri}">${rec.priority}</span>${platformBadgeHTML(rec.platform)}</div><div class="rec-action">${escapeHTML(rec.action)}</div><div class="rec-rationale">${escapeHTML(rec.rationale)}</div></div>`;
-      });
-    }
+    // ── 7. PLATFORM UPDATES (algorithm news — least urgent, bottom) ───────────
+    html += '<div class="section-header">&#x26A1; Platform Updates</div>';
+    (trendsData.platform_updates || []).forEach(pu => {
+      const actionCls = pu.action_required ? ' action-required' : '';
+      const detail = pu.detail_for_liv || pu.detail || '';
+      html += `<div class="card platform-update-card${actionCls}"><div class="platform-update-name">${escapeHTML(pu.platform)}${pu.action_required ? ' <span class="action-badge">ACTION REQUIRED</span>' : ''}</div><div class="ranked-summary">${escapeHTML(pu.update)}</div>${detail ? `<div class="platform-update-detail">${escapeHTML(detail)}</div>` : ''}</div>`;
+    });
 
     trendsContent.innerHTML = html;
     trendsContent.querySelectorAll('a.card-link, a.audio-item-link').forEach(link => {
@@ -897,15 +937,14 @@
     const safe = (fn, label) => { try { return fn(); } catch(e) { console.error('renderAnalytics section failed:', label, e); return ''; } };
     html += `<div class="trends-header"><span class="trends-title">Weekly Analytics</span><span class="trends-week">Week of ${formatDate(analyticsData.week_of)}</span></div>`;
 
-    // LIV vs Market — support both liv_accounts and liv_vs_market key names
+    // ── 1. LIV VS MARKET (most strategic, always first) ──────────────────
     const livAccounts = analyticsData.liv_accounts || analyticsData.liv_vs_market;
     if (livAccounts) html += safe(() => renderLivVsMarket(livAccounts), 'LivVsMarket');
 
-    // Leaderboard — support both cross_venue_rankings and account_stats
-    const rankings = analyticsData.cross_venue_rankings || analyticsData.account_stats;
-    if (rankings) html += safe(() => renderLeaderboard(rankings), 'Leaderboard');
+    // ── 2. AI INSIGHT ──────────────────────────────────────────────────
+    if (analyticsData.weekly_ai_insight) html += safe(() => renderAIInsight(analyticsData.weekly_ai_insight), 'AIInsight');
 
-    // Event Radar — event_discovery may be a dict with .sample_events and .social_dark_events inside
+    // ── 3. EVENT RADAR ────────────────────────────────────────────────
     const evtDisc = analyticsData.event_discovery;
     const darkEvts = analyticsData.social_dark_events ||
       (evtDisc && !Array.isArray(evtDisc) ? evtDisc.social_dark_events : null) || [];
@@ -915,22 +954,23 @@
       html += safe(() => renderEventRadar(evtList, darkEvts), 'EventRadar');
     }
 
-    // AI Insight
-    if (analyticsData.weekly_ai_insight) html += safe(() => renderAIInsight(analyticsData.weekly_ai_insight), 'AIInsight');
-
-    // Hashtag Intelligence
+    // ── 4. HASHTAG INTELLIGENCE ────────────────────────────────────────
     if (analyticsData.hashtag_tracker) html += safe(() => renderHashtagIntel(analyticsData.hashtag_tracker), 'HashtagIntel');
 
-    // Time Intelligence
+    // ── 5. BEST TIMES TO POST ──────────────────────────────────────────
     if (analyticsData.time_intelligence) html += safe(() => renderTimeIntelligence(analyticsData.time_intelligence), 'TimeIntel');
 
-    // Patterns — historical_patterns may be a dict with .detected_patterns inside
+    // ── 6. LEADERBOARD ─────────────────────────────────────────────────
+    const rankings = analyticsData.cross_venue_rankings || analyticsData.account_stats;
+    if (rankings) html += safe(() => renderLeaderboard(rankings), 'Leaderboard');
+
+    // ── 7. HISTORICAL PATTERNS ─────────────────────────────────────────
     const hpRaw = analyticsData.historical_patterns;
     const hpList = Array.isArray(hpRaw) ? hpRaw : (hpRaw && hpRaw.detected_patterns ? hpRaw.detected_patterns : []);
     const upcomingPat = (hpRaw && hpRaw.upcoming_pattern_events) || analyticsData.upcoming_pattern_events || [];
     if (hpList.length) html += safe(() => renderPatterns(hpList, upcomingPat), 'Patterns');
 
-    // Venue Deep Dive
+    // ── 8. VENUE DEEP DIVE (detail, bottom) ──────────────────────────────
     const analyticsVenues = analyticsData.venues;
     if (analyticsVenues && analyticsVenues.length) html += safe(() => renderAnalyticsVenues(analyticsVenues), 'VenueDive');
 
