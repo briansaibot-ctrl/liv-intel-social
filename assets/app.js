@@ -738,7 +738,7 @@
     }
     return `
       <div class="card venue-card${livCls}">
-        <div class="venue-header">${urgentDot}${livBadge}<span class="venue-name">${escapeHTML(venue.venue)}</span><span class="venue-count">${venue.posts_found} post${venue.posts_found !== 1 ? 's' : ''}</span><span class="venue-chevron">&#x25BE;</span></div>
+        <div class="venue-header">${urgentDot}${livBadge}<span class="venue-name">${escapeHTML(shortVenueName(venue.venue))}</span><span class="venue-count">${venue.posts_found} post${venue.posts_found !== 1 ? 's' : ''}</span><span class="venue-chevron">&#x25BE;</span></div>
         ${venue.flags && venue.flags.length ? `<div class="venue-flags">${flagPillsHTML(venue.flags)}</div>` : ''}
         <div class="venue-summary">${escapeHTML(venue.summary)}</div>
         ${showSeasonal ? '<div class="seasonal-banner">Seasonal — Off</div>' : ''}
@@ -825,26 +825,61 @@
     });
   }
 
+  // Strip hotel/casino suffixes from venue names for compact display
+  function shortVenueName(name) {
+    if (!name) return '';
+    return String(name)
+      .replace(/\s*\([^)]*\)/, '')  // remove (Wynn), (MGM Grand), (The Venetian), etc.
+      .replace(/Palm Tree Beach Club/, 'Palm Tree')
+      .replace(/Palm Tree \(.*\)/, 'Palm Tree')
+      .trim();
+  }
+
   function renderSearchTrends(st) {
     let html = '<div class="section-header">&#x1F50D; Search Trends</div><div class="card">';
-    if (st.rising_venues && st.rising_venues.length) {
-      st.rising_venues.forEach(v => {
-        html += `<div class="trend-item"><span class="trend-arrow up">&#x2191;</span><div><div class="trend-venue">${escapeHTML(v.venue)}</div><div class="trend-driver">${escapeHTML(v.driver)}</div></div></div>`;
-      });
-    }
-    if (st.declining_venues && st.declining_venues.length) {
-      st.declining_venues.forEach(v => {
-        html += `<div class="trend-item"><span class="trend-arrow down">&#x2193;</span><div><div class="trend-venue">${escapeHTML(v.venue)}</div><div class="trend-driver">${escapeHTML(v.driver)}</div></div></div>`;
-      });
-    }
+
+    // Rising venues — LIV first, then others; max 2 shown as green
+    const rising = (st.rising_venues || []);
+    const livFirst = [...rising].sort((a, b) => {
+      const aIsLiv = /liv/i.test(a.venue);
+      const bIsLiv = /liv/i.test(b.venue);
+      return aIsLiv ? -1 : bIsLiv ? 1 : 0;
+    }).slice(0, 2);
+    livFirst.forEach(v => {
+      const name = shortVenueName(v.venue);
+      const spike = v.estimated_spike ? `<span style="color:var(--green);font-weight:600">${escapeHTML(v.estimated_spike)}</span> · ` : '';
+      html += `<div class="trend-item"><span class="trend-arrow up">&#x2191;</span><div><div class="trend-venue">${escapeHTML(name)}</div><div class="trend-driver">${spike}${escapeHTML(v.trend || v.driver || '')}</div></div></div>`;
+    });
+
+    // Declining venues — max 2 shown as red; may be strings or objects
+    const declining = (st.declining_venues || []).slice(0, 2);
+    declining.forEach(v => {
+      // v may be a plain string like "Encore Beach (seasonal decline — ...)"
+      let name, reason;
+      if (typeof v === 'string') {
+        const match = v.match(/^([^(—]+?)(?:\s*[—(]\s*(.+?)\)?)?$/);
+        name = shortVenueName(match ? match[1].trim() : v);
+        reason = match && match[2] ? match[2].replace(/\)$/, '').trim() : '';
+      } else {
+        name = shortVenueName(v.venue || '');
+        reason = v.driver || v.reason || '';
+      }
+      html += `<div class="trend-item"><span class="trend-arrow down">&#x2193;</span><div><div class="trend-venue">${escapeHTML(name)}</div>${reason ? `<div class="trend-driver">${escapeHTML(reason)}</div>` : ''}</div></div>`;
+    });
+
+    // Rising artists as pills
     if (st.rising_artists && st.rising_artists.length) {
       html += '<div class="trend-artist-pills">';
-      st.rising_artists.forEach(a => { html += `<span class="trend-artist-pill">${escapeHTML(a)} &#x2191;</span>`; });
+      // LIV-related artists first
+      const artists = [...st.rising_artists].sort((a, b) => /liv/i.test(a) ? -1 : /liv/i.test(b) ? 1 : 0);
+      artists.forEach(a => { html += `<span class="trend-artist-pill">${escapeHTML(a)} &#x2191;</span>`; });
       html += '</div>';
     }
-    const livTrend = st.liv_search_trend === 'up' ? '&#x2191;' : st.liv_search_trend === 'down' ? '&#x2193;' : '&#x2192;';
-    const mktTrend = st.market_search_trend === 'up' ? '&#x2191;' : st.market_search_trend === 'down' ? '&#x2193;' : '&#x2192;';
-    html += `<div class="trend-market">Market: ${mktTrend} ${escapeHTML(st.market_search_trend || 'stable')} &nbsp;|&nbsp; LIV: ${livTrend} ${escapeHTML(st.liv_search_trend || 'stable')}</div>`;
+
+    // Market narrative
+    if (st.market_search_trend && st.market_search_trend.length > 5) {
+      html += `<div class="trend-market" style="margin-top:10px;font-size:12px;color:var(--text-secondary)">${escapeHTML(st.market_search_trend)}</div>`;
+    }
     html += '</div>';
     return html;
   }
