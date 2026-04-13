@@ -1,0 +1,26 @@
+[WHATSAPP NOTIFICATION — PENDING SEND]
+
+Recipient: Brian
+Platform: WhatsApp
+Scheduled: Sunday, April 12, 2026, 1:23 PM (Pacific)
+
+MESSAGE CONTENT:
+---
+📈 LIV Intel — Weekly Trends [Week of 2026-04-12]
+
+🔥 Action: Deploy "Marco Strous Tonight" Carousel + Reel Suite on Instagram. Use "House Tour" audio for venue tour segment; "World Stop!" for transformation/outfit content. Optimize carousels for SAVES (Gen Z behavior).
+
+🎬 Format: Carousels (40% Reels, 30% Stories, 30% Carousels). Carousels = best-save format. Reels = 1.23% engagement.
+
+🎵 Audio: "House Tour" (Sabrina Carpenter — trending for tours), "World Stop!" (glow-up energy), "Beez in the Trap/What's Up?" mashup (TikTok FYP dominating).
+
+⚡ Platform: Instagram de-ranking watermarked/reposted content — create ORIGINAL club footage. TikTok save ratio now prioritized (~50% of reach). X/Twitter rewards sentiment > engagement (use Grok-friendly positive framing).
+
+🔍 Rising: XS Nightclub +40% YoY (art residency angle). LIV +25% this month (Marco Strous, John Summit bookings). **April 13-26 window = peak Coachella attendee Vegas extension** — position events as "post-festival celebration."
+
+Trending DJs: John Summit (May 1 LIV), Marco Strous (April 12 LIV), Kaskade, DJ Snake, Disclosure (all Coachella momentum).
+
+Full digest in the app.
+---
+
+STATUS: Message prepared and ready for manual send or integration with WhatsApp Business API

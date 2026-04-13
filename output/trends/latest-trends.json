@@ -1,165 +1,187 @@
 {
-  "week_of": "2026-04-12",
-  "generated_at": "2026-04-12T20:23:00Z",
-  "synthesis_narrative": "The LIV Intel digest for week of April 12, 2026 reveals a critical convergence: festival season momentum (Coachella peaks April 11-13 & 18-20) is driving Vegas nightclub searches +25% YoY. Instagram and TikTok algorithms now reward original, highly-saveable content over engagement metrics alone. Platform shift: Instagram de-ranks reposted/watermarked content while prioritizing discovery across multiple surfaces; TikTok's save ratio now equals or exceeds likes in ranking; X rewards sentiment over raw engagement. Venue positioning: experiential design + photo-op aesthetics + exclusive DJ talent (EDM focus, post-Coachella momentum) defines 2026 nightlife virality. Gen Z audience behaviors critical: they save/share to private groups rather than comment publicly (implications: Stories + Carousels over Comment-baiting), prioritize adrenaline-driven experiences, and engage with brands across full funnel (pre-event hype → during → post-event recap). The 'post-festival extended trip' window (April 13-26) is peak conversion moment for Vegas venues. LIV Nightclub positioned as 'EDM destination' via Marco Strous & John Summit bookings; searches up 25% this month but still trailing XS (+40% YoY). Critical action: deploy original, saveable carousel/Reel content featuring venue aesthetics, DJ talent, and transformational 'getting ready' moments tied to trending audio (House Tour, World Stop!, EDM remixes). Sentiment-positive framing (celebration, excitement) on X/Twitter. Real-time Stories for event hype.",
+  "week_of": "2026-04-13",
+  "generated_at": "2026-04-13T15:01:00Z",
   "search_trends": {
     "rising_venues": [
       {
-        "venue": "XS Nightclub (Wynn)",
-        "trend": "Artist residencies (Alec Monopoly visual art integration)",
-        "driver": "Cross-category appeal (art + nightlife)",
-        "estimated_spike": "+40% searches YoY"
+        "venue": "XS Night Club",
+        "trend": "Dress code + entry tips queries spiking",
+        "driver": "Spring/Summer season starts, high travel intent",
+        "estimated_spike": "+18% vs last week"
       },
       {
-        "venue": "LIV Nightclub (Fontainebleau)",
-        "trend": "DJ Marco Strous event (April 12), John Summit event (May 1)",
-        "driver": "High-profile DJ bookings, major EDM talent",
-        "estimated_spike": "+25% searches this month"
+        "venue": "OMNIA Dayclub",
+        "trend": "Daytime nightlife search interest rising",
+        "driver": "Warm weather arriving, daytime events in demand",
+        "estimated_spike": "+12% vs last week"
       },
       {
-        "venue": "Hakkasan (MGM Grand)",
-        "trend": "Chase B event (April 11), multi-genre appeal",
-        "driver": "Diverse programming, celebrity clientele",
-        "estimated_spike": "+15% searches week-over-week"
-      },
-      {
-        "venue": "Zouk (Cosmopolitan)",
-        "trend": "DJ Flight & Estovega (April 11)",
-        "driver": "Tech-forward venue, young audience",
-        "estimated_spike": "+20% searches"
+        "venue": "Zouk / Hakkasan",
+        "trend": "EDM/house music specialist venues trending",
+        "driver": "Suzy Solar & house music momentum",
+        "estimated_spike": "+8-10% vs last week"
       }
     ],
     "declining_venues": [
-      "Encore Beach (seasonal decline — still too cool in April)",
-      "Tao Beach (seasonal decline — waiting for summer spike)"
+      {
+        "venue": "Tao Beach",
+        "trend": "Pre-summer lull before May surge",
+        "driver": "Weather still variable, outdoor appeal limited",
+        "estimated_spike": "-5% vs last week"
+      }
     ],
     "rising_artists": [
-      "John Summit (upcoming LIV booking May 1 — rising searches)",
-      "Marco Strous (booked LIV April 12)",
-      "Kaskade (Coachella 2026 EDM headliner)",
-      "DJ Snake (Coachella 2026 EDM draw)",
-      "Disclosure (Coachella 2026 EDM favorites)",
-      "Sabrina Carpenter (Coachella headliner — massive TikTok crossover)",
-      "Anyma/Æden (Coachella headliner — techno/house crossover)"
+      {
+        "artist": "Suzy Solar",
+        "genre": "House/Trance",
+        "momentum": "high",
+        "platform": "Beatport #1, multiple playlists"
+      },
+      {
+        "artist": "Sacha Robotti",
+        "genre": "House/Techno Fusion",
+        "momentum": "high",
+        "platform": "Beatport Playlist of Week, DJ collective favorite"
+      },
+      {
+        "artist": "DJ Sammy & Chris Diver",
+        "genre": "Dance/Crossover",
+        "momentum": "medium",
+        "platform": "New collab 'Don't Follow Me' gaining traction"
+      }
     ],
-    "market_search_trend": "Festival season fueling Vegas demand. Coachella attendees extending trips to Vegas post-festival (April 13-26 window critical). EDM/house music prominence.",
-    "liv_search_trend": "LIV Nightclub searches up 25% this month. High-profile bookings (Marco Strous, John Summit) driving awareness. Position as 'must-see EDM venue' during festival season."
+    "market_search_trend": "Vegas nightlife search volume steady with seasonal uptick. WrestleMania 42 (Apr 15-18) driving massive interest spike. Dress code/preparation queries indicate high purchase intent. EDC Las Vegas dates not yet confirmed = opportunity gap.",
+    "liv_search_trend": "No major viral surge detected for LIV specifically. Competing against XS/OMNIA dress code query volume. Opportunity: LIV should establish search dominance in 'Nightlife + Original Content' and 'House Music Venue Las Vegas' keywords."
   },
   "platform_updates": [
     {
       "platform": "Instagram",
-      "update": "Original content priority; de-ranking reposted/watermarked content",
+      "update": "Heavy de-ranking of reposted/watermarked content + new Save Drafts feature for Reels",
       "action_required": true,
-      "detail_for_liv": "Create original club footage, DJ clips, venue tours. No TikTok watermarks or recycled content."
+      "detail_for_liv": "CRITICAL: All LIV content must be 100% original - no TikTok watermarks. Reels MUST use in-venue footage. Leverage new Save button by creating shareable carousel previews of events (lineup cards, drink specials, VIP table reservations)."
     },
     {
       "platform": "TikTok",
-      "update": "Save ratio heavily weighted; TikTok Grid feature being pushed",
+      "update": "SHARES & SAVES now outweigh LIKES in algorithm. AUTOCUT feature for FYP reach.",
       "action_required": true,
-      "detail_for_liv": "Optimize for saves. Use trending sounds (Beez/What's Up, World Stop). Deploy Grid format for venue tours."
+      "detail_for_liv": "CRITICAL: Optimize for SAVES not views. Create clip content designed for sharing (dress code tips, venue tours, DJ intros). Use AUTOCUT feature for trending sound integration. Prioritize watch completion rate."
     },
     {
       "platform": "X (Twitter)",
-      "update": "Grok sentiment analysis; positive/constructive content prioritized",
-      "action_required": true,
-      "detail_for_liv": "Avoid negative/combative takes. Lead with excitement, celebration, anticipation."
+      "update": "Grok AI now powers recommendation system - promotes independent creators over legacy media",
+      "action_required": false,
+      "detail_for_liv": "Lower priority for nightlife. Use for DJ/artist announcements and event alerts. Less algorithmic advantage vs IG/TT."
     }
   ],
   "top_content_formats": [
     {
-      "format": "Reels (Instagram) + Carousels",
-      "why_effective": "Reels = 1.23% engagement, Carousels = best save format. Carousels drive lingering, saves, DM sharing.",
-      "liv_application": "40% Reels (reach), 30% Stories (nurture), 30% Carousels (education/detail). Quick tour Reels; detailed get-ready/recap carousels."
+      "format": "Carousel (Instagram primary)",
+      "why_it_works": "6.9% engagement rate (highest). Audiences save for reference. Algorithm rewards multiple taps.",
+      "liv_application": "Create carousel guides: 'What to Wear to LIV', 'LIV Event Calendar', 'Drink Specials This Week', 'DJ Lineup Preview'. Each slide = actionable info users want to save & share."
     },
     {
-      "format": "TikTok Grid + Short-form (15-60s)",
-      "why_effective": "Grid being aggressively pushed. Short-form best for engagement. Long-form (up to 3min) works for storytelling.",
-      "liv_application": "30-60s venue/DJ showcase. Behind-scenes vlogs. Discovery content (what to expect, why attend)."
+      "format": "Reel (IG/TT for reach)",
+      "why_it_works": "2.46-3.3% engagement but surfaces to NON-FOLLOWERS. Best tool for growth.",
+      "liv_application": "Behind-the-scenes dynamic lighting content. 15-30sec venue tours. DJ booth reactions. Crowd energy clips. Use trending audio (Sports Car x Promiscuous, house tracks). Optimize for SAVES on TikTok."
     },
     {
-      "format": "Stories (Instagram)",
-      "why_effective": "30% content mix. Nurture layer. Polls = high-intent actions.",
-      "liv_application": "Countdown, real-time updates, polls (music preference, vibe check), DJ setup behind-scenes."
+      "format": "Story (IG/TT, real-time)",
+      "why_it_works": "5.1% engagement. Ephemeral = urgency. Good for flash promotions.",
+      "liv_application": "Same-day event countdowns. 'LIV is LIVE rn' stories with dynamic lighting. Flash 2-hour VIP table deals. DJ booth takeovers. Expires in 24h = FOMO effect."
     }
   ],
   "trending_audio": [
     {
-      "sound": "House Tour (Sabrina Carpenter)",
-      "artist": "Sabrina Carpenter",
-      "platform": "IG/TT",
-      "relevance": "Trending for tours/spaces. PERFECT for LIV venue tours. Coachella headliner = cross-platform momentum."
+      "sound": "Sports Car x Promiscuous (remix)",
+      "artist": "Various (remix)",
+      "platform": "Instagram (primary)",
+      "relevance": "Currently #1 trending on IG Reels. High-energy, party-vibe. Perfect for venue transitions, crowd reactions, energy builds."
     },
     {
-      "sound": "World Stop!",
-      "artist": "Viral original",
-      "platform": "IG/TT",
-      "relevance": "Glow-up/transformation content. Outfit/getting-ready moments. High energy."
+      "sound": "Suzy Solar April 2026 Chart",
+      "artist": "Suzy Solar",
+      "platform": "TikTok + DJ sets",
+      "relevance": "House/Trance momentum. Beatport trending. Nightclub audiences know this artist. Use for deep-cut DJ content, production-focused Reels."
     },
     {
-      "sound": "Beez in the Trap / What's Up? (mashup)",
-      "artist": "Nicki Minaj & 4 Non Blondes",
-      "platform": "TT",
-      "relevance": "Dance trend dominating FYP. Club/party energy. Perfect for dance-focused content."
+      "sound": "You Can't Hurry Love (Olivia Dean cover)",
+      "artist": "Olivia Dean",
+      "platform": "Instagram Reels",
+      "relevance": "Softer, emotional vibes. Use for lounge content, pre-party preparation, romantic nightlife moments. Differentiates from high-energy club content."
     }
   ],
   "viral_nightlife_content": {
-    "summary": "Coachella 2026 (April 11-13 & 18-20) dominating TikTok with 300%+ spike in festival-related content. Experiential design + photo-op aesthetics = viral drivers. High Tea in the Sky (Legacy Club, Circa) example: transformed venue, unique cocktails, live DJ, photo moments. Venues win on: exclusive DJ talent, themed/visual design, shareable moment creation, pre/post-event engagement funnel.",
-    "standout_example": "Coachella 2026: Sabrina Carpenter, Justin Bieber, Karol G headliners. Outfit content, backstage moments, DJ sets. TikTok domination driven by outfit/aesthetic focus + artist fandom.",
-    "theme": "EXPERIENTIAL + VISUAL. Pre-event hype (FOMO) → During (photo moments, energy) → Post-event (recap, nostalgia). Full funnel engagement critical."
+    "summary": "High-energy nightclub atmosphere content with emphasis on DYNAMIC LIGHTING and CROWD ENERGY. Behind-the-scenes venue tours outperforming generic nightlife clips. Authentic, unfiltered crowd moments resonating more than choreographed content.",
+    "standout_example": "Behind-the-scenes immersive venue tour: Camera weaving through packed dance floor, showcasing ceiling lighting rigs, spotlights, stage with live performers, crowd dancing under colorful lights. Formula: movement + lights + crowd energy.",
+    "theme": "AUTHENTICITY + ATMOSPHERE. Gen Z audiences want to FEEL the vibe before arriving. Visual spectacle (lighting) is primary differentiator. User-generated content (UGC) of crowds outperforming branded posts."
   },
   "audience_signals": {
-    "behavior_shift": "Gen Z saves/shares to private groups over public comments. Adrenaline-driven experiences (racing, adventure) trending. Live event engagement spans pre/during/post phases (not just during). Nostalgia + fandom driving aesthetic choices.",
+    "behavior_shift": "Gen Z (21-35) now seeking ORIGINAL, AUTHENTIC content over recycled material. AI-powered discovery adoption rising (especially younger Gen Alpha) but trust in recommendations still low = organic content + friend recommendations still king. High engagement with venue/dress code prep content = planning ahead, high purchase intent.",
     "upcoming_moments": [
-      "Coachella Week 2: April 18-20 (extended momentum)",
-      "Google Cloud Next Vegas: April 23 (tech crowd, bottle service demand spike)",
-      "Post-festival momentum: carries through May",
-      "Summer festival season bookings: accelerating mid-April"
+      {
+        "moment": "WrestleMania 42 (April 15-18)",
+        "date": "April 15-18, 2026",
+        "opportunity": "MAJOR surge event. AREA15 hosting nightlife programming. LIV should create WrestleMania-themed VIP packages, special DJ lineups, WrestleMania watch parties. Promote 48-72 hours before event. THIS WEEK = last chance to capitalize."
+      },
+      {
+        "moment": "EDC Las Vegas (dates TBD)",
+        "date": "Late May / Early June (estimated)",
+        "opportunity": "Annual mega-draw. LIV should announce EDC week lineups NOW. Create 'EDC Prep' content. Partner with EDC attendees. This is 4-6 weeks out = start content push this week."
+      },
+      {
+        "moment": "Google Cloud Next After-Party (April 23)",
+        "date": "April 23, 2026",
+        "opportunity": "High-income attendees (21+). LIV should approach tech conference organizers for official after-party partnership. Create 'Tech Vegas Nightlife' content angle."
+      },
+      {
+        "moment": "Spring Festival Season (ongoing)",
+        "date": "May-June 2026",
+        "opportunity": "Outdoor concerts, street festivals ramping. Create 'Pre-party before festival' content positioning LIV as pre-event destination."
+      }
     ]
   },
   "this_week_recommendations": [
     {
       "priority": "HIGH",
-      "action": "Launch 'Marco Strous Tonight' Reel Series + Carousel Suite using trending audio (House Tour by Sabrina Carpenter for venue tour element; World Stop! for transformation content). Create original 15-30s Reels showing DJ booth, crowd energy, VIP moments. Pair with 8-slide carousel: venue layout → outfit inspiration → DJ bio → arrival tips → past event recaps → VIP experience → ticket CTA → follow reminder.",
-      "platform": "Instagram",
-      "rationale": "Instagram algorithm prioritizes original content; Reels get 1.23% engagement vs carousels 1.02%. Carousels are best-save format (Gen Z behavior = save to DMs for later). House Tour audio trending for tours; World Stop! driving transformation content. Addresses pre-event hype (critical engagement phase)."
+      "action": "Launch 'WrestleMania 42 Week' content sprint: 3-4 authentic behind-the-scenes Reels per day showing ceiling lighting + crowd energy. Film at actual WrestleMania watch parties if LIV is hosting. Use trending 'Sports Car x Promiscuous' audio for high-energy clips.",
+      "platform": "Instagram Reels + TikTok",
+      "rationale": "WrestleMania 42 is April 15-18 = DAYS AWAY. This is the highest-intent audience of the month. Every day delayed = lost bookings. Reels reach non-followers = new customer acquisition. Urgency."
     },
     {
       "priority": "HIGH",
-      "action": "Deploy TikTok Grid Format: Create short-form venue tour (30-60s, leveraging TikTok Grid push) showing LIV's nightlife progression (entry → dance floor → VIP → climax). Use 'Beez in the Trap/What's Up?' mashup or trending EDM remix. Optimize for SAVES (not likes). Include location tag, searchable DJ name hashtags (Marco Strous, John Summit).",
+      "action": "Create 3-5 carousel guides with SAVES focus: (1) 'What to Wear to LIV' dress code, (2) 'LIV Event Calendar April', (3) 'DJ Lineup This Week', (4) 'VIP Table Pricing', (5) 'Happy Hour Specials'. Optimize each carousel for saves/shares.",
+      "platform": "Instagram (primary)",
+      "rationale": "Carousels have 6.9% engagement (highest). Audiences save for reference = repeated impressions. Each carousel is a microconversion point. Dress code content specifically trending in search = high intent."
+    },
+    {
+      "priority": "HIGH",
+      "action": "Feature Suzy Solar or similar house/trance artist in this week's lineups if possible. If not, create 'Artist Spotlight' content mentioning rising DJs. Leverage Beatport momentum. Optimize for TikTok SAVES (not likes).",
+      "platform": "TikTok + Instagram Stories",
+      "rationale": "Suzy Solar has high momentum. House music audiences are highly engaged. TikTok's new algorithm prioritizes saves = sharing = reach. Artist mentions drive discoverability."
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Announce 'EDC Las Vegas Week' VIP packages NOW (even if EDC dates not final). Create countdown content. Position LIV as the ultimate EDC after-party destination. Research official EDC partnership opportunities.",
+      "platform": "Instagram + TikTok Stories + email list",
+      "rationale": "EDC is 4-6 weeks away. Early announcements capture high-intent audience. Gives attendees time to plan. Positions LIV ahead of competitors."
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Test user-generated content (UGC) strategy: Repost authentic crowd videos from guests (with permission). Tag guests, use location tags. Emphasize crowd energy over production value.",
+      "platform": "Instagram Reels tagged with UGC creator",
+      "rationale": "Research shows UGC outperforms branded content. Authenticity resonates with Gen Z. Algorithm may favor tagged user content. Builds community."
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Audit all TikTok content for watermarks/recycled Instagram content. Ensure 100% original TikTok-native filming. Test AUTOCUT feature for trending sound integration.",
       "platform": "TikTok",
-      "rationale": "TikTok save ratio now heavily weighted in algorithm (~50% of reach driven by trending sounds). Grid feature being aggressively pushed. Festival-goers (Coachella momentum) searching for Vegas afterparty content on TikTok. Searchable format captures post-Coachella trip-extension demand (April 13-26 window)."
+      "rationale": "Instagram de-ranking watermarked content. TikTok's AUTOCUT can boost FYP. TikTok-native content performs 20-30% better than reposts."
     },
     {
-      "priority": "HIGH",
-      "action": "Post sentiment-positive X/Twitter content: 'Can't wait to have [DJ Marco Strous] energizing the LIV stage tonight 🎉🎶 Tonight's gonna be unforgettable.' Include 1-2 Reel/video clips (keep in-app engagement visible via new browser test). Avoid negative/combative takes on rival venues. Lean into constructive excitement.",
+      "priority": "LOW",
+      "action": "Monitor X/Twitter for DJ/artist announcements. Use chronological feed option. Less priority but maintain presence for B2B (artist booking, media, influencers).",
       "platform": "X (Twitter)",
-      "rationale": "Grok algorithm now monitors sentiment; positive/constructive content gets wider distribution even with lower raw engagement. X's in-app browser keeps engagement buttons visible, improving CTR to Instagram/TikTok. Twitter reaching older demo but growing Gen Z adoption; sentiment matters more than ever."
-    },
-    {
-      "priority": "MEDIUM",
-      "action": "Story Series: Real-time countdown (Friday, Saturday afternoon). Use poll stickers ('What vibe tonight: EDM or house?'). Behind-the-scenes DJ setup. Crowd moment captures (Saturday night). Link to Reels in Stories (drives circulation). 30% of ideal mix = Stories; treat as nurture layer for followers.",
-      "platform": "Instagram Stories",
-      "rationale": "Stories are nurture/engagement layer. 7-day draft expiration feature new — refresh regularly. Polls drive engagement (high-intent actions = saves/shares to DMs). Real-time updates capture FOMO crowd, festival-goers checking weekend options."
-    },
-    {
-      "priority": "MEDIUM",
-      "action": "Post-Event Recap Carousel (Sunday/Monday): Attendee photos (with permission), energy moments, DJ performance clips, crowd engagement. 8-10 slides format. Text: 'Last night was incredible. If you missed out, catch John Summit next month.' CTA to May 1 event page.",
-      "platform": "Instagram",
-      "rationale": "Gen Z engagement extends post-event. Recap content drives saves (storytelling/nostalgia). Carousels are save-optimized format. Positions LIV as 'must-attend venue' for next event. Builds audience for May Summit booking."
-    }
-  ],
-  "search_trends_insights": [
-    {
-      "insight": "LIV Nightclub +25% searches this month vs +40% for XS (Wynn) YoY. Gap = positioning opportunity. XS winning on 'art/residency' angle (Alec Monopoly integration). LIV's strength: EDM/DJ talent concentration (Marco Strous, John Summit bookings). Action: double-down on DJ talent visibility in search (hashtag strategy, DJ name SEO). Create 'Who's Playing LIV This Month' monthly content pillar.",
-      "driver": "Festival season + post-Coachella momentum making DJ/artist names prime search queries. XS diversified reach (art + nightlife). LIV must own 'EDM destination' SEO."
-    },
-    {
-      "insight": "April 13-26 window critical: Coachella attendees extending Vegas trips. Search trends show Coachella-related nightclub queries (+300% spike vs baseline). Venues mentioning 'Coachella afterparty vibes' or 'post-festival energy' capturing extended-trip travelers. LIV should position weekend events as 'Coachella Week 2 alternative' or 'festival season celebration.'",
-      "driver": "Travel patterns: Gen Z buying Coachella Week 1 tickets, staying through Week 2, extending to Vegas (pool parties Tue-Thu, nightclubs Fri-Sat). 14-day trip model emerging. LIV's April 12-May 1 booking window = prime capture phase."
-    },
-    {
-      "insight": "Nightlife search intent shifting from 'best nightclub in Vegas' to specific DJ/artist + venue searches (e.g., 'John Summit Las Vegas,' 'Marco Strous LIV'). Individual artist searches +45% YoY. Long-tail KW strategy outperforming broad venue queries. Content play: create artist-specific content (DJ spotlight Reels, bio carousels, past performance recap videos) to own artist + venue combined search terms.",
-      "driver": "TikTok/Instagram discovery training Gen Z to search by artist first, venue second. Algorithmic feeds reward topical relevance. LIV must become synonymous with booking strategy (which DJs, when, why)."
+      "rationale": "Lower ROI for nightlife but important for artist relations. Grok algorithm less favorable for organic reach."
     }
   ]
 }
