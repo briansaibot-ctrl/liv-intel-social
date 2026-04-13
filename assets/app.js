@@ -998,11 +998,23 @@
     let html = '<div class="section-header">&#x1F9E0; AI Insight</div>';
     html += `<div class="card insight-card"><div class="insight-label">Competitive Takeaway</div><div class="insight-text">${escapeHTML(insight.competitive_takeaway)}</div>`;
     html += `<div class="insight-highlight"><div class="insight-highlight-label">Biggest LIV Opportunity</div><div class="insight-highlight-text">${escapeHTML(insight.biggest_opportunity_for_liv)}</div></div>`;
+    // who_to_watch may be a single object or an array — handle both
     if (insight.who_to_watch) {
-      html += `<div style="font-size:12px;margin-bottom:6px"><span style="color:var(--gold);font-weight:700">Who to Watch:</span> ${escapeHTML(insight.who_to_watch.venue)} — ${escapeHTML(insight.who_to_watch.reason)}</div>`;
+      const wtw = Array.isArray(insight.who_to_watch) ? insight.who_to_watch[0] : insight.who_to_watch;
+      if (wtw && wtw.venue) {
+        html += `<div style="font-size:12px;margin-bottom:6px"><span style="color:var(--gold);font-weight:700">Who to Watch:</span> ${escapeHTML(wtw.venue)} — ${escapeHTML(wtw.reason)}</div>`;
+      }
     }
+    // content_format_winner may be a {format, why} object or a plain string
     if (insight.content_format_winner) {
-      html += `<div style="font-size:12px"><span style="color:var(--gold);font-weight:700">Winning Format:</span> ${escapeHTML(insight.content_format_winner.format)} — ${escapeHTML(insight.content_format_winner.why)}</div>`;
+      const cfw = insight.content_format_winner;
+      if (typeof cfw === 'object' && cfw.format) {
+        html += `<div style="font-size:12px"><span style="color:var(--gold);font-weight:700">Winning Format:</span> ${escapeHTML(cfw.format)} — ${escapeHTML(cfw.why)}</div>`;
+      } else if (typeof cfw === 'string') {
+        // Plain string — show first sentence as the format summary
+        const short = cfw.split('.')[0];
+        html += `<div style="font-size:12px"><span style="color:var(--gold);font-weight:700">Winning Format:</span> ${escapeHTML(short)}</div>`;
+      }
     }
     html += '</div>';
     return html;
@@ -1024,15 +1036,25 @@
       return r;
     };
 
+    // Support both old key names (liv_hashtags) and new (liv_tags)
     html += '<div class="card">';
-    html += renderPillRow('Competitor Tags', tracker.competitor_hashtags, 'stable');
-    html += renderPillRow('Market Tags', tracker.market_hashtags, 'stable');
-    html += renderPillRow('LIV Tags', tracker.liv_hashtags, 'up');
+    html += renderPillRow('Competitor Tags', tracker.competitor_hashtags || tracker.competitor_tags, 'stable');
+    html += renderPillRow('Market Tags', tracker.market_hashtags || tracker.market_tags, 'stable');
+    html += renderPillRow('LIV Tags', tracker.liv_hashtags || tracker.liv_tags, 'up');
 
     if (tracker.untapped_opportunities && tracker.untapped_opportunities.length) {
       html += '<div style="font-size:12px;font-weight:600;color:var(--gold);margin:12px 0 6px">&#x1F4A1; Untapped Opportunities</div>';
       tracker.untapped_opportunities.forEach(u => {
-        html += `<div style="margin-bottom:8px"><span class="hashtag-pill opportunity">${escapeHTML(u.tag)}</span><div class="hashtag-suggestion">${escapeHTML(u.suggestion)}</div></div>`;
+        // u may be an object {tag, suggestion} or a plain string like "#tag (volume; note)"
+        if (typeof u === 'object' && u.tag) {
+          html += `<div style="margin-bottom:8px"><span class="hashtag-pill opportunity">${escapeHTML(u.tag)}</span><div class="hashtag-suggestion">${escapeHTML(u.suggestion || '')}</div></div>`;
+        } else if (typeof u === 'string') {
+          // Parse "#tag (volume; description)" format
+          const match = u.match(/^(#\S+)\s*(.*)$/);
+          const tag = match ? match[1] : u;
+          const note = match ? match[2].replace(/^\(|\)$/g, '') : '';
+          html += `<div style="margin-bottom:8px"><span class="hashtag-pill opportunity">${escapeHTML(tag)}</span>${note ? `<div class="hashtag-suggestion">${escapeHTML(note)}</div>` : ''}</div>`;
+        }
       });
     }
     html += '</div>';
@@ -1041,26 +1063,33 @@
 
   function renderTimeIntelligence(ti) {
     let html = '<div class="section-header">&#x23F0; Best Times to Post</div>';
-    const platforms = ti.peak_windows_by_platform || {};
-    const recs = ti.liv_recommendation || {};
+    // Support both old schema (peak_windows_by_platform.instagram) and
+    // new schema (instagram_analysis, tiktok_analysis, twitter_x_analysis)
+    const platMap = [
+      { key: 'instagram', newKey: 'instagram_analysis', label: 'IG', cls: 'ig' },
+      { key: 'tiktok',    newKey: 'tiktok_analysis',    label: 'TT', cls: 'tt' },
+      { key: 'x',         newKey: 'twitter_x_analysis', label: 'X',  cls: 'x'  },
+    ];
+    const oldPlatforms = ti.peak_windows_by_platform || {};
+    const oldRecs = ti.liv_recommendation || {};
 
-    ['instagram', 'tiktok', 'x'].forEach(plat => {
-      const data = platforms[plat];
+    platMap.forEach(({ key, newKey, label, cls }) => {
+      const data = oldPlatforms[key] || ti[newKey];
       if (!data) return;
-      const platLabel = plat === 'instagram' ? 'IG' : plat === 'tiktok' ? 'TT' : 'X';
-      const platCls = plat === 'instagram' ? 'ig' : plat === 'tiktok' ? 'tt' : 'x';
       const best = new Set(data.best_hours || []);
       const worst = new Set(data.worst_hours || []);
+      // liv_recommendation may be top-level map or inline per-platform
+      const rec = oldRecs[key] || data.liv_recommendation || '';
 
-      html += `<div class="card time-card"><div class="time-card-header"><span class="platform-badge ${platCls}">${platLabel}</span><span style="font-size:12px;color:var(--text-secondary)">Opportunity: ${escapeHTML(data.opportunity_window || '')}</span></div>`;
+      html += `<div class="card time-card"><div class="time-card-header"><span class="platform-badge ${cls}">${label}</span><span style="font-size:12px;color:var(--text-secondary)">Opportunity: ${escapeHTML(data.opportunity_window || '')}</span></div>`;
       html += '<div class="time-bar">';
       for (let h = 0; h < 24; h++) {
-        const cls = best.has(h) ? 'best' : worst.has(h) ? 'worst' : '';
-        html += `<div class="time-hour ${cls}" title="${h}:00"></div>`;
+        const c = best.has(h) ? 'best' : worst.has(h) ? 'worst' : '';
+        html += `<div class="time-hour ${c}" title="${h}:00"></div>`;
       }
       html += '</div>';
       html += '<div class="time-labels"><span>12am</span><span>6am</span><span>12pm</span><span>6pm</span><span>11pm</span></div>';
-      if (recs[plat]) html += `<div class="time-insight">${escapeHTML(recs[plat])}</div>`;
+      if (rec) html += `<div class="time-insight">${escapeHTML(rec)}</div>`;
       html += '</div>';
     });
     return html;
