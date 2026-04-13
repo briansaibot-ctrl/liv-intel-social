@@ -1,176 +1,143 @@
 {
-  "run_at": "2026-04-13T09:24:00Z",
-  "run_type": "late_night",
-  "market_pulse": "Competitive activity remains strong across premium venues with Zedd, Tiësto, and Rob Guson driving mid-week engagements; LIV showed solid momentum with April 10-12 resident DJ lineup (Dombresky, Cloonee, Marcos Trous) but engagement appears subdued for Monday-Tuesday.",
+  "run_at": "2026-04-13T09:29:00Z",
+  "run_type": "early_morning",
+  "market_pulse": "Competitive activity stable; LIV leading with recent Dombresky/Cloonee momentum while competitors focus on residencies and special events.",
   "urgent_alert_count": 0,
   "weekend_readiness": null,
   "content_gaps": [
     {
-      "gap_type": "countdown_content",
-      "description": "OMNIA using countdown reels and story features for Zedd (4/17) and Deorro (4/18); LIV showing only static graphics for April weekend events",
-      "competitors_doing_it": [
-        "OMNIA Nightclub",
-        "Hakkasan Nightclub"
-      ],
+      "gap_type": "resident_DJ_promotions",
+      "description": "XS, OMNIA, and Encore actively promoting resident DJ schedules with personality-driven content; LIV mixing personalities with artist announcements.",
+      "competitors_doing_it": ["XS Nightclub", "OMNIA Nightclub", "Encore Beach Club"],
       "urgency": "medium",
-      "suggested_action": "Deploy countdown stickers and behind-the-scenes content for next weekend resident DJ performances"
+      "suggested_action": "Increase behind-the-scenes storytelling from John Summit, emphasize unique Fontainebleau location advantage."
     },
     {
       "gap_type": "user_generated_content",
-      "description": "OMNIA and XS actively reposting guest videos and influencer clips; LIV's TikTok presence relies on third-party promoters rather than official account engagement",
-      "competitors_doing_it": [
-        "XS Nightclub",
-        "OMNIA Nightclub",
-        "Hakkasan Nightclub"
-      ],
+      "description": "Competitors leveraging TikTok for visitor reviews and outfit guides; LIV Beach gaining traction via user posts but room for growth.",
+      "competitors_doing_it": ["XS Nightclub", "Encore Beach Club"],
       "urgency": "high",
-      "suggested_action": "Launch hashtag campaign #LIVMoment for guests; feature TikTok/IG Reels from attendees on official @livlv and @livbeach accounts"
+      "suggested_action": "Create LIV-specific hashtag challenge for dayclubbers; incentivize TikTok creators to share outfit/experience reels."
     },
     {
-      "gap_type": "educational_content",
-      "description": "Competitors posting dress code guides, venue tours, and nightlife tips; LIV content focus is event-only",
-      "competitors_doing_it": [
-        "XS Nightclub",
-        "OMNIA Nightclub",
-        "Zouk Nightclub"
-      ],
-      "urgency": "low",
-      "suggested_action": "Create 15-30 second 'venue tour' and 'dress code breakdown' content for TikTok/Reels to drive engagement from planning-phase audiences"
+      "gap_type": "interactive_countdowns",
+      "description": "OMNIA using event countdowns and Latin event theming; LIV occasionally mentions upcoming weekends but lacks persistent countdown strategy.",
+      "competitors_doing_it": ["OMNIA Nightclub"],
+      "urgency": "medium",
+      "suggested_action": "Post 3x/week countdown stories for weekend headliners starting Thursday."
     }
   ],
   "influencer_activity": [
     {
       "handle": "@globeth0tter",
       "platform": "TT",
-      "mention": "Posted honest review of LIV Nightclub (591 likes, 61 comments) and XS Nightclub (175 likes, 20 comments); creator appears to be Vegas nightlife reviewer with 300K+ followers",
+      "mention": "Posted honest reviews of both LIV Nightclub and XS Nightclub as guest list visitor; high engagement (591 likes on LIV review).",
       "posts_found": 2,
-      "engagement_level": "Normal"
+      "engagement_level": "High"
     },
     {
       "handle": "@edsonvegasclubpromoter",
       "platform": "TT",
-      "mention": "2.3M likes on OMNIA Satisfaction content; multiple videos of Vegas nightclubs with strong engagement; competitor tracking creator",
-      "posts_found": 3,
+      "mention": "Posted viral OMNIA main room content (2.3M likes); created trending chandelier highlight video; strong EDM audience.",
+      "posts_found": 1,
       "engagement_level": "High"
     },
     {
-      "handle": "@livlvguestlist",
+      "handle": "@lydiainvegas",
       "platform": "TT",
-      "mention": "Official LIV promoter account actively pushing guest list and promotional codes; moderate engagement on event posts",
-      "posts_found": 2,
+      "mention": "Posted 60-second dayclub walkthrough of LIV Beach showing pool/layout; engagement marker for new-venue explorers.",
+      "posts_found": 1,
       "engagement_level": "Normal"
     }
   ],
-  "liv_outreach_targets": [
-    {
-      "handle": "@globeth0tter",
-      "platform": "TT",
-      "reason": "Vegas nightlife reviewer with proven reach; already reviewed LIV and XS; opportunity for featured guest list or VIP experience",
-      "priority": "high"
-    }
-  ],
+  "liv_outreach_targets": [],
   "story_activity": [
+    {
+      "venue": "LIV Nightclub",
+      "content_type": "announcement",
+      "summary": "Last week (April 10-12) featured Dombresky, Cloonee, Marcos Trous—strong tech-house and house lineup momentum.",
+      "detected_at": "2026-04-13T09:29:00Z",
+      "urgency": false
+    },
     {
       "venue": "OMNIA Nightclub",
       "content_type": "announcement",
-      "summary": "Zedd performance April 17 and Deorro April 18 promoted via Instagram Stories; active countdown-style messaging",
-      "detected_at": "2026-04-13T09:24:00Z",
+      "summary": "Upcoming April lineup includes Follow the Fish (4/11), Deseo Latin Sundays (4/12), DJ Rob Guson (4/14), Zedd (4/17), DeOrro (4/18).",
+      "detected_at": "2026-04-13T09:29:00Z",
       "urgency": false
     },
     {
-      "venue": "Hakkasan Nightclub",
+      "venue": "LIV Beach",
       "content_type": "announcement",
-      "summary": "R&Bae Wednesdays series announced; Cardi B after-party promotion gaining TikTok traction",
-      "detected_at": "2026-04-13T09:24:00Z",
-      "urgency": false
-    },
-    {
-      "venue": "Palm Tree Beach Club",
-      "content_type": "announcement",
-      "summary": "New luxury dayclub by Kygo and Tao Group; opening buzz from May 2025 still generating discovery posts",
-      "detected_at": "2026-04-13T09:24:00Z",
-      "urgency": false
-    },
-    {
-      "venue": "TAO Beach",
-      "content_type": "announcement",
-      "summary": "Tiësto April 11 and EDC Week day parties (Porter Robinson, DJ Snake, Steve Aoki); rooftop pool positioning emphasized",
-      "detected_at": "2026-04-13T09:24:00Z",
+      "summary": "Recent lineup (late March) featured Westend tech-house debut, Disco Lines, DJ Vice—positioning as tech-house dayclub destination.",
+      "detected_at": "2026-04-13T09:29:00Z",
       "urgency": false
     }
   ],
   "venues": [
     {
-      "venue": "LIV Nightclub (@livnightclub)",
+      "venue": "LIV Nightclub",
       "posts_found": 4,
       "urgent": false,
-      "summary": "Moderate Instagram/TikTok activity with April 10-12 resident DJ lineup (Dombresky, Cloonee, Marcos Trous); TikTok influencer reviews but limited official engagement",
-      "flags": [
-        "talent_announcement"
-      ],
+      "summary": "Strong weekend momentum with tech-house focus; 87K Instagram followers, active promotion of John Summit as resident.",
+      "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "April 10 - Dombresky, April 11 - Cloonee, April 12 - Marcos Trous resident DJ weekends under the Halo; 87K followers, 641 total posts",
+          "content_summary": "Weekend lineup: Dombresky (Fri), Cloonee (Sat), Marcos Trous (Sun)—tech-house focus under the iconic Halo.",
           "posted_at": "2026-04-10",
-          "engagement_note": "Normal",
-          "flags": [
-            "talent_announcement"
-          ]
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "GLOBETHOTTER honest review of LIV Nightclub as guest list attendee; mentions John Summit performances and Fontainebleau location",
+          "content_summary": "@globeth0tter posted honest guest-list review of LIV Nightclub experience; well-received by audience.",
+          "posted_at": "2026-04-09",
+          "engagement_note": "High",
+          "flags": []
+        },
+        {
+          "platform": "TT",
+          "content_summary": "User-generated content about John Summit appearances at LIV Beach; backstage access mentioned by promoters.",
           "posted_at": "2026-04-08",
           "engagement_note": "Normal",
-          "flags": []
+          "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "Guest list and bottle service promotional content from @livlvguestlist promoter account; Dom Dolla weekend callouts",
-          "posted_at": "2026-04-05",
-          "engagement_note": "Normal",
-          "flags": []
-        },
-        {
-          "platform": "TT",
-          "content_summary": "John Summit backstage access and outfit guide content; Fontainebleau Las Vegas location emphasis",
-          "posted_at": "2026-03-28",
+          "content_summary": "Las Vegas club promoter Edwin Griffiths sharing LIV guest list terms and cover charge info; informational content.",
+          "posted_at": "2026-04-07",
           "engagement_note": "Normal",
           "flags": []
         }
       ]
     },
     {
-      "venue": "LIV Beach (@livbeachlasvegas)",
+      "venue": "LIV Beach",
       "posts_found": 3,
       "urgent": false,
-      "summary": "Dayclubs/pool parties active with Westend tech-house debut March 27; promoter content dominates; March-April engagement trending normal",
-      "flags": [
-        "talent_announcement"
-      ],
+      "summary": "Growing dayclub brand with 36K Instagram followers; recent tech-house artist debuts (Westend, Disco Lines) attracting core EDM audience.",
+      "flags": [],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "March 27 - Westend tech-house debut, March 28 - Discolines, March 29 - DJ Vice; 36K followers, 431 total posts",
+          "content_summary": "Recent lineup: Westend (Mar 27), Disco Lines (Mar 28), DJ Vice (Mar 29)—tech-house positioning for spring/summer season.",
           "posted_at": "2026-03-27",
           "engagement_note": "Normal",
-          "flags": [
-            "talent_announcement"
-          ]
+          "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "60-second venue walkthrough by @lydiainvegas; post-opening dayclub tour showing pool and layout",
-          "posted_at": "2026-03-18",
+          "content_summary": "@lydiainvegas posted 60-second walkthrough of new LIV Beach dayclub layout, pool areas, and DJ stage.",
+          "posted_at": "2026-03-22",
           "engagement_note": "Normal",
           "flags": []
         },
         {
           "platform": "TT",
-          "content_summary": "Galantis event promoter post; capacity warnings and guest list acquisition instructions",
-          "posted_at": "2026-03-10",
-          "engagement_note": "Low",
+          "content_summary": "User content about LIV Beach pool party experiences; mentions spring break and high-engagement crowd.",
+          "posted_at": "2026-03-15",
+          "engagement_note": "Normal",
           "flags": []
         }
       ]
@@ -179,27 +146,27 @@
       "venue": "XS Nightclub",
       "posts_found": 3,
       "urgent": false,
-      "summary": "308K Instagram followers with strong promoter presence; insider tips TikTok content gaining traction; Wynn location emphasis",
-      "flags": [],
+      "summary": "Large following (308K IG); resident DJ heavy lineup (David Guetta, Marshmello, Diplo, Kygo); promoting 2026 talent roster.",
+      "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Where every night deserves an Encore tagline; Wynn Las Vegas location; 4,190 total posts with high activity",
+          "content_summary": "High-follower account (308K followers) with 4,190+ posts showcasing XS as venue under Wynn ecosystem.",
           "posted_at": "2026-04-12",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "TT",
+          "content_summary": "@globeth0tter posted honest guest-list review of XS Nightclub; found it worth the hype with pro tips for entry.",
+          "posted_at": "2026-04-08",
           "engagement_note": "High",
           "flags": []
         },
         {
           "platform": "TT",
-          "content_summary": "GLOBETHOTTER honest review of XS Nightclub on guest list; mentions Wynn prestige and nightclub value proposition",
-          "posted_at": "2026-04-10",
-          "engagement_note": "Normal",
-          "flags": []
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Insider tips for XS Nightclub (dress code, free entry strategies, Discotech app mentions); 175+ likes per post",
-          "posted_at": "2026-02-23",
+          "content_summary": "Promoter Norman Jay (@normanjay_lasvegas) with 176K followers sharing XS/Encore guest list and VIP services.",
+          "posted_at": "2026-04-05",
           "engagement_note": "Normal",
           "flags": []
         }
@@ -207,262 +174,96 @@
     },
     {
       "venue": "Encore Beach Club",
-      "posts_found": 3,
+      "posts_found": 2,
       "urgent": false,
-      "summary": "284K Instagram followers; elite Wynn positioning with Upper Cabana and lily pad content; David Guetta EDC Week activity",
-      "flags": [
-        "talent_announcement"
-      ],
+      "summary": "Large community (284K IG followers); resident DJ lineup includes David Guetta, Diplo, Skrillex; positioned as premium daytime destination.",
+      "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Unforgettable days, Unstoppable nights tagline; 3,861 total posts; high activity Wynn property",
-          "posted_at": "2026-04-12",
+          "content_summary": "Established daytime hotspot (284K followers) with messaging around 'Unforgettable days, Unstoppable nights' and premium pool experiences.",
+          "posted_at": "2026-04-11",
           "engagement_note": "High",
-          "flags": []
+          "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "Upper Cabana luxury pool section showcasing premium VIP experience and sunset views",
+          "content_summary": "User content showing Encore Beach Club upper cabana experiences, golden hour photography, high production value.",
           "posted_at": "2026-03-09",
           "engagement_note": "Normal",
           "flags": []
-        },
-        {
-          "platform": "TT",
-          "content_summary": "David Guetta EDC Week appearance; party atmosphere with A-list guest TikTok content",
-          "posted_at": "2026-02-09",
-          "engagement_note": "High",
-          "flags": [
-            "talent_announcement"
-          ]
         }
       ]
     },
     {
       "venue": "OMNIA Nightclub",
-      "posts_found": 5,
+      "posts_found": 3,
       "urgent": false,
-      "summary": "458K Instagram followers with aggressive event announcements; Zedd (4/17), Follow the Fish (4/11), Deorro (4/18), DJ Rob Guson (4/14) lineups; Deseo Latin Sundays series active",
-      "flags": [
-        "talent_announcement"
-      ],
+      "summary": "Very active (458K IG followers, 3,513 posts); Latin-focused events (Deseo Sundays) and diverse DJ roster; strong viral content from promoters.",
+      "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "April 11 Follow the Fish, April 12 Deseo Latin Sundays, April 14 DJ Rob Guson, April 17 Zedd, April 18 Deorro; 3,513 total posts",
-          "posted_at": "2026-04-12",
+          "content_summary": "April lineup announced: Follow the Fish (4/11), Deseo Latin Sundays (4/12), DJ Rob Guson (4/14), Zedd (4/17), DeOrro (4/18).",
+          "posted_at": "2026-04-09",
           "engagement_note": "High",
-          "flags": [
-            "talent_announcement"
-          ]
+          "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "Official OMNIA TikTok account with 323K followers; vibrant nightlife content and event announcements",
-          "posted_at": "2026-04-11",
+          "content_summary": "@edsonvegasclubpromoter posted viral OMNIA main room content with iconic chandelier; 2.3M likes, strong EDM audience traction.",
+          "posted_at": "2026-04-01",
           "engagement_note": "High",
           "flags": []
         },
         {
           "platform": "TT",
-          "content_summary": "Edson Vegas Club Promoter video (2.3M likes) showing Satisfaction main room chandelier; viral organic promotion",
-          "posted_at": "2026-04-08",
-          "engagement_note": "High",
-          "flags": []
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Dress code guides and outfit inspiration for female attendees; fashion-focused content engagement",
-          "posted_at": "2026-04-13",
+          "content_summary": "Multiple dress code and nightclub guide videos; OMNIA terrace and main room content gaining consistent engagement.",
+          "posted_at": "2026-04-05",
           "engagement_note": "Normal",
           "flags": []
-        },
-        {
-          "platform": "TT",
-          "content_summary": "EDC Week day parties announcement with multiple DJ lineups during peak festival season",
-          "posted_at": "2026-02-26",
-          "engagement_note": "High",
-          "flags": [
-            "talent_announcement"
-          ]
         }
       ]
     },
     {
       "venue": "Omnia Beach Club",
-      "posts_found": 1,
+      "posts_found": 0,
       "urgent": false,
-      "summary": "Minimal beach club-specific content; OMNIA brand dominates with nightclub focus; daytime pool experience underrepresented",
+      "summary": "Daytime sister venue to OMNIA Nightclub; less social media activity visible vs. nightclub; operates seasonally.",
       "flags": [],
-      "raw_posts": [
-        {
-          "platform": "PR/News",
-          "content_summary": "Part of Tao Group Hospitality concept at Caesars Palace; mentioned in broader OMNIA promotional content and event calendars",
-          "posted_at": "2026-04-12",
-          "engagement_note": "Normal",
-          "flags": []
-        }
-      ]
+      "raw_posts": []
     },
     {
       "venue": "Zouk Nightclub",
-      "posts_found": 3,
+      "posts_found": 0,
       "urgent": false,
-      "summary": "249K Instagram followers (Zouk Group); tech-forward positioning; Duke Dumont (4/3), Tape Beats (4/4) lineups; Resorts World location emphasis",
-      "flags": [
-        "talent_announcement"
-      ],
-      "raw_posts": [
-        {
-          "platform": "IG",
-          "content_summary": "Zouk Group branded content; April 3 Duke Dumont, April 4 Tape Beats at AYU Dayclub; 2,827 posts, high activity",
-          "posted_at": "2026-04-04",
-          "engagement_note": "Normal",
-          "flags": [
-            "talent_announcement"
-          ]
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Dress code guides and insider tips for Vegas nightclub experience; educational content strategy",
-          "posted_at": "2026-04-02",
-          "engagement_note": "Normal",
-          "flags": []
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Zouk Group TikTok (@zoukgrouplv) with 9.7K followers; lower reach than competitors but curated nightlife content",
-          "posted_at": "2026-03-25",
-          "engagement_note": "Low",
-          "flags": []
-        }
-      ]
+      "summary": "Newer venue (post-2023); limited social media activity detected in search window; may have private guest list strategy.",
+      "flags": [],
+      "raw_posts": []
     },
     {
       "venue": "Hakkasan Nightclub",
-      "posts_found": 4,
+      "posts_found": 0,
       "urgent": false,
-      "summary": "258K Instagram followers; R&Bae Wednesdays series driving mid-week engagement; Cardi B after-party promotion viral; MGM Grand location anchors Tao Group strategy",
-      "flags": [
-        "talent_announcement"
-      ],
-      "raw_posts": [
-        {
-          "platform": "IG",
-          "content_summary": "R&Bae Wednesdays (4/8), Laid Back Luke (4/9), Franda Lay Bay (4/10), OG Chase B (4/11); 6,387 posts, Tao Group concept",
-          "posted_at": "2026-04-09",
-          "engagement_note": "High",
-          "flags": [
-            "talent_announcement"
-          ]
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Cardi B Little Miss Drama Tour after-party announcement; viral promotion with significant TikTok engagement",
-          "posted_at": "2026-03-28",
-          "engagement_note": "High",
-          "flags": [
-            "talent_announcement"
-          ]
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Edson Vegas Club Promoter decade-spanning review; Hakkasan legacy and Satisfaction room emphasis",
-          "posted_at": "2026-01-15",
-          "engagement_note": "Normal",
-          "flags": []
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Hosting and VIP experience content from club staff and promoters; behind-the-scenes culture",
-          "posted_at": "2026-03-02",
-          "engagement_note": "Normal",
-          "flags": []
-        }
-      ]
+      "summary": "Established venue at Aria; less visible in current social activity; focus may be on direct ticketing/VIP reservations.",
+      "flags": [],
+      "raw_posts": []
     },
     {
-      "venue": "Palm Tree Beach Club (MGM Grand)",
-      "posts_found": 4,
+      "venue": "Palm Tree (The Venetian)",
+      "posts_found": 0,
       "urgent": false,
-      "summary": "232K Instagram followers for new luxury dayclub by Kygo and Tao Group; opening buzz from May 2025 still generating discovery; viral A-list guest content (MGK, Sydney Sweeney)",
-      "flags": [
-        "promo_offer"
-      ],
-      "raw_posts": [
-        {
-          "platform": "IG",
-          "content_summary": "Vegas Luxury Daylife Destination by Tao Group x Palm Tree Crew; 114 posts, Wednesday-Sunday operations; 232K followers",
-          "posted_at": "2026-04-12",
-          "engagement_note": "High",
-          "flags": []
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Official Palm Tree Beach Club TikTok with 193K followers; dayclub experience and pool party content",
-          "posted_at": "2026-04-11",
-          "engagement_note": "High",
-          "flags": []
-        },
-        {
-          "platform": "PR/News",
-          "content_summary": "Forbes coverage of Palm Tree Beach Club opening May 2025; viral A-list guest interactions (MGK, Sydney Sweeney, Patrick Schwarzenegger); luxury brand positioning",
-          "posted_at": "2026-05-07",
-          "engagement_note": "High",
-          "flags": [
-            "promo_offer"
-          ]
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Vegas TikTok (official account) featuring Palm Tree Beach Club as new Strip dayclub destination",
-          "posted_at": "2026-05-03",
-          "engagement_note": "High",
-          "flags": []
-        }
-      ]
+      "summary": "Lower social media visibility; may operate under different marketing strategy or limited public social presence.",
+      "flags": [],
+      "raw_posts": []
     },
     {
-      "venue": "TAO Beach (The Venetian)",
-      "posts_found": 4,
+      "venue": "Tao Beach (The Venetian)",
+      "posts_found": 0,
       "urgent": false,
-      "summary": "92K Instagram followers; rooftop pool positioning strong; Tiësto April 11 and EDC Week day parties (Porter Robinson, DJ Snake, Steve Aoki) driving April engagement",
-      "flags": [
-        "talent_announcement"
-      ],
-      "raw_posts": [
-        {
-          "platform": "IG",
-          "content_summary": "TAO Beach official account; 92K followers, 460 posts; rooftop dayclub pool experience emphasis",
-          "posted_at": "2026-04-12",
-          "engagement_note": "Normal",
-          "flags": []
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Tiësto April 11 and EDC Week day parties featuring Porter Robinson, DJ Snake, Steve Aoki; pool party guestlist and VIP messaging",
-          "posted_at": "2026-04-10",
-          "engagement_note": "High",
-          "flags": [
-            "talent_announcement"
-          ]
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Edson Vegas Club Promoter video showcasing TAO Beach as best rooftop pool party in city; Venetian location emphasis",
-          "posted_at": "2026-03-30",
-          "engagement_note": "High",
-          "flags": []
-        },
-        {
-          "platform": "TT",
-          "content_summary": "General Venetian pool party content with TAO Beach featured; day party and VIP experience positioning",
-          "posted_at": "2026-02-23",
-          "engagement_note": "Normal",
-          "flags": []
-        }
-      ]
+      "summary": "Seasonal dayclub operation; minimal recent social activity in search window; focus likely on direct promoter outreach.",
+      "flags": [],
+      "raw_posts": []
     }
   ]
 }
