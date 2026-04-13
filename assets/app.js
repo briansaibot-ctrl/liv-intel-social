@@ -302,9 +302,9 @@
     try { analyticsData = await fetchJSON('./data/latest-analytics.json'); loaded++; } catch {}
     try { historyData = await fetchJSON('./data/analytics-history.json'); } catch {}
     offlineBanner.hidden = loaded > 0;
-    renderFeed();
-    renderTrends();
-    if (analyticsRendered) renderAnalytics();
+    try { renderFeed(); } catch(e) { console.error('renderFeed failed', e); feedContent.innerHTML = '<div class="empty-state">Feed failed to load. Check console.</div>'; }
+    try { renderTrends(); } catch(e) { console.error('renderTrends failed', e); trendsContent.innerHTML = '<div class="empty-state">Trends failed to load. Check console.</div>'; }
+    if (analyticsRendered) { try { renderAnalytics(); } catch(e) { console.error('renderAnalytics failed', e); analyticsContent.innerHTML = '<div class="empty-state">Analytics failed to load. Check console.</div>'; } }
   }
 
   // ===== Sparkline Renderer =====
@@ -858,15 +858,17 @@
     }
 
     let html = '';
+    // Wrap each section in try/catch so one bad render doesn’t crash the whole tab
+    const safe = (fn, label) => { try { return fn(); } catch(e) { console.error('renderAnalytics section failed:', label, e); return ''; } };
     html += `<div class="trends-header"><span class="trends-title">Weekly Analytics</span><span class="trends-week">Week of ${formatDate(analyticsData.week_of)}</span></div>`;
 
     // LIV vs Market — support both liv_accounts and liv_vs_market key names
     const livAccounts = analyticsData.liv_accounts || analyticsData.liv_vs_market;
-    if (livAccounts) html += renderLivVsMarket(livAccounts);
+    if (livAccounts) html += safe(() => renderLivVsMarket(livAccounts), 'LivVsMarket');
 
     // Leaderboard — support both cross_venue_rankings and account_stats
     const rankings = analyticsData.cross_venue_rankings || analyticsData.account_stats;
-    if (rankings) html += renderLeaderboard(rankings);
+    if (rankings) html += safe(() => renderLeaderboard(rankings), 'Leaderboard');
 
     // Event Radar — event_discovery may be a dict with .sample_events and .social_dark_events inside
     const evtDisc = analyticsData.event_discovery;
@@ -875,27 +877,27 @@
     const evtList = Array.isArray(evtDisc) ? evtDisc :
       (evtDisc && evtDisc.sample_events ? evtDisc.sample_events : []);
     if (evtList.length || darkEvts.length) {
-      html += renderEventRadar(evtList, darkEvts);
+      html += safe(() => renderEventRadar(evtList, darkEvts), 'EventRadar');
     }
 
     // AI Insight
-    if (analyticsData.weekly_ai_insight) html += renderAIInsight(analyticsData.weekly_ai_insight);
+    if (analyticsData.weekly_ai_insight) html += safe(() => renderAIInsight(analyticsData.weekly_ai_insight), 'AIInsight');
 
     // Hashtag Intelligence
-    if (analyticsData.hashtag_tracker) html += renderHashtagIntel(analyticsData.hashtag_tracker);
+    if (analyticsData.hashtag_tracker) html += safe(() => renderHashtagIntel(analyticsData.hashtag_tracker), 'HashtagIntel');
 
     // Time Intelligence
-    if (analyticsData.time_intelligence) html += renderTimeIntelligence(analyticsData.time_intelligence);
+    if (analyticsData.time_intelligence) html += safe(() => renderTimeIntelligence(analyticsData.time_intelligence), 'TimeIntel');
 
     // Patterns — historical_patterns may be a dict with .detected_patterns inside
     const hpRaw = analyticsData.historical_patterns;
     const hpList = Array.isArray(hpRaw) ? hpRaw : (hpRaw && hpRaw.detected_patterns ? hpRaw.detected_patterns : []);
     const upcomingPat = (hpRaw && hpRaw.upcoming_pattern_events) || analyticsData.upcoming_pattern_events || [];
-    if (hpList.length) html += renderPatterns(hpList, upcomingPat);
+    if (hpList.length) html += safe(() => renderPatterns(hpList, upcomingPat), 'Patterns');
 
-    // Venue Deep Dive — support both venues array and account_stats dict
+    // Venue Deep Dive
     const analyticsVenues = analyticsData.venues;
-    if (analyticsVenues && analyticsVenues.length) html += renderAnalyticsVenues(analyticsVenues);
+    if (analyticsVenues && analyticsVenues.length) html += safe(() => renderAnalyticsVenues(analyticsVenues), 'VenueDive');
 
     analyticsContent.innerHTML = html;
     analyticsContent.querySelectorAll('.analytics-venue-card .venue-header').forEach(hdr => {
