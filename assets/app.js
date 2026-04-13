@@ -14,6 +14,7 @@
   const REFRESH_INTERVAL = 30 * 60 * 1000;
   const ENGAGEMENT_RANK = { High: 3, Normal: 2, Low: 1 };
   const PRIORITY_ORDER = { HIGH: 0, MEDIUM: 1, LOW: 2 };
+  const badge = (w) => `<span style="font-size:10px;font-weight:400;color:var(--text-secondary);margin-left:6px;background:rgba(255,255,255,0.08);border-radius:3px;padding:1px 5px">${w}</span>`;
   // SVG icons for platforms (16x16 viewBox, white fill)
   const IG_ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/></svg>';
   const TT_ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z" fill="white"/></svg>';
@@ -77,6 +78,7 @@
   let trendsData = null;
   let analyticsData = null;
   let historyData = null;
+  let rollingData = null;
   let analyticsRendered = false;
   let settingsRendered = false;
 
@@ -301,6 +303,7 @@
     try { trendsData = await fetchJSON('./data/latest-trends.json'); loaded++; } catch {}
     try { analyticsData = await fetchJSON('./data/latest-analytics.json'); loaded++; } catch {}
     try { historyData = await fetchJSON('./data/analytics-history.json'); } catch {}
+    try { rollingData = await fetchJSON('./data/rolling-24h.json'); } catch {}
     offlineBanner.hidden = loaded > 0;
     try { renderFeed(); } catch(e) { console.error('renderFeed failed', e); feedContent.innerHTML = '<div class="empty-state">Feed failed to load. Check console.</div>'; }
     try { renderTrends(); } catch(e) { console.error('renderTrends failed', e); trendsContent.innerHTML = '<div class="empty-state">Trends failed to load. Check console.</div>'; }
@@ -424,41 +427,6 @@
 
   // ===== AI Daily Brief =====
 
-  function renderLivSpotlight() {
-    if (!feedData) return '';
-    const livNight = (feedData.venues || []).find(v => v.venue.toLowerCase().includes('liv nightclub'));
-    const livBeach = (feedData.venues || []).find(v => v.venue.toLowerCase().includes('liv beach'));
-    const topGap = (feedData.content_gaps || []).sort((a, b) => (a.urgency === 'high' ? 0 : 1) - (b.urgency === 'high' ? 0 : 1))[0];
-    const topCreator = (feedData.influencer_activity || []).sort((a, b) => (ENGAGEMENT_RANK[b.engagement_level] || 0) - (ENGAGEMENT_RANK[a.engagement_level] || 0))[0];
-
-    let html = '<div class="section-header">&#x2728; LIV Spotlight</div><div class="card liv-spotlight-card">';
-
-    // LIV Nightclub row
-    if (livNight) {
-      const urgentDot = livNight.urgent ? '<span class="urgent-dot"></span>' : '';
-      html += `<div class="spotlight-venue"><div class="spotlight-venue-name">${urgentDot}LIV Nightclub</div><div class="spotlight-summary">${escapeHTML(livNight.summary)}</div><div class="spotlight-meta">${livNight.posts_found} post${livNight.posts_found !== 1 ? 's' : ''} detected</div></div>`;
-    }
-
-    // LIV Beach row
-    if (livBeach) {
-      html += `<div class="spotlight-venue" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border)"><div class="spotlight-venue-name">LIV Beach</div><div class="spotlight-summary">${escapeHTML(livBeach.summary)}</div><div class="spotlight-meta">${livBeach.posts_found} post${livBeach.posts_found !== 1 ? 's' : ''} detected</div></div>`;
-    }
-
-    // Top content gap
-    if (topGap) {
-      const urgencyColor = topGap.urgency === 'high' ? 'var(--red)' : topGap.urgency === 'medium' ? 'var(--orange)' : 'var(--text-secondary)';
-      html += `<div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border)"><div style="font-size:11px;font-weight:700;color:${urgencyColor};text-transform:uppercase;margin-bottom:4px">&#x26A1; Priority Gap</div><div style="font-size:13px">${escapeHTML(topGap.suggested_action || topGap.description)}</div></div>`;
-    }
-
-    // Top creator mention
-    if (topCreator) {
-      html += `<div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border)"><div style="font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase;margin-bottom:4px">&#x1F31F; Creator Buzz</div><div style="font-size:13px">${escapeHTML(topCreator.handle || '')} — ${escapeHTML(topCreator.mention ? topCreator.mention.substring(0, 80) : '')}</div></div>`;
-    }
-
-    html += '</div>';
-    return html;
-  }
-
   function renderDailyBrief() {
     const bullets = [];
 
@@ -497,7 +465,8 @@
     const top3 = bullets.slice(0, 3);
     if (!top3.length) return '';
 
-    let html = '<div class="card daily-brief"><div class="brief-header">Today\'s Intel</div><div class="brief-bullets">';
+    const lastScanText = feedData.run_at ? `Last scan: ${formatTimestamp(feedData.run_at)}` : '';
+    let html = `<div class="card daily-brief"><div class="brief-header">Today's Intel — 24 Hour Recap</div>${lastScanText ? `<div style="font-size:11px;color:var(--text-secondary);margin-bottom:8px">${escapeHTML(lastScanText)}</div>` : ''}<div class="brief-bullets">`;
     top3.forEach(b => {
       html += `<div class="brief-bullet"><span class="brief-icon">${b.icon}</span> ${escapeHTML(b.text)}</div>`;
     });
@@ -521,10 +490,7 @@
 
     let html = '';
 
-    // ── 1. LIV SPOTLIGHT (always top, always LIV-first) ──────────────────
-    html += renderLivSpotlight();
-
-    // ── 2. TODAY'S INTEL brief ────────────────────────────────────────────
+    // ── 1. TODAY'S INTEL brief ────────────────────────────────────────────
     html += renderDailyBrief();
 
     // ── 3. URGENT ALERTS ─────────────────────────────────────────────────
@@ -541,17 +507,17 @@
       html += renderWeekendReadiness(feedData.weekend_readiness);
     }
 
-    // ── 5. MARKET PULSE ───────────────────────────────────────────────────
-    html += `<div class="card market-pulse"><div class="label">Market Pulse</div><div class="pulse-text">${escapeHTML(feedData.market_pulse)}</div></div>`;
-
-    // ── 6. CONTENT GAPS ───────────────────────────────────────────────────
+    // ── 5. CONTENT GAPS ───────────────────────────────────────────────────
     if (feedData.content_gaps && feedData.content_gaps.length) {
       html += renderContentGaps(feedData.content_gaps);
     }
 
     // ── 7. STORIES (time-sensitive — show near top) ────────────────────────
-    if (feedData.story_activity && feedData.story_activity.length) {
-      const fresh = feedData.story_activity.filter(s => getHoursAgo(s.detected_at) < 8);
+    const storySource = (rollingData && rollingData.story_activity && rollingData.story_activity.length)
+      ? rollingData.story_activity
+      : (feedData.story_activity || []);
+    if (storySource.length) {
+      const fresh = storySource.filter(s => getHoursAgo(s.detected_at) < 8);
       if (fresh.length) html += renderStories(fresh);
     }
 
@@ -566,7 +532,7 @@
     }
 
     // ── 10. VENUE CARDS (LIV first, then competitors) ─────────────────────
-    html += '<div class="section-header">&#x1F4CA; Competitor Feed</div>';
+    html += '<div class="section-header">&#x1F4CA; Competitor Feed — 7 Days</div>';
     const sorted = [...feedData.venues].filter(v => shouldShowVenue(v.venue)).sort((a, b) => venueIndex(a.venue) - venueIndex(b.venue));
     sorted.forEach(v => { html += renderVenueCard(v); });
 
@@ -579,9 +545,6 @@
         track('venue_expand', { venue: name ? name.textContent : 'unknown' });
       });
     });
-    // Export creators button
-    const exportBtn = feedContent.querySelector('#exportCreatorsBtn');
-    if (exportBtn) exportBtn.addEventListener('click', (e) => { e.preventDefault(); exportCreators(feedData.influencer_activity || [], feedData.liv_outreach_targets || []); });
 
     // Track outbound link clicks
     feedContent.querySelectorAll('a.card-link, a.audio-item-link').forEach(link => {
@@ -613,7 +576,7 @@
       const o = { high: 0, medium: 1, low: 2 };
       return (o[a.urgency] ?? 9) - (o[b.urgency] ?? 9);
     });
-    let html = '<div class="section-header" style="color:var(--orange)">&#x26A1; Content Gaps — Act Now</div>';
+    let html = `<div class="section-header" style="color:var(--orange)">&#x26A1; Content Gaps — Act Now${badge('📅 7 days')}</div>`;
     sorted.forEach(g => {
       const u = (g.urgency || 'medium').toLowerCase();
       const typeLabel = (g.gap_type || '').replace(/_/g, ' ');
@@ -718,12 +681,7 @@
   }
 
   function renderCreatorActivity(influencers, targets) {
-    let html = '<div class="section-header">&#x1F3A4; Creator Activity';
-    // Export button in header
-    if (influencers.length || targets.length) {
-      html += '<button class="export-btn" id="exportCreatorsBtn" style="float:right;font-size:11px;padding:2px 8px;margin-top:-2px;background:var(--gold);color:#000;border:none;border-radius:4px;cursor:pointer">&#x2B07; Export</button>';
-    }
-    html += '</div>';
+    let html = `<div class="section-header">&#x1F3A4; Creator Activity${badge('🕐 24 hrs')}</div>`;
 
     if (targets.length) {
       html += '<div class="section-header" style="font-size:13px;margin-top:8px;color:var(--gold)">&#x1F3AF; Outreach Opportunities</div><div class="card">';
@@ -758,7 +716,7 @@
   }
 
   function renderStories(stories) {
-    let html = '<div class="section-header">&#x1F4F8; Stories Detected</div>';
+    let html = '<div class="section-header">&#x1F4F8; Stories Detected<span style="font-size:11px;font-weight:400;color:var(--text-secondary);margin-left:6px"> — 24 Hours</span></div>';
     stories.forEach(s => {
       const urgCls = s.urgency ? ' urgent' : '';
       const typeCls = s.content_type || '';
@@ -815,7 +773,7 @@
 
     // ── 1. THIS WEEK — ACTIONS (most actionable, always first) ─────────────────
     if (trendsData.this_week_recommendations && trendsData.this_week_recommendations.length) {
-      html += '<div class="section-header">&#x1F3AF; This Week — Act On This</div>';
+      html += `<div class="section-header">&#x1F3AF; This Week — Act On This${badge('📅 7 days')}</div>`;
       [...trendsData.this_week_recommendations].sort((a, b) => (PRIORITY_ORDER[a.priority] ?? 9) - (PRIORITY_ORDER[b.priority] ?? 9)).forEach(rec => {
         const pri = (rec.priority || 'MEDIUM').toLowerCase();
         html += `<div class="card rec-card ${pri}"><div class="rec-header"><span class="priority-badge ${pri}">${rec.priority}</span>${platformBadgeHTML(rec.platform)}</div><div class="rec-action">${escapeHTML(rec.action)}</div><div class="rec-rationale">${escapeHTML(rec.rationale)}</div></div>`;
@@ -828,14 +786,14 @@
     }
 
     // ── 3. CONTENT FORMATS ─────────────────────────────────────────────
-    html += '<div class="section-header">&#x1F3AC; Content Formats Trending Now</div><div class="card">';
+    html += `<div class="section-header">&#x1F3AC; Content Formats Trending Now${badge('📅 7 days')}</div><div class="card">`;
     (trendsData.top_content_formats || []).forEach(fmt => {
       html += `<div class="format-item"><div class="format-name">${escapeHTML(fmt.format)}</div><div class="format-why">${escapeHTML(fmt.why_it_works || fmt.why_effective || '')}</div><div class="format-liv"><span class="format-liv-prefix">For LIV: </span>${escapeHTML(fmt.liv_application)}</div></div>`;
     });
     html += '</div>';
 
     // ── 4. TRENDING AUDIO ──────────────────────────────────────────────
-    html += '<div class="section-header">&#x1F3B5; Trending Audio</div>';
+    html += `<div class="section-header">&#x1F3B5; Trending Audio${badge('📅 7 days')}</div>`;
     if (trendsData.trending_audio && trendsData.trending_audio.length) {
       html += '<div class="card">';
       trendsData.trending_audio.forEach(a => {
@@ -846,22 +804,8 @@
       html += '</div>';
     } else { html += '<div class="card"><div class="no-posts">No standout audio trends this cycle</div></div>'; }
 
-    // ── 5. WHAT'S WORKING IN NIGHTLIFE ─────────────────────────────
-    if (trendsData.viral_nightlife_content) {
-      const vnc = trendsData.viral_nightlife_content;
-      html += '<div class="section-header">&#x1F525; What\'s Working in Nightlife</div>';
-      html += `<div class="card"><div class="viral-summary">${escapeHTML(vnc.summary)}</div>${vnc.standout_example ? `<div class="viral-standout">${escapeHTML(vnc.standout_example)}</div>` : ''}${vnc.theme ? `<span class="theme-pill">${escapeHTML(vnc.theme)}</span>` : ''}</div>`;
-    }
-
-    // ── 6. AUDIENCE SIGNALS ──────────────────────────────────────────────
-    if (trendsData.audience_signals) {
-      const as = trendsData.audience_signals;
-      html += '<div class="section-header">&#x1F465; Audience Signals</div>';
-      html += `<div class="card"><div class="audience-behavior">${escapeHTML(as.behavior_shift)}</div>${as.upcoming_moments && as.upcoming_moments.length ? `<div class="moments-scroll">${as.upcoming_moments.map(m => `<span class="moment-pill">${escapeHTML(m)}</span>`).join('')}</div>` : ''}</div>`;
-    }
-
-    // ── 7. PLATFORM UPDATES (algorithm news — least urgent, bottom) ───────────
-    html += '<div class="section-header">&#x26A1; Platform Updates</div>';
+    // ── 5. PLATFORM UPDATES (algorithm news — least urgent, bottom) ───────────
+    html += `<div class="section-header">&#x26A1; Platform Updates${badge('📅 7 days')}</div>`;
     (trendsData.platform_updates || []).forEach(pu => {
       const actionCls = pu.action_required ? ' action-required' : '';
       const detail = pu.detail_for_liv || pu.detail || '';
@@ -887,7 +831,7 @@
   }
 
   function renderSearchTrends(st) {
-    let html = '<div class="section-header">&#x1F50D; Search Trends</div><div class="card">';
+    let html = `<div class="section-header">&#x1F50D; Search Trends${badge('📅 7 days')}</div><div class="card">`;
 
     // Rising venues — sort by highest % spike, max 2 shown as green
     const rising = (st.rising_venues || []);
@@ -921,9 +865,16 @@
     // Rising artists as pills
     if (st.rising_artists && st.rising_artists.length) {
       html += '<div class="trend-artist-pills">';
-      // LIV-related artists first
-      const artists = [...st.rising_artists].sort((a, b) => /liv/i.test(a) ? -1 : /liv/i.test(b) ? 1 : 0);
-      artists.forEach(a => { html += `<span class="trend-artist-pill">${escapeHTML(a)} &#x2191;</span>`; });
+      // LIV-related artists first; items may be strings or objects
+      const artists = [...st.rising_artists].sort((a, b) => {
+        const na = typeof a === 'string' ? a : (a.artist || a.name || '');
+        const nb = typeof b === 'string' ? b : (b.artist || b.name || '');
+        return /liv/i.test(na) ? -1 : /liv/i.test(nb) ? 1 : 0;
+      });
+      artists.forEach(a => {
+        const artistName = typeof a === 'string' ? a : (a.artist || a.name || a.venue || JSON.stringify(a));
+        html += `<span class="trend-artist-pill">${escapeHTML(artistName)} &#x2191;</span>`;
+      });
       html += '</div>';
     }
 
@@ -971,11 +922,7 @@
     // ── 5. BEST TIMES TO POST ──────────────────────────────────────────
     if (analyticsData.time_intelligence) html += safe(() => renderTimeIntelligence(analyticsData.time_intelligence), 'TimeIntel');
 
-    // ── 6. LEADERBOARD ─────────────────────────────────────────────────
-    const rankings = analyticsData.cross_venue_rankings || analyticsData.account_stats;
-    if (rankings) html += safe(() => renderLeaderboard(rankings), 'Leaderboard');
-
-    // ── 7. HISTORICAL PATTERNS ─────────────────────────────────────────
+    // ── 6. HISTORICAL PATTERNS ─────────────────────────────────────────
     const hpRaw = analyticsData.historical_patterns;
     const hpList = Array.isArray(hpRaw) ? hpRaw : (hpRaw && hpRaw.detected_patterns ? hpRaw.detected_patterns : []);
     const upcomingPat = (hpRaw && hpRaw.upcoming_pattern_events) || analyticsData.upcoming_pattern_events || [];
@@ -1002,7 +949,7 @@
   }
 
   function renderLivVsMarket(liv) {
-    let html = '<div class="section-header">&#x1F4CD; LIV vs Market</div><div class="liv-compare-row">';
+    let html = `<div class="section-header">&#x1F4CD; LIV vs Market${badge('📅 7 days')}</div><div class="liv-compare-row">`;
 
     // Support two schemas:
     // Old: { liv_nightclub: { instagram: {followers, engagement_rate_pct}, tiktok: {}, vs_market: {} } }
@@ -1023,8 +970,9 @@
       if (isNew || acct.follower_count != null) {
         // New schema — flat positioning object
         const rankBadge = (r, total) => { if (!r) return ''; const cls = r <= 2 ? 'top' : r <= 4 ? 'mid' : 'low'; return `<span class="rank-badge ${cls}">#${r}${total ? ' of ' + total : ''}</span>`; };
-        html += `<div class="liv-stat"><span class="liv-stat-label">Followers</span><span class="liv-stat-value">${formatNum(acct.follower_count)} ${rankBadge(acct.follower_rank, 8)}</span></div>`;
-        html += `<div class="liv-stat"><span class="liv-stat-label">Engagement Rate</span><span class="liv-stat-value">${acct.engagement_rate || '—'} ${rankBadge(acct.engagement_rank, 8)}</span></div>`;
+        const trendArrow = (r) => { if (!r) return ''; if (r <= 3) return '<span style="color:var(--green);font-weight:700;margin-left:4px">↑</span>'; if (r >= 6) return '<span style="color:var(--red);font-weight:700;margin-left:4px">↓</span>'; return '<span style="color:#EAB308;font-weight:700;margin-left:4px">→</span>'; };
+        html += `<div class="liv-stat"><span class="liv-stat-label">Followers</span><span class="liv-stat-value">${formatNum(acct.follower_count)} ${rankBadge(acct.follower_rank, 8)}${trendArrow(acct.follower_rank)}</span></div>`;
+        html += `<div class="liv-stat"><span class="liv-stat-label">Engagement Rate</span><span class="liv-stat-value">${acct.engagement_rate || '—'}% ${rankBadge(acct.engagement_rank, 8)}${trendArrow(acct.engagement_rank)}</span></div>`;
         if (acct.posts_per_week) html += `<div class="liv-stat"><span class="liv-stat-label">Posts / Week</span><span class="liv-stat-value">${acct.posts_per_week}</span></div>`;
         if (acct.posting_frequency_rank) html += `<div class="liv-stat"><span class="liv-stat-label">Posting Rank</span><span class="liv-stat-value">${rankBadge(acct.posting_frequency_rank, 8)}</span></div>`;
         if (acct.estimated_avg_top_post_reach) html += `<div class="liv-stat"><span class="liv-stat-label">Avg Top Post Reach</span><span class="liv-stat-value">${escapeHTML(String(acct.estimated_avg_top_post_reach))}</span></div>`;
@@ -1084,7 +1032,7 @@
   }
 
   function renderEventRadar(events, darkEvents) {
-    let html = '<div class="section-header">&#x1F3AB; Event Radar — Next 30 Days</div>';
+    let html = '<div class="section-header">&#x1F3AB; Event Radar — 7 Days</div>';
 
     if (darkEvents.length) {
       html += '<div class="section-header" style="font-size:13px;color:var(--orange)">&#x1F440; Not Yet On Social</div>';
@@ -1102,7 +1050,7 @@
   }
 
   function renderAIInsight(insight) {
-    let html = '<div class="section-header">&#x1F9E0; AI Insight</div>';
+    let html = `<div class="section-header">&#x1F9E0; AI Insight${badge('📅 7 days')}</div>`;
     html += `<div class="card insight-card"><div class="insight-label">Competitive Takeaway</div><div class="insight-text">${escapeHTML(insight.competitive_takeaway)}</div>`;
     html += `<div class="insight-highlight"><div class="insight-highlight-label">Biggest LIV Opportunity</div><div class="insight-highlight-text">${escapeHTML(insight.biggest_opportunity_for_liv)}</div></div>`;
     // who_to_watch may be a single object or an array — handle both
@@ -1128,7 +1076,7 @@
   }
 
   function renderHashtagIntel(tracker) {
-    let html = '<div class="section-header">&#x0023;&#xFE0F;&#x20E3; Hashtag Intelligence</div>';
+    let html = `<div class="section-header">&#x0023;&#xFE0F;&#x20E3; Hashtag Intelligence${badge('📅 7 days')}</div>`;
 
     const renderPillRow = (label, items, cls) => {
       if (!items) return '';
@@ -1182,7 +1130,7 @@
   }
 
   function renderTimeIntelligence(ti) {
-    let html = '<div class="section-header">&#x23F0; Best Times to Post</div>';
+    let html = `<div class="section-header">&#x23F0; Best Times to Post${badge('📅 7 days')}</div>`;
     // Support both old schema (peak_windows_by_platform.instagram) and
     // new schema (instagram_analysis, tiktok_analysis, twitter_x_analysis)
     const platMap = [
@@ -1193,11 +1141,24 @@
     const oldPlatforms = ti.peak_windows_by_platform || {};
     const oldRecs = ti.liv_recommendation || {};
 
+    // Parse strings like "8 PM" / "6 AM" to 0-23 integers
+    function parseHourStr(s) {
+      if (typeof s === 'number') return s;
+      const m = String(s).match(/(\d+)\s*(AM|PM)?/i);
+      if (!m) return -1;
+      let h = parseInt(m[1]);
+      const pm = m[2] && m[2].toUpperCase() === 'PM';
+      const am = m[2] && m[2].toUpperCase() === 'AM';
+      if (pm && h !== 12) h += 12;
+      if (am && h === 12) h = 0;
+      return h;
+    }
+
     platMap.forEach(({ key, newKey, label, cls }) => {
       const data = oldPlatforms[key] || ti[newKey];
       if (!data) return;
-      const best = new Set(data.best_hours || []);
-      const worst = new Set(data.worst_hours || []);
+      const best = new Set((data.best_hours || []).map(parseHourStr).filter(h => h >= 0));
+      const worst = new Set((data.worst_hours || []).map(parseHourStr).filter(h => h >= 0));
       const rec = oldRecs[key] || data.liv_recommendation || data.liv_current_status || '';
       // opportunity_window may be missing (e.g. Twitter) — fall back to best_use or highest_engagement_time
       const opportunity = data.opportunity_window || data.best_use || data.highest_engagement_time || '';
@@ -1220,7 +1181,7 @@
   }
 
   function renderPatterns(patterns, upcoming) {
-    let html = '<div class="section-header">&#x1F4DA; Patterns</div>';
+    let html = `<div class="section-header">&#x1F4DA; Patterns${badge('📅 8 weeks')}</div>`;
     patterns.forEach(p => {
       const pConf = String(p.confidence ?? '');
       html += `<div class="card pattern-card"><div class="pattern-name">${escapeHTML(p.venue)} <span class="pattern-confidence ${pConf.toLowerCase()}">${escapeHTML(pConf)}</span></div><div class="pattern-desc">${escapeHTML(p.pattern)}</div>`;
@@ -1383,8 +1344,140 @@
     // Force refresh button removed — auto-refresh only
   }
 
+  // ===== Full Report Export =====
+
+  function exportFullReport() {
+    const now = new Date();
+    const dateStr = now.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    const dateFile = now.toISOString().slice(0, 10);
+    const lines = [];
+
+    lines.push(`LIV INTEL SOCIAL REPORT — ${dateStr}`);
+    lines.push('='.repeat(60));
+    lines.push('');
+
+    // Run timestamp
+    if (feedData && feedData.run_at) {
+      lines.push(`Report generated: ${formatTimestamp(feedData.run_at)}`);
+      lines.push('');
+    }
+
+    // LIV Performance Summary
+    lines.push('LIV PERFORMANCE SUMMARY');
+    lines.push('-'.repeat(40));
+    if (analyticsData && analyticsData.liv_vs_market) {
+      const lvm = analyticsData.liv_vs_market;
+      const lnp = lvm.liv_nightclub_positioning || {};
+      const lbp = lvm.liv_beach_positioning || {};
+      lines.push(`LIV Nightclub: ${formatNum(lnp.follower_count || 0)} followers | Rank #${lnp.follower_rank || '?'} of 8 | Engagement ${lnp.engagement_rate || '?'}% (rank #${lnp.engagement_rank || '?'})`);
+      if (lnp.competitive_summary) lines.push(`  → ${lnp.competitive_summary}`);
+      lines.push(`LIV Beach: ${formatNum(lbp.follower_count || 0)} followers | Rank #${lbp.follower_rank || '?'} of 8 | Engagement ${lbp.engagement_rate || '?'}%`);
+    } else if (analyticsData && analyticsData.account_stats) {
+      const ln = analyticsData.account_stats.liv_nightclub || {};
+      const lb = analyticsData.account_stats.liv_beach || {};
+      const lnIg = ln.instagram || {};
+      const lbIg = lb.instagram || {};
+      lines.push(`LIV Nightclub: ${formatNum(lnIg.followers)} followers | Engagement ${lnIg.engagement_rate_percent || '?'}%`);
+      lines.push(`LIV Beach: ${formatNum(lbIg.followers)} followers | Engagement ${lbIg.engagement_rate_percent || '?'}%`);
+    }
+    lines.push('');
+
+    // Content Gaps
+    lines.push('CONTENT GAPS');
+    lines.push('-'.repeat(40));
+    (feedData && feedData.content_gaps || []).forEach((g, i) => {
+      lines.push(`${i + 1}. [${(g.urgency || 'medium').toUpperCase()}] ${g.gap_type ? g.gap_type.replace(/_/g, ' ') : ''}`);
+      lines.push(`   ${g.description}`);
+      if (g.suggested_action) lines.push(`   Action: ${g.suggested_action}`);
+    });
+    lines.push('');
+
+    // Top Creators
+    lines.push('TOP CREATORS THIS CYCLE');
+    lines.push('-'.repeat(40));
+    (feedData && feedData.influencer_activity || []).slice(0, 5).forEach(inf => {
+      lines.push(`${inf.handle || 'Unknown'} (${inf.platform || '?'}) — ${inf.engagement_level || 'Normal'} engagement`);
+      if (inf.mention) lines.push(`  ${inf.mention.substring(0, 120)}`);
+    });
+    lines.push('');
+
+    // Competitor Summary
+    lines.push('COMPETITOR SUMMARY');
+    lines.push('-'.repeat(40));
+    (feedData && feedData.venues || []).filter(v => !isLivVenue(v.venue)).forEach(v => {
+      const urgentMark = v.urgent ? ' ⚠️' : '';
+      lines.push(`${shortVenueName(v.venue)}${urgentMark}: ${v.posts_found} posts — ${v.summary ? v.summary.substring(0, 100) : ''}`);
+    });
+    lines.push('');
+
+    // Search Trends
+    if (trendsData && trendsData.search_trends) {
+      lines.push('SEARCH TRENDS');
+      lines.push('-'.repeat(40));
+      const st = trendsData.search_trends;
+      (st.rising_venues || []).forEach(v => {
+        lines.push(`↑ ${shortVenueName(v.venue || '')} ${v.estimated_spike || ''} — ${v.driver || v.trend || ''}`);
+      });
+      (st.declining_venues || []).forEach(v => {
+        const name = typeof v === 'string' ? v : shortVenueName(v.venue || '');
+        const reason = typeof v === 'object' ? (v.driver || v.reason || '') : '';
+        lines.push(`↓ ${name}${reason ? ' — ' + reason : ''}`);
+      });
+      if (st.rising_artists && st.rising_artists.length) {
+        lines.push('Rising Artists: ' + st.rising_artists.map(a => {
+          if (typeof a === 'string') return a;
+          return a.artist || a.name || JSON.stringify(a);
+        }).join(', '));
+      }
+      lines.push('');
+    }
+
+    // AI Insight
+    if (analyticsData && analyticsData.weekly_ai_insight) {
+      const ins = analyticsData.weekly_ai_insight;
+      lines.push('AI STRATEGIC INSIGHT');
+      lines.push('-'.repeat(40));
+      if (ins.competitive_takeaway) lines.push(ins.competitive_takeaway);
+      lines.push('');
+      if (ins.biggest_opportunity_for_liv) {
+        lines.push('Biggest Opportunity for LIV:');
+        lines.push(ins.biggest_opportunity_for_liv);
+        lines.push('');
+      }
+    }
+
+    // This week recommendations
+    if (trendsData && trendsData.this_week_recommendations && trendsData.this_week_recommendations.length) {
+      lines.push('RECOMMENDATIONS THIS WEEK');
+      lines.push('-'.repeat(40));
+      [...trendsData.this_week_recommendations]
+        .sort((a, b) => (PRIORITY_ORDER[a.priority] ?? 9) - (PRIORITY_ORDER[b.priority] ?? 9))
+        .slice(0, 5)
+        .forEach((r, i) => {
+          lines.push(`${i + 1}. [${r.priority}] ${r.action ? r.action.substring(0, 140) : ''}`);
+        });
+      lines.push('');
+    }
+
+    lines.push('-'.repeat(60));
+    lines.push('Generated by LIV Intel Social Monitor');
+    lines.push(`https://briansaibot-ctrl.github.io/liv-intel-social/`);
+
+    const text = lines.join('\n');
+    const blob = new Blob([text], { type: 'text/plain' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `LIV-Intel-Report-${dateFile}.txt`;
+    a.click();
+    track('report_download', { date: dateFile });
+  }
+
   // ===== Init =====
   initTabs();
   loadData();
   setInterval(loadData, REFRESH_INTERVAL);
+
+  // Wire up download report button
+  const downloadBtn = document.getElementById('downloadReportBtn');
+  if (downloadBtn) downloadBtn.addEventListener('click', exportFullReport);
 })();

@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-04-13T21:00:00Z",
+  "window": "24h",
+  "liv_nightclub": {
+    "posts_count": 3,
+    "avg_engagement": "High",
+    "top_posts": [
+      {
+        "platform": "TT",
+        "content_summary": "John Summit performance recap with guest list angle; backstage access driver for followers",
+        "posted_at": "2026-03-22",
+        "engagement_note": "High"
+      },
+      {
+        "platform": "TT",
+        "content_summary": "Honest LIV review from guest-list creator (@globeth0tter); EDM/guest list focus",
+        "posted_at": "2026-04-08",
+        "engagement_note": "High"
+      },
+      {
+        "platform": "IG",
+        "content_summary": "Event calendar updates with DJ Kettama and residency posts; Fontainebleau integration messaging",
+        "posted_at": "2026-04-01",
+        "engagement_note": "Normal"
+      }
+    ]
+  },
+  "liv_beach": {
+    "posts_count": 2,
+    "avg_engagement": "Normal",
+    "top_posts": [
+      {
+        "platform": "TT",
+        "content_summary": "User-generated outfit content for LIV Beach; pool party and branding visibility",
+        "posted_at": "2026-03-15",
+        "engagement_note": "High"
+      },
+      {
+        "platform": "IG",
+        "content_summary": "Instagram bio update: Westend debut (3/27), Discolines (3/28), DJ Vice (3/29); Fontainebleau branding",
+        "posted_at": "2026-03-26",
+        "engagement_note": "Normal"
+      }
+    ]
+  },
+  "competitor_summary": [
+    { "venue": "OMNIA Nightclub", "posts_count": 3, "urgency_flags": 1 },
+    { "venue": "Hakkasan Nightclub", "posts_count": 3, "urgency_flags": 1 },
+    { "venue": "Palm Tree", "posts_count": 2, "urgency_flags": 1 },
+    { "venue": "Tao Beach", "posts_count": 3, "urgency_flags": 1 },
+    { "venue": "XS Nightclub", "posts_count": 2, "urgency_flags": 0 },
+    { "venue": "Encore Beach Club", "posts_count": 2, "urgency_flags": 0 },
+    { "venue": "Zouk Nightclub", "posts_count": 2, "urgency_flags": 0 }
+  ],
+  "story_activity": [
+    {
+      "venue": "OMNIA Nightclub",
+      "content_type": "announcement",
+      "summary": "Upcoming lineup: Fisher (4/11), Zedd (4/17), De'orro + Chase B (4/18); R&Bae Wednesdays (4/8); strong messaging around variety",
+      "detected_at": "2026-04-13T21:00:00Z",
+      "urgency": true
+    },
+    {
+      "venue": "Hakkasan Nightclub",
+      "content_type": "announcement",
+      "summary": "R&Bae Wednesdays launching; Laid Back Luke (4/9), Franda Lay Bay (4/10), OG Chase B (4/11); Cardi B official after-party mentioned",
+      "detected_at": "2026-04-13T21:00:00Z",
+      "urgency": true
+    },
+    {
+      "venue": "Zouk Nightclub",
+      "content_type": "announcement",
+      "summary": "Duke DuMont (Fri 4/3), Tape Beats with AYU Dayclub (Sat 4/4); cohesive weekend programming visible",
+      "detected_at": "2026-04-13T21:00:00Z",
+      "urgency": false
+    },
+    {
+      "venue": "TAO Beach",
+      "content_type": "announcement",
+      "summary": "Tiësto at TAO Beach (4/11); EDC Week lineup includes Porter Robinson, DJ Snake, Steve Aoki; major talent draw",
+      "detected_at": "2026-04-13T21:00:00Z",
+      "urgency": true
+    },
+    {
+      "venue": "LIV Beach",
+      "content_type": "countdown",
+      "summary": "Discolines (Sat 3/28), DJ Vice (Sun 3/29), Westend tech-house debut (Fri 3/27); daytime positioning solid but no major April talent announced",
+      "detected_at": "2026-04-13T21:00:00Z",
+      "urgency": false
+    }
+  ],
+  "top_creators": [
+    {
+      "handle": "@globeth0tter",
+      "platform": "TT",
+      "engagement_level": "High",
+      "posts_found": 1,
+      "mention": "Posted honest review of LIV Nightclub as guest list creator with 591 likes"
+    },
+    {
+      "handle": "@edsonvegasclubpromoter",
+      "platform": "TT",
+      "engagement_level": "High",
+      "posts_found": 2,
+      "mention": "Cross-promotes TAO Beach, Hakkasan with decade-long club narratives; 300k+ follower potential reach"
+    }
+  ],
+  "content_gaps": [
+    {
+      "gap_type": "R&B_night_strategy",
+      "description": "Hakkasan Wednesday R&Bae nights driving strong creator engagement; LIV has no dedicated R&B programming visible in social feeds",
+      "urgency": "high",
+      "suggested_action": "Launch LIV Wednesday R&B or hip-hop themed night with resident DJ and creator partnerships"
+    },
+    {
+      "gap_type": "mega_DJ_residencies",
+      "description": "Tiësto residency at Encore Beach Club and Fisher/Zedd bookings at OMNIA drawing large followings",
+      "urgency": "medium",
+      "suggested_action": "Secure headline house/tech-house name for May residency announcement"
+    },
+    {
+      "gap_type": "trending_audio_remixes",
+      "description": "Zouk, OMNIA, and Hakkasan using trending TikTok audio in shorts; LIV posts lack this remix-culture hook",
+      "urgency": "medium",
+      "suggested_action": "Launch weekly 15s TikTok audio-driven shorts featuring LIV Beach talent using top 5 trending sounds"
+    }
+  ],
+  "urgent_count": 4
+}
