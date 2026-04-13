@@ -1142,7 +1142,8 @@
   function renderPatterns(patterns, upcoming) {
     let html = '<div class="section-header">&#x1F4DA; Patterns</div>';
     patterns.forEach(p => {
-      html += `<div class="card pattern-card"><div class="pattern-name">${escapeHTML(p.venue)} <span class="pattern-confidence ${(p.confidence || '').toLowerCase()}">${escapeHTML(p.confidence)}</span></div><div class="pattern-desc">${escapeHTML(p.pattern)}</div>`;
+      const pConf = String(p.confidence ?? '');
+      html += `<div class="card pattern-card"><div class="pattern-name">${escapeHTML(p.venue)} <span class="pattern-confidence ${pConf.toLowerCase()}">${escapeHTML(pConf)}</span></div><div class="pattern-desc">${escapeHTML(p.pattern)}</div>`;
       if (p.based_on_weeks) html += `<div class="pattern-meta">Based on ${p.based_on_weeks} weeks of data</div>`;
       if (p.next_expected) html += `<div class="pattern-next">Next expected: ${formatShortDate(p.next_expected)}</div>`;
       if (p.liv_action) html += `<div class="pattern-action">${escapeHTML(p.liv_action)}</div>`;
@@ -1152,7 +1153,8 @@
     if (upcoming.length) {
       html += '<div class="section-header" style="font-size:13px">&#x1F52E; Predicted This Week</div><div class="card">';
       upcoming.forEach(u => {
-        html += `<div style="padding:6px 0;border-bottom:1px solid var(--border);font-size:13px"><span style="color:var(--gold);font-weight:600">${formatShortDate(u.date)}</span> · <strong>${escapeHTML(u.venue)}</strong><br><span style="color:var(--text-secondary)">${escapeHTML(u.expected_action)}</span> <span class="pattern-confidence ${(u.confidence || '').toLowerCase()}">${escapeHTML(u.confidence)}</span></div>`;
+        const uConf = String(u.confidence ?? '');
+        html += `<div style="padding:6px 0;border-bottom:1px solid var(--border);font-size:13px"><span style="color:var(--gold);font-weight:600">${formatShortDate(u.date)}</span> · <strong>${escapeHTML(u.venue || u.event || '')}</strong><br><span style="color:var(--text-secondary)">${escapeHTML(u.expected_action || u.liv_opportunity || '')}</span> <span class="pattern-confidence ${uConf.toLowerCase()}">${uConf}</span></div>`;
       });
       html += '</div>';
     }
@@ -1167,7 +1169,8 @@
       const ig = v.accounts?.instagram || {};
       const tt = v.accounts?.tiktok || {};
 
-      html += `<div class="card analytics-venue-card"><div class="venue-header"><span class="venue-name">${escapeHTML(v.name)}</span><span class="confidence-badge ${(v.confidence || '').toLowerCase()}">${escapeHTML(v.confidence)}</span><span class="venue-chevron">&#x25BE;</span></div>`;
+      const vConf = String(v.confidence ?? '');
+      html += `<div class="card analytics-venue-card"><div class="venue-header"><span class="venue-name">${escapeHTML(v.name)}</span><span class="confidence-badge ${vConf.toLowerCase()}">${escapeHTML(vConf)}</span><span class="venue-chevron">&#x25BE;</span></div>`;
 
       // Collapsed stats
       html += `<div class="analytics-stats-row"><span class="analytics-stat-chip"><strong>${formatNum(ig.followers)}</strong> IG</span><span class="analytics-stat-chip"><strong>${formatNum(tt.followers)}</strong> TT</span><span class="analytics-stat-chip"><strong>${ig.engagement_rate_pct || '—'}%</strong> eng</span></div>`;
