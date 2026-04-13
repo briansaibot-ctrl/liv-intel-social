@@ -1024,12 +1024,25 @@
     let html = '<div class="section-header">&#x0023;&#xFE0F;&#x20E3; Hashtag Intelligence</div>';
 
     const renderPillRow = (label, items, cls) => {
-      if (!items || !items.length) return '';
+      if (!items) return '';
+      // items may be: array of strings, array of {tag,trend} objects, or a plain object (dict keyed by tag)
+      let entries = [];
+      if (Array.isArray(items)) {
+        entries = items.map(h => ({
+          tag: (typeof h === 'string') ? h : (h.tag || h),
+          trend: (typeof h === 'object' && h.trend) ? h.trend : ''
+        }));
+      } else if (typeof items === 'object') {
+        // dict like { '#livnightclub': { trend: '...', ... }, ... }
+        entries = Object.entries(items).map(([tag, meta]) => ({
+          tag,
+          trend: (meta && meta.trend) ? meta.trend : ''
+        }));
+      }
+      if (!entries.length) return '';
       let r = `<div style="font-size:12px;font-weight:600;color:var(--text-secondary);margin:8px 0 6px">${label}</div><div class="hashtag-scroll">`;
-      items.forEach(h => {
-        const tag = h.tag || h;
-        const trend = h.trend || '';
-        const arrow = trend === 'up' ? ' ↑' : trend === 'down' ? ' ↓' : '';
+      entries.forEach(({ tag, trend }) => {
+        const arrow = /growing|up|increase/i.test(trend) ? ' ↑' : /declin|down|drop/i.test(trend) ? ' ↓' : '';
         r += `<span class="hashtag-pill ${cls}">${escapeHTML(tag)}${arrow}</span>`;
       });
       r += '</div>';
@@ -1078,17 +1091,21 @@
       if (!data) return;
       const best = new Set(data.best_hours || []);
       const worst = new Set(data.worst_hours || []);
-      // liv_recommendation may be top-level map or inline per-platform
-      const rec = oldRecs[key] || data.liv_recommendation || '';
+      const rec = oldRecs[key] || data.liv_recommendation || data.liv_current_status || '';
+      // opportunity_window may be missing (e.g. Twitter) — fall back to best_use or highest_engagement_time
+      const opportunity = data.opportunity_window || data.best_use || data.highest_engagement_time || '';
+      const hasBars = best.size > 0 || worst.size > 0;
 
-      html += `<div class="card time-card"><div class="time-card-header"><span class="platform-badge ${cls}">${label}</span><span style="font-size:12px;color:var(--text-secondary)">Opportunity: ${escapeHTML(data.opportunity_window || '')}</span></div>`;
-      html += '<div class="time-bar">';
-      for (let h = 0; h < 24; h++) {
-        const c = best.has(h) ? 'best' : worst.has(h) ? 'worst' : '';
-        html += `<div class="time-hour ${c}" title="${h}:00"></div>`;
+      html += `<div class="card time-card"><div class="time-card-header"><span class="platform-badge ${cls}">${label}</span><span style="font-size:12px;color:var(--text-secondary)">${escapeHTML(opportunity)}</span></div>`;
+      if (hasBars) {
+        html += '<div class="time-bar">';
+        for (let h = 0; h < 24; h++) {
+          const c = best.has(h) ? 'best' : worst.has(h) ? 'worst' : '';
+          html += `<div class="time-hour ${c}" title="${h}:00"></div>`;
+        }
+        html += '</div>';
+        html += '<div class="time-labels"><span>12am</span><span>6am</span><span>12pm</span><span>6pm</span><span>11pm</span></div>';
       }
-      html += '</div>';
-      html += '<div class="time-labels"><span>12am</span><span>6am</span><span>12pm</span><span>6pm</span><span>11pm</span></div>';
       if (rec) html += `<div class="time-insight">${escapeHTML(rec)}</div>`;
       html += '</div>';
     });
