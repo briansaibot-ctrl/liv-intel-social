@@ -860,33 +860,42 @@
     let html = '';
     html += `<div class="trends-header"><span class="trends-title">Weekly Analytics</span><span class="trends-week">Week of ${formatDate(analyticsData.week_of)}</span></div>`;
 
-    // LIV vs Market (Feature 1)
-    if (analyticsData.liv_accounts) html += renderLivVsMarket(analyticsData.liv_accounts);
+    // LIV vs Market — support both liv_accounts and liv_vs_market key names
+    const livAccounts = analyticsData.liv_accounts || analyticsData.liv_vs_market;
+    if (livAccounts) html += renderLivVsMarket(livAccounts);
 
-    // Leaderboard
-    if (analyticsData.cross_venue_rankings) html += renderLeaderboard(analyticsData.cross_venue_rankings);
+    // Leaderboard — support both cross_venue_rankings and account_stats
+    const rankings = analyticsData.cross_venue_rankings || analyticsData.account_stats;
+    if (rankings) html += renderLeaderboard(rankings);
 
-    // Event Radar (Feature 4)
-    if (analyticsData.event_discovery || analyticsData.social_dark_events) {
-      html += renderEventRadar(analyticsData.event_discovery || [], analyticsData.social_dark_events || []);
+    // Event Radar — event_discovery may be a dict with .sample_events and .social_dark_events inside
+    const evtDisc = analyticsData.event_discovery;
+    const darkEvts = analyticsData.social_dark_events ||
+      (evtDisc && !Array.isArray(evtDisc) ? evtDisc.social_dark_events : null) || [];
+    const evtList = Array.isArray(evtDisc) ? evtDisc :
+      (evtDisc && evtDisc.sample_events ? evtDisc.sample_events : []);
+    if (evtList.length || darkEvts.length) {
+      html += renderEventRadar(evtList, darkEvts);
     }
 
     // AI Insight
     if (analyticsData.weekly_ai_insight) html += renderAIInsight(analyticsData.weekly_ai_insight);
 
-    // Hashtag Intelligence (Feature 10)
+    // Hashtag Intelligence
     if (analyticsData.hashtag_tracker) html += renderHashtagIntel(analyticsData.hashtag_tracker);
 
-    // Time Intelligence (Feature 11)
+    // Time Intelligence
     if (analyticsData.time_intelligence) html += renderTimeIntelligence(analyticsData.time_intelligence);
 
-    // Patterns (Feature 13)
-    if (analyticsData.historical_patterns && analyticsData.historical_patterns.length) {
-      html += renderPatterns(analyticsData.historical_patterns, analyticsData.upcoming_pattern_events || []);
-    }
+    // Patterns — historical_patterns may be a dict with .detected_patterns inside
+    const hpRaw = analyticsData.historical_patterns;
+    const hpList = Array.isArray(hpRaw) ? hpRaw : (hpRaw && hpRaw.detected_patterns ? hpRaw.detected_patterns : []);
+    const upcomingPat = (hpRaw && hpRaw.upcoming_pattern_events) || analyticsData.upcoming_pattern_events || [];
+    if (hpList.length) html += renderPatterns(hpList, upcomingPat);
 
-    // Venue Deep Dive (Features 6, 7, 12)
-    if (analyticsData.venues && analyticsData.venues.length) html += renderAnalyticsVenues(analyticsData.venues);
+    // Venue Deep Dive — support both venues array and account_stats dict
+    const analyticsVenues = analyticsData.venues;
+    if (analyticsVenues && analyticsVenues.length) html += renderAnalyticsVenues(analyticsVenues);
 
     analyticsContent.innerHTML = html;
     analyticsContent.querySelectorAll('.analytics-venue-card .venue-header').forEach(hdr => {
@@ -907,29 +916,45 @@
   function renderLivVsMarket(liv) {
     let html = '<div class="section-header">&#x1F4CD; LIV vs Market</div><div class="liv-compare-row">';
 
-    ['liv_nightclub', 'liv_beach'].forEach(key => {
-      const acct = liv[key];
-      if (!acct) return;
-      const label = key === 'liv_nightclub' ? 'LIV Nightclub' : 'LIV Beach';
-      const ig = acct.instagram || {};
-      const tt = acct.tiktok || {};
-      const vm = acct.vs_market || {};
+    // Support two schemas:
+    // Old: { liv_nightclub: { instagram: {followers, engagement_rate_pct}, tiktok: {}, vs_market: {} } }
+    // New: { liv_nightclub_positioning: { follower_count, engagement_rate, follower_rank, engagement_rank, competitive_summary } }
+    const keyMap = [
+      { old: 'liv_nightclub', new: 'liv_nightclub_positioning', label: 'LIV Nightclub' },
+      { old: 'liv_beach',     new: 'liv_beach_positioning',     label: 'LIV Beach' },
+    ];
 
+    keyMap.forEach(({ old: oldKey, new: newKey, label }) => {
+      const acct = liv[oldKey] || liv[newKey];
+      if (!acct) return;
+
+      // Detect which schema
+      const isNew = !!(liv[newKey] && !liv[oldKey]);
       html += `<div class="liv-card"><div class="liv-card-title">${label}</div>`;
-      // IG stats
-      html += `<div class="liv-stat"><span class="liv-stat-label">IG Followers</span><span class="liv-stat-value">${formatNum(ig.followers)}</span></div>`;
-      html += `<div class="liv-stat"><span class="liv-stat-label">IG Engage</span><span class="liv-stat-value">${ig.engagement_rate_pct || '—'}%</span></div>`;
-      // TT stats
-      html += `<div class="liv-stat"><span class="liv-stat-label">TT Followers</span><span class="liv-stat-value">${formatNum(tt.followers)}</span></div>`;
-      html += `<div class="liv-stat"><span class="liv-stat-label">TT Engage</span><span class="liv-stat-value">${tt.engagement_rate_pct || '—'}%</span></div>`;
-      // 30d delta
-      const delta = ig.follower_30d_delta || 0;
-      const deltaClass = delta > 0 ? 'up' : delta < 0 ? 'down' : 'flat';
-      html += `<div class="liv-stat"><span class="liv-stat-label">30d IG Delta</span><span class="liv-delta ${deltaClass}">${delta > 0 ? '+' : ''}${formatNum(delta)}</span></div>`;
-      // Ranks
-      const rankBadge = (r) => { const cls = r <= 2 ? 'top' : r <= 4 ? 'mid' : 'low'; return `<span class="rank-badge ${cls}">#${r} of 8</span>`; };
-      html += `<div class="liv-stat"><span class="liv-stat-label">Followers</span>${rankBadge(vm.follower_rank || 0)}</div>`;
-      html += `<div class="liv-stat"><span class="liv-stat-label">Engagement</span>${rankBadge(vm.engagement_rank || 0)}</div>`;
+
+      if (isNew || acct.follower_count != null) {
+        // New schema — flat positioning object
+        const rankBadge = (r) => { if (!r) return ''; const cls = r <= 2 ? 'top' : r <= 4 ? 'mid' : 'low'; return `<span class="rank-badge ${cls}">#${r}</span>`; };
+        html += `<div class="liv-stat"><span class="liv-stat-label">Followers</span><span class="liv-stat-value">${formatNum(acct.follower_count)}${rankBadge(acct.follower_rank)}</span></div>`;
+        html += `<div class="liv-stat"><span class="liv-stat-label">Engagement</span><span class="liv-stat-value">${acct.engagement_rate || '—'}${rankBadge(acct.engagement_rank)}</span></div>`;
+        if (acct.posts_per_week) html += `<div class="liv-stat"><span class="liv-stat-label">Posts/week</span><span class="liv-stat-value">${acct.posts_per_week}</span></div>`;
+        if (acct.competitive_summary) html += `<div class="time-insight" style="margin-top:6px">${escapeHTML(acct.competitive_summary)}</div>`;
+      } else {
+        // Old schema — nested instagram/tiktok/vs_market
+        const ig = acct.instagram || {};
+        const tt = acct.tiktok || {};
+        const vm = acct.vs_market || {};
+        html += `<div class="liv-stat"><span class="liv-stat-label">IG Followers</span><span class="liv-stat-value">${formatNum(ig.followers)}</span></div>`;
+        html += `<div class="liv-stat"><span class="liv-stat-label">IG Engage</span><span class="liv-stat-value">${ig.engagement_rate_pct || '—'}%</span></div>`;
+        html += `<div class="liv-stat"><span class="liv-stat-label">TT Followers</span><span class="liv-stat-value">${formatNum(tt.followers)}</span></div>`;
+        html += `<div class="liv-stat"><span class="liv-stat-label">TT Engage</span><span class="liv-stat-value">${tt.engagement_rate_pct || '—'}%</span></div>`;
+        const delta = ig.follower_30d_delta || 0;
+        const deltaClass = delta > 0 ? 'up' : delta < 0 ? 'down' : 'flat';
+        html += `<div class="liv-stat"><span class="liv-stat-label">30d Delta</span><span class="liv-delta ${deltaClass}">${delta > 0 ? '+' : ''}${formatNum(delta)}</span></div>`;
+        const rankBadge = (r) => { const cls = r <= 2 ? 'top' : r <= 4 ? 'mid' : 'low'; return `<span class="rank-badge ${cls}">#${r} of 8</span>`; };
+        html += `<div class="liv-stat"><span class="liv-stat-label">Followers Rank</span>${rankBadge(vm.follower_rank || 0)}</div>`;
+        html += `<div class="liv-stat"><span class="liv-stat-label">Engage Rank</span>${rankBadge(vm.engagement_rank || 0)}</div>`;
+      }
       html += sparklineRow(label);
       html += '</div>';
     });
