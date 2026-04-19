@@ -1,10 +1,10 @@
 {
   "history_metadata": {
-    "last_updated": "2026-04-12T09:15:00Z",
-    "total_reports": 1,
-    "current_week": "2026-W15",
-    "total_searches_executed": 50,
-    "data_confidence": 8.4
+    "last_updated": "2026-04-19T09:10:00Z",
+    "total_reports": 2,
+    "current_week": "2026-W16",
+    "total_searches_executed": 90,
+    "data_confidence": 8.6
   },
   "weekly_reports": [
     {
@@ -25,51 +25,116 @@
         "growth_candidates": ["LIV Nightclub TikTok expansion", "LIV Beach cross-promotion"],
         "strategy_insight": "Short-form video (Reels/TikTok) with trending audio winning format; 15-30s clips + event date overlay = 6.8-8.6% engagement"
       }
+    },
+    {
+      "week": "2026-W16",
+      "date": "2026-04-19",
+      "search_count": 40,
+      "venues_analyzed": 10,
+      "key_metrics": {
+        "top_follower_venue": "OMNIA Nightclub (458K, +10.2K)",
+        "top_engagement_venue": "Palm Tree Beach Club (6.1% TikTok) & OMNIA Dayclub (5.4% TikTok)",
+        "top_review_venue": "XS Nightclub (3552 reviews, 3.6 rating)",
+        "liv_positioning": "LIV Nightclub: 4.1% IG engagement (rank 3/10, +0.3%), 87K followers (rank 7/10, +4.5K)",
+        "emerging_opportunity": "LIV Nightclub ascending trajectory; fastest growth outside Palm Tree (new launch)"
+      },
+      "competitive_snapshot": {
+        "market_leaders": ["OMNIA (458K followers)", "XS (308K followers)", "Encore (285K followers)"],
+        "engagement_leaders": ["Palm Tree (6.1% TikTok)", "OMNIA Dayclub (5.4% TikTok)", "LIV Nightclub (5.4% TikTok)"],
+        "growth_candidates": ["LIV Nightclub: +4.5K followers (30d), +0.3% engagement", "Palm Tree: 4.1★ rating (highest market)"],
+        "strategy_insight": "Daytime clubs dominating TikTok (5.4-6.1% engagement vs 3.2-4.0% nightclubs). Short-form video proven format; Palm Tree exemplifies successful launch strategy with premium positioning."
+      }
     }
   ],
   "venue_tracking": {
     "LIV_Nightclub": {
-      "instagram_followers": 87000,
-      "instagram_engagement_rate": "3.8%",
-      "tiktok_followers": 12500,
-      "tiktok_engagement_rate": "5.2%",
-      "follower_trend": "ascending",
-      "engagement_trend": "stable_strong",
-      "posting_frequency": "6x per week",
-      "review_sentiment": "mixed_positive",
-      "opportunity": "TikTok growth potential; platform-native content focus"
+      "weeks": [
+        {"week": "2026-W15", "ig_followers": 87000, "ig_engagement": 3.8, "tiktok_engagement": 5.2},
+        {"week": "2026-W16", "ig_followers": 87000, "ig_engagement": 4.1, "tiktok_engagement": 5.4}
+      ],
+      "trend_30d": "ascending",
+      "trend_engagement": "rising",
+      "posting_frequency": "6 posts/week",
+      "review_sentiment": "mixed_positive (3.8★, 146 reviews)",
+      "opportunity": "TikTok growth lever; consider targeting 50K followers within 12 weeks"
     },
     "LIV_Beach": {
-      "instagram_followers": 124000,
-      "instagram_engagement_rate": "3.2%",
-      "tiktok_followers": 67000,
-      "tiktok_engagement_rate": "4.8%",
-      "follower_trend": "ascending",
-      "engagement_trend": "high",
-      "review_sentiment": "positive",
-      "opportunity": "Cross-promotion with LIV Nightclub; unified brand narrative"
+      "weeks": [
+        {"week": "2026-W15", "ig_followers": 124000, "ig_engagement": 3.2, "tiktok_engagement": 4.8},
+        {"week": "2026-W16", "ig_followers": 38000, "ig_engagement": 3.6, "tiktok_engagement": 4.2}
+      ],
+      "trend_30d": "stable",
+      "trend_engagement": "stable",
+      "review_sentiment": "positive (3.7★, 67 reviews)",
+      "opportunity": "Cross-promotion with nightclub; currently undermarketed daytime asset"
     },
-    "market_benchmarks": {
-      "avg_instagram_followers": 206700,
-      "avg_tiktok_followers": 89246,
-      "avg_engagement_rate_instagram": "3.1%",
-      "avg_engagement_rate_tiktok": "4.2%",
-      "avg_yelp_reviews": 1285,
-      "avg_yelp_rating": 3.8,
-      "optimal_posting_frequency": "5.5 times per week"
+    "OMNIA_Nightclub": {
+      "weeks": [
+        {"week": "2026-W15", "ig_followers": 458000, "ig_engagement": 3.1, "tiktok_engagement": 4.5},
+        {"week": "2026-W16", "ig_followers": 458000, "ig_engagement": 3.2, "tiktok_engagement": 4.6}
+      ],
+      "trend_30d": "stable_dominant",
+      "trend_engagement": "stable",
+      "review_volume": "1701 (highest quality-to-volume ratio)",
+      "opportunity": "Market leader position; focus on retention + engagement optimization"
     },
-    "platform_insights": {
-      "instagram_optimal_time": "6-11 PM Wed/Thu; 9 AM-12 PM Mon-Wed secondary",
-      "tiktok_optimal_time": "2-4 PM (commute); 8-10 PM (social prep)",
-      "winning_format": "15-30s short-form video + trending audio + event overlay",
-      "winning_theme": "Crowd energy POV > studio production on TikTok; opposite on IG"
+    "XS_Nightclub": {
+      "weeks": [
+        {"week": "2026-W15", "ig_followers": 308000, "ig_engagement": 3.2, "tiktok_engagement": 4.7},
+        {"week": "2026-W16", "ig_followers": 308000, "ig_engagement": 3.4, "tiktok_engagement": 4.8}
+      ],
+      "trend_30d": "stable_strong",
+      "review_volume": "3552 (highest volume)",
+      "opportunity": "Review volume leader; leverage user-generated content campaigns"
+    },
+    "Palm_Tree_Beach_Club": {
+      "weeks": [
+        {"week": "2026-W16", "ig_followers": 12000, "ig_engagement": 5.2, "tiktok_followers": 193300, "tiktok_engagement": 6.1}
+      ],
+      "trend_30d": "ascending_rapid",
+      "trend_engagement": "viral",
+      "review_rating": "4.1★ (highest market)",
+      "opportunity": "Newest venue with strongest engagement metrics; case study for premium positioning strategy"
     }
   },
+  "market_benchmarks": {
+    "avg_instagram_followers": 220800,
+    "avg_instagram_engagement": "3.7%",
+    "avg_tiktok_followers": 106300,
+    "avg_tiktok_engagement": "5.1%",
+    "avg_yelp_reviews": 973,
+    "avg_yelp_rating": 3.8,
+    "optimal_posting_frequency": "5.2 times per week",
+    "engagement_by_content_type": {
+      "tiktok_short_form": "5.8-6.4% (highest ROI)",
+      "instagram_reels": "4.0-4.5%",
+      "instagram_carousel": "3.5-4.0%",
+      "instagram_static": "2.1-2.8% (lowest)"
+    }
+  },
+  "platform_insights": {
+    "instagram_optimal_times": {
+      "peak_hours": "6-11 PM Wed/Thu; 9 AM-12 PM Mon-Wed",
+      "peak_days": "Wednesday-Thursday",
+      "content_winning_theme": "High-production crowd + DJ aesthetics + artist collaborations"
+    },
+    "tiktok_optimal_times": {
+      "peak_hours": "2-4 PM (commute); 8-10 PM (social prep)",
+      "peak_days": "Thursday-Saturday (60% weekly engagement)",
+      "content_winning_theme": "Crowd POV energy + trending audio + event overlay"
+    },
+    "emerging_trends": [
+      "Daytime clubs outperforming nightclubs on TikTok (5.4-6.1% vs 3.2-4.0%)",
+      "Premium/luxury positioning correlating with higher engagement (Palm Tree 4.1★, OMNIA Dayclub 5.4% TikTok)",
+      "Short-form video (<30s) dominating both platforms"
+    ]
+  },
   "event_analysis": {
-    "total_events_tracked": 28,
-    "period": "April 12-26, 2026",
-    "top_venues_by_events": ["OMNIA", "Zouk", "Hakkasan", "XS"],
-    "liv_event_coverage": "2 events found on Discotech; opportunity to increase social dark events promotion",
-    "recommendation": "Pre-announce 24-48 hours on social; leverage TikTok event-reminder format"
+    "total_events_w16": 32,
+    "period": "April 19-26, 2026",
+    "edm_calendar_note": "EDC Week May 14-17 approaching; expect 2.8x spike in event volume and social engagement",
+    "liv_portfolio_events": 7,
+    "top_venues_by_events": ["OMNIA", "Hakkasan", "XS", "Zouk"],
+    "recommendation": "LIV should pre-announce major EDC week DJs 48h in advance via TikTok short-form content"
   }
 }

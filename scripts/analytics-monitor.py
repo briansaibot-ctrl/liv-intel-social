@@ -234,7 +234,8 @@ Return as JSON only, no other text."""
 def compile_analytics_json(all_venues: list, insights: dict) -> dict:
     """Compile the final analytics JSON output."""
     today = datetime.now()
-    week_of = (today - pd.Timedelta(days=today.weekday())).strftime("%Y-%m-%d")  # Start of this week
+    from datetime import timedelta
+    week_of = (today - timedelta(days=today.weekday())).strftime("%Y-%m-%d")  # Start of this week
     
     return {
         "week_of": week_of,
