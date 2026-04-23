@@ -1,69 +1,89 @@
 {
-  "run_at": "2026-04-22T21:00:00Z",
+  "run_at": "2026-04-23T03:00:00Z",
   "run_type": "midday",
-  "market_pulse": "Mid-week momentum building: OMNIA and Tao Beach consolidating star-studded weekends while LIV counteracts with official bookings (Matroda, Precise); Zouk's tech narrative gaining ground, Palm Tree capturing daylife premium segment.",
+  "market_pulse": "LIV Beach leads momentum with Nathan April (Fri 4/24) + David Guetta (Sat 4/25); competitors ramping EDC Week prep with marquee talent at Zouk (RL Grime 5/8, Lil Wayne 5/9), TAO Beach (Porter Robinson, DJ Snake, Steve Aoki May 14-17), and Hakkasan (R&Bae Wednesdays driving consistent weeknight traffic).",
   "urgent_alert_count": 0,
   "weekend_readiness": null,
   "content_gaps": [
     {
-      "gap_type": "EDC_week_positioning",
-      "description": "Tao Beach and Hakkasan heavily leveraging EDC Week storytelling and early-June promotion; LIV has limited visibility in this segment despite prime positioning.",
-      "competitors_doing_it": ["Tao Beach", "Hakkasan Nightclub", "OMNIA Nightclub"],
+      "gap_type": "edm_week_hype",
+      "description": "Competitors heavily promoting EDC Week May 2026 with early-bird DJ announcements and TikTok hype videos; LIV's May calendar visibility lower than peers.",
+      "competitors_doing_it": ["Zouk Nightclub", "TAO Beach", "Hakkasan Nightclub"],
       "urgency": "high",
-      "suggested_action": "Create 3-5 countdown stories and Reels for LIV's EDC Week lineup; tag @insomniac and cross-promote with emerging artists."
+      "suggested_action": "Launch May EDC Week pre-sale campaign on Instagram/TikTok with top 3 DJ headliners by late April; use influencer takeovers (@globeth0tter, Vegas promoters) for guest list teasers."
     },
     {
-      "gap_type": "influencer_collaboration_narratives",
-      "description": "Competitors posting behind-the-scenes DJ booth access and artist meet-and-greets; LIV's creator content focuses on attendees rather than exclusive talent moments.",
-      "competitors_doing_it": ["Zouk Nightclub", "Encore Beach Club", "OMNIA Nightclub"],
+      "gap_type": "weeknight_programming",
+      "description": "Hakkasan dominates Wed/Thu with R&Bae Wednesdays recurring series; LIV's weeknight calendar less visible on social.",
+      "competitors_doing_it": ["Hakkasan Nightclub", "OMNIA Nightclub"],
       "urgency": "medium",
-      "suggested_action": "Coordinate 2-3 BTS TikToks of Matroda/Precise soundcheck; tag creators like @globeth0tter for reposts."
+      "suggested_action": "Create 'Thirsty Thursdays' or weekday residency campaign; repurpose TikTok clips from weeknight events to build mid-week audience habit."
     },
     {
-      "gap_type": "beach_club_theme_continuity",
-      "description": "Palm Tree Beach Club and Tao Beach dominating 'tropical escape' aesthetic posts; LIV Beach posts lack seasonal urgency despite April warming trend.",
-      "competitors_doing_it": ["Palm Tree Beach Club", "Tao Beach"],
+      "gap_type": "pool_dayclub_content",
+      "description": "TAO Beach, Palm Tree Beach Club, and Encore Beach Club posting high-engagement pool/cabana lifestyle content; LIV Beach lacks behind-the-scenes cabana setup posts.",
+      "competitors_doing_it": ["TAO Beach", "Encore Beach Club", "Palm Tree Beach Club"],
       "urgency": "medium",
-      "suggested_action": "Launch #LIVBeachSeason with poolside outfit tutorials and weather-triggered Stories (temp >85°F)."
+      "suggested_action": "Post weekly LIV Beach cabana/pool setup videos on Reels/Shorts; include guest testimonials and VIP package callouts."
     }
   ],
   "influencer_activity": [
     {
       "handle": "@globeth0tter",
       "platform": "TT",
-      "mention": "Posted honest LIV Nightclub review as guest-list attendee; 591 likes, 61 comments. Frames venue as accessible for female guests with proper promoter outreach.",
+      "mention": "Posted honest review of LIV Nightclub as guest-list attendee; high engagement (591 likes, 61 comments) with Tiësto mention.",
       "posts_found": 1,
       "engagement_level": "High"
     },
     {
-      "handle": "@livlvguestlist",
+      "handle": "@edsonvegasclubpromoter",
       "platform": "TT",
-      "mention": "Edwin (LIV promoter) posted Dom Dolla event details with guest-list mechanics; community resource post showing accessibility angle.",
+      "mention": "Frequently posts OMNIA, Hakkasan, and Zouk Nightclub content; 2M+ likes on Hakkasan 'satisfaction' video; strong Vegas club authority.",
+      "posts_found": 3,
+      "engagement_level": "High"
+    },
+    {
+      "handle": "@jongraceinvegas",
+      "platform": "TT",
+      "mention": "Promoted LIV Beach grand opening with VIP host/promoter angle; targeted bottle service and all-inclusive party packages.",
       "posts_found": 1,
       "engagement_level": "Normal"
     }
   ],
-  "liv_outreach_targets": [],
+  "liv_outreach_targets": [
+    {
+      "influencer": "@globeth0tter",
+      "platform": "TT",
+      "reason": "High engagement on LIV Nightclub review; micro-influencer with Vegas credibility",
+      "suggested_action": "Send guest list offer for upcoming Fri/Sat events; request 2-3 follow-up posts"
+    },
+    {
+      "influencer": "@edsonvegasclubpromoter",
+      "platform": "TT",
+      "reason": "Massive reach (2M+ engagements) covering nightlife; creates consistent club content",
+      "suggested_action": "Partner for LIV/LIV Beach takeover series during EDC Week; offer exclusive behind-the-scenes access"
+    }
+  ],
   "story_activity": [
     {
       "venue": "LIV Beach",
       "content_type": "announcement",
-      "summary": "Nathan Yapr (Fri Apr 24) and David Guetta (Sat Apr 25) bookings posted to Instagram; premium weekend DJ roster.",
-      "detected_at": "2026-04-22T21:00:00Z",
-      "urgency": true
-    },
-    {
-      "venue": "OMNIA Nightclub",
-      "content_type": "countdown",
-      "summary": "Multiple DJ bookings through Apr 24 (DeOrro, Justin Mylo, Chris Lake) creating sustained narrative; Latin Sundays recurring feature.",
-      "detected_at": "2026-04-22T21:00:00Z",
+      "summary": "Nathan April on Friday (4/24) + David Guetta on Saturday (4/25) announced via Instagram bio; limited story urgency, organic IG feed discovery only.",
+      "detected_at": "2026-04-23T03:00:00Z",
       "urgency": false
     },
     {
-      "venue": "Tao Beach",
+      "venue": "TAO Beach",
+      "content_type": "countdown",
+      "summary": "EDC Week mega lineup (Porter Robinson, DJ Snake, Steve Aoki) posted; countdown to May 14-17 with high TikTok visibility and engagement.",
+      "detected_at": "2026-04-23T03:00:00Z",
+      "urgency": false
+    },
+    {
+      "venue": "Hakkasan Nightclub",
       "content_type": "announcement",
-      "summary": "Tiësto confirmed for Apr 11 (past date in search but may still be live on social); EDC Week day parties heavily promoted.",
-      "detected_at": "2026-04-22T21:00:00Z",
+      "summary": "R&Bae Wednesdays recurring series + upcoming DJs (TwinSick 4/16, Four Color Zack 4/17, DJ Pauly D 4/18) posted on IG; strong weeknight programming signal.",
+      "detected_at": "2026-04-23T03:00:00Z",
       "urgency": false
     }
   ],
@@ -72,74 +92,89 @@
       "venue": "LIV Nightclub (@livnightclub)",
       "posts_found": 3,
       "urgent": false,
-      "summary": "Strong official bookings (Matroda Apr 27, DJ Precise Apr 28) plus sustained creator review content; guest-list accessibility messaging working.",
+      "summary": "Strong TikTok engagement around John Summit guest list access and Tiësto mentions; upcoming April 27 Matroda event and Official BTC 2026 Kickoff Party with DJ Precise.",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
-          "platform": "Ticket/Eventbrite",
-          "content_summary": "Matroda performing Apr 27 with official BTC 2026 Kickoff Party branding; ticket sales active.",
-          "posted_at": "2026-04-20",
+          "platform": "TT",
+          "content_summary": "Review of LIV Nightclub guest list experience with John Summit backstage access; club outfit tips.",
+          "posted_at": "2026-04-15",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
-          "platform": "Ticket/Eventbrite",
-          "content_summary": "DJ Precise performing Apr 28 at LIV Las Vegas; event listing confirms booking.",
-          "posted_at": "2026-04-20",
+          "platform": "IG",
+          "content_summary": "Upcoming lineup: Matroda (Apr 27), Official BTC 2026 Kickoff Party with DJ Precise (Apr 27).",
+          "posted_at": "2026-04-22",
           "engagement_note": "Normal",
           "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "@globeth0tter posted honest guest-list review of LIV Nightclub; positive framing of accessibility and nightlife experience.",
-          "posted_at": "2026-04-18",
+          "content_summary": "John Summit backstage meet-and-greet with guest list promoters; club attire breakdown.",
+          "posted_at": "2026-04-10",
           "engagement_note": "High",
           "flags": []
         }
       ]
     },
     {
-      "venue": "LIV Beach (@livbeachlasvegas)",
+      "venue": "LIV Beach (@livbeach)",
       "posts_found": 2,
-      "urgent": true,
-      "summary": "Premium weekend bookings (Nathan Yapr Fri, David Guetta Sat) announced; peak season activation starting this weekend.",
+      "urgent": false,
+      "summary": "April 24-25 weekend headliners (Nathan April Fri, David Guetta Sat) driving early bookings; strong dayclub positioning vs competitors.",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
-          "platform": "IG/Ticket",
-          "content_summary": "Nathan Yapr announced for Friday, April 24 at LIV Beach. Premium dayclub booking.",
-          "posted_at": "2026-04-21",
+          "platform": "IG",
+          "content_summary": "Friday 4/24: Nathan April; Saturday 4/25: David Guetta at LIV Beach located inside Fontainebleau.",
+          "posted_at": "2026-04-22",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
-          "platform": "IG/Ticket",
-          "content_summary": "David Guetta confirmed for Saturday, April 25 at LIV Beach. Major star booking for Saturday daylife.",
-          "posted_at": "2026-04-21",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
+          "platform": "TT",
+          "content_summary": "Day club experience at LIV Beach with DJ lineup and disco lines entertainment.",
+          "posted_at": "2026-04-18",
+          "engagement_note": "Normal",
+          "flags": []
         }
       ]
     },
     {
       "venue": "XS Nightclub",
-      "posts_found": 0,
+      "posts_found": 1,
       "urgent": false,
-      "summary": "No current week posts detected; calendar infrastructure exists but limited social amplification.",
+      "summary": "Resident DJs (David Guetta, The Chainsmokers, Diplo, RL Grime, Dillon Francis, Marshmello, Kygo) active; solid mid-month event calendar presence.",
       "flags": [],
-      "raw_posts": []
+      "raw_posts": [
+        {
+          "platform": "Ticket/Eventbrite",
+          "content_summary": "XS Nightclub event calendar featuring resident and guest DJ performances; strong ticketing infrastructure.",
+          "posted_at": "2026-04-21",
+          "engagement_note": "Normal",
+          "flags": []
+        }
+      ]
     },
     {
       "venue": "Encore Beach Club",
-      "posts_found": 1,
+      "posts_found": 2,
       "urgent": false,
-      "summary": "Strong Instagram presence (285K followers, 3,864 posts); sustained bottle service and lifestyle content without major week-specific announcements.",
+      "summary": "285K IG followers with 3,864 posts; high-engagement champagne/luxury positioning; strong content volume.",
       "flags": [],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Ongoing lifestyle content focused on bottle service, pool experiences, and premium dayclub positioning; consistent high-quality feed.",
+          "content_summary": "Unforgettable days, unstoppable nights positioning with champagne tower setups and VIP experiences inside Wynn.",
           "posted_at": "2026-04-22",
+          "engagement_note": "High",
+          "flags": []
+        },
+        {
+          "platform": "TT",
+          "content_summary": "Beach club lifestyle, cabana setups, and party reviews; strong micro-influencer adoption.",
+          "posted_at": "2026-04-20",
           "engagement_note": "High",
           "flags": []
         }
@@ -147,31 +182,24 @@
     },
     {
       "venue": "OMNIA Nightclub",
-      "posts_found": 3,
+      "posts_found": 2,
       "urgent": false,
-      "summary": "Packed week of bookings (DeOrro Apr 18, Deseo Latin Sundays Apr 19, Justin Mylo Apr 21, Chris Lake Apr 24); Latin programming recurring theme.",
+      "summary": "460K IG followers; April lineup includes DeOrro (4/18), Deseo Latin Sundays (4/19), Justin Mylo (4/21), Chris Lake (4/24); strong mid-week programming.",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
-          "platform": "IG/Ticket",
-          "content_summary": "DeOrro performing April 18 at OMNIA Las Vegas; confirmed booking on Tao Group ticketing.",
-          "posted_at": "2026-04-18",
+          "platform": "IG",
+          "content_summary": "Upcoming lineups: DeOrro (4/18), Deseo Latin Sundays (4/19), Justin Mylo (4/21), Chris Lake (4/24) at OMNIA inside Caesar's Palace.",
+          "posted_at": "2026-04-22",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
-          "platform": "IG/Ticket",
-          "content_summary": "Deseo: Latin Sundays recurring event April 19; cultural programming diversification.",
-          "posted_at": "2026-04-18",
-          "engagement_note": "Normal",
+          "platform": "TT",
+          "content_summary": "Life-changing chandelier highlight in main room; EDC Week prep content; club experience reviews.",
+          "posted_at": "2026-04-15",
+          "engagement_note": "High",
           "flags": []
-        },
-        {
-          "platform": "IG/Ticket",
-          "content_summary": "Chris Lake and Justin Mylo bookings for April 21 and April 24 respectively; sustained star power through mid-week.",
-          "posted_at": "2026-04-20",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
         }
       ]
     },
@@ -179,21 +207,28 @@
       "venue": "Omnia Beach Club",
       "posts_found": 0,
       "urgent": false,
-      "summary": "OMNIA Dayclub opening summer 2026 at Caesars Palace; currently in pre-launch phase with limited social activity (expected residents: Martin Garrix, Zedd, Fisher, Steve Aoki).",
+      "summary": "Limited standalone social presence; content often merged with OMNIA Nightclub posts under TAO Group umbrella.",
       "flags": [],
       "raw_posts": []
     },
     {
       "venue": "Zouk Nightclub",
-      "posts_found": 1,
+      "posts_found": 2,
       "urgent": false,
-      "summary": "Tech-forward positioning emphasized (most advanced nightclub in Vegas); limited week-specific content but strong brand narrative around innovation.",
-      "flags": [],
+      "summary": "EDC Week May lineup strong: DJ Snoopadelic (5/7), RL Grime (5/8), Lil Wayne (5/9); state-of-the-art tech positioning.",
+      "flags": ["talent_announcement"],
       "raw_posts": [
         {
-          "platform": "TT",
-          "content_summary": "Zouk Nightclub brand discovery content highlighting innovation, Travis Scott mentions, and cutting-edge technology narrative.",
-          "posted_at": "2026-04-16",
+          "platform": "Ticket/Eventbrite",
+          "content_summary": "May EDC Week headliners: DJ Snoopadelic (5/7), RL Grime (5/8), Lil Wayne (5/9) at Zouk Nightclub.",
+          "posted_at": "2026-04-22",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "PR/News",
+          "content_summary": "Zouk Nightclub positioned as most technologically advanced venue in Las Vegas; innovative dance music space.",
+          "posted_at": "2026-04-15",
           "engagement_note": "Normal",
           "flags": []
         }
@@ -201,39 +236,46 @@
     },
     {
       "venue": "Hakkasan Nightclub",
-      "posts_found": 1,
+      "posts_found": 3,
       "urgent": false,
-      "summary": "Scheduled performers include TWINSICK, DJ Drama, Steve Aoki; packed 2026-2027 calendar with sustained DJ rotation.",
+      "summary": "258K IG followers with 6,388 posts; R&Bae Wednesdays recurring series driving weeknight traffic; TwinSick (4/16), Four Color Zack (4/17), DJ Pauly D (4/18).",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
-          "platform": "Ticket/Eventbrite",
-          "content_summary": "Confirmed artists: TWINSICK, DJ Drama, Steve Aoki on Bandsintown calendar for 2026-2027 season.",
-          "posted_at": "2026-04-18",
-          "engagement_note": "Normal",
-          "flags": ["talent_announcement"]
-        }
-      ]
-    },
-    {
-      "venue": "Palm Tree Beach Club (MGM Grand)",
-      "posts_found": 2,
-      "urgent": false,
-      "summary": "Recently opened (May 2025), 232K IG followers, 114 posts; aggressive market capture from Wet Republic legacy; upscale Miami-style aesthetic gaining traction.",
-      "flags": [],
-      "raw_posts": [
-        {
           "platform": "IG",
-          "content_summary": "Instagram profile active with 232K followers; premium dayclub positioning with upscale cabanas and private pools.",
+          "content_summary": "R&Bae Wednesdays recurring series with April lineup: TwinSick (4/16), Four Color Zack (4/17), DJ Pauly D (4/18) at Hakkasan inside MGM Grand.",
           "posted_at": "2026-04-22",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "TT",
+          "content_summary": "Cardi B official after-party announcement at Hakkasan; strong hip-hop/R&B positioning.",
+          "posted_at": "2026-04-16",
           "engagement_note": "High",
           "flags": []
         },
         {
-          "platform": "PR/News",
-          "content_summary": "Las Vegas Magazine feature (Apr 20, 2026): Palm Tree as newest seasonal pool venue, emphasizing posh VIP cabanas and MGM Grand location advantage.",
-          "posted_at": "2026-04-20",
+          "platform": "TT",
+          "content_summary": "Hakkasan decade-long dominance in Las Vegas with 'Satisfaction' main room chandelier feature; over 2.3M likes.",
+          "posted_at": "2026-04-12",
           "engagement_note": "High",
+          "flags": []
+        }
+      ]
+    },
+    {
+      "venue": "Palm Tree (The Venetian)",
+      "posts_found": 1,
+      "urgent": false,
+      "summary": "Dayclube dayclub at MGM Grand (note: location correction from Venetian); limited April social activity; EDC Week positioning unclear.",
+      "flags": [],
+      "raw_posts": [
+        {
+          "platform": "Ticket/Eventbrite",
+          "content_summary": "Palm Tree Beach Club event calendar with world-class DJs; VIP cabanas and party passes.",
+          "posted_at": "2026-04-20",
+          "engagement_note": "Normal",
           "flags": []
         }
       ]
@@ -242,22 +284,22 @@
       "venue": "Tao Beach (The Venetian)",
       "posts_found": 2,
       "urgent": false,
-      "summary": "92K IG followers, 460 posts; heavily leveraging EDC Week (Tiësto Apr 11, EDC day parties with Porter Robinson, DJ Snake, Steve Aoki); strong seasonal narrative.",
+      "summary": "EDC Week mega announcement: Porter Robinson (5/14), DJ Snake + Roz (5/15), Steve Aoki (5/17); highest TikTok engagement for May programming.",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "TT",
-          "content_summary": "Tiësto confirmed for April 11 with EDC Week day party positioning; 'don't get caught outside' viral narrative; strong engagement.",
-          "posted_at": "2026-04-10",
+          "content_summary": "EDC WEEK DAY PARTIES: Porter Robinson (5/14), DJ Snake + Roz (5/15), TAO Saturday Party (5/16), Steve Aoki (5/17) at TAO Beach; doors open 11:00 AM.",
+          "posted_at": "2026-04-09",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
-          "platform": "IG",
-          "content_summary": "EDC Week day parties featuring Porter Robinson, DJ Snake, Steve Aoki; heavy festival-week cross-promotion and brand partnerships.",
-          "posted_at": "2026-04-08",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
+          "platform": "Ticket/Eventbrite",
+          "content_summary": "TAO Beach 47,000 sq ft tropical oasis with state-of-the-art sound/lighting and top-tier DJ lineup.",
+          "posted_at": "2026-04-15",
+          "engagement_note": "Normal",
+          "flags": []
         }
       ]
     }
