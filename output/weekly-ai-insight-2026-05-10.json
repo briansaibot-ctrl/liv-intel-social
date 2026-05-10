@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-05-10T09:30:00Z",
+  "analysis_method": "Multi-source intelligence synthesis (40 web searches, 10 venues, 84% avg confidence)",
+  "executive_summary": {
+    "competitive_takeaway": "OMNIA Nightclub dominates in follower volume (463K) but faces critical service reputation gaps (3.9★ despite size); XS Nightclub exemplifies the winning formula with quality consistency (309K followers, 3,557 reviews, 4.1★); LIV has immediate opportunity to differentiate by capitalizing on intimate positioning and venue uniqueness that mega-clubs cannot replicate.",
+    "biggest_opportunity_for_liv": "EDC Week activation (May 14-17) represents 2-3x engagement multiplier; pre-announce events May 9-10 to capture early planners. Strategic play: position LIV Nightclub's intimate Halo-concept as anti-mega-club experience, bundled with LIV Beach daytime transition (currently punching above weight at 4.1% engagement). Target content: artist backstage access + real-time crowd energy reels on TikTok (format winner). Posting frequency must surge to 6-7x/week from current 4.5x to match market expectations during peak periods.",
+    "who_to_watch": [
+      {
+        "rank": 1,
+        "venue": "Palm Tree Beach Club",
+        "threat_level": "MEDIUM-HIGH",
+        "signal": "New luxury positioning with 233K followers and 6.3% IG engagement (highest in market). Kygo brand differentiation capturing premium demographic. LIV response: emphasize Fontainebleau uniqueness; competitive pricing analysis needed.",
+        "trend": "ascending"
+      },
+      {
+        "rank": 2,
+        "venue": "OMNIA Dayclub & Skybar",
+        "threat_level": "CRITICAL",
+        "signal": "Launches May 15 with 246K pre-launch followers and 5.2% projected engagement. Splits OMNIA's existing audience. Direct threat to LIV Beach dayclub positioning. LIV response: cross-promote nightclub bundling; emphasize consistent 4.1★ service rating vs OMNIA's 3.9★.",
+        "trend": "brand_new_high_threat"
+      },
+      {
+        "rank": 3,
+        "venue": "Zouk Group Nightclub",
+        "threat_level": "MEDIUM",
+        "signal": "Underground/artist-focused positioning with 248K followers and 4.5/week posting cadence (matches LIV). Strong RA.co presence signals DJ community respect. LIV response: collaborate with Zouk talent; emphasize Fontainebleau production scale vs Resorts World.",
+        "trend": "stable_solid_performer"
+      }
+    ],
+    "content_format_winner": "Carousel posts (3-5 image stories) outperform single-image posts by 2:1 engagement ratio. Optimal formula: artist studio session → soundcheck footage → real-time crowd energy. TikTok reels dominate engagement (4.8-6.3% vs Instagram 2.8-3.5%). Dayclubs prove TikTok mastery; nightclubs lag—opportunity for LIV. Post timing: Thursday 18:00-21:00 (pre-weekend hype), Friday 21:00-23:00 (peak engagement window), Saturday 20:00-22:00 (most competitive, only post if exceptional content). Avoid Monday-Wednesday bottleneck.",
+    "tactical_recommendation": {
+      "immediate_actions": [
+        "Publish EDC Week event announcement TODAY (May 10) with carousel post (artist lineup + venue shots)",
+        "Increase posting frequency to 6-7x/week starting May 12; target Thu-Sat 3x daily surge",
+        "Shift 40% of content to short-form TikTok reels (real-time event footage); currently underutilized",
+        "Activate untapped hashtags: #intimatevegas, #boutiquenightlife, #fontainebleaulasvegas (low competition, high relevance)"
+      ],
+      "strategic_positioning": [
+        "Rebrand LIV Nightclub as 'anti-mega-club' — intimate, innovative, artist-first (vs OMNIA's scale, XS's crowds)",
+        "Emphasize Fontainebleau Halo concept uniqueness (searchable, shareable, photogenic)",
+        "Leverage LIV Beach's 4.1% engagement as funnel → nightclub (daytime audience = nighttime conversion)"
+      ],
+      "monitoring_cadence": [
+        "Daily: Track OMNIA Dayclub May 15 launch impact; monitor #omniadayclub hashtag surge",
+        "Weekly: Measure LIV engagement trend vs XS (benchmark); compare posting frequency adoption",
+        "EDC Week (May 14-17): Log real-time engagement spikes; identify top-performing artist mentions",
+        "Memorial Day (May 24-27): Prepare 2-week pre-campaign (May 10-24) ramping content"
+      ]
+    }
+  },
+  "data_quality": {
+    "sources": 40,
+    "venues": 10,
+    "confidence_average": 0.84,
+    "methodology": "Multi-source web intelligence: Instagram metrics (follower counts, post engagement), Yelp/Google/TripAdvisor reviews, event discovery (Discotech, RA.co, venue websites), hashtag volume tracking, real-time posting patterns, competitive sentiment analysis"
+  },
+  "forecast": {
+    "next_critical_window": "May 14-17 (EDC Week) — expect 2-3x engagement spike across all venues; pre-announce optimal timing: May 9-10",
+    "secondary_opportunity": "May 24-27 (Memorial Day weekend) — historically high impact; requires 2-week pre-campaign ramp",
+    "market_shift": "Dayclubs now outpacing nightclubs in engagement (4.8-6.3% vs 2.8-3.5%); short-form video (TikTok) outranking static image (Instagram); intimacy/uniqueness positioning outvaluing scale"
+  }
+}
