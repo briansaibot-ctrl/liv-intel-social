@@ -1,106 +1,178 @@
 {
-  "run_at": "2026-05-11T21:00:00Z",
+  "run_at": "2026-05-12T03:00:00Z",
   "run_type": "evening",
-  "market_pulse": "Heavy weekend momentum across Strip venues with major talent confirmations (Calvin Harris, Snoop Dogg, RL Grime, Lil Wayne) and competing pool party energy from Encore, OMNIA, and Zouk.",
-  "urgent_alert_count": 1,
+  "market_pulse": "Competitor landscape dominated by Sommer Ray, David Guetta, and major artist residencies; weekend readiness high across portfolio with EDC Week momentum and established DJ lineups.",
+  "urgent_alert_count": 0,
   "weekend_readiness": null,
   "content_gaps": [
     {
       "gap_type": "trending_audio",
-      "description": "Tech-house and bass production dominance without corresponding LIV social amplification.",
-      "competitors_doing_it": ["Zouk Nightclub", "XS Nightclub", "Hakkasan Nightclub"],
+      "description": "Heavy use of electronic/house remixes trending in TikTok sounds; competitors actively leveraging trending audio from Disco Lines, tech-house, and progressive house tracks",
+      "competitors_doing_it": ["Zouk Nightclub", "Encore Beach Club", "OMNIA Nightclub"],
       "urgency": "high",
-      "suggested_action": "Post reels showcasing upcoming LIV tech-house lineups with trending audio; highlight Westend-style production aesthetics."
+      "suggested_action": "Update LIV social audio library to include trending electronic/house remixes; collaborate with DJ residents to create signature sound clips"
     },
     {
-      "gap_type": "behind_the_scenes",
-      "description": "Competitors running consistent backstage/setup content; LIV visibility gaps.",
-      "competitors_doing_it": ["Encore Beach Club", "OMNIA Nightclub"],
+      "gap_type": "influencer_content",
+      "description": "Strong guest list/VIP review content from mega-influencers; Sommer Ray, David Guetta, and verified creators doing unboxing-style VIP experiences",
+      "competitors_doing_it": ["LIV Beach", "XS Nightclub", "Hakkasan Nightclub"],
       "urgency": "medium",
-      "suggested_action": "Deploy BTS stories from LIV Beach setup, soundcheck footage, pre-party energy."
+      "suggested_action": "Pitch exclusive VIP experience reviews to 500k+ TikTok creators; focus on behind-the-scenes bottle service moments"
+    },
+    {
+      "gap_type": "user_generated_content",
+      "description": "Outfits/dress code content dominating TikTok discovery feeds for all major competitors; outfit guides and get-ready-with-me (GRWM) videos drive high engagement",
+      "competitors_doing_it": ["XS Nightclub", "Omnia Nightclub", "Zouk Nightclub"],
+      "urgency": "medium",
+      "suggested_action": "Launch \"Get Vegas Ready\" UGC campaign; incentivize outfit/GRWM content with guestlist perks"
     }
   ],
   "influencer_activity": [
     {
       "handle": "@globeth0tter",
       "platform": "TT",
-      "mention": "Posted honest review of LIV Nightclub as guest list attendee; 591 likes with EDM/nightlife audience engagement.",
+      "mention": "Posted honest review of LIV Nightclub experience as guest list attendee; gained 591 likes on review video highlighting EDM/raver community",
+      "posts_found": 1,
+      "engagement_level": "High"
+    },
+    {
+      "handle": "@sommerray",
+      "platform": "IG",
+      "mention": "Appears in LIV Beach latest posts for May 8 appearance; high-profile celebrity endorsement driving visibility",
+      "posts_found": 1,
+      "engagement_level": "High"
+    },
+    {
+      "handle": "@davidguetta",
+      "platform": "IG",
+      "mention": "Exclusive 2025-2026 bi-coastal North American headliner at LIV Beach; major artist residency announcement",
+      "posts_found": 1,
+      "engagement_level": "High"
+    },
+    {
+      "handle": "@snoopdogg",
+      "platform": "IG",
+      "mention": "Thurs May 7 booking at Zouk Nightclub; major hip-hop crossover appeal",
+      "posts_found": 1,
+      "engagement_level": "High"
+    },
+    {
+      "handle": "@rlgrime",
+      "platform": "IG",
+      "mention": "Fri May 8 booking at Zouk Nightclub; strong electronic music credibility",
       "posts_found": 1,
       "engagement_level": "High"
     }
   ],
-  "liv_outreach_targets": [],
-  "story_activity": [
+  "liv_outreach_targets": [
     {
-      "venue": "LIV Beach",
-      "content_type": "announcement",
-      "summary": "Upcoming weekend talent announcements confirmed: Sommer Ray (May 8), David Guetta (May 9).",
-      "detected_at": "2026-05-11T21:00:00Z",
-      "urgency": true
+      "handle": "@globeth0tter",
+      "reason": "Already created authentic LIV Nightclub review with 591 likes; demonstrated genuine guest list community engagement; could deepen with exclusive invite"
     },
+    {
+      "handle": "@jongraceinvegas",
+      "reason": "Vegas promoter with established TikTok presence; posted about LIV Beach grand opening; strong platform for ongoing partnership"
+    }
+  ],
+  "story_activity": [
     {
       "venue": "Zouk Nightclub",
       "content_type": "announcement",
-      "summary": "Confirmed May weekend lineup: Snoop Dogg (May 7), RL Grime (May 8), Lil Wayne (May 9) — major hip-hop + bass crossover.",
-      "detected_at": "2026-05-11T21:00:00Z",
-      "urgency": true
+      "summary": "Thurs 5/7 Snoop Dogg, Fri 5/8 RL Grime, Sat 5/9 Lil Tunechi, Sun 5/9 Justin Credible; major hip-hop & electronic crossover",
+      "detected_at": "2026-05-12T03:00:00Z",
+      "urgency": false
     },
     {
-      "venue": "Encore Beach Club",
+      "venue": "LIV Beach",
       "content_type": "announcement",
-      "summary": "Calvin Harris locked for May 16 — major pull for weekend dayclub positioning.",
-      "detected_at": "2026-05-11T21:00:00Z",
+      "summary": "May 8 Sommer Ray, May 9 David Guetta; established celebrity/artist presence driving traffic",
+      "detected_at": "2026-05-12T03:00:00Z",
+      "urgency": false
+    },
+    {
+      "venue": "Hakkasan Nightclub",
+      "content_type": "announcement",
+      "summary": "R&Bae Wednesdays (5/6), Laid Back Luke (5/7), Four Color Zack (5/8), Justin Credible (5/9); consistent midweek programming",
+      "detected_at": "2026-05-12T03:00:00Z",
+      "urgency": false
+    },
+    {
+      "venue": "Palm Tree Beach Club",
+      "content_type": "announcement",
+      "summary": "Grand opening momentum continuing with Kygo residency; MGK/Sydney Sweeney viral moment from May 3 launch still driving engagement",
+      "detected_at": "2026-05-12T03:00:00Z",
+      "urgency": false
+    },
+    {
+      "venue": "TAO Beach",
+      "content_type": "announcement",
+      "summary": "Tiësto, Alesso, Zedd world-class artist lineup throughout season; Disco Lines performances attracting family-friendly audiences",
+      "detected_at": "2026-05-12T03:00:00Z",
       "urgency": false
     }
   ],
   "venues": [
     {
-      "venue": "LIV Nightclub",
+      "venue": "LIV Nightclub (@livnightclub)",
       "posts_found": 3,
-      "urgent": true,
-      "summary": "Confirmed May weekend lineup (Sommer Ray, David Guetta); strong influencer engagement (globeth0tter review); guest list push underway.",
-      "flags": ["talent_announcement", "promo_offer"],
+      "urgent": false,
+      "summary": "Strong influencer presence (Sommer Ray, David Guetta, Tiësto residency); active guest list community engagement with micro-influencers",
+      "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Events page updated with May lineup featuring major DJs including David Guetta, DOM DOLLA, Tiësto, and others.",
+          "content_summary": "Event lineup update featuring Ben Sterling, Cloonee, Crankdat, DOM DOLLA, Devault, and other EDM talents; May 10, 2026 calendar published with multiple artist confirmations",
           "posted_at": "2026-05-10",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "John Summit performance at LIV Beach promoted by attendees with outfit guides and spring break energy.",
-          "posted_at": "2026-05-08",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
+          "content_summary": "Guest list attendee review highlighting EDM/raver community experience; user testimonial-style content gaining organic reach",
+          "posted_at": "2026-05-09",
+          "engagement_note": "Normal",
+          "flags": []
         },
         {
-          "platform": "TT",
-          "content_summary": "Guest review by globeth0tter: honest review of LIV Nightclub experience as gal on guest list.",
-          "posted_at": "2026-05-04",
-          "engagement_note": "High",
+          "platform": "PR/News",
+          "content_summary": "Friday-Sunday 10PM-4AM operating schedule; occasional closure for special private events noted on official Fontainebleau site",
+          "posted_at": "2026-05-01",
+          "engagement_note": "Normal",
           "flags": []
         }
       ]
     },
     {
-      "venue": "LIV Beach",
-      "posts_found": 2,
-      "urgent": true,
-      "summary": "May 8-9 confirmed bookings (Sommer Ray, David Guetta); poolside lifestyle content; 40K followers engaged.",
-      "flags": ["talent_announcement", "promo_offer"],
+      "venue": "LIV Beach (@livbeachlasvegas)",
+      "posts_found": 4,
+      "urgent": false,
+      "summary": "Celebrity-driven visibility with Sommer Ray & David Guetta announced; strong day club positioning with 40K follower base; established residency model",
+      "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Bio updated: 'An all-new day life oasis. FRI, May 8 @sommerray SAT, May 9 @davidguetta' — major pool party talent.",
-          "posted_at": "2026-05-09",
+          "content_summary": "FRI May 8 - @sommerray, SAT May 9 - @davidguetta; high-profile celebrity and world-class DJ coverage driving premium positioning",
+          "posted_at": "2026-05-08",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "PR/News",
+          "content_summary": "David Guetta exclusive 2025-2026 bi-coastal North American headliner partnership announced via Fontainebleau",
+          "posted_at": "2026-02-27",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "Attendee content: 'Disco Lines' performance highlights and outfit guides for LIV Beach summer experience.",
+          "content_summary": "Grand opening viral moment featuring user-generated outfit/poolside content; Disco Lines performance review gaining organic reach",
+          "posted_at": "2026-05-06",
+          "engagement_note": "High",
+          "flags": []
+        },
+        {
+          "platform": "TT",
+          "content_summary": "Best day at LIV Beach experience shares; day club summer positioning with family-friendly entertainment focus",
           "posted_at": "2026-05-05",
           "engagement_note": "Normal",
           "flags": []
@@ -109,29 +181,22 @@
     },
     {
       "venue": "XS Nightclub",
-      "posts_found": 3,
+      "posts_found": 2,
       "urgent": false,
-      "summary": "Major promoter presence (Norman Jay); 309K IG followers; consistent outfit/event guides; no specific May announcements captured.",
+      "summary": "304K Instagram followers with strong promotional presence; insider tips and celebrity sighting content; established promoter network (@normanjay_lasvegas 179K followers)",
       "flags": [],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Promoter @normanjay_lasvegas: 179K followers, active guest list and VIP bottle service promotion.",
-          "posted_at": "2026-05-08",
+          "content_summary": "4,210 total posts on main account; active event scheduling and VIP table promotion",
+          "posted_at": "2026-05-01",
           "engagement_note": "High",
           "flags": []
         },
         {
           "platform": "TT",
-          "content_summary": "Calvin Harris Las Vegas content; XS Club events positioning under Wynn ecosystem.",
-          "posted_at": "2026-04-28",
-          "engagement_note": "Normal",
-          "flags": []
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Outfit guides and dress code education for XS Nightclub attendees.",
-          "posted_at": "2026-04-15",
+          "content_summary": "Insider tips guide, outfit transition content, and celebrity sighting narratives (Jeff Bezos reference); strong community engagement",
+          "posted_at": "2026-05-02",
           "engagement_note": "Normal",
           "flags": []
         }
@@ -141,112 +206,103 @@
       "venue": "Encore Beach Club",
       "posts_found": 2,
       "urgent": false,
-      "summary": "Calvin Harris locked for May 16; 283K followers; premium positioning with David Guetta and Kygo previously booked; consistent dayclub branding.",
-      "flags": ["talent_announcement"],
+      "summary": "283K Instagram followers; Wynn property positioning with \"Unforgettable days, Unstoppable nights\" brand; champagne tower culture and Marshmello appearances",
+      "flags": [],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Major bio positioning: 'Unforgettable days, Unstoppable nights 🍾💫' at Wynn; calendar events updated.",
-          "posted_at": "2026-05-10",
+          "content_summary": "3,879 total posts; brand tagline and VIP bottle service focus; 283K follower base with premium positioning",
+          "posted_at": "2026-05-01",
           "engagement_note": "High",
-          "flags": ["talent_announcement"]
+          "flags": []
         },
         {
-          "platform": "IG/Ticket",
-          "content_summary": "Calvin Harris confirmed Saturday May 16, 2026 — premium weekend dayclub pull.",
-          "posted_at": "2026-05-05",
+          "platform": "TT",
+          "content_summary": "Marshmello EDM summer performance; pool party dayclub lifestyle content; Wynn property integration marketing",
+          "posted_at": "2026-05-04",
           "engagement_note": "High",
-          "flags": ["talent_announcement"]
+          "flags": []
         }
       ]
     },
     {
       "venue": "OMNIA Nightclub",
       "posts_found": 2,
-      "urgent": true,
-      "summary": "May lineup confirmed: Yoyo Lie (5/5), DeOrro (5/8), Cedric Gervais (5/9), Deseo Latin Sundays (5/10), Mikey Francis (5/12); 463K followers; TAO Group positioning.",
-      "flags": ["talent_announcement"],
+      "urgent": false,
+      "summary": "Strong TikTok discovery presence with dress code and outfit content dominating; chandelier landmark visual appeal; 2025-2026 positioning",
+      "flags": [],
       "raw_posts": [
         {
-          "platform": "IG",
-          "content_summary": "Full May lineup posted: #OMNIALasVegas 5/5 @yoyolie 5/8 @deorro 5/9 @cedricgervais 5/10 #deseolatinsundays 5/12 @mikeyxfrancis.",
-          "posted_at": "2026-05-10",
+          "platform": "TT",
+          "content_summary": "Chandelier landmark feature content; visual storytelling driving organic reach and tour-like discovery",
+          "posted_at": "2026-04-28",
           "engagement_note": "High",
-          "flags": ["talent_announcement"]
+          "flags": []
         },
         {
-          "platform": "IG",
-          "content_summary": "OMNIA Dayclub expansion at Caesars Palace; European beach club energy with festival-level production.",
-          "posted_at": "2026-05-08",
+          "platform": "TT",
+          "content_summary": "Dress code and outfit guide content; \"what to wear\" positioning for different gender audiences",
+          "posted_at": "2026-04-05",
           "engagement_note": "Normal",
           "flags": []
-        }
-      ]
-    },
-    {
-      "venue": "Omnia Beach Club",
-      "posts_found": 1,
-      "urgent": false,
-      "summary": "New dayclub concept launching May 2026; OMNIA Dayclub at Caesars Palace; May 22 event date confirmed.",
-      "flags": ["talent_announcement"],
-      "raw_posts": [
-        {
-          "platform": "Ticket/Eventbrite",
-          "content_summary": "OMNIA Dayclub opening Friday, May 22, 2026 at 11:00 AM — new festival-level production pool venue at Caesars.",
-          "posted_at": "2026-05-09",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
         }
       ]
     },
     {
       "venue": "Zouk Nightclub",
       "posts_found": 3,
-      "urgent": true,
-      "summary": "Major May weekend takeover: Snoop Dogg (5/7), RL Grime (5/8), Lil Wayne (5/9) — hip-hop + bass crossover; 248K followers; Resorts World positioning.",
-      "flags": ["talent_announcement", "promo_offer"],
-      "raw_posts": [
-        {
-          "platform": "IG",
-          "content_summary": "Confirmed May weekend lineup: Thurs 5/7 @snoopdogg, Fri 5/8 @rlgrime, Sat 5/9 @liltunechi (Lil Wayne).",
-          "posted_at": "2026-05-10",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
-        },
-        {
-          "platform": "PR/News",
-          "content_summary": "May 2026 event calendar posted on zoukgrouplv.com featuring hip-hop, bass, and EDM lineup.",
-          "posted_at": "2026-05-09",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
-        },
-        {
-          "platform": "IG",
-          "content_summary": "Ray Volpe BASSRUSH event (May 13) with Adventure Club; festival-level production tease.",
-          "posted_at": "2026-05-06",
-          "engagement_note": "Normal",
-          "flags": []
-        }
-      ]
-    },
-    {
-      "venue": "Hakkasan Nightclub",
-      "posts_found": 2,
       "urgent": false,
-      "summary": "May lineup: R&Bae Wednesdays (5/6), Laid Back Luke (5/7), Four Color Zack (5/8), Justin Credible (5/9); 255K followers; MGM Grand positioning.",
+      "summary": "248K Instagram followers; major talent bookings (Snoop Dogg, RL Grime, Lil Tunechi); strong \"best club\" positioning with March 2026 momentum",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "May events posted: 5/6 R&Bae Wednesdays, 5/7 @laidbackluke, 5/8 @fourcolorzack, 5/9 @justin_credible.",
-          "posted_at": "2026-05-10",
+          "content_summary": "Thurs 5/7 @snoopdogg, Fri 5/8 @rlgrime, Sat 5/9 @liltunechi, Sun 5/9 @justin_credible; major hip-hop & electronic crossover weekend",
+          "posted_at": "2026-05-07",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "Cardi B after-party rumor; R&Bae Wednesday positioning; decade-long nightclub legacy messaging.",
+          "content_summary": "Zouk Nightclub supremacy messaging; \"reigns supreme on the Strip right now\" positioning with strong community engagement",
+          "posted_at": "2026-03-16",
+          "engagement_note": "High",
+          "flags": []
+        },
+        {
+          "platform": "TT",
+          "content_summary": "Illenium production quality narrative; \"mothership\" visual branding and September 20 booking announcement",
           "posted_at": "2026-05-04",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        }
+      ]
+    },
+    {
+      "venue": "Hakkasan Nightclub",
+      "posts_found": 3,
+      "urgent": false,
+      "summary": "255K Instagram followers; consistent R&Bae Wednesday programming; established decade-long presence; Tao Group Hospitality brand integration",
+      "flags": ["talent_announcement"],
+      "raw_posts": [
+        {
+          "platform": "IG",
+          "content_summary": "Upcoming schedule: 5/06 R&Bae Wednesdays, 5/07 @laidbackluke, 5/08 @fourcolorzack, 5/09 @justin_credible; consistent midweek & weekend programming",
+          "posted_at": "2026-05-06",
+          "engagement_note": "Normal",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "TT",
+          "content_summary": "R&Bae Wednesdays recurring series with call-to-action engagement; genre-specific community building",
+          "posted_at": "2026-02-16",
+          "engagement_note": "High",
+          "flags": []
+        },
+        {
+          "platform": "TT",
+          "content_summary": "Decade-long club legacy narrative; MGM Grand property integration; \"top clubs in Las Vegas\" positioning",
+          "posted_at": "2026-04-12",
           "engagement_note": "Normal",
           "flags": []
         }
@@ -256,47 +312,55 @@
       "venue": "Palm Tree Beach Club",
       "posts_found": 2,
       "urgent": false,
-      "summary": "New luxury daylife concept at MGM Grand; May lineup: Steve Aoki (Sat), DJ Lema (Sun); 232K followers; Tao Group positioning.",
-      "flags": ["talent_announcement", "promo_offer"],
+      "summary": "232K Instagram followers; brand new May 2026 opening with viral celebrity momentum (MGK/Sydney Sweeney); Kygo & Tao Group partnership; luxury day club positioning",
+      "flags": ["promo_offer"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Bio: 'Vegas' Luxury Daylife Destination @mgmgrand by @TaoGroupHospitality x @PalmTreeCrew. Wed-Sun Sat @steveaoki Sun @djlema'",
-          "posted_at": "2026-05-08",
+          "content_summary": "Vegas' Luxury Daylife Destination @mgmgrand; Wed-Sun schedule; Sat @steveaoki, Sun @djlema; boutique day club positioning",
+          "posted_at": "2026-05-11",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
+          "platform": "TT",
+          "content_summary": "Grand opening viral moment with celebrity guest list (MGK, Sydney Sweeney, Patrick Schwarzenegger); May 3 launch drove massive social momentum",
+          "posted_at": "2026-05-03",
+          "engagement_note": "High",
+          "flags": ["promo_offer"]
+        }
+      ]
+    },
+    {
+      "venue": "Tao Beach (The Venetian)",
+      "posts_found": 2,
+      "urgent": false,
+      "summary": "93K Instagram followers; world-class artist residencies (Tiësto, Alesso, Zedd); premier dayclub positioning; EDC Week integration with Porter Robinson, DJ Snake, Steve Aoki",
+      "flags": ["talent_announcement"],
+      "raw_posts": [
+        {
           "platform": "PR/News",
-          "content_summary": "Fully reimagined oasis with headliners like Kygo, Alesso, Zedd announced for May 2026; festival-level production.",
-          "posted_at": "2026-05-05",
+          "content_summary": "World-class artist lineup throughout 2026 season: Tiësto, Alesso, Zedd; ultramodern DJ booth and giant LED screens; premier dayclub experience",
+          "posted_at": "2026-05-01",
+          "engagement_note": "High",
+          "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "TT",
+          "content_summary": "EDC Week day parties featuring @porterrobinson, @djsnake, @steveaoki, @rozmus; high-engagement seasonal content",
+          "posted_at": "2026-04-06",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         }
       ]
     },
     {
-      "venue": "Tao Beach",
-      "posts_found": 2,
+      "venue": "Omnia Beach Club",
+      "posts_found": 0,
       "urgent": false,
-      "summary": "93K followers; Venetian positioning; Tiësto and FISHER recent bookings; pool party lifestyle content; May calendar active.",
-      "flags": ["talent_announcement"],
-      "raw_posts": [
-        {
-          "platform": "IG",
-          "content_summary": "Venetian location positioning; 269 total posts; consistent dayclub lifestyle branding.",
-          "posted_at": "2026-05-09",
-          "engagement_note": "Normal",
-          "flags": []
-        },
-        {
-          "platform": "TT",
-          "content_summary": "Recent Tiësto performance highlighted; FISHER booking; poolside summer vibe content.",
-          "posted_at": "2026-04-06",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
-        }
-      ]
+      "summary": "No specific social media posts detected this week for Omnia Beach Club; venue appears inactive or low-profile on Instagram/TikTok",
+      "flags": [],
+      "raw_posts": []
     }
   ]
 }
