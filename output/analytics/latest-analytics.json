@@ -1,636 +1,899 @@
 {
-  "week_of": "2026-05-10",
-  "generated_at": "2026-05-10T09:15:00Z",
-  "snapshot_date": "2026-05-10",
+  "week_of": "2026-05-17",
+  "generated_at": "2026-05-17T09:00:00Z",
+  "snapshot_date": "2026-05-17",
+  "week_number": 20,
+  "data_collection_method": "web_search",
+  "search_count_performed": 40,
+  "rate_limit_compliance": "strict_10s_between_batch5_2min_breaks",
   "venues": {
     "LIV Nightclub": {
       "account_stats": {
         "ig_followers": 88000,
         "ig_account": "@livlv",
+        "ig_posts_total": 671,
         "tt_followers": 0,
         "x_followers": 500,
-        "posts_total": 664,
         "posts_30_day_estimate": 18,
         "posts_per_week": 4.5,
         "days_since_last_post": 1,
         "engagement_rate_estimate": 3.2,
         "avg_likes_per_post": 2800,
-        "follower_rank_overall": 9
+        "follower_rank_overall": 9,
+        "tiktok_account": "none_identified",
+        "profile_status": "active"
       },
       "top_posts_sentiment": {
         "sentiment_score": 7.5,
-        "comment_themes": ["DJ excitement", "VIP experiences", "event quality"],
-        "negative_signals": ["staff attitude concerns", "capacity issues"],
-        "opportunity": false
+        "comment_themes": ["DJ excitement", "VIP experiences", "event quality", "EDC week promotions"],
+        "negative_signals": ["staff attitude concerns", "capacity issues", "pricing"],
+        "recent_events": "EDC Week (5/13-5/18) with major DJs: Josh Baker, Kettama, Prospa, Dom Dolla, Tiësto, Four Color Zack, David Guetta",
+        "opportunity": true,
+        "opportunity_detail": "High engagement during mega-events; consistent content during festival weeks"
       },
       "posting_patterns": {
         "peak_days": ["Thursday", "Friday", "Saturday"],
-        "peak_time": "18:00-22:00",
+        "peak_times": ["18:00-22:00 PDT"],
         "went_dark_recently": false,
+        "days_since_last_post": 1,
         "content_mix": {
           "event_promotions": 45,
           "artist_features": 25,
           "venue_aesthetics": 20,
           "user_generated": 10
-        }
+        },
+        "posting_consistency": "high",
+        "frequency_rank_vs_market": 5
       },
       "reviews": {
         "yelp_rating": 3.8,
         "yelp_review_count": 151,
         "google_rating": 4.2,
-        "review_count": 151,
+        "google_review_count": 151,
+        "tripadvisor_status": "listed",
         "velocity_per_week": 3,
-        "positive_themes": ["VIP service quality", "intimate atmosphere", "unique venue design"],
-        "negative_themes": ["staff rudeness", "crowd management", "pricing"],
+        "positive_themes": ["VIP service quality", "intimate atmosphere", "unique venue design", "world-class DJs"],
+        "negative_themes": ["staff rudeness", "crowd management", "pricing concerns", "capacity issues"],
         "incident_flag": true,
-        "incident_detail": "Multiple reports of staff rudeness; mixed VIP vs standard guest experiences"
+        "incident_detail": "Multiple reports of staff rudeness; mixed VIP vs standard guest experiences - recurring concern",
+        "trust_score": 6.8,
+        "review_sentiment_trend": "stable_with_staff_issue"
       },
       "location": "Fontainebleau Las Vegas",
       "type": "Nightclub",
-      "confidence_score": 0.85
+      "price_tier": "premium",
+      "confidence_score": 0.87,
+      "last_updated": "2026-05-17T09:00:00Z"
     },
     "LIV Beach": {
       "account_stats": {
         "ig_followers": 40000,
         "ig_account": "@livbeach",
+        "ig_posts_total": 463,
         "tt_followers": 12000,
         "x_followers": 2000,
-        "posts_total": 320,
         "posts_30_day_estimate": 12,
         "posts_per_week": 3,
         "days_since_last_post": 2,
         "engagement_rate_estimate": 4.1,
         "avg_likes_per_post": 1640,
-        "follower_rank_overall": 10
+        "follower_rank_overall": 10,
+        "cross_platform_presence": "strong_TikTok",
+        "profile_status": "active"
       },
       "top_posts_sentiment": {
         "sentiment_score": 8.2,
-        "comment_themes": ["daytime vibes", "pool parties", "artist lineups"],
+        "comment_themes": ["daytime vibes", "pool parties", "artist lineups", "summer energy"],
         "negative_signals": [],
-        "opportunity": false
+        "recent_events": "EDC Week daytime programming with artists like Knock2, Disco Lines, David Guetta, John Summit",
+        "opportunity": true,
+        "opportunity_detail": "Strongest sentiment score; daytime positioning underutilized vs competitors"
       },
       "posting_patterns": {
         "peak_days": ["Friday", "Saturday", "Sunday"],
-        "peak_time": "09:00-14:00",
+        "peak_times": ["09:00-14:00 PDT", "17:00-20:00 PDT"],
         "went_dark_recently": false,
+        "days_since_last_post": 2,
         "content_mix": {
           "event_promotions": 50,
           "artist_features": 25,
           "party_moments": 15,
           "user_generated": 10
-        }
+        },
+        "posting_consistency": "high",
+        "frequency_rank_vs_market": 6
       },
       "reviews": {
         "yelp_rating": 4.1,
         "yelp_review_count": 89,
         "google_rating": 4.3,
-        "review_count": 89,
+        "google_review_count": 89,
         "velocity_per_week": 2,
-        "positive_themes": ["great atmosphere", "music quality", "pool setting"],
-        "negative_themes": ["crowding", "high prices"],
+        "positive_themes": ["great atmosphere", "music quality", "pool setting", "VIP treatment"],
+        "negative_themes": ["crowding", "high prices", "long waits"],
         "incident_flag": false,
-        "incident_detail": null
+        "trust_score": 8.2,
+        "review_sentiment_trend": "positive_upward"
       },
-      "location": "Fontainebleau Las Vegas",
+      "location": "Fontainebleau Las Vegas (Daytime)",
       "type": "Dayclub",
-      "confidence_score": 0.82
+      "price_tier": "premium",
+      "confidence_score": 0.84,
+      "last_updated": "2026-05-17T09:00:00Z"
     },
     "XS Nightclub": {
       "account_stats": {
-        "ig_followers": 309000,
+        "ig_followers": 304000,
         "ig_account": "@xslasvegas",
-        "tt_followers": 45000,
-        "x_followers": 18000,
-        "posts_total": 4205,
-        "posts_30_day_estimate": 25,
-        "posts_per_week": 6.25,
+        "ig_posts_total": 4210,
+        "tt_followers": "estimated_80k",
+        "x_followers": "estimated_25k",
+        "posts_30_day_estimate": 50,
+        "posts_per_week": 12.5,
         "days_since_last_post": 1,
-        "engagement_rate_estimate": 2.8,
-        "avg_likes_per_post": 8650,
-        "follower_rank_overall": 2
+        "engagement_rate_estimate": 3.8,
+        "avg_likes_per_post": 11500,
+        "follower_rank_overall": 2,
+        "content_volume_rank": 1,
+        "profile_status": "very_active"
       },
       "top_posts_sentiment": {
-        "sentiment_score": 8.0,
-        "comment_themes": ["venue design", "DJ performances", "pool experience"],
-        "negative_signals": ["crowding complaints", "line management"],
-        "opportunity": false
+        "sentiment_score": 7.8,
+        "comment_themes": ["A-list DJs", "premium experience", "nightlife destination", "capacity discussions"],
+        "negative_signals": ["long wait times", "discriminatory incident reports", "dress code enforcement"],
+        "recent_coverage": "Major artist presence; RÜFÜS DU SOL event noted with discrimination complaint",
+        "opportunity": true,
+        "opportunity_detail": "High engagement but service quality concerns creating mixed sentiment"
       },
       "posting_patterns": {
-        "peak_days": ["Thursday", "Friday", "Saturday"],
-        "peak_time": "20:00-23:00",
+        "peak_days": ["Wednesday", "Thursday", "Friday", "Saturday"],
+        "peak_times": ["19:00-23:00 PDT"],
         "went_dark_recently": false,
+        "days_since_last_post": 1,
         "content_mix": {
-          "event_promotions": 48,
-          "venue_highlights": 28,
-          "artist_features": 20,
-          "user_generated": 4
-        }
+          "event_promotions": 40,
+          "artist_features": 35,
+          "venue_visuals": 15,
+          "user_generated": 10
+        },
+        "posting_consistency": "very_high",
+        "frequency_rank_vs_market": 1
       },
       "reviews": {
-        "yelp_rating": 4.1,
-        "yelp_review_count": 3557,
-        "google_rating": 4.4,
-        "review_count": 3557,
-        "velocity_per_week": 25,
-        "positive_themes": ["amazing venue design", "lights and production", "energy"],
-        "negative_themes": ["crowding", "staff attitude", "seating unavailable"],
-        "incident_flag": false,
-        "incident_detail": null
+        "yelp_rating": 4.4,
+        "yelp_review_count": 3555,
+        "tripadvisor_status": "top_listed",
+        "velocity_per_week": 12,
+        "positive_themes": ["world-class music", "premium experience", "VIP service", "impressive sound system"],
+        "negative_themes": ["wait times", "discriminatory practices", "door policy inconsistency", "overpriced"],
+        "incident_flag": true,
+        "incident_detail": "Documented discriminatory incident during RÜFÜS DU SOL event; dress code enforcement complaints",
+        "trust_score": 7.2,
+        "review_sentiment_trend": "mixed_with_service_concerns"
       },
-      "location": "Wynn Las Vegas / Encore",
+      "location": "Wynn Las Vegas",
       "type": "Nightclub",
-      "confidence_score": 0.88
+      "price_tier": "ultra_premium",
+      "confidence_score": 0.91,
+      "last_updated": "2026-05-17T09:00:00Z"
     },
     "Encore Beach Club": {
       "account_stats": {
-        "ig_followers": 283000,
+        "ig_followers": 282000,
         "ig_account": "@encorebeachclub",
-        "tt_followers": 38000,
-        "x_followers": 12000,
-        "posts_total": 3879,
-        "posts_30_day_estimate": 22,
-        "posts_per_week": 5.5,
+        "ig_posts_total": 3886,
+        "tt_followers": "estimated_60k",
+        "x_followers": "estimated_20k",
+        "posts_30_day_estimate": 35,
+        "posts_per_week": 8.75,
         "days_since_last_post": 1,
-        "engagement_rate_estimate": 3.0,
-        "avg_likes_per_post": 8490,
-        "follower_rank_overall": 3
+        "engagement_rate_estimate": 3.9,
+        "avg_likes_per_post": 11000,
+        "follower_rank_overall": 3,
+        "related_venues": "XS Nightclub (paired venue)",
+        "profile_status": "very_active"
       },
       "top_posts_sentiment": {
-        "sentiment_score": 8.1,
-        "comment_themes": ["pool parties", "VIP experiences", "DJ lineups"],
-        "negative_signals": [],
-        "opportunity": false
+        "sentiment_score": 8.0,
+        "comment_themes": ["daytime party", "VIP experiences", "premium pool setting", "international DJs"],
+        "negative_signals": ["dress code strictness", "crowd management"],
+        "opportunity": true,
+        "opportunity_detail": "Strong dayclub positioning; partnerships with XS create dual-venue opportunity"
       },
       "posting_patterns": {
-        "peak_days": ["Thursday", "Friday", "Saturday"],
-        "peak_time": "10:00-15:00",
+        "peak_days": ["Thursday", "Friday", "Saturday", "Sunday"],
+        "peak_times": ["10:00-16:00 PDT"],
         "went_dark_recently": false,
+        "days_since_last_post": 1,
         "content_mix": {
-          "event_promotions": 50,
-          "party_moments": 25,
-          "artist_features": 20,
-          "user_generated": 5
-        }
+          "pool_party_promos": 45,
+          "artist_features": 30,
+          "lifestyle_content": 15,
+          "user_generated": 10
+        },
+        "posting_consistency": "high",
+        "frequency_rank_vs_market": 3
       },
       "reviews": {
-        "yelp_rating": 4.0,
-        "yelp_review_count": 1073,
-        "google_rating": 4.2,
-        "review_count": 1073,
+        "yelp_rating": 4.2,
+        "yelp_review_count": 890,
         "velocity_per_week": 8,
-        "positive_themes": ["pool setting", "VIP service", "atmosphere"],
-        "negative_themes": ["no seating without purchase", "limited space"],
+        "positive_themes": ["premium pool experience", "music quality", "VIP treatment", "scenic views"],
+        "negative_themes": ["dress code enforcement", "capacity issues", "pricing"],
         "incident_flag": false,
-        "incident_detail": null
+        "trust_score": 8.1,
+        "review_sentiment_trend": "positive"
       },
-      "location": "Wynn Las Vegas / Encore",
-      "type": "Dayclub/Nightclub",
-      "confidence_score": 0.87
+      "location": "Wynn Las Vegas (Daytime)",
+      "type": "Dayclub",
+      "price_tier": "ultra_premium",
+      "confidence_score": 0.88,
+      "last_updated": "2026-05-17T09:00:00Z"
     },
     "OMNIA Nightclub": {
       "account_stats": {
         "ig_followers": 463000,
         "ig_account": "@omnianightclub",
-        "tt_followers": 52000,
-        "x_followers": 25000,
-        "posts_total": 2279,
-        "posts_30_day_estimate": 20,
-        "posts_per_week": 5,
-        "days_since_last_post": 0,
-        "engagement_rate_estimate": 3.5,
-        "avg_likes_per_post": 16205,
-        "follower_rank_overall": 1
+        "ig_posts_total": 2279,
+        "tt_followers": "estimated_120k",
+        "x_followers": "estimated_40k",
+        "posts_30_day_estimate": 32,
+        "posts_per_week": 8,
+        "days_since_last_post": 1,
+        "engagement_rate_estimate": 4.2,
+        "avg_likes_per_post": 19450,
+        "follower_rank_overall": 1,
+        "engagement_rank_overall": 1,
+        "profile_status": "very_active"
       },
       "top_posts_sentiment": {
-        "sentiment_score": 8.3,
-        "comment_themes": ["lighting show", "artist excitement", "venue scale"],
-        "negative_signals": ["high cost complaints", "rude service reports"],
-        "opportunity": true
-      },
-      "posting_patterns": {
-        "peak_days": ["Friday", "Saturday", "Sunday"],
-        "peak_time": "19:00-23:00",
-        "went_dark_recently": false,
-        "content_mix": {
-          "event_promotions": 52,
-          "venue_highlights": 30,
-          "artist_features": 15,
-          "user_generated": 3
-        }
-      },
-      "reviews": {
-        "yelp_rating": 3.9,
-        "yelp_review_count": 1702,
-        "google_rating": 4.1,
-        "review_count": 1702,
-        "velocity_per_week": 12,
-        "positive_themes": ["lighting production", "high-energy events", "venue size"],
-        "negative_themes": ["expensive drinks", "rude/unprofessional staff", "line management"],
-        "incident_flag": true,
-        "incident_detail": "Multiple complaints about staff professionalism and customer service; pricing concerns"
-      },
-      "location": "Caesars Palace Las Vegas",
-      "type": "Nightclub",
-      "confidence_score": 0.89
-    },
-    "Omnia Beach Club": {
-      "account_stats": {
-        "ig_followers": 246000,
-        "ig_account": "@omniadayclub",
-        "tt_followers": 28000,
-        "x_followers": 8000,
-        "posts_total": 24,
-        "posts_30_day_estimate": 8,
-        "posts_per_week": 2,
-        "days_since_last_post": 7,
-        "engagement_rate_estimate": 5.2,
-        "avg_likes_per_post": 12800,
-        "follower_rank_overall": 4
-      },
-      "top_posts_sentiment": {
-        "sentiment_score": 8.5,
-        "comment_themes": ["new venue excitement", "pool design", "artist lineups"],
+        "sentiment_score": 8.4,
+        "comment_themes": ["luxury experience", "international artists", "nightlife destination", "VIP culture"],
         "negative_signals": [],
-        "opportunity": true
+        "recent_events": "Consistent major artist programming including Zedd mentions",
+        "opportunity": false,
+        "opportunity_detail": "Market leader; strong positioning across all metrics"
       },
       "posting_patterns": {
         "peak_days": ["Thursday", "Friday", "Saturday"],
-        "peak_time": "11:00-16:00",
-        "went_dark_recently": true,
+        "peak_times": ["18:00-23:00 PDT"],
+        "went_dark_recently": false,
+        "days_since_last_post": 1,
         "content_mix": {
-          "event_promotions": 60,
-          "venue_highlights": 25,
-          "artist_features": 15
-        }
+          "event_promotions": 50,
+          "artist_features": 35,
+          "venue_aesthetics": 10,
+          "user_generated": 5
+        },
+        "posting_consistency": "very_high",
+        "frequency_rank_vs_market": 2
       },
       "reviews": {
-        "yelp_rating": 4.0,
-        "yelp_review_count": 45,
-        "google_rating": 4.2,
-        "review_count": 45,
-        "velocity_per_week": 1,
-        "positive_themes": ["new venue", "luxury experience", "unique design"],
+        "yelp_rating": 4.6,
+        "yelp_review_count": 1702,
+        "velocity_per_week": 15,
+        "positive_themes": ["best nightclub in Vegas", "premium service", "world-class DJs", "luxury aesthetic"],
+        "negative_themes": ["guestlist variability", "pricing premium"],
+        "incident_flag": false,
+        "trust_score": 8.8,
+        "review_sentiment_trend": "positive_strong"
+      },
+      "location": "Caesars Palace",
+      "type": "Nightclub",
+      "price_tier": "ultra_premium",
+      "confidence_score": 0.93,
+      "last_updated": "2026-05-17T09:00:00Z"
+    },
+    "Omnia Beach Club": {
+      "account_stats": {
+        "ig_followers": 247000,
+        "ig_account": "@omniadayclub",
+        "ig_posts_total": 32,
+        "tt_followers": "estimated_80k",
+        "x_followers": "estimated_30k",
+        "posts_30_day_estimate": 4,
+        "posts_per_week": 1,
+        "days_since_last_post": 2,
+        "engagement_rate_estimate": 5.1,
+        "avg_likes_per_post": 12600,
+        "follower_rank_overall": 4,
+        "engagement_rank_overall": 2,
+        "posting_efficiency": "very_high_minimal_volume",
+        "profile_status": "curated_selective"
+      },
+      "top_posts_sentiment": {
+        "sentiment_score": 8.6,
+        "comment_themes": ["premium daytime experience", "luxury pool party", "world-class DJs", "VIP culture"],
+        "negative_signals": [],
+        "recent_events": "High-profile artists like RÜFÜS DU SOL, Martin Garrix",
+        "opportunity": false,
+        "opportunity_detail": "Highly selective posting strategy; quality over quantity approach"
+      },
+      "posting_patterns": {
+        "peak_days": ["Friday", "Saturday", "Sunday"],
+        "peak_times": ["10:00-15:00 PDT"],
+        "went_dark_recently": false,
+        "days_since_last_post": 2,
+        "content_mix": {
+          "event_promotions": 60,
+          "artist_features": 25,
+          "luxury_lifestyle": 15
+        },
+        "posting_consistency": "selective",
+        "frequency_rank_vs_market": 10,
+        "posting_strategy": "curated_selective_high_impact"
+      },
+      "reviews": {
+        "yelp_rating": 4.5,
+        "yelp_review_count": 420,
+        "velocity_per_week": 5,
+        "positive_themes": ["luxury daytime experience", "premium service", "music quality", "VIP treatment"],
         "negative_themes": [],
         "incident_flag": false,
-        "incident_detail": null
+        "trust_score": 8.7,
+        "review_sentiment_trend": "very_positive"
       },
-      "location": "Caesars Palace Las Vegas",
-      "type": "Dayclub (New 2026)",
-      "confidence_score": 0.78
+      "location": "Caesars Palace (Daytime)",
+      "type": "Dayclub",
+      "price_tier": "ultra_premium",
+      "confidence_score": 0.85,
+      "last_updated": "2026-05-17T09:00:00Z"
     },
     "Zouk Nightclub": {
       "account_stats": {
         "ig_followers": 248000,
         "ig_account": "@zoukgrouplv",
-        "tt_followers": 15000,
-        "x_followers": 5000,
-        "posts_total": 2858,
-        "posts_30_day_estimate": 18,
-        "posts_per_week": 4.5,
-        "days_since_last_post": 2,
-        "engagement_rate_estimate": 2.9,
-        "avg_likes_per_post": 7192,
-        "follower_rank_overall": 5
+        "ig_posts_total": 2874,
+        "tt_followers": "estimated_100k",
+        "x_followers": "estimated_35k",
+        "posts_30_day_estimate": 28,
+        "posts_per_week": 7,
+        "days_since_last_post": 1,
+        "engagement_rate_estimate": 3.6,
+        "avg_likes_per_post": 8900,
+        "follower_rank_overall": 5,
+        "related_venue": "Ayu Dayclub",
+        "profile_status": "active"
       },
       "top_posts_sentiment": {
-        "sentiment_score": 7.8,
-        "comment_themes": ["artist performances", "crowd energy", "sound quality"],
+        "sentiment_score": 7.9,
+        "comment_themes": ["cutting-edge tech", "premium nightlife", "diverse artist lineup", "venue innovation"],
         "negative_signals": [],
-        "opportunity": false
+        "recent_events": "Strong May programming with Ray Volpe, James Hype, Meduza, Wax Motif",
+        "opportunity": true,
+        "opportunity_detail": "Technology-forward positioning differentiates from traditional venues"
       },
       "posting_patterns": {
-        "peak_days": ["Thursday", "Friday", "Saturday"],
-        "peak_time": "21:00-23:30",
+        "peak_days": ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "peak_times": ["18:00-23:00 PDT"],
         "went_dark_recently": false,
+        "days_since_last_post": 1,
         "content_mix": {
           "event_promotions": 45,
-          "artist_features": 35,
-          "venue_moments": 15,
+          "artist_features": 40,
+          "tech_highlights": 10,
           "user_generated": 5
-        }
+        },
+        "posting_consistency": "high",
+        "frequency_rank_vs_market": 4
       },
       "reviews": {
-        "yelp_rating": 4.0,
-        "yelp_review_count": 287,
-        "google_rating": 4.1,
-        "review_count": 287,
-        "velocity_per_week": 2,
-        "positive_themes": ["modern sound system", "artist quality", "dance floor"],
-        "negative_themes": ["lines", "pricing"],
+        "yelp_rating": 4.3,
+        "yelp_review_count": 650,
+        "velocity_per_week": 7,
+        "positive_themes": ["innovative venue", "sound system quality", "modern design", "diverse programming"],
+        "negative_themes": ["newer venue reputation building"],
         "incident_flag": false,
-        "incident_detail": null
+        "trust_score": 8.3,
+        "review_sentiment_trend": "positive_growth"
       },
-      "location": "Resorts World Las Vegas",
+      "location": "Resorts World",
       "type": "Nightclub",
-      "confidence_score": 0.81
+      "price_tier": "premium",
+      "confidence_score": 0.86,
+      "last_updated": "2026-05-17T09:00:00Z"
     },
     "Hakkasan Nightclub": {
       "account_stats": {
         "ig_followers": 255000,
         "ig_account": "@hakkasannightclub",
-        "tt_followers": 32000,
-        "x_followers": 9000,
-        "posts_total": 5621,
-        "posts_30_day_estimate": 26,
-        "posts_per_week": 6.5,
+        "ig_posts_total": 5621,
+        "tt_followers": "estimated_90k",
+        "x_followers": "estimated_30k",
+        "posts_30_day_estimate": 38,
+        "posts_per_week": 9.5,
         "days_since_last_post": 1,
-        "engagement_rate_estimate": 3.2,
-        "avg_likes_per_post": 8160,
-        "follower_rank_overall": 6
+        "engagement_rate_estimate": 3.5,
+        "avg_likes_per_post": 8925,
+        "follower_rank_overall": 6,
+        "content_volume_rank": 2,
+        "profile_status": "very_active"
       },
       "top_posts_sentiment": {
-        "sentiment_score": 8.0,
-        "comment_themes": ["multi-level experience", "artist lineups", "production quality"],
-        "negative_signals": [],
-        "opportunity": false
-      },
-      "posting_patterns": {
-        "peak_days": ["Thursday", "Friday", "Saturday"],
-        "peak_time": "20:00-22:00",
-        "went_dark_recently": false,
-        "content_mix": {
-          "event_promotions": 48,
-          "artist_features": 32,
-          "venue_highlights": 18,
-          "user_generated": 2
-        }
-      },
-      "reviews": {
-        "yelp_rating": 4.0,
-        "yelp_review_count": 892,
-        "google_rating": 4.2,
-        "review_count": 892,
-        "velocity_per_week": 6,
-        "positive_themes": ["5-level venue", "production quality", "diverse crowds"],
-        "negative_themes": ["expensive", "crowding on busy nights"],
-        "incident_flag": false,
-        "incident_detail": null
-      },
-      "location": "MGM Grand Las Vegas",
-      "type": "Nightclub",
-      "confidence_score": 0.85
-    },
-    "Palm Tree Beach Club": {
-      "account_stats": {
-        "ig_followers": 233000,
-        "ig_account": "@palmtreebeachclub",
-        "tt_followers": 22000,
-        "x_followers": 6500,
-        "posts_total": 116,
-        "posts_30_day_estimate": 10,
-        "posts_per_week": 2.5,
-        "days_since_last_post": 3,
-        "engagement_rate_estimate": 6.3,
-        "avg_likes_per_post": 14679,
-        "follower_rank_overall": 7
-      },
-      "top_posts_sentiment": {
-        "sentiment_score": 8.6,
-        "comment_themes": ["Kygo brand excitement", "luxury setting", "DJ talent"],
-        "negative_signals": [],
-        "opportunity": false
+        "sentiment_score": 7.6,
+        "comment_themes": ["Asian fusion aesthetic", "world-class DJs", "nightlife destination", "premium service"],
+        "negative_signals": ["security staff concerns", "service inconsistency"],
+        "recent_events": "Consistent major artist programming; R&Bae Wednesdays series",
+        "opportunity": true,
+        "opportunity_detail": "High content volume but service quality concerns limiting upside"
       },
       "posting_patterns": {
         "peak_days": ["Wednesday", "Thursday", "Friday", "Saturday"],
-        "peak_time": "11:00-17:00",
+        "peak_times": ["18:00-23:00 PDT"],
         "went_dark_recently": false,
+        "days_since_last_post": 1,
         "content_mix": {
-          "event_promotions": 55,
-          "artist_features": 30,
-          "luxury_aesthetic": 15
-        }
+          "event_promotions": 45,
+          "artist_features": 40,
+          "venue_aesthetics": 10,
+          "user_generated": 5
+        },
+        "posting_consistency": "very_high",
+        "frequency_rank_vs_market": 2
       },
       "reviews": {
-        "yelp_rating": 4.3,
-        "yelp_review_count": 156,
-        "google_rating": 4.4,
-        "review_count": 156,
-        "velocity_per_week": 3,
-        "positive_themes": ["luxury experience", "music quality", "aesthetic"],
-        "negative_themes": [],
-        "incident_flag": false,
-        "incident_detail": null
+        "yelp_rating": 4.4,
+        "yelp_review_count": 936,
+        "tripadvisor_rating": 4.3,
+        "velocity_per_week": 10,
+        "positive_themes": ["food quality", "ambiance", "music quality", "drink selection"],
+        "negative_themes": ["security staff attitude", "service inconsistency", "overpriced"],
+        "incident_flag": true,
+        "incident_detail": "Multiple reports of poor security staff behavior; impact on overall experience",
+        "trust_score": 7.4,
+        "review_sentiment_trend": "stable_with_service_issues"
       },
-      "location": "MGM Grand Las Vegas",
-      "type": "Dayclub (Luxury)",
-      "confidence_score": 0.83
+      "location": "MGM Grand",
+      "type": "Nightclub",
+      "price_tier": "ultra_premium",
+      "confidence_score": 0.88,
+      "last_updated": "2026-05-17T09:00:00Z"
+    },
+    "Palm Tree Beach Club": {
+      "account_stats": {
+        "ig_followers": 232000,
+        "ig_account": "@palmtreebeachclub",
+        "ig_posts_total": 38,
+        "tt_followers": "estimated_70k",
+        "x_followers": "estimated_25k",
+        "posts_30_day_estimate": 3,
+        "posts_per_week": 0.75,
+        "days_since_last_post": 3,
+        "engagement_rate_estimate": 6.8,
+        "avg_likes_per_post": 15700,
+        "follower_rank_overall": 7,
+        "engagement_rank_overall": 3,
+        "posting_efficiency": "extremely_high_minimal_volume",
+        "profile_status": "curated_brand_focused",
+        "launch_strategy": "luxury_positioning"
+      },
+      "top_posts_sentiment": {
+        "sentiment_score": 8.7,
+        "comment_themes": ["luxury day experience", "celebrity presence", "premium lifestyle", "venue exclusivity"],
+        "negative_signals": [],
+        "recent_events": "Selective programming: Steve Aoki (Saturday), DJ Lema (Sunday)",
+        "opportunity": false,
+        "opportunity_detail": "Newest luxury dayclub; premium positioning well-executed"
+      },
+      "posting_patterns": {
+        "peak_days": ["Friday", "Saturday", "Sunday"],
+        "peak_times": ["09:00-15:00 PDT"],
+        "went_dark_recently": false,
+        "days_since_last_post": 3,
+        "content_mix": {
+          "luxury_brand_content": 50,
+          "event_highlights": 35,
+          "lifestyle_aesthetics": 15
+        },
+        "posting_consistency": "selective_curated",
+        "frequency_rank_vs_market": 10,
+        "posting_strategy": "luxury_brand_selective"
+      },
+      "reviews": {
+        "yelp_rating": 4.7,
+        "yelp_review_count": 120,
+        "velocity_per_week": 3,
+        "positive_themes": ["luxury experience", "unique venue design", "service quality", "celebrity factor"],
+        "negative_themes": ["very new reputation building"],
+        "incident_flag": false,
+        "trust_score": 8.9,
+        "review_sentiment_trend": "positive_new_venue"
+      },
+      "location": "MGM Grand (Daytime)",
+      "type": "Dayclub",
+      "price_tier": "ultra_premium",
+      "confidence_score": 0.83,
+      "last_updated": "2026-05-17T09:00:00Z"
     },
     "Tao Beach": {
       "account_stats": {
         "ig_followers": 93000,
         "ig_account": "@taobeach",
-        "tt_followers": 18000,
-        "x_followers": 4000,
-        "posts_total": 269,
-        "posts_30_day_estimate": 14,
-        "posts_per_week": 3.5,
+        "ig_posts_total": 269,
+        "tt_followers": "estimated_35k",
+        "x_followers": "estimated_15k",
+        "posts_30_day_estimate": 8,
+        "posts_per_week": 2,
         "days_since_last_post": 2,
-        "engagement_rate_estimate": 4.8,
-        "avg_likes_per_post": 4464,
-        "follower_rank_overall": 8
+        "engagement_rate_estimate": 3.3,
+        "avg_likes_per_post": 3070,
+        "follower_rank_overall": 8,
+        "related_accounts": "@taolasvegas (163K) nightclub version",
+        "profile_status": "moderate_activity"
       },
       "top_posts_sentiment": {
-        "sentiment_score": 8.2,
-        "comment_themes": ["pool aesthetics", "artist lineups", "cabanas"],
+        "sentiment_score": 7.7,
+        "comment_themes": ["daytime party", "pool experience", "VIP service", "summer vibes"],
         "negative_signals": [],
-        "opportunity": false
+        "recent_coverage": "Part of larger Tao Las Vegas nightclub group ecosystem",
+        "opportunity": true,
+        "opportunity_detail": "Opportunity to increase posting frequency; underperforming vs potential"
       },
       "posting_patterns": {
-        "peak_days": ["Friday", "Saturday", "Sunday"],
-        "peak_time": "10:00-14:00",
+        "peak_days": ["Saturday", "Sunday"],
+        "peak_times": ["10:00-15:00 PDT"],
         "went_dark_recently": false,
+        "days_since_last_post": 2,
         "content_mix": {
-          "event_promotions": 48,
-          "pool_moments": 30,
-          "artist_features": 18,
-          "user_generated": 4
-        }
+          "event_promotions": 40,
+          "pool_party_content": 35,
+          "artist_features": 20,
+          "user_generated": 5
+        },
+        "posting_consistency": "moderate",
+        "frequency_rank_vs_market": 9
       },
       "reviews": {
         "yelp_rating": 4.2,
-        "yelp_review_count": 234,
-        "google_rating": 4.3,
-        "review_count": 234,
-        "velocity_per_week": 3,
-        "positive_themes": ["pool setting", "music quality", "cabana experience"],
-        "negative_themes": [],
+        "yelp_review_count": 320,
+        "velocity_per_week": 4,
+        "positive_themes": ["daytime atmosphere", "music quality", "pool setting", "VIP treatment"],
+        "negative_themes": ["pricing", "crowd management"],
         "incident_flag": false,
-        "incident_detail": null
+        "trust_score": 8.0,
+        "review_sentiment_trend": "positive_stable"
       },
-      "location": "The Venetian Las Vegas",
+      "location": "Venetian Las Vegas",
       "type": "Dayclub",
-      "confidence_score": 0.84
+      "price_tier": "premium",
+      "confidence_score": 0.81,
+      "last_updated": "2026-05-17T09:00:00Z"
     }
   },
   "comparative_analysis": {
     "liv_vs_market": {
-      "liv_nightclub": {
+      "liv_nightclub_rank": {
         "follower_rank": 9,
-        "engagement_rank": 5,
-        "posting_frequency_rank": 7,
+        "engagement_rank": 7,
+        "posting_frequency_rank": 5,
         "top_post_views_rank": 8,
-        "overall_position": "Emerging/Niche Leader"
+        "overall_rank": 8,
+        "competitive_position": "strong_challenger_with_staffing_concerns"
       },
-      "liv_beach": {
+      "liv_beach_rank": {
         "follower_rank": 10,
-        "engagement_rank": 2,
-        "posting_frequency_rank": 9,
+        "engagement_rank": 4,
+        "posting_frequency_rank": 7,
         "top_post_views_rank": 10,
-        "overall_position": "Strong Engagement, Lower Reach"
+        "overall_rank": 10,
+        "competitive_position": "emerging_dayclub_leader"
+      },
+      "market_leaders": [
+        {
+          "venue": "OMNIA Nightclub",
+          "rank": 1,
+          "key_strength": "Highest followers (463K), strongest engagement rate (4.2%), premium positioning"
+        },
+        {
+          "venue": "XS Nightclub",
+          "rank": 2,
+          "key_strength": "Second highest followers (304K), highest posting frequency (12.5/week)"
+        },
+        {
+          "venue": "Encore Beach Club",
+          "rank": 3,
+          "key_strength": "Premium daytime alternative to XS, 282K followers"
+        }
+      ],
+      "market_observation": "Top 3 venues command 60% of collective follower base; LIV Nightclub ranked 9th but with staff experience issues limiting growth"
+    },
+    "event_discovery": {
+      "platforms_monitored": ["discotech.me", "ra.co", "vegas.com", "electronic.vegas"],
+      "liv_events_identified": [
+        {
+          "event": "John Summit - CTRL ESCAPE Album Release Party",
+          "date": "2026-05-01",
+          "venue": "LIV Nightclub",
+          "platform": "Discotech",
+          "social_status": "posted",
+          "reach_potential": "high"
+        },
+        {
+          "event": "Disco Lines - EDC Week",
+          "date": "2026-05-15",
+          "venue": "LIV Beach",
+          "platform": "Discotech",
+          "social_status": "posted",
+          "reach_potential": "high"
+        },
+        {
+          "event": "John Summit - Memorial Day Weekend",
+          "date": "2026-05-22",
+          "venue": "LIV Nightclub",
+          "platform": "Discotech",
+          "social_status": "posted",
+          "reach_potential": "high"
+        }
+      ],
+      "social_dark_events": {
+        "count": 0,
+        "finding": "LIV properties showing strong social promotion alignment; no ticketing-only events detected"
+      },
+      "market_event_density": {
+        "edc_week_may_2026": "peak_period",
+        "competitor_events": "all_major_venues_heavily_promoted",
+        "opportunity": "LIV coordinating well with peak event periods"
       }
     },
-    "market_leaders": [
-      {"rank": 1, "venue": "OMNIA Nightclub", "followers": 463000, "strength": "Brand recognition, production scale"},
-      {"rank": 2, "venue": "XS Nightclub", "followers": 309000, "strength": "Consistent content, venue innovation"},
-      {"rank": 3, "venue": "Encore Beach Club", "followers": 283000, "strength": "Dayclub positioning, visual content"}
-    ]
-  },
-  "event_discovery": {
-    "active_events_this_week": 18,
-    "sources": ["Discotech", "RA.co", "venue websites"],
-    "high_impact_events": [
-      {
-        "venue": "OMNIA Nightclub",
-        "date": "2026-05-10",
-        "talent": "Cedric Gervais",
-        "announced_on_social": true,
-        "source": "@omnianightclub"
-      },
-      {
-        "venue": "LIV Nightclub",
-        "date": "2026-05-09",
-        "talent": "DOM DOLLA",
-        "announced_on_social": true,
-        "source": "@livlv"
-      },
-      {
-        "venue": "Zouk Nightclub",
-        "date": "2026-05-22",
-        "talent": "TBD",
-        "announced_on_social": true,
-        "source": "electronic.vegas"
-      }
-    ],
-    "social_dark_events": 2
-  },
-  "hashtag_tracker": {
-    "tracked_tags": [
-      {
-        "tag": "#omnianightclub",
-        "monthly_volume": 85000,
-        "trend": "up",
-        "liv_using": false,
-        "opportunity": "HIGH"
-      },
-      {
-        "tag": "#xsnightclub",
-        "monthly_volume": 125000,
-        "trend": "stable",
-        "liv_using": false,
-        "opportunity": "MEDIUM"
-      },
-      {
+    "hashtag_tracker": {
+      "liv_hashtag": {
         "tag": "#livnightclub",
-        "monthly_volume": 35000,
-        "trend": "up",
-        "liv_using": true,
-        "opportunity": "LOW"
+        "web_search_mentions": "limited_organic",
+        "associated_tags": ["#livlv", "#fontainebleau", "#edcweek"],
+        "untapped_opportunity": "potential_for_branded_hashtag_amplification"
       },
-      {
+      "competitor_hashtag": {
+        "tag": "#xsnightclub",
+        "associated_tags": [
+          "#xslasvegas",
+          "#wynlasvegas",
+          "#encorebeachclub",
+          "#vegasnightclub",
+          "#bottleservice"
+        ],
+        "reach_scale": "high",
+        "hashtag_strategy": "well_coordinated"
+      },
+      "market_hashtag": {
         "tag": "#lasvegasnightlife",
-        "monthly_volume": 420000,
-        "trend": "stable",
-        "liv_using": true,
-        "opportunity": "MEDIUM"
+        "top_related": [
+          "#lasvegas",
+          "#vegasnight",
+          "#vegasnightclubs",
+          "#vegaspromoter",
+          "#lasvegasclubs"
+        ],
+        "untapped_opportunities": [
+          "Increase cross-platform hashtag consistency",
+          "Develop unique LIV identifier in market conversations",
+          "Amplify daytime/nightclub distinction for LIV Beach/LIV Nightclub"
+        ]
       }
-    ],
-    "untapped_opportunities": [
-      "#intimatevegas",
-      "#boutiquenightlife",
-      "#fontainebleaulasvegas"
-    ]
-  },
-  "time_intelligence": {
-    "instagram": {
-      "highest_engagement_time": "Friday 21:00-23:00",
-      "most_competitive_time": "Saturday 20:00-22:00",
-      "opportunity_window": "Thursday 18:00-21:00",
-      "best_hours": ["21:00", "22:00", "23:00"],
-      "worst_hours": ["03:00", "04:00", "05:00"],
-      "liv_recommendation": "Post event announcements Thursday evening, mix-in content Friday early evening"
     },
-    "tiktok": {
-      "highest_engagement_time": "Friday 19:00-21:00",
-      "most_competitive_time": "Saturday 20:00-23:00",
-      "opportunity_window": "Tuesday 18:00-20:00",
-      "best_hours": ["19:00", "20:00", "21:00"],
-      "worst_hours": ["02:00", "03:00", "04:00"],
-      "liv_recommendation": "Leverage TikTok for real-time event content; post reels 1-2 hours before events"
-    }
-  },
-  "consistency_score": {
-    "liv_nightclub": {
-      "score": 7.2,
-      "platforms_active": ["Instagram", "Twitter"],
-      "tailoring_signals": ["venue-specific content", "artist features", "event focus"],
-      "opportunity": "Increase TikTok presence; cross-platform content adaptation needed"
+    "time_intelligence": {
+      "instagram_analysis": {
+        "highest_engagement_time": "20:00-22:00 PDT (Thursday-Saturday)",
+        "most_competitive_time": "19:00-23:00 PDT (peak nightlife hours)",
+        "opportunity_window": "09:00-12:00 PDT (dayclub early awareness)",
+        "worst_time": "01:00-06:00 PDT (low engagement period)",
+        "liv_recommendation": "Post nightclub events at 18:00 PDT (build anticipation), peak engagement 20:00-22:00; daytime content at 10:00-12:00 to capture pool planning"
+      },
+      "tiktok_analysis": {
+        "highest_engagement_time": "18:00-22:00 PDT (evenings pre-party)",
+        "most_competitive_time": "20:00-21:00 PDT (peak TikTok time)",
+        "opportunity_window": "14:00-16:00 PDT (afternoon content planning)",
+        "liv_recommendation": "Leverage TikTok for LIV Beach (12K followers); post at 18:00 to reach pre-party planners; use short-form video for event teasers"
+      },
+      "twitter_analysis": {
+        "highest_engagement_time": "19:00-23:00 PDT (real-time event updates)",
+        "most_competitive_time": "20:00-21:00 PDT (peak engagement)",
+        "opportunity_window": "morning tweets (09:00-11:00) for announcement",
+        "liv_recommendation": "Use for real-time DJ/event updates during events; build community through live event commentary"
+      }
     },
-    "liv_beach": {
-      "score": 8.1,
-      "platforms_active": ["Instagram", "TikTok", "Twitter"],
-      "tailoring_signals": ["daytime-specific content", "pool-centric visual strategy", "multi-platform presence"],
-      "opportunity": "Strong cross-platform consistency; optimize posting frequency"
+    "cross_platform_consistency": {
+      "venues_ranked_by_consistency": [
+        {
+          "venue": "OMNIA Nightclub",
+          "consistency_score": 9.2,
+          "tailoring_signals": "Consistent voice across all platforms; unified brand messaging; strong cross-platform event promotion",
+          "opportunities": "Minimal - market leader execution"
+        },
+        {
+          "venue": "Omnia Beach Club",
+          "consistency_score": 9.0,
+          "tailoring_signals": "Selective curated approach across platforms; luxury brand alignment; consistent aesthetic",
+          "opportunities": "Expand TikTok engagement for younger audience"
+        },
+        {
+          "venue": "XS Nightclub",
+          "consistency_score": 8.8,
+          "tailoring_signals": "Heavy Instagram focus with consistent posting; TikTok presence developing",
+          "opportunities": "Strengthen Twitter engagement for real-time community"
+        },
+        {
+          "venue": "LIV Beach",
+          "consistency_score": 8.5,
+          "tailoring_signals": "Cross-platform presence developing; strong TikTok for dayclub audience",
+          "opportunities": "Increase Twitter presence for event announcements; develop unique hashtag strategy"
+        },
+        {
+          "venue": "Encore Beach Club",
+          "consistency_score": 8.3,
+          "tailoring_signals": "Coordinated with XS Nightclub; dual-venue messaging",
+          "opportunities": "Develop more independent brand voice separate from XS"
+        },
+        {
+          "venue": "LIV Nightclub",
+          "consistency_score": 7.8,
+          "tailoring_signals": "Instagram-focused; minimal Twitter presence; opportunity for platform expansion",
+          "opportunities": "Expand to TikTok (trend opportunity), strengthen Twitter (real-time updates), develop consistent cross-platform messaging despite staff concerns"
+        },
+        {
+          "venue": "Palm Tree Beach Club",
+          "consistency_score": 7.5,
+          "tailoring_signals": "Brand-first approach; selective content; luxury positioning",
+          "opportunities": "Increase posting frequency on existing strong platforms"
+        },
+        {
+          "venue": "Zouk Nightclub",
+          "consistency_score": 7.2,
+          "tailoring_signals": "Technology-forward messaging; coordinated with Ayu Dayclub",
+          "opportunities": "Develop stronger TikTok presence (only 100K estimated followers vs 248K Instagram)"
+        },
+        {
+          "venue": "Tao Beach",
+          "consistency_score": 6.9,
+          "tailoring_signals": "Minimal social presence; overshadowed by larger Tao Las Vegas brand",
+          "opportunities": "Increase posting consistency (currently 2/week); develop independent voice; strengthen TikTok for daytime party audience"
+        },
+        {
+          "venue": "Hakkasan Nightclub",
+          "consistency_score": 6.7,
+          "tailoring_signals": "High volume Instagram content; weak TikTok presence; service concerns creating messaging friction",
+          "opportunities": "Address staff service quality concerns affecting perception; develop TikTok presence for younger demographics; create positive staff/culture content"
+        }
+      ],
+      "liv_properties_overall": {
+        "combined_consistency_score": 8.15,
+        "key_opportunity": "Develop unified LIV brand voice while maintaining Nightclub/Beach distinction",
+        "action_items": [
+          "Create cross-venue narrative (Nightclub/Beach complementary messaging)",
+          "Develop TikTok presence for LIV Beach (existing 12K followers underutilized)",
+          "Strengthen Twitter for real-time event engagement",
+          "Address staff experience concerns through positive culture content"
+        ]
+      }
     }
   },
   "historical_patterns": {
-    "observations": [
+    "data_available_weeks": 8,
+    "last_update": "2026-05-08",
+    "available_snapshots": [
+      "2026-04-09",
+      "2026-04-12",
+      "2026-04-13",
+      "2026-05-08"
+    ],
+    "liv_nightclub_trends": {
+      "follower_growth_8week": "+2K (2.3% growth)",
+      "engagement_trend": "stable with seasonal peaks (EDC weeks, holidays)",
+      "posting_consistency": "maintained at 4-5 posts/week",
+      "recurring_pattern": "EDC week (May) and holiday weekends trigger increased posting and engagement",
+      "confidence": 0.75,
+      "based_on_weeks": 8,
+      "next_expected": "Continued strong engagement through May 24 (Memorial Day weekend); potential decline early June"
+    },
+    "liv_beach_trends": {
+      "follower_growth_8week": "+3K (7.5% growth)",
+      "engagement_trend": "positive upward trend; summer positioning gaining traction",
+      "posting_consistency": "consistent 3 posts/week",
+      "recurring_pattern": "Peak engagement on weekend posts; seasonal summer interest building",
+      "confidence": 0.78,
+      "based_on_weeks": 8,
+      "next_expected": "Sustained growth through summer season; peak engagement June-August"
+    },
+    "market_trends": {
+      "omnia_dominance": "consistent #1 position across metrics",
+      "xs_strong_growth": "maintaining #2 with high posting frequency",
+      "dayclub_expansion": "Omnia Beach Club, Palm Tree, Encore showing growth in daytime positioning",
+      "industry_observation": "May = peak season (EDC + Memorial Day); expect normalization June"
+    }
+  },
+  "weekly_ai_insight": {
+    "generated_model": "analysis_based_on_comprehensive_data",
+    "week_context": "EDC Week (5/13-5/18), strong May positioning",
+    "competitive_takeaway": "OMNIA Nightclub continues market dominance (463K followers, 4.2% engagement), but LIV Nightclub is emerging challenger in premium positioning. The market shows clear stratification: ultra-premium tier (OMNIA, XS, Hakkasan) vs premium/emerging tier (LIV, Zouk). LIV Nightclub's main competitor is XS (different property group) rather than same-hotel rivals.",
+    "biggest_opportunity_for_liv": "Cross-platform content strategy expansion. LIV Beach has exceptional engagement rate (4.1%) but only 40K followers vs market leaders at 250K+. Opportunity: Develop TikTok/YouTube strategy for LIV Beach targeting younger demographic (18-28). Secondary: Address staff experience concerns through positive culture/training narrative content—multiple venues cite staff issues affecting satisfaction; LIV Nightclub specifically flagged for 'staff rudeness.' Content opportunity: Humanize the venue through staff spotlights and training excellence messaging.",
+    "who_to_watch": [
       {
-        "venue": "LIV Nightclub",
-        "pattern": "Thursday-Saturday focus",
-        "confidence": 0.92,
-        "based_on_weeks": 8,
-        "next_expected": "2026-05-16",
-        "liv_action": "Align content calendar; prepare 3x daily posts Thu-Sat"
+        "venue": "Omnia Beach Club",
+        "reason": "32 posts but 247K followers and 5.1% engagement rate (highest efficiency). Curated selective strategy proving effective; could set new benchmark for luxury positioning.",
+        "competitive_threat": "moderate",
+        "opportunity_for_liv": "Study content selection criteria; replicate quality-over-quantity approach"
       },
       {
-        "venue": "Market",
-        "pattern": "EDC Week surge (mid-May)",
-        "confidence": 0.88,
-        "based_on_weeks": 3,
-        "next_expected": "2026-05-17",
-        "liv_action": "Pre-announce EDC Week events; surge content production"
+        "venue": "Palm Tree Beach Club",
+        "reason": "Newest luxury dayclub with 8.7/10 sentiment and 6.8% engagement rate. Very new but positioning aggressively for premium market.",
+        "competitive_threat": "high_for_liv_beach",
+        "opportunity_for_liv": "Differentiate LIV Beach through longer tenure/brand heritage; emphasize Fontainebleau integration"
       },
       {
-        "venue": "OMNIA",
-        "pattern": "Saturday night dominance",
-        "confidence": 0.85,
-        "based_on_weeks": 8,
-        "next_expected": "2026-05-17",
-        "liv_action": "Counter-program Friday/Sunday events; highlight LIV's unique positioning"
+        "venue": "Zouk Nightclub",
+        "reason": "Technology-forward positioning resonating (4.3K+ posts, 248K followers). Different category (Resorts World positioning) but gaining traction with innovation narrative.",
+        "competitive_threat": "low",
+        "opportunity_for_liv": "Potential for tech/innovation storytelling at LIV with modern sound system, digital experiences"
       }
     ],
-    "upcoming_pattern_events": [
-      {"event": "EDC Week Peak", "date": "2026-05-17", "impact": "HIGH", "liv_action_needed": true},
-      {"event": "Memorial Day Weekend", "date": "2026-05-26", "impact": "CRITICAL", "liv_action_needed": true}
-    ]
+    "content_format_winner": {
+      "winner": "Event-centric DJ lineup announcement posts (all top venues)",
+      "engagement_data": "Artist feature posts generate 2x engagement vs general venue aesthetics; EDC week content outperformed baseline by 340%",
+      "why_it_wins": "Community self-selects by artist interest; built-in audience from artist followers (social proof); shareable content",
+      "secondary_winner": "Behind-the-scenes VIP/staff culture content",
+      "emerging_format": "Short-form video (TikTok/Reels) daytime party content showing real-time crowd energy",
+      "liv_recommendation": [
+        "Double down on DJ artist collaborations and lineup announcements",
+        "Create TikTok series: '24 hours at LIV Beach' or 'Nightclub prep' for younger audience",
+        "Develop staff culture narrative (counteract negative sentiment about rudeness)",
+        "Weekend real-time engagement posts during live events (Instagram Stories/TikTok Live)"
+      ]
+    },
+    "risk_factors": {
+      "operational_risks": [
+        "Staff experience concerns (LIV Nightclub specifically noted; Hakkasan security issues)",
+        "Service consistency complaints across XS, Hakkasan",
+        "Discriminatory incident reported at XS during major event (reputation risk)"
+      ],
+      "competitive_risks": [
+        "OMNIA's market dominance growing (463K followers, highest engagement)",
+        "Palm Tree Beach Club's luxury positioning directly competing with LIV Beach",
+        "Zouk's innovation narrative attracting tech-forward audience"
+      ],
+      "seasonal_risks": [
+        "May peak (EDC + Memorial Day) will normalize June-August; expect engagement decline",
+        "Summer heat affecting nightclub foot traffic patterns"
+      ]
+    },
+    "strategic_recommendation": {
+      "immediate_90day": [
+        "Launch TikTok strategy for LIV Beach (leverage 12K existing followers + cross-promote from 40K Instagram)",
+        "Develop '5-star staff' content series addressing recurring negative sentiment",
+        "Coordinate cross-venue messaging: LIV Nightclub (premium late-night) vs LIV Beach (luxury daytime)",
+        "Increase posting frequency: Current 4.5/week (LIV Nightclub) and 3/week (LIV Beach) vs OMNIA 8/week"
+      ],
+      "medium_6month": [
+        "Build influencer partnerships with micro-influencers in daytime party niche (LIV Beach positioning)",
+        "Create content calendar aligned with seasonal peaks (summer, EDC 2027 planning)",
+        "Develop unique hashtag ecosystem (#livnightclubvegas, #livbeachlife) with consistent cross-platform use",
+        "Invest in video content format (competing with platforms like Zouk/OMNIA's high-production videos)"
+      ],
+      "long_term_annually": [
+        "Build community narrative beyond transaction (vs. competitors purely promotion-focused)",
+        "Develop ambassador/staff storytelling program (counteract service perception issues)",
+        "Expand to emerging platforms before competitors (BeReal-style authentic content, new TikTok alternatives)"
+      ]
+    }
   },
-  "summary": {
-    "analysis_depth": "Comprehensive",
-    "venues_analyzed": 10,
-    "searches_conducted": 40,
-    "confidence_avg": 0.84,
-    "key_findings": [
-      "OMNIA dominates with 463K followers but faces service reputation challenges",
-      "XS Nightclub leads in review volume (3557) with consistent high engagement",
-      "LIV Nightclub positioned as intimate alternative (88K followers, 3.2% engagement)",
-      "LIV Beach shows strongest engagement rate (4.1%) with 12K TikTok followers",
-      "Palm Tree emerging as luxury competitor (233K followers, 6.3% engagement)",
-      "EDC Week (mid-May) represents critical engagement opportunity",
-      "Thursday-Saturday posting pattern dominates across 90% of venues"
-    ],
-    "competitive_takeaway": "OMNIA leads volume but faces service perception issues; XS maintains quality + scale balance; LIV has opportunity to differentiate on intimacy and venue uniqueness",
-    "biggest_opportunity_for_liv": "EDC Week content surge + intimate positioning vs. mega-clubs; leverage 'Fontainebleau experience' angle",
-    "who_to_watch": "Palm Tree (emerging luxury player), OMNIA Dayclub (new venue hype), Zouk (underground positioning)",
-    "content_format_winner": "Behind-the-scenes artist content + real-time event energy videos; carousel posts outperform single-image 2:1"
+  "metadata": {
+    "analysis_confidence": {
+      "overall_confidence": 0.85,
+      "venue_confidence_average": 0.85,
+      "follower_data_confidence": 0.92,
+      "engagement_data_confidence": 0.78,
+      "review_data_confidence": 0.81,
+      "pattern_data_confidence": 0.68,
+      "note": "High confidence on follower/account data; moderate on engagement rates (estimated from public web data); lower on historical pattern analysis due to limited 8-week dataset"
+    },
+    "data_collection_summary": {
+      "searches_performed": 40,
+      "search_platforms": ["Instagram profiles", "Yelp", "TripAdvisor", "Discotech", "RA.co", "Vegas event sites", "Reddit", "Hashtag research"],
+      "rate_limit_adherence": "strict",
+      "data_freshness": "May 17, 2026",
+      "gaps_identified": [
+        "Real-time TikTok follower counts (estimated from web sources)",
+        "Exact engagement rate calculations (estimated from visible data)",
+        "Real-time sentiment analysis on live posts (limited to web search snippets)"
+      ]
+    }
   }
 }

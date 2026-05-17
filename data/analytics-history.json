@@ -1,12 +1,39 @@
 {
   "history_metadata": {
-    "last_updated": "2026-05-10T09:15:00Z",
-    "total_reports": 4,
-    "current_week": "2026-W20",
-    "total_searches_executed": 170,
-    "data_confidence": 0.84
+    "last_updated": "2026-05-17T09:00:00Z",
+    "total_reports": 5,
+    "current_week": "2026-W21",
+    "total_searches_executed": 210,
+    "data_confidence": 0.85
   },
   "weekly_reports": [
+    {
+      "week": "2026-W21",
+      "date": "2026-05-17",
+      "search_count": 40,
+      "venues_analyzed": 10,
+      "snapshot_timestamp": "2026-05-17T09:00:00Z",
+      "key_metrics": {
+        "top_follower_venue": "OMNIA Nightclub (463K followers)",
+        "top_engagement_venue": "Palm Tree Beach Club (6.8% IG engagement)",
+        "top_engagement_venue_secondary": "OMNIA Dayclub (5.1% IG engagement)",
+        "liv_nightclub_positioning": "LIV Nightclub: 3.2% IG engagement (rank 7/10), 88K followers (rank 9/10)",
+        "liv_beach_positioning": "LIV Beach: 4.1% IG engagement (rank 4/10), 40K followers (rank 10/10) - highest efficiency",
+        "critical_dates": "EDC Week (5/13-5/18 - IN PROGRESS), Memorial Day Weekend (5/24-5/27)"
+      },
+      "edcweek_analysis": {
+        "period": "May 13-18, 2026",
+        "status": "ongoing",
+        "liv_participation": "Strong - both venues actively promoting major artists",
+        "liv_events": ["Disco Lines (LIV Beach 5/15)", "David Guetta (LIV 5/18)", "John Summit (LIV nightclub 5/14)"],
+        "engagement_multiplier": "Expected 2.5-3x baseline during EDC week",
+        "competitor_activity": "All venues maximizing content; high market competition for attention"
+      },
+      "competitive_takeaway": "Market structure remains stratified: OMNIA (463K) dominates, but XS (304K) and Encore (282K) maintain strong positions. LIV differentiates through intimacy positioning vs mega-clubs. New threat: Palm Tree (232K) and OMNIA Dayclub (247K) competing for premium daytime market where LIV Beach excels.",
+      "biggest_liv_opportunity": "Cross-platform content strategy (TikTok expansion for LIV Beach), address staff experience concerns through positive culture narrative, increase posting frequency to 6-7x/week (vs current 4.5/week) to match market expectations.",
+      "who_to_watch": ["OMNIA Beach Club (most efficient: 247K followers, 32 posts, 5.1% engagement)", "Palm Tree Beach Club (emerging luxury dayclub threat, 6.8% engagement)", "Zouk Nightclub (tech-forward positioning resonating)"],
+      "content_format_winner": "Event-centric DJ lineup announcement posts (all top venues); EDC week content outperformed baseline 340%; secondary winner: behind-the-scenes VIP/staff culture content."
+    },
     {
       "week": "2026-W16",
       "date": "2026-04-19",
@@ -113,8 +140,9 @@
     }
   },
   "confidence_tracking": {
-    "2026-W16": {"avg_confidence": 0.78, "searches": 40, "coverage": "Complete"},
+    "2026-W21": {"avg_confidence": 0.85, "searches": 40, "coverage": "Complete - Full analytics refresh with 40 searches covering account stats, top posts, posting patterns, reviews, event discovery (discotech/ra.co/vegas.com), hashtag analysis, time intelligence, cross-platform consistency, and historical pattern analysis with AI escalation"},
+    "2026-W20": {"avg_confidence": 0.84, "searches": 40, "coverage": "Complete - Comprehensive snapshot with 40 web searches across 10 venues, social metrics extraction, review analysis, event discovery, hashtag tracking, and competitive analysis"},
     "2026-W19": {"avg_confidence": 0.81, "searches": 15, "coverage": "Partial"},
-    "2026-W20": {"avg_confidence": 0.84, "searches": 40, "coverage": "Complete - Comprehensive snapshot with 40 web searches across 10 venues, social metrics extraction, review analysis, event discovery, hashtag tracking, and competitive analysis"}
+    "2026-W16": {"avg_confidence": 0.78, "searches": 40, "coverage": "Complete"}
   }
 }
