@@ -1,148 +1,134 @@
 {
-  "run_at": "2026-05-19T04:00:00Z",
+  "run_at": "2026-05-19T15:00:00Z",
   "run_type": "midday",
-  "market_pulse": "EDC Week momentum carrying into Memorial Day weekend with major openings (OMNIA Dayclub, Palm Tree Beach Club) and high-profile talent deployments across premium venues creating competitive pressure on social engagement.",
-  "urgent_alert_count": 1,
+  "market_pulse": "EDC Week momentum carries forward with strong DJ lineups across the Strip; LIV maintaining competitive advantage with high-profile talent while competitors (Encore, OMNIA) activate heavily in dayclub segment.",
+  "urgent_alert_count": 0,
   "weekend_readiness": null,
   "content_gaps": [
     {
-      "gap_type": "celebrity_integration",
-      "description": "Competitors leveraging celebrity appearances and VIP moments for viral reach (LeBron James at OMNIA, Sofia Vergara, celebrity endorsements). LIV not capitalizing on similar talent moments in social posts.",
-      "competitors_doing_it": ["OMNIA Nightclub", "Palm Tree Beach Club"],
-      "urgency": "high",
-      "suggested_action": "Secure VIP/influencer photo ops for upcoming LIV events and push behind-the-scenes content showing talent prep and arrival moments."
-    },
-    {
-      "gap_type": "live_event_countdowns",
-      "description": "Competitors using countdown timers, story sequences, and event day recaps to drive urgency. LIV social presence lacks real-time event momentum feeds.",
-      "competitors_doing_it": ["Encore Beach Club", "OMNIA Dayclub", "Zouk Nightclub"],
-      "urgency": "high",
-      "suggested_action": "Create 24-hour countdown content series for major LIV events; use stories for pre-event hype and real-time updates during events."
-    },
-    {
-      "gap_type": "dj_collaboration_stories",
-      "description": "OMNIA, Zouk, and Hakkasan pushing exclusive DJ collaborations and b2b sets as story angles. Tiësto at LIV (May 15) not fully leveraged in social context.",
-      "competitors_doing_it": ["Zouk Nightclub", "Hakkasan Nightclub", "OMNIA Dayclub"],
+      "gap_type": "behind_the_scenes",
+      "description": "Competitors posting more BTS content and pre-event setup videos; LIV could amplify staff/DJ prep stories",
+      "competitors_doing_it": ["Encore Beach Club", "OMNIA Nightclub"],
       "urgency": "medium",
-      "suggested_action": "Post exclusive Tiësto rehearsal/soundcheck content; highlight rare b2b opportunities at LIV that competitors can't match."
+      "suggested_action": "Create 3-5 Stories this week showing DJ setup, sound check, and crew preparation for upcoming events"
+    },
+    {
+      "gap_type": "user_generated_content",
+      "description": "Fewer UGC reposts/tags from LIV guests compared to competitors capturing attendee moments",
+      "competitors_doing_it": ["Zouk Nightclub", "Hakkasan Nightclub"],
+      "urgency": "medium",
+      "suggested_action": "Launch weekly hashtag repost feature; feature top UGC in Stories rotation"
     }
   ],
   "influencer_activity": [
     {
-      "handle": "@diplo",
+      "handle": "@johnsummit",
       "platform": "IG",
-      "mention": "Diplo at XS Nightclub, high-profile performance during EDC Week getting significant social traction.",
+      "mention": "Playing LIV Beach May 17; high-profile EDC Week performance",
       "posts_found": 1,
       "engagement_level": "High"
     },
     {
-      "handle": "@theurbandaily",
-      "platform": "X",
-      "mention": "LeBron James coverage at OMNIA Dayclub grand opening - celebrity power move that drove massive earned media.",
-      "posts_found": 5,
+      "handle": "@davidguetta",
+      "platform": "IG",
+      "mention": "Performing both LIV Beach (May 16) and LIV Nightclub (May 18) back-to-back; major draw",
+      "posts_found": 1,
       "engagement_level": "High"
     },
     {
-      "handle": "@tmz",
+      "handle": "@tiesto",
       "platform": "IG",
-      "mention": "Celebrity sightings at OMNIA (LeBron, Sofia Vergara, Mehcad Brooks) creating viral moments and paparazzi coverage.",
-      "posts_found": 3,
+      "mention": "LIV Nightclub Friday May 15 headline slot",
+      "posts_found": 1,
       "engagement_level": "High"
+    },
+    {
+      "handle": "@domdolla",
+      "platform": "IG",
+      "mention": "LIV Nightclub Thursday May 14; strong house music draw",
+      "posts_found": 1,
+      "engagement_level": "Normal"
     }
   ],
   "liv_outreach_targets": [
     {
-      "influencer": "@diplo",
+      "handle": "@marshmello",
       "platform": "IG",
-      "rationale": "Already activated at XS; potential cross-promotion with LIV for unique b2b or exclusive set.",
-      "suggested_tie_in": "Exclusive Diplo at LIV residency announcement or feature guest spot."
+      "venue": "Encore Beach Club (competing May 17)",
+      "reason": "High engagement profile; could be next-week target for LIV"
     },
     {
-      "influencer": "@charlieputh",
-      "platform": "TT",
-      "rationale": "Consumer-friendly producer; strong TikTok following. Could amplify LIV's music credibility.",
-      "suggested_tie_in": "Music production collaboration or exclusive studio session at LIV."
+      "handle": "@calvinharis",
+      "platform": "IG",
+      "venue": "Encore Beach Club (May 16)",
+      "reason": "Competing against LIV Beach David Guetta; potential future collaboration"
     }
   ],
   "story_activity": [
     {
-      "venue": "OMNIA Dayclub",
+      "venue": "LIV Nightclub",
+      "content_type": "countdown",
+      "summary": "EDC Week countdown featuring daily DJ announcements (Josh Baker B2B Kettama, Dom Dolla, Tiesto, Four Color Zack, David Guetta)",
+      "detected_at": "2026-05-19T15:00:00Z",
+      "urgency": false
+    },
+    {
+      "venue": "LIV Beach",
       "content_type": "announcement",
-      "summary": "Grand opening announcement with LeBron James and celebrity guests; motorcycle stunt and world-record moment.",
-      "detected_at": "2026-05-18T04:00:00Z",
-      "urgency": true
+      "summary": "EDC Week dayclub lineup (Knock2 Music, Disco Lines, David Guetta, John Summit) with 'oasis' theme",
+      "detected_at": "2026-05-19T15:00:00Z",
+      "urgency": false
     },
     {
       "venue": "Encore Beach Club",
       "content_type": "countdown",
-      "summary": "Calvin Harris 6-hour set countdown for Saturday (May 18); capacity warning for guest lists.",
-      "detected_at": "2026-05-18T04:00:00Z",
-      "urgency": false
-    },
-    {
-      "venue": "Palm Tree Beach Club",
-      "content_type": "announcement",
-      "summary": "New venue debut; Zedd, Above & Beyond, and Kygo performances announced for Memorial Day weekend.",
-      "detected_at": "2026-05-18T04:00:00Z",
-      "urgency": false
-    },
-    {
-      "venue": "Zouk Nightclub",
-      "content_type": "announcement",
-      "summary": "EDC Week underground picks announced: Ray Volpe (Wed), James Hype b2b Meduza (Thu), Wax Motif (Fri).",
-      "detected_at": "2026-05-18T04:00:00Z",
+      "summary": "Memorial Day weekend push with Subtronics (night), Gryffin, Calvin Harris, Marshmello lineup announced",
+      "detected_at": "2026-05-19T15:00:00Z",
       "urgency": false
     }
   ],
   "venues": [
     {
-      "venue": "LIV Nightclub",
-      "posts_found": 3,
+      "venue": "LIV Nightclub (@livnightclub)",
+      "posts_found": 4,
       "urgent": false,
-      "summary": "David Guetta at LIV Beach drew record 65,000 sq ft capacity crowds during EDC Week; Tiësto residency ongoing (May 15). Social performance moderate.",
+      "summary": "Strong EDC Week positioning with high-caliber DJ roster (Tiesto, David Guetta, Dom Dolla); 88K followers, active engagement",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "David Guetta simultaneous set at LIV Beach & EBC drew capacity crowd; largest single-day attendance since opening.",
-          "posted_at": "2026-05-17",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
-        },
-        {
-          "platform": "Ticket/Eventbrite",
-          "content_summary": "Tiësto at LIV Las Vegas residency announced for May 15, 2026.",
+          "content_summary": "EDC Week lineup announcement: Josh Baker B2B Kettama B2B Prospa (Wed 5/13), Dom Dolla (Thu 5/14), Tiesto (Fri 5/15), Four Color Zack (Sat 5/16), David Guetta (Mon 5/18)",
           "posted_at": "2026-05-13",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
-          "platform": "PR/News",
-          "content_summary": "Knock2 takeover at LIV Nightclub during EDC Week; underground house flavor.",
-          "posted_at": "2026-05-14",
+          "platform": "TT",
+          "content_summary": "Spring break content showing attendees prepping for John Summit at LIV Beach; outfit inspiration and venue hype",
+          "posted_at": "2026-05-10",
           "engagement_note": "Normal",
           "flags": []
         }
       ]
     },
     {
-      "venue": "LIV Beach",
-      "posts_found": 2,
+      "venue": "LIV Beach (@livbeach)",
+      "posts_found": 3,
       "urgent": false,
-      "summary": "Record-breaking EDC Week performance with David Guetta; capacity crowds and high social buzz. Strong day-life positioning with Knock2 takeover.",
+      "summary": "Dayclub EDC Week activation with major talent; 40K followers; 'all-new day life oasis' positioning",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "David Guetta drew record 65,000 sq ft capacity; LIV Beach now positioned as EDC Week destination for day pools.",
-          "posted_at": "2026-05-17",
+          "content_summary": "EDC Week dayclub lineup: Knock2 Music (Thu 5/14), Disco Lines (Fri 5/15), David Guetta (Sat 5/16), John Summit (Sun 5/17)",
+          "posted_at": "2026-05-14",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "Knock2 event video content showing high-energy crowd during EDC Week Thursday night.",
-          "posted_at": "2026-05-14",
+          "content_summary": "User content: 'Getting ready for John Summit at LIV Beach' with outfit/prep focus; high engagement from UGC",
+          "posted_at": "2026-05-12",
           "engagement_note": "Normal",
           "flags": []
         }
@@ -150,24 +136,17 @@
     },
     {
       "venue": "XS Nightclub",
-      "posts_found": 2,
+      "posts_found": 1,
       "urgent": false,
-      "summary": "Diplo headliner during EDC Week received strongest immediate social attention of the week per nocovervegas.com; The Chainsmokers performance in evening. Premium talent roster driving engagement.",
-      "flags": ["talent_announcement"],
+      "summary": "Calendar activity shows events scheduled May 10, 14, 16, 17; resident DJs include The Chainsmokers, Diplo, Dillon Francis, Marshmello, Gryffin",
+      "flags": [],
       "raw_posts": [
         {
-          "platform": "TT",
-          "content_summary": "Diplo at XS Nightclub with high-profile social media coverage; TikTok feature from @vegas account.",
-          "posted_at": "2026-05-14",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
-        },
-        {
-          "platform": "IG",
-          "content_summary": "The Chainsmokers performance at XS in evening received immediate social traction.",
-          "posted_at": "2026-05-17",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
+          "platform": "Ticket/Eventbrite",
+          "content_summary": "Upcoming event calendar with multiple dates in May; no specific DJ headliners announced yet for week of 5/19",
+          "posted_at": "2026-05-12",
+          "engagement_note": "Normal",
+          "flags": []
         }
       ]
     },
@@ -175,81 +154,60 @@
       "venue": "Encore Beach Club",
       "posts_found": 3,
       "urgent": false,
-      "summary": "Calvin Harris 6-hour day set on Saturday (May 18) transformed pool party into full-day festival; guest lists closed by noon; Subtronics and Kygo upcoming. Strong EDC Week execution.",
+      "summary": "Heavy EDC Week dayclub push; 282K followers; major talent roster (Subtronics, Gryffin, Calvin Harris, Marshmello) driving engagement",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
-          "platform": "IG/Ticket",
-          "content_summary": "Calvin Harris 6-hour set on Saturday; lily pad daybeds at capacity from opening; women's guest list closed before noon.",
-          "posted_at": "2026-05-18",
+          "platform": "IG",
+          "content_summary": "EDC Week nightclub lineup: Subtronics (5/14), Gryffin (5/15), Calvin Harris (5/16), Marshmello (5/17), plus ongoing weekend events",
+          "posted_at": "2026-05-14",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
-          "platform": "Ticket/Eventbrite",
-          "content_summary": "Subtronics May 14 performance announced; bass-heavy crowd draw during EDC Week.",
-          "posted_at": "2026-05-08",
-          "engagement_note": "Normal",
-          "flags": ["talent_announcement"]
-        },
-        {
-          "platform": "IG",
-          "content_summary": "Kygo appearance announced for May 23 (Memorial Day weekend); upcoming high-capacity draw.",
-          "posted_at": "2026-05-18",
-          "engagement_note": "Normal",
-          "flags": ["talent_announcement"]
+          "platform": "TT",
+          "content_summary": "Pool party and lily pad content; high view counts on EDC Week prep videos",
+          "posted_at": "2026-05-13",
+          "engagement_note": "High",
+          "flags": []
         }
       ]
     },
     {
       "venue": "OMNIA Nightclub",
-      "posts_found": 4,
-      "urgent": true,
-      "summary": "OMNIA Dayclub & Skybar GRAND OPENING (May 17-19) with LeBron James, Sofia Vergara, celebrity arrivals, world-record motorcycle stunt; major market disruptor. Massive earned media and viral moments.",
-      "flags": ["talent_announcement", "urgent"],
+      "posts_found": 2,
+      "urgent": false,
+      "summary": "463K followers; strong calendar activity with Chris Lake (5/15), DESEO Latin Sundays (5/16), DJ Pauly D (Memorial Day weekend); tactical genre diversity",
+      "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "OMNIA Dayclub grand opening with LeBron James, Sofia Vergara, Mehcad Brooks in VIP; celebrity photo ops and paparazzi coverage.",
-          "posted_at": "2026-05-17",
-          "engagement_note": "High",
-          "flags": ["talent_announcement", "urgent"]
+          "content_summary": "Upcoming talent: Chris Lake EDC Week (5/15), DESEO Latin Sundays takeover (5/16), Memorial Day weekend programming with DJ Pauly D",
+          "posted_at": "2026-05-13",
+          "engagement_note": "Normal",
+          "flags": ["talent_announcement"]
         },
         {
-          "platform": "PR/News",
-          "content_summary": "LeBron James arrival at OMNIA; Getty images coverage; private setup and VIP treatment; celebrity sightings amplified.",
-          "posted_at": "2026-05-18",
-          "engagement_note": "High",
-          "flags": ["urgent"]
-        },
-        {
-          "platform": "IG",
-          "content_summary": "RÜFÜS DU SOL opening day performance; 100-foot motorcycle stunt during opening weekend; world-record moment.",
-          "posted_at": "2026-05-17",
-          "engagement_note": "High",
-          "flags": ["talent_announcement", "urgent"]
-        },
-        {
-          "platform": "TT",
-          "content_summary": "OMNIA Dayclub opening footage showing celebrity crowd, Trojan Horse production element, viral stunt moments.",
-          "posted_at": "2026-05-18",
-          "engagement_note": "High",
-          "flags": ["urgent"]
+          "platform": "Ticket/Eventbrite",
+          "content_summary": "Full event calendar view showing May 2026 dates; theme nights (Latin Sundays) driving repeat visitation",
+          "posted_at": "2026-05-15",
+          "engagement_note": "Normal",
+          "flags": []
         }
       ]
     },
     {
-      "venue": "Omnia Beach Club",
+      "venue": "Omnia Beach Club (Dayclub)",
       "posts_found": 1,
       "urgent": false,
-      "summary": "Omnia nightclub venue at Caesars; referenced alongside dayclub opening but limited recent social activity. Part of larger Tao Group expansion.",
+      "summary": "New Caesars Palace concept launching in 2026; minimal current social activity; poised as premium competitor",
       "flags": [],
       "raw_posts": [
         {
           "platform": "PR/News",
-          "content_summary": "Omnia nightclub mentioned as sister venue to new Omnia Dayclub; bridge connecting both concepts for multi-layered experience.",
-          "posted_at": "2026-05-18",
-          "engagement_note": "Normal",
+          "content_summary": "OMNIA Dayclub announced for Caesars Palace with European beach club aesthetic and festival-level production; positioning as luxury alternative",
+          "posted_at": "2026-05-01",
+          "engagement_note": "Low",
           "flags": []
         }
       ]
@@ -258,20 +216,20 @@
       "venue": "Zouk Nightclub",
       "posts_found": 2,
       "urgent": false,
-      "summary": "Underground EDC Week positioning with Ray Volpe (Wed), James Hype b2b Meduza (Thu), Wax Motif (Fri) in Funktion-One room. Consistent execution, niche credibility.",
+      "summary": "Resident performers include Illenium, DJ Snake, Deadmau5, Louis the Child, Duke Dumont; strong May lineup (DJ Snoopadelic, RL Grime, Lil Wayne)",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
-          "platform": "PR/News",
-          "content_summary": "EDC Week underground picks: Ray Volpe (Wed), James Hype b2b Meduza (Thu), Wax Motif (Fri) in Funktion-One room.",
-          "posted_at": "2026-05-18",
+          "platform": "Ticket/Eventbrite",
+          "content_summary": "May 2026 events: DJ Snoopadelic (5/2), RL Grime (5/7), Lil Wayne (5/8) plus ongoing resident roster",
+          "posted_at": "2026-05-07",
           "engagement_note": "Normal",
           "flags": ["talent_announcement"]
         },
         {
-          "platform": "IG",
-          "content_summary": "Ayu Dayclub pool party afters announced; Zouk Group weekly DJ announcements for summer season.",
-          "posted_at": "2026-05-18",
+          "platform": "PR/News",
+          "content_summary": "Resident artist announcements and ongoing Resorts World venue positioning",
+          "posted_at": "2026-05-10",
           "engagement_note": "Normal",
           "flags": []
         }
@@ -279,68 +237,61 @@
     },
     {
       "venue": "Hakkasan Nightclub",
+      "posts_found": 1,
+      "urgent": false,
+      "summary": "Packed 2026 schedule with TWINSICK, DJ Drama, Steve Aoki; May 28 event showing continued activity; TAO Group property with strong talent pipeline",
+      "flags": ["talent_announcement"],
+      "raw_posts": [
+        {
+          "platform": "Ticket/Eventbrite",
+          "content_summary": "2026 performer announcements: TWINSICK, DJ Drama, Steve Aoki; May 28 event shows post-EDC Week momentum",
+          "posted_at": "2026-05-15",
+          "engagement_note": "Normal",
+          "flags": ["talent_announcement"]
+        }
+      ]
+    },
+    {
+      "venue": "Palm Tree Beach Club (MGM Grand)",
       "posts_found": 2,
       "urgent": false,
-      "summary": "Charlotte de Witte Thursday night techno performance was 'most artistically significant night of EDC Week 2026'; consistent quality execution. Strong specialist reputation.",
+      "summary": "New luxury dayclub concept with top-tier talent (Kygo, Alesso, Zedd, Martin Garrix, Steve Aoki, Fisher); direct competitor to LIV Beach in premium segment",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "PR/News",
-          "content_summary": "Charlotte de Witte headline at Hakkasan Thursday night; described as most artistically significant night of EDC Week by nocovervegas.",
-          "posted_at": "2026-05-16",
+          "content_summary": "Newly launched venue by Palm Tree Crew + TAO Group; luxury positioning with world-class DJ roster; tropical ambiance with private cabanas",
+          "posted_at": "2026-04-15",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
-          "platform": "IG",
-          "content_summary": "Hakkasan nightclub at MGM Grand promoting world-class DJ talent; 80,000 sq ft five-level venue experience.",
-          "posted_at": "2026-05-18",
-          "engagement_note": "Normal",
+          "platform": "IG/Ticket",
+          "content_summary": "Updated May 2026: Confirmed lineups with premium artists; active social presence with high-engagement dayclub content",
+          "posted_at": "2026-05-15",
+          "engagement_note": "High",
           "flags": []
         }
       ]
     },
     {
-      "venue": "Palm Tree Beach Club",
-      "posts_found": 3,
+      "venue": "Tao Beach (The Venetian)",
+      "posts_found": 2,
       "urgent": false,
-      "summary": "NEW VENUE DEBUT (May 2026) at MGM Grand with Zedd, Above & Beyond, Kygo, Chris Lake, Tiësto, Louis the Child announced. Strong launch lineup positioning for Memorial Day weekend.",
+      "summary": "EDC Week activation with Illenium (5/16), Steve Aoki Dim Mak Takeover (5/17); strong dayclub calendar; positioned as alternative to Wynn properties",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG/Ticket",
-          "content_summary": "Palm Tree Beach Club official launch at MGM Grand; Above & Beyond May 14 EDC Week performance announced.",
-          "posted_at": "2026-05-14",
+          "content_summary": "EDC Week performances: Illenium headline (5/16), Steve Aoki Dim Mak Takeover (5/17); strong positioning in dayclub segment",
+          "posted_at": "2026-05-15",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
-          "platform": "PR/News",
-          "content_summary": "Zedd 11 a.m. performance at Palm Tree Beach Club; full-day dayclub experience positioning for summer season.",
-          "posted_at": "2026-05-18",
-          "engagement_note": "Normal",
-          "flags": ["talent_announcement"]
-        },
-        {
-          "platform": "IG",
-          "content_summary": "Palm Tree Beach Club redefining daylife on Strip; upcoming Tiësto (May 23), Louis the Child (May 29) performances; Kygo announced.",
-          "posted_at": "2026-05-18",
-          "engagement_note": "Normal",
-          "flags": ["talent_announcement"]
-        }
-      ]
-    },
-    {
-      "venue": "Tao Beach Club",
-      "posts_found": 1,
-      "urgent": false,
-      "summary": "Referenced as established competitor dayclub at The Venetian; limited recent social push. Porter Robinson DJ set during EDC Week mentioned in event listings.",
-      "flags": [],
-      "raw_posts": [
-        {
           "platform": "Ticket/Eventbrite",
-          "content_summary": "Porter Robinson DJ set at Tao Beach during EDC Week; traditional dayclub offering.",
-          "posted_at": "2026-05-18",
+          "content_summary": "Full calendar through May 2026; TAO Beach Daybreak Thursdays and ongoing premium programming post-EDC Week",
+          "posted_at": "2026-05-17",
           "engagement_note": "Normal",
           "flags": []
         }
