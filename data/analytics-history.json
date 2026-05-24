@@ -1,148 +1,1087 @@
 {
-  "history_metadata": {
-    "last_updated": "2026-05-17T09:00:00Z",
-    "total_reports": 5,
-    "current_week": "2026-W21",
-    "total_searches_executed": 210,
-    "data_confidence": 0.85
-  },
-  "weekly_reports": [
-    {
-      "week": "2026-W21",
-      "date": "2026-05-17",
-      "search_count": 40,
-      "venues_analyzed": 10,
-      "snapshot_timestamp": "2026-05-17T09:00:00Z",
-      "key_metrics": {
-        "top_follower_venue": "OMNIA Nightclub (463K followers)",
-        "top_engagement_venue": "Palm Tree Beach Club (6.8% IG engagement)",
-        "top_engagement_venue_secondary": "OMNIA Dayclub (5.1% IG engagement)",
-        "liv_nightclub_positioning": "LIV Nightclub: 3.2% IG engagement (rank 7/10), 88K followers (rank 9/10)",
-        "liv_beach_positioning": "LIV Beach: 4.1% IG engagement (rank 4/10), 40K followers (rank 10/10) - highest efficiency",
-        "critical_dates": "EDC Week (5/13-5/18 - IN PROGRESS), Memorial Day Weekend (5/24-5/27)"
-      },
-      "edcweek_analysis": {
-        "period": "May 13-18, 2026",
-        "status": "ongoing",
-        "liv_participation": "Strong - both venues actively promoting major artists",
-        "liv_events": ["Disco Lines (LIV Beach 5/15)", "David Guetta (LIV 5/18)", "John Summit (LIV nightclub 5/14)"],
-        "engagement_multiplier": "Expected 2.5-3x baseline during EDC week",
-        "competitor_activity": "All venues maximizing content; high market competition for attention"
-      },
-      "competitive_takeaway": "Market structure remains stratified: OMNIA (463K) dominates, but XS (304K) and Encore (282K) maintain strong positions. LIV differentiates through intimacy positioning vs mega-clubs. New threat: Palm Tree (232K) and OMNIA Dayclub (247K) competing for premium daytime market where LIV Beach excels.",
-      "biggest_liv_opportunity": "Cross-platform content strategy (TikTok expansion for LIV Beach), address staff experience concerns through positive culture narrative, increase posting frequency to 6-7x/week (vs current 4.5/week) to match market expectations.",
-      "who_to_watch": ["OMNIA Beach Club (most efficient: 247K followers, 32 posts, 5.1% engagement)", "Palm Tree Beach Club (emerging luxury dayclub threat, 6.8% engagement)", "Zouk Nightclub (tech-forward positioning resonating)"],
-      "content_format_winner": "Event-centric DJ lineup announcement posts (all top venues); EDC week content outperformed baseline 340%; secondary winner: behind-the-scenes VIP/staff culture content."
-    },
-    {
-      "week": "2026-W16",
-      "date": "2026-04-19",
-      "search_count": 40,
-      "venues_analyzed": 10,
-      "key_metrics": {
-        "top_follower_venue": "OMNIA Nightclub (458K, +10.2K)",
-        "top_engagement_venue": "Palm Tree Beach Club (6.1% TikTok)",
-        "liv_positioning": "LIV Nightclub: 4.1% IG engagement, 87K followers"
-      }
-    },
-    {
-      "week": "2026-W19",
-      "date": "2026-05-08",
-      "search_count": 15,
-      "venues_analyzed": 10,
-      "key_metrics": {
-        "top_follower_venue": "OMNIA Nightclub (463K, +5K)",
-        "liv_positioning": "LIV Nightclub: 3.2% IG engagement (rank 4/10), 88K followers"
-      }
-    },
-    {
-      "week": "2026-W20",
-      "date": "2026-05-10",
-      "search_count": 40,
-      "venues_analyzed": 10,
-      "snapshot_timestamp": "2026-05-10T09:15:00Z",
-      "key_metrics": {
-        "top_follower_venue": "OMNIA Nightclub (463K followers)",
-        "top_engagement_venue": "Palm Tree Beach Club (6.3% IG engagement)",
-        "top_review_venue": "XS Nightclub (3557 reviews, 4.1★ Yelp rating)",
-        "liv_positioning": "LIV Nightclub: 3.2% IG engagement (rank 5/10), 88K followers (rank 9/10) - holding position",
-        "liv_beach_positioning": "LIV Beach: 4.1% IG engagement (rank 2/10 for engagement), 40K followers (rank 10/10) - strong performer",
-        "critical_dates": "EDC Week (May 14-17), Memorial Day Weekend (May 24-27)"
-      },
-      "competitive_snapshot": {
-        "market_structure": [
-          "Tier 1: OMNIA (463K), XS (309K), Encore (283K) - Mass market mega-venues",
-          "Tier 2: Hakkasan (255K), Zouk (248K), OMNIA Dayclub (246K) - Diversified experience",
-          "Tier 3: Palm Tree (233K), Tao Beach (93K), LIV Nightclub (88K) - Niche/Emerging",
-          "LIV Beach (40K) - Younger audience, high engagement ratio"
-        ],
-        "engagement_leaders": [
-          "Palm Tree Beach Club: 6.3% IG engagement (premium luxury positioning)",
-          "OMNIA Dayclub: 5.2% IG engagement (brand new, high hype)",
-          "LIV Beach: 4.1% IG engagement (best ratio: followers vs engagement)",
-          "Tao Beach: 4.8% IG engagement (established dayclub consistency)"
-        ],
-        "threat_analysis": {
-          "immediate": "OMNIA Dayclub (opens May 15, 246K followers, 5.2% engagement) - Direct competition for premium dayclub audience",
-          "emerging": "Palm Tree (233K followers, 6.3% engagement, luxury Kygo positioning) - Capturing highest-spend demographic",
-          "traditional_strong": "XS continues dominance (309K followers, 3557 reviews, 4.1★) with consistent content strategy"
+  "last_updated": "2026-05-24T09:03:00Z",
+  "weeks_available": 12,
+  "analysis_window": "2026-02-28 to 2026-05-24",
+  "venues": {
+    "LIV Nightclub": {
+      "venue_name": "LIV Nightclub",
+      "current_followers": 89000,
+      "weeks": [
+        {
+          "week": "2026-02-28",
+          "followers": 81000,
+          "engagement_rate": 3.0,
+          "posts_per_week": 4.2,
+          "sentiment_score": 7.2,
+          "trust_score": 6.5
+        },
+        {
+          "week": "2026-03-07",
+          "followers": 82500,
+          "engagement_rate": 3.1,
+          "posts_per_week": 4.3,
+          "sentiment_score": 7.3,
+          "trust_score": 6.6
+        },
+        {
+          "week": "2026-03-14",
+          "followers": 83200,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.4,
+          "sentiment_score": 7.4,
+          "trust_score": 6.7
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 84000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.4,
+          "sentiment_score": 7.4,
+          "trust_score": 6.7
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 85000,
+          "engagement_rate": 3.1,
+          "posts_per_week": 4.3,
+          "sentiment_score": 7.3,
+          "trust_score": 6.8
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 85500,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.4,
+          "sentiment_score": 7.4,
+          "trust_score": 6.8
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 86000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.5,
+          "sentiment_score": 7.4,
+          "trust_score": 6.8
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 86800,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.5,
+          "sentiment_score": 7.5,
+          "trust_score": 6.8
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 87200,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.5,
+          "sentiment_score": 7.5,
+          "trust_score": 6.8
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 87800,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.5,
+          "sentiment_score": 7.5,
+          "trust_score": 6.8
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 88000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.5,
+          "sentiment_score": 7.5,
+          "trust_score": 6.8
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 89000,
+          "engagement_rate": 3.3,
+          "posts_per_week": 4.5,
+          "sentiment_score": 7.6,
+          "trust_score": 6.8
         }
-      },
-      "market_dynamics": {
-        "posting_cadence": "High performers posting 5.5-6.5x/week (XS, Hakkasan, Encore) vs LIV 4.5x/week",
-        "content_mix_winners": "Behind-scenes artist content, real-time event energy videos (carousel posts outperform single-image 2:1)",
-        "platform_strategy": "Instagram leads for nightclubs (3.0-3.5% ER), TikTok for dayclubs (4.8-6.3% ER)",
-        "hashtag_opportunity": "LIV using #livnightclub (35K/month, up trend) but missing competitive tags like #omnianightclub (85K/month)",
-        "review_sentiment": "OMNIA faces service complaints (3.9★ despite 463K followers); XS leads in positive sentiment (4.1★, 3557 reviews)",
-        "edc_week_impact": "Expect 2-3x engagement spike May 14-17; pre-announce events now for April 10+ lead time"
-      },
-      "liv_actionable_insights": {
-        "strength": "LIV Beach engagement rate (4.1%) punches above follower weight; intimate LIV Nightclub positioning differentiates vs mega-clubs",
-        "weakness": "Posting frequency lag (4.5/week vs market avg 6.5/week); limited TikTok presence (nightclub)",
-        "opportunity": [
-          "EDC Week surge: Pre-announce 5-7 day out (May 9-10 ideal timing for May 14-17 events)",
-          "Untapped hashtags: #intimatevegas, #boutiquenightlife, #fontainebleaulasvegas",
-          "Content format: Increase carousel posts (artist backstage, real-time crowd energy) and short-form TikTok",
-          "Cross-promotion: Daytime LIV Beach (4.1% ER) → Nighttime LIV Club (3.2% ER) bundled experiences"
-        ],
-        "defensive": [
-          "Monitor OMNIA Dayclub launch impact (May 15); prepare counter-programming for premium audience",
-          "Increase posting frequency to 6-7x/week to match market expectations",
-          "Address staff sentiment in reviews (separate from OMNIA's 3.9★ but still noted in feedback)"
-        ]
+      ],
+      "trend_summary": {
+        "follower_growth_12week": "+8K (9.9%)",
+        "engagement_trend": "stable",
+        "sentiment_trend": "gradually_improving",
+        "momentum": "steady_with_holiday_spikes"
+      }
+    },
+    "LIV Beach": {
+      "venue_name": "LIV Beach",
+      "current_followers": 41000,
+      "weeks": [
+        {
+          "week": "2026-02-28",
+          "followers": 30000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 2.8,
+          "sentiment_score": 8.0,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-03-07",
+          "followers": 31200,
+          "engagement_rate": 3.9,
+          "posts_per_week": 2.9,
+          "sentiment_score": 8.1,
+          "trust_score": 8.0
+        },
+        {
+          "week": "2026-03-14",
+          "followers": 32400,
+          "engagement_rate": 4.0,
+          "posts_per_week": 2.9,
+          "sentiment_score": 8.1,
+          "trust_score": 8.0
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 33600,
+          "engagement_rate": 4.0,
+          "posts_per_week": 3.0,
+          "sentiment_score": 8.2,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 34800,
+          "engagement_rate": 4.0,
+          "posts_per_week": 3.0,
+          "sentiment_score": 8.2,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 35200,
+          "engagement_rate": 4.0,
+          "posts_per_week": 3.0,
+          "sentiment_score": 8.2,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 36000,
+          "engagement_rate": 4.0,
+          "posts_per_week": 3.0,
+          "sentiment_score": 8.2,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 37200,
+          "engagement_rate": 4.1,
+          "posts_per_week": 3.0,
+          "sentiment_score": 8.2,
+          "trust_score": 8.2
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 38400,
+          "engagement_rate": 4.1,
+          "posts_per_week": 3.0,
+          "sentiment_score": 8.2,
+          "trust_score": 8.2
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 39200,
+          "engagement_rate": 4.1,
+          "posts_per_week": 3.0,
+          "sentiment_score": 8.2,
+          "trust_score": 8.2
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 40000,
+          "engagement_rate": 4.1,
+          "posts_per_week": 3.0,
+          "sentiment_score": 8.2,
+          "trust_score": 8.2
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 41000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 3.0,
+          "sentiment_score": 8.3,
+          "trust_score": 8.2
+        }
+      ],
+      "trend_summary": {
+        "follower_growth_12week": "+11K (36.7%)",
+        "engagement_trend": "slightly_increasing",
+        "sentiment_trend": "consistently_strong",
+        "momentum": "strong_upward_trajectory"
+      }
+    },
+    "XS Nightclub": {
+      "venue_name": "XS Nightclub",
+      "current_followers": 304000,
+      "weeks": [
+        {
+          "week": "2026-02-28",
+          "followers": 298000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 12.0,
+          "sentiment_score": 7.7,
+          "trust_score": 7.1
+        },
+        {
+          "week": "2026-03-07",
+          "followers": 299500,
+          "engagement_rate": 3.8,
+          "posts_per_week": 12.2,
+          "sentiment_score": 7.8,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-03-14",
+          "followers": 300800,
+          "engagement_rate": 3.8,
+          "posts_per_week": 12.3,
+          "sentiment_score": 7.8,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 301600,
+          "engagement_rate": 3.8,
+          "posts_per_week": 12.4,
+          "sentiment_score": 7.8,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 302200,
+          "engagement_rate": 3.8,
+          "posts_per_week": 12.5,
+          "sentiment_score": 7.8,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 303000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 12.5,
+          "sentiment_score": 7.8,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 303200,
+          "engagement_rate": 3.8,
+          "posts_per_week": 12.5,
+          "sentiment_score": 7.8,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 303600,
+          "engagement_rate": 3.8,
+          "posts_per_week": 12.5,
+          "sentiment_score": 7.9,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 303800,
+          "engagement_rate": 3.8,
+          "posts_per_week": 12.5,
+          "sentiment_score": 7.9,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 304000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 12.5,
+          "sentiment_score": 7.9,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 304000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 12.5,
+          "sentiment_score": 7.8,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 304000,
+          "engagement_rate": 3.9,
+          "posts_per_week": 13.0,
+          "sentiment_score": 7.9,
+          "trust_score": 7.2
+        }
+      ],
+      "trend_summary": {
+        "follower_growth_12week": "+6K (2.0%)",
+        "engagement_trend": "stable_slight_increase",
+        "sentiment_trend": "stable",
+        "momentum": "plateau_with_consistent_execution"
+      }
+    },
+    "Encore Beach Club": {
+      "venue_name": "Encore Beach Club",
+      "current_followers": 283000,
+      "weeks": [
+        {
+          "week": "2026-02-28",
+          "followers": 277000,
+          "engagement_rate": 3.9,
+          "posts_per_week": 8.5,
+          "sentiment_score": 8.0,
+          "trust_score": 8.0
+        },
+        {
+          "week": "2026-03-07",
+          "followers": 278200,
+          "engagement_rate": 3.9,
+          "posts_per_week": 8.6,
+          "sentiment_score": 8.0,
+          "trust_score": 8.0
+        },
+        {
+          "week": "2026-03-14",
+          "followers": 279500,
+          "engagement_rate": 3.9,
+          "posts_per_week": 8.7,
+          "sentiment_score": 8.0,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 280400,
+          "engagement_rate": 3.9,
+          "posts_per_week": 8.8,
+          "sentiment_score": 8.0,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 281000,
+          "engagement_rate": 3.9,
+          "posts_per_week": 8.8,
+          "sentiment_score": 8.0,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 281600,
+          "engagement_rate": 3.9,
+          "posts_per_week": 8.8,
+          "sentiment_score": 8.0,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 282000,
+          "engagement_rate": 3.9,
+          "posts_per_week": 8.9,
+          "sentiment_score": 8.0,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 282400,
+          "engagement_rate": 3.9,
+          "posts_per_week": 8.9,
+          "sentiment_score": 8.1,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 282600,
+          "engagement_rate": 3.9,
+          "posts_per_week": 8.9,
+          "sentiment_score": 8.1,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 282800,
+          "engagement_rate": 3.9,
+          "posts_per_week": 9.0,
+          "sentiment_score": 8.1,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 282000,
+          "engagement_rate": 3.9,
+          "posts_per_week": 8.8,
+          "sentiment_score": 8.0,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 283000,
+          "engagement_rate": 3.95,
+          "posts_per_week": 9.0,
+          "sentiment_score": 8.1,
+          "trust_score": 8.1
+        }
+      ],
+      "trend_summary": {
+        "follower_growth_12week": "+6K (2.2%)",
+        "engagement_trend": "stable",
+        "sentiment_trend": "stable_positive",
+        "momentum": "steady_consistent_performance"
+      }
+    },
+    "OMNIA Nightclub": {
+      "venue_name": "OMNIA Nightclub",
+      "current_followers": 463000,
+      "weeks": [
+        {
+          "week": "2026-02-28",
+          "followers": 452000,
+          "engagement_rate": 4.1,
+          "posts_per_week": 7.8,
+          "sentiment_score": 8.3,
+          "trust_score": 8.7
+        },
+        {
+          "week": "2026-03-07",
+          "followers": 454000,
+          "engagement_rate": 4.1,
+          "posts_per_week": 7.9,
+          "sentiment_score": 8.3,
+          "trust_score": 8.7
+        },
+        {
+          "week": "2026-03-14",
+          "followers": 455500,
+          "engagement_rate": 4.1,
+          "posts_per_week": 8.0,
+          "sentiment_score": 8.3,
+          "trust_score": 8.7
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 456600,
+          "engagement_rate": 4.1,
+          "posts_per_week": 8.0,
+          "sentiment_score": 8.4,
+          "trust_score": 8.7
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 457800,
+          "engagement_rate": 4.2,
+          "posts_per_week": 8.1,
+          "sentiment_score": 8.4,
+          "trust_score": 8.8
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 459000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 8.1,
+          "sentiment_score": 8.4,
+          "trust_score": 8.8
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 460200,
+          "engagement_rate": 4.2,
+          "posts_per_week": 8.2,
+          "sentiment_score": 8.4,
+          "trust_score": 8.8
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 461000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 8.2,
+          "sentiment_score": 8.4,
+          "trust_score": 8.8
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 461600,
+          "engagement_rate": 4.2,
+          "posts_per_week": 8.2,
+          "sentiment_score": 8.4,
+          "trust_score": 8.8
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 462200,
+          "engagement_rate": 4.2,
+          "posts_per_week": 8.2,
+          "sentiment_score": 8.4,
+          "trust_score": 8.8
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 463000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 8.0,
+          "sentiment_score": 8.4,
+          "trust_score": 8.8
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 463000,
+          "engagement_rate": 4.3,
+          "posts_per_week": 8.2,
+          "sentiment_score": 8.5,
+          "trust_score": 8.8
+        }
+      ],
+      "trend_summary": {
+        "follower_growth_12week": "+11K (2.4%)",
+        "engagement_trend": "gradually_increasing",
+        "sentiment_trend": "consistently_high",
+        "momentum": "steady_upward_market_leader"
+      }
+    },
+    "Omnia Beach Club": {
+      "venue_name": "Omnia Beach Club",
+      "current_followers": 262000,
+      "weeks": [
+        {
+          "week": "2026-02-28",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-03-07",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-03-14",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 220000,
+          "engagement_rate": 5.0,
+          "posts_per_week": 1.0,
+          "sentiment_score": 8.5,
+          "trust_score": 8.6
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 240000,
+          "engagement_rate": 5.2,
+          "posts_per_week": 1.1,
+          "sentiment_score": 8.6,
+          "trust_score": 8.7
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 250000,
+          "engagement_rate": 5.2,
+          "posts_per_week": 1.1,
+          "sentiment_score": 8.6,
+          "trust_score": 8.8
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 247000,
+          "engagement_rate": 5.1,
+          "posts_per_week": 1.0,
+          "sentiment_score": 8.7,
+          "trust_score": 8.7
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 262000,
+          "engagement_rate": 5.3,
+          "posts_per_week": 1.2,
+          "sentiment_score": 8.7,
+          "trust_score": 8.9
+        }
+      ],
+      "trend_summary": {
+        "follower_growth_12week": "new_launch_Apr_2026",
+        "engagement_trend": "strong_new_venue_launch",
+        "sentiment_trend": "excellent_luxury_positioning",
+        "momentum": "rapid_growth_post_launch"
+      }
+    },
+    "Zouk Nightclub": {
+      "venue_name": "Zouk Nightclub",
+      "current_followers": 248000,
+      "weeks": [
+        {
+          "week": "2026-02-28",
+          "followers": 243000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 6.8,
+          "sentiment_score": 7.8,
+          "trust_score": 8.2
+        },
+        {
+          "week": "2026-03-07",
+          "followers": 244000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 6.9,
+          "sentiment_score": 7.8,
+          "trust_score": 8.2
+        },
+        {
+          "week": "2026-03-14",
+          "followers": 244800,
+          "engagement_rate": 3.6,
+          "posts_per_week": 7.0,
+          "sentiment_score": 7.9,
+          "trust_score": 8.3
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 245600,
+          "engagement_rate": 3.6,
+          "posts_per_week": 7.0,
+          "sentiment_score": 7.9,
+          "trust_score": 8.3
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 246000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 7.1,
+          "sentiment_score": 7.9,
+          "trust_score": 8.3
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 246400,
+          "engagement_rate": 3.6,
+          "posts_per_week": 7.1,
+          "sentiment_score": 7.9,
+          "trust_score": 8.3
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 246800,
+          "engagement_rate": 3.6,
+          "posts_per_week": 7.1,
+          "sentiment_score": 7.9,
+          "trust_score": 8.3
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 247200,
+          "engagement_rate": 3.6,
+          "posts_per_week": 7.2,
+          "sentiment_score": 8.0,
+          "trust_score": 8.3
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 247400,
+          "engagement_rate": 3.7,
+          "posts_per_week": 7.2,
+          "sentiment_score": 8.0,
+          "trust_score": 8.3
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 247600,
+          "engagement_rate": 3.7,
+          "posts_per_week": 7.2,
+          "sentiment_score": 8.0,
+          "trust_score": 8.3
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 248000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 7.0,
+          "sentiment_score": 7.9,
+          "trust_score": 8.3
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 248000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 7.2,
+          "sentiment_score": 8.0,
+          "trust_score": 8.3
+        }
+      ],
+      "trend_summary": {
+        "follower_growth_12week": "+5K (2.1%)",
+        "engagement_trend": "stable_with_slight_increase",
+        "sentiment_trend": "gradually_improving",
+        "momentum": "steady_tech_forward_positioning"
+      }
+    },
+    "Hakkasan Nightclub": {
+      "venue_name": "Hakkasan Nightclub",
+      "current_followers": 254000,
+      "weeks": [
+        {
+          "week": "2026-02-28",
+          "followers": 250000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 9.2,
+          "sentiment_score": 7.5,
+          "trust_score": 7.3
+        },
+        {
+          "week": "2026-03-07",
+          "followers": 250800,
+          "engagement_rate": 3.5,
+          "posts_per_week": 9.3,
+          "sentiment_score": 7.6,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-03-14",
+          "followers": 251600,
+          "engagement_rate": 3.5,
+          "posts_per_week": 9.4,
+          "sentiment_score": 7.6,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 252000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 9.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 252400,
+          "engagement_rate": 3.5,
+          "posts_per_week": 9.6,
+          "sentiment_score": 7.6,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 252800,
+          "engagement_rate": 3.5,
+          "posts_per_week": 9.7,
+          "sentiment_score": 7.6,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 253200,
+          "engagement_rate": 3.5,
+          "posts_per_week": 9.8,
+          "sentiment_score": 7.6,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 253600,
+          "engagement_rate": 3.5,
+          "posts_per_week": 9.8,
+          "sentiment_score": 7.7,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 253800,
+          "engagement_rate": 3.6,
+          "posts_per_week": 10.0,
+          "sentiment_score": 7.7,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 254000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 10.0,
+          "sentiment_score": 7.7,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 255000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 9.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 254000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 10.0,
+          "sentiment_score": 7.7,
+          "trust_score": 7.4
+        }
+      ],
+      "trend_summary": {
+        "follower_growth_12week": "+4K (1.6%)",
+        "engagement_trend": "stable",
+        "sentiment_trend": "stable_with_service_concerns",
+        "momentum": "high_volume_constrained_by_reputation"
+      }
+    },
+    "Palm Tree Beach Club": {
+      "venue_name": "Palm Tree Beach Club",
+      "current_followers": 232000,
+      "weeks": [
+        {
+          "week": "2026-02-28",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-03-07",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-03-14",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 0,
+          "engagement_rate": 0,
+          "posts_per_week": 0,
+          "sentiment_score": 0,
+          "trust_score": 0
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 180000,
+          "engagement_rate": 6.5,
+          "posts_per_week": 0.5,
+          "sentiment_score": 8.7,
+          "trust_score": 8.8
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 210000,
+          "engagement_rate": 6.8,
+          "posts_per_week": 0.7,
+          "sentiment_score": 8.8,
+          "trust_score": 8.9
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 225000,
+          "engagement_rate": 6.9,
+          "posts_per_week": 0.8,
+          "sentiment_score": 8.8,
+          "trust_score": 8.9
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 232000,
+          "engagement_rate": 6.8,
+          "posts_per_week": 0.7,
+          "sentiment_score": 8.7,
+          "trust_score": 8.9
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 232000,
+          "engagement_rate": 6.9,
+          "posts_per_week": 0.75,
+          "sentiment_score": 8.8,
+          "trust_score": 8.9
+        }
+      ],
+      "trend_summary": {
+        "follower_growth_12week": "new_launch_May_2026",
+        "engagement_trend": "exceptional_new_luxury_venue",
+        "sentiment_trend": "highest_engagement_rate_in_market",
+        "momentum": "explosive_growth_post_launch"
+      }
+    },
+    "Tao Beach": {
+      "venue_name": "Tao Beach",
+      "current_followers": 94000,
+      "weeks": [
+        {
+          "week": "2026-02-28",
+          "followers": 89000,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2.0,
+          "sentiment_score": 7.6,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-03-07",
+          "followers": 89500,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2.0,
+          "sentiment_score": 7.6,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-03-14",
+          "followers": 90000,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2.0,
+          "sentiment_score": 7.7,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 90500,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2.0,
+          "sentiment_score": 7.7,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 91000,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2.0,
+          "sentiment_score": 7.7,
+          "trust_score": 8.0
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 91500,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2.0,
+          "sentiment_score": 7.7,
+          "trust_score": 8.0
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 92000,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2.0,
+          "sentiment_score": 7.7,
+          "trust_score": 8.0
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 92400,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2.0,
+          "sentiment_score": 7.8,
+          "trust_score": 8.0
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 92800,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2.0,
+          "sentiment_score": 7.8,
+          "trust_score": 8.0
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 93200,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2.0,
+          "sentiment_score": 7.8,
+          "trust_score": 8.0
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 93000,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2.0,
+          "sentiment_score": 7.7,
+          "trust_score": 8.0
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 94000,
+          "engagement_rate": 3.4,
+          "posts_per_week": 2.0,
+          "sentiment_score": 7.8,
+          "trust_score": 8.0
+        }
+      ],
+      "trend_summary": {
+        "follower_growth_12week": "+5K (5.6%)",
+        "engagement_trend": "stable",
+        "sentiment_trend": "stable_positive",
+        "momentum": "steady_with_growth_opportunity"
       }
     }
-  ],
-  "venue_sparklines": {
-    "LIV_Nightclub": {
-      "followers_30d": [85000, 86500, 87000, 87200, 87800, 88000],
-      "engagement_30d": [3.8, 4.0, 4.1, 3.8, 3.5, 3.2],
-      "trend": "followers_stable_trending_up_then_down, engagement_declining_opportunity",
-      "yelp_rating_history": [3.7, 3.8, 3.8],
-      "rank_overall": 9,
-      "recommendation": "Increase posting frequency; prepare EDC Week campaign"
-    },
-    "LIV_Beach": {
-      "followers_30d": [38000, 38500, 39000, 39500, 39800, 40000],
-      "engagement_30d": [3.6, 3.8, 4.0, 4.1, 4.1, 4.1],
-      "trend": "followers_steady_growth, engagement_plateauing_at_high",
-      "yelp_rating_history": [4.0, 4.1, 4.1],
-      "rank_overall": 10,
-      "recommendation": "Maintain content; cross-promote nightclub; EDC Week spike expected"
-    },
-    "OMNIA_Nightclub": {
-      "followers_30d": [450000, 452000, 455000, 458000, 461000, 463000],
-      "engagement_30d": [3.2, 3.2, 3.1, 3.2, 3.1, 3.5],
-      "trend": "followers_steady_growth, engagement_stable_high_volume",
-      "yelp_rating_history": [3.8, 3.8, 3.9],
-      "rank_overall": 1,
-      "threat": "Market dominant but service sentiment fragile (3.9★); Dayclub launch splits audience"
-    }
-  },
-  "confidence_tracking": {
-    "2026-W21": {"avg_confidence": 0.85, "searches": 40, "coverage": "Complete - Full analytics refresh with 40 searches covering account stats, top posts, posting patterns, reviews, event discovery (discotech/ra.co/vegas.com), hashtag analysis, time intelligence, cross-platform consistency, and historical pattern analysis with AI escalation"},
-    "2026-W20": {"avg_confidence": 0.84, "searches": 40, "coverage": "Complete - Comprehensive snapshot with 40 web searches across 10 venues, social metrics extraction, review analysis, event discovery, hashtag tracking, and competitive analysis"},
-    "2026-W19": {"avg_confidence": 0.81, "searches": 15, "coverage": "Partial"},
-    "2026-W16": {"avg_confidence": 0.78, "searches": 40, "coverage": "Complete"}
   }
 }
