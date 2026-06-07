@@ -155,7 +155,7 @@
         "checkins": 527505
       },
       "posts_per_week": 7.8,
-        "days_since_last_post": 0,
+      "days_since_last_post": 0,
       "note": "Highest posting frequency",
       "confidence": 0.86
     },
@@ -747,5 +747,28 @@
     "data_confidence": "high (0.78 avg)",
     "ready_for_ai_insight": true,
     "next_escalation": "Claude Sonnet 4.5 - weekly_ai_insight phase"
+  },
+  "weekly_ai_insight": {
+    "competitive_takeaway": "LIV has lost competitive momentum—posting frequency dropped 30% (6→4.2/week) while OMNIA accelerates with 461K followers and 4.3% engagement; without immediate intervention, the gap widens beyond recovery.",
+    "biggest_opportunity_for_liv": "Claim the #poolpartyvegas niche (89K monthly searches, vastly underutilized by competitors) by tripling LIV Beach's posting frequency to 5-6x/week with dayclub-specific content; combined with Hakkasan-matching daily cadence at LIV Nightclub, this recaptures lost audience and blocks competitor expansion.",
+    "who_to_watch": [
+      {
+        "venue": "OMNIA Nightclub",
+        "reason": "461K followers, 4.3% engagement, growing fastest; dominates weekend narrative; their strategy (quality DJ lineups + event-driven posting) is the gold standard LIV must match"
+      },
+      {
+        "venue": "Palm Tree Beach Club",
+        "reason": "New entrant (3 weeks) already at 6.1% engagement with only 1.5 posts/week; proves quality-over-quantity works; LIV Beach should mirror this curated approach but at higher frequency"
+      },
+      {
+        "venue": "Hakkasan",
+        "reason": "7.8 posts/week daily consistency drives 4.2% engagement; operating a content machine that LIV nightclub must replicate to stay relevant in the daily feed"
+      }
+    ],
+    "content_format_winner": "DJ lineups (28% of mix) dominate—OMNIA, XS, and Hakkasan all lead with talent announcements; LIV should increase DJ residency storytelling from current ~18% (event promos) to 35%+ by spotlighting resident talent profiles, DJ takeover narratives, and artist-exclusive content on TikTok.",
+    "confidence_level": 0.82,
+    "urgency": "CRITICAL - Execute posting frequency increase and #poolpartyvegas campaign within 7 days to prevent further ranking decline",
+    "data_sources": "54 searches across 10 venues + 8-week historical pattern analysis",
+    "analysis_timestamp": "2026-06-07T09:01:00-07:00"
   }
 }
