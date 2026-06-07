@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-07T09:00:00Z",
+  "last_updated": "2026-06-07T16:04:40.660Z",
   "weeks_available": 12,
   "analysis_window": "2026-03-14 to 2026-06-07",
   "venues": {
@@ -7,191 +7,1081 @@
       "venue_name": "LIV Nightclub",
       "current_followers": 90000,
       "weeks": [
-        {"week": "2026-03-14", "followers": 83200, "engagement_rate": 3.2, "posts_per_week": 4.4, "sentiment_score": 7.4, "trust_score": 6.7},
-        {"week": "2026-03-21", "followers": 84000, "engagement_rate": 3.2, "posts_per_week": 4.4, "sentiment_score": 7.4, "trust_score": 6.7},
-        {"week": "2026-03-28", "followers": 85000, "engagement_rate": 3.1, "posts_per_week": 4.3, "sentiment_score": 7.3, "trust_score": 6.8},
-        {"week": "2026-04-04", "followers": 85500, "engagement_rate": 3.2, "posts_per_week": 4.4, "sentiment_score": 7.4, "trust_score": 6.8},
-        {"week": "2026-04-11", "followers": 86200, "engagement_rate": 3.3, "posts_per_week": 4.5, "sentiment_score": 7.5, "trust_score": 6.9},
-        {"week": "2026-04-18", "followers": 87000, "engagement_rate": 3.2, "posts_per_week": 4.4, "sentiment_score": 7.4, "trust_score": 7.0},
-        {"week": "2026-04-25", "followers": 88500, "engagement_rate": 3.3, "posts_per_week": 4.6, "sentiment_score": 7.6, "trust_score": 7.1},
-        {"week": "2026-05-03", "followers": 92800, "engagement_rate": 3.3, "posts_per_week": 2.0, "sentiment_score": 7.8, "trust_score": 8.0},
-        {"week": "2026-05-10", "followers": 93200, "engagement_rate": 3.3, "posts_per_week": 2.0, "sentiment_score": 7.8, "trust_score": 8.0},
-        {"week": "2026-05-17", "followers": 93000, "engagement_rate": 3.3, "posts_per_week": 2.0, "sentiment_score": 7.7, "trust_score": 8.0},
-        {"week": "2026-05-24", "followers": 94000, "engagement_rate": 3.4, "posts_per_week": 2.0, "sentiment_score": 7.8, "trust_score": 8.0},
-        {"week": "2026-06-07", "followers": 90000, "engagement_rate": 3.6, "posts_per_week": 5.0, "sentiment_score": 8.1, "trust_score": 7.8}
+        {
+          "week": "2026-03-14",
+          "followers": 83200,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.4,
+          "sentiment_score": 7.4,
+          "trust_score": 6.7
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 84000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.4,
+          "sentiment_score": 7.4,
+          "trust_score": 6.7
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 85000,
+          "engagement_rate": 3.1,
+          "posts_per_week": 4.3,
+          "sentiment_score": 7.3,
+          "trust_score": 6.8
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 85500,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.4,
+          "sentiment_score": 7.4,
+          "trust_score": 6.8
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 86200,
+          "engagement_rate": 3.3,
+          "posts_per_week": 4.5,
+          "sentiment_score": 7.5,
+          "trust_score": 6.9
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 87000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.4,
+          "sentiment_score": 7.4,
+          "trust_score": 7
+        },
+        {
+          "week": "2026-04-25",
+          "followers": 88500,
+          "engagement_rate": 3.3,
+          "posts_per_week": 4.6,
+          "sentiment_score": 7.6,
+          "trust_score": 7.1
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 92800,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2,
+          "sentiment_score": 7.8,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 93200,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2,
+          "sentiment_score": 7.8,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 93000,
+          "engagement_rate": 3.3,
+          "posts_per_week": 2,
+          "sentiment_score": 7.7,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 94000,
+          "engagement_rate": 3.4,
+          "posts_per_week": 2,
+          "sentiment_score": 7.8,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-06-07",
+          "followers": 90000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 4.2,
+          "sentiment_score": 7.8,
+          "trust_score": 7.4
+        }
       ],
-      "trend_summary": {"follower_growth_12week": "+6.8K (8.2%)", "engagement_trend": "accelerating", "sentiment_trend": "uptrend", "momentum": "strong_recovery"}
+      "trend_summary": {
+        "follower_growth_12week": "+6.8K (8.2%)",
+        "engagement_trend": "accelerating",
+        "sentiment_trend": "uptrend",
+        "momentum": "strong_recovery"
+      }
     },
     "LIV Beach": {
       "venue_name": "LIV Beach",
       "current_followers": 42000,
       "weeks": [
-        {"week": "2026-03-14", "followers": 68000, "engagement_rate": 3.5, "posts_per_week": 3.8, "sentiment_score": 7.3, "trust_score": 7.0},
-        {"week": "2026-03-21", "followers": 69000, "engagement_rate": 3.6, "posts_per_week": 3.9, "sentiment_score": 7.4, "trust_score": 7.1},
-        {"week": "2026-03-28", "followers": 70000, "engagement_rate": 3.6, "posts_per_week": 4.0, "sentiment_score": 7.5, "trust_score": 7.2},
-        {"week": "2026-04-04", "followers": 71000, "engagement_rate": 3.7, "posts_per_week": 4.0, "sentiment_score": 7.5, "trust_score": 7.2},
-        {"week": "2026-04-11", "followers": 71800, "engagement_rate": 3.7, "posts_per_week": 4.1, "sentiment_score": 7.6, "trust_score": 7.3},
-        {"week": "2026-04-18", "followers": 72500, "engagement_rate": 3.8, "posts_per_week": 4.1, "sentiment_score": 7.6, "trust_score": 7.4},
-        {"week": "2026-04-25", "followers": 73500, "engagement_rate": 3.8, "posts_per_week": 4.2, "sentiment_score": 7.7, "trust_score": 7.5},
-        {"week": "2026-05-03", "followers": 75000, "engagement_rate": 3.8, "posts_per_week": 4.2, "sentiment_score": 7.9, "trust_score": 8.0},
-        {"week": "2026-05-10", "followers": 76000, "engagement_rate": 3.9, "posts_per_week": 4.3, "sentiment_score": 8.0, "trust_score": 8.0},
-        {"week": "2026-05-17", "followers": 77000, "engagement_rate": 3.9, "posts_per_week": 4.2, "sentiment_score": 8.0, "trust_score": 8.0},
-        {"week": "2026-05-24", "followers": 78000, "engagement_rate": 4.0, "posts_per_week": 4.3, "sentiment_score": 8.1, "trust_score": 8.0},
-        {"week": "2026-06-07", "followers": 42000, "engagement_rate": 4.2, "posts_per_week": 4.4, "sentiment_score": 8.3, "trust_score": 8.2}
+        {
+          "week": "2026-03-14",
+          "followers": 68000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 3.8,
+          "sentiment_score": 7.3,
+          "trust_score": 7
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 69000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 3.9,
+          "sentiment_score": 7.4,
+          "trust_score": 7.1
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 70000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 4,
+          "sentiment_score": 7.5,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 71000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 4,
+          "sentiment_score": 7.5,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 71800,
+          "engagement_rate": 3.7,
+          "posts_per_week": 4.1,
+          "sentiment_score": 7.6,
+          "trust_score": 7.3
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 72500,
+          "engagement_rate": 3.8,
+          "posts_per_week": 4.1,
+          "sentiment_score": 7.6,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-04-25",
+          "followers": 73500,
+          "engagement_rate": 3.8,
+          "posts_per_week": 4.2,
+          "sentiment_score": 7.7,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 75000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 4.2,
+          "sentiment_score": 7.9,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 76000,
+          "engagement_rate": 3.9,
+          "posts_per_week": 4.3,
+          "sentiment_score": 8,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 77000,
+          "engagement_rate": 3.9,
+          "posts_per_week": 4.2,
+          "sentiment_score": 8,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 78000,
+          "engagement_rate": 4,
+          "posts_per_week": 4.3,
+          "sentiment_score": 8.1,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-06-07",
+          "followers": 42000,
+          "engagement_rate": 2.8,
+          "posts_per_week": 3.1,
+          "sentiment_score": 7.6,
+          "trust_score": 7.2
+        }
       ],
-      "trend_summary": {"follower_growth_12week": "-26K (-38%)", "engagement_trend": "accelerating_significantly", "sentiment_trend": "strong_uptrend", "momentum": "highest_engagement_rate_portfolio"}
+      "trend_summary": {
+        "follower_growth_12week": "-26K (-38%)",
+        "engagement_trend": "accelerating_significantly",
+        "sentiment_trend": "strong_uptrend",
+        "momentum": "highest_engagement_rate_portfolio"
+      }
     },
     "XS Nightclub": {
       "venue_name": "XS Nightclub",
       "current_followers": 304000,
       "weeks": [
-        {"week": "2026-03-14", "followers": 285000, "engagement_rate": 3.7, "posts_per_week": 6.2, "sentiment_score": 7.8, "trust_score": 7.5},
-        {"week": "2026-03-21", "followers": 288000, "engagement_rate": 3.7, "posts_per_week": 6.2, "sentiment_score": 7.8, "trust_score": 7.5},
-        {"week": "2026-03-28", "followers": 291000, "engagement_rate": 3.8, "posts_per_week": 6.3, "sentiment_score": 7.9, "trust_score": 7.6},
-        {"week": "2026-04-04", "followers": 294000, "engagement_rate": 3.8, "posts_per_week": 6.3, "sentiment_score": 7.9, "trust_score": 7.6},
-        {"week": "2026-04-11", "followers": 296000, "engagement_rate": 3.8, "posts_per_week": 6.4, "sentiment_score": 7.9, "trust_score": 7.7},
-        {"week": "2026-04-18", "followers": 298000, "engagement_rate": 3.8, "posts_per_week": 6.4, "sentiment_score": 7.9, "trust_score": 7.7},
-        {"week": "2026-04-25", "followers": 300000, "engagement_rate": 3.8, "posts_per_week": 6.4, "sentiment_score": 8.0, "trust_score": 7.8},
-        {"week": "2026-05-03", "followers": 301000, "engagement_rate": 3.8, "posts_per_week": 6.4, "sentiment_score": 8.0, "trust_score": 7.9},
-        {"week": "2026-05-10", "followers": 302000, "engagement_rate": 3.8, "posts_per_week": 6.4, "sentiment_score": 8.0, "trust_score": 7.9},
-        {"week": "2026-05-17", "followers": 303000, "engagement_rate": 3.8, "posts_per_week": 6.4, "sentiment_score": 8.0, "trust_score": 7.9},
-        {"week": "2026-05-24", "followers": 303500, "engagement_rate": 3.8, "posts_per_week": 6.4, "sentiment_score": 8.0, "trust_score": 7.9},
-        {"week": "2026-06-07", "followers": 304000, "engagement_rate": 3.8, "posts_per_week": 6.3, "sentiment_score": 7.9, "trust_score": 7.8}
+        {
+          "week": "2026-03-14",
+          "followers": 285000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 6.2,
+          "sentiment_score": 7.8,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 288000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 6.2,
+          "sentiment_score": 7.8,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 291000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 6.3,
+          "sentiment_score": 7.9,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 294000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 6.3,
+          "sentiment_score": 7.9,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 296000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 6.4,
+          "sentiment_score": 7.9,
+          "trust_score": 7.7
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 298000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 6.4,
+          "sentiment_score": 7.9,
+          "trust_score": 7.7
+        },
+        {
+          "week": "2026-04-25",
+          "followers": 300000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 6.4,
+          "sentiment_score": 8,
+          "trust_score": 7.8
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 301000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 6.4,
+          "sentiment_score": 8,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 302000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 6.4,
+          "sentiment_score": 8,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 303000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 6.4,
+          "sentiment_score": 8,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 303500,
+          "engagement_rate": 3.8,
+          "posts_per_week": 6.4,
+          "sentiment_score": 8,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-06-07",
+          "followers": 304000,
+          "engagement_rate": 4.1,
+          "posts_per_week": 5.8,
+          "sentiment_score": 7.9,
+          "trust_score": 7.8
+        }
       ],
-      "trend_summary": {"follower_growth_12week": "+19K (6.7%)", "engagement_trend": "stable_at_peak", "sentiment_trend": "stable_high", "momentum": "market_leader_position"}
+      "trend_summary": {
+        "follower_growth_12week": "+19K (6.7%)",
+        "engagement_trend": "stable_at_peak",
+        "sentiment_trend": "stable_high",
+        "momentum": "market_leader_position"
+      }
     },
     "Encore Beach Club": {
       "venue_name": "Encore Beach Club",
       "current_followers": 284000,
       "weeks": [
-        {"week": "2026-03-14", "followers": 270000, "engagement_rate": 3.8, "posts_per_week": 5.7, "sentiment_score": 7.7, "trust_score": 7.4},
-        {"week": "2026-03-21", "followers": 273000, "engagement_rate": 3.8, "posts_per_week": 5.8, "sentiment_score": 7.8, "trust_score": 7.5},
-        {"week": "2026-03-28", "followers": 276000, "engagement_rate": 3.8, "posts_per_week": 5.8, "sentiment_score": 7.8, "trust_score": 7.5},
-        {"week": "2026-04-04", "followers": 279000, "engagement_rate": 3.8, "posts_per_week": 5.8, "sentiment_score": 7.8, "trust_score": 7.6},
-        {"week": "2026-04-11", "followers": 280000, "engagement_rate": 3.9, "posts_per_week": 5.9, "sentiment_score": 7.9, "trust_score": 7.7},
-        {"week": "2026-04-18", "followers": 281000, "engagement_rate": 3.9, "posts_per_week": 5.9, "sentiment_score": 7.9, "trust_score": 7.7},
-        {"week": "2026-04-25", "followers": 281500, "engagement_rate": 3.9, "posts_per_week": 5.9, "sentiment_score": 7.9, "trust_score": 7.7},
-        {"week": "2026-05-03", "followers": 282000, "engagement_rate": 3.9, "posts_per_week": 5.9, "sentiment_score": 7.9, "trust_score": 7.8},
-        {"week": "2026-05-10", "followers": 282500, "engagement_rate": 3.9, "posts_per_week": 5.9, "sentiment_score": 7.9, "trust_score": 7.8},
-        {"week": "2026-05-17", "followers": 283000, "engagement_rate": 3.9, "posts_per_week": 5.9, "sentiment_score": 8.0, "trust_score": 7.8},
-        {"week": "2026-05-24", "followers": 283500, "engagement_rate": 3.9, "posts_per_week": 5.9, "sentiment_score": 8.0, "trust_score": 7.9},
-        {"week": "2026-06-07", "followers": 284000, "engagement_rate": 3.9, "posts_per_week": 5.8, "sentiment_score": 8.0, "trust_score": 7.9}
+        {
+          "week": "2026-03-14",
+          "followers": 270000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 5.7,
+          "sentiment_score": 7.7,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 273000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 5.8,
+          "sentiment_score": 7.8,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 276000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 5.8,
+          "sentiment_score": 7.8,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 279000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 5.8,
+          "sentiment_score": 7.8,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 280000,
+          "engagement_rate": 3.9,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.9,
+          "trust_score": 7.7
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 281000,
+          "engagement_rate": 3.9,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.9,
+          "trust_score": 7.7
+        },
+        {
+          "week": "2026-04-25",
+          "followers": 281500,
+          "engagement_rate": 3.9,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.9,
+          "trust_score": 7.7
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 282000,
+          "engagement_rate": 3.9,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.9,
+          "trust_score": 7.8
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 282500,
+          "engagement_rate": 3.9,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.9,
+          "trust_score": 7.8
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 283000,
+          "engagement_rate": 3.9,
+          "posts_per_week": 5.9,
+          "sentiment_score": 8,
+          "trust_score": 7.8
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 283500,
+          "engagement_rate": 3.9,
+          "posts_per_week": 5.9,
+          "sentiment_score": 8,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-06-07",
+          "followers": 284000,
+          "engagement_rate": 3.9,
+          "posts_per_week": 5.4,
+          "sentiment_score": 8,
+          "trust_score": 7.9
+        }
       ],
-      "trend_summary": {"follower_growth_12week": "+14K (5.2%)", "engagement_trend": "stable_high", "sentiment_trend": "slight_uptrend", "momentum": "strong_seasonal_opportunity"}
+      "trend_summary": {
+        "follower_growth_12week": "+14K (5.2%)",
+        "engagement_trend": "stable_high",
+        "sentiment_trend": "slight_uptrend",
+        "momentum": "strong_seasonal_opportunity"
+      }
     },
     "OMNIA Nightclub": {
       "venue_name": "OMNIA Nightclub",
       "current_followers": 461000,
       "weeks": [
-        {"week": "2026-03-14", "followers": 437000, "engagement_rate": 3.6, "posts_per_week": 5.5, "sentiment_score": 7.6, "trust_score": 7.3},
-        {"week": "2026-03-21", "followers": 440000, "engagement_rate": 3.7, "posts_per_week": 5.5, "sentiment_score": 7.7, "trust_score": 7.4},
-        {"week": "2026-03-28", "followers": 443000, "engagement_rate": 3.7, "posts_per_week": 5.6, "sentiment_score": 7.7, "trust_score": 7.4},
-        {"week": "2026-04-04", "followers": 446000, "engagement_rate": 3.7, "posts_per_week": 5.6, "sentiment_score": 7.7, "trust_score": 7.5},
-        {"week": "2026-04-11", "followers": 450000, "engagement_rate": 3.7, "posts_per_week": 5.6, "sentiment_score": 7.8, "trust_score": 7.5},
-        {"week": "2026-04-18", "followers": 453000, "engagement_rate": 3.7, "posts_per_week": 5.6, "sentiment_score": 7.8, "trust_score": 7.6},
-        {"week": "2026-04-25", "followers": 456000, "engagement_rate": 3.7, "posts_per_week": 5.6, "sentiment_score": 7.8, "trust_score": 7.6},
-        {"week": "2026-05-03", "followers": 457000, "engagement_rate": 3.7, "posts_per_week": 5.6, "sentiment_score": 7.8, "trust_score": 7.6},
-        {"week": "2026-05-10", "followers": 458000, "engagement_rate": 3.7, "posts_per_week": 5.6, "sentiment_score": 7.8, "trust_score": 7.7},
-        {"week": "2026-05-17", "followers": 459000, "engagement_rate": 3.7, "posts_per_week": 5.6, "sentiment_score": 7.8, "trust_score": 7.7},
-        {"week": "2026-05-24", "followers": 460000, "engagement_rate": 3.7, "posts_per_week": 5.6, "sentiment_score": 7.8, "trust_score": 7.7},
-        {"week": "2026-06-07", "followers": 461000, "engagement_rate": 3.7, "posts_per_week": 5.6, "sentiment_score": 7.8, "trust_score": 7.7}
+        {
+          "week": "2026-03-14",
+          "followers": 437000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 5.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.3
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 440000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 5.5,
+          "sentiment_score": 7.7,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 443000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 5.6,
+          "sentiment_score": 7.7,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 446000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 5.6,
+          "sentiment_score": 7.7,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 450000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 5.6,
+          "sentiment_score": 7.8,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 453000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 5.6,
+          "sentiment_score": 7.8,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-04-25",
+          "followers": 456000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 5.6,
+          "sentiment_score": 7.8,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 457000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 5.6,
+          "sentiment_score": 7.8,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 458000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 5.6,
+          "sentiment_score": 7.8,
+          "trust_score": 7.7
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 459000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 5.6,
+          "sentiment_score": 7.8,
+          "trust_score": 7.7
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 460000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 5.6,
+          "sentiment_score": 7.8,
+          "trust_score": 7.7
+        },
+        {
+          "week": "2026-06-07",
+          "followers": 461000,
+          "engagement_rate": 4.3,
+          "posts_per_week": 3.1,
+          "sentiment_score": 7.8,
+          "trust_score": 7.7
+        }
       ],
-      "trend_summary": {"follower_growth_12week": "+24K (5.5%)", "engagement_trend": "stable", "sentiment_trend": "stable_positive", "momentum": "flagship_property_strength"}
+      "trend_summary": {
+        "follower_growth_12week": "+24K (5.5%)",
+        "engagement_trend": "stable",
+        "sentiment_trend": "stable_positive",
+        "momentum": "flagship_property_strength"
+      }
     },
     "Omnia Beach Club": {
       "venue_name": "Omnia Beach Club",
       "current_followers": 267000,
       "weeks": [
-        {"week": "2026-03-14", "followers": 235000, "engagement_rate": 4.0, "posts_per_week": 2.2, "sentiment_score": 8.0, "trust_score": 7.8},
-        {"week": "2026-03-21", "followers": 240000, "engagement_rate": 4.0, "posts_per_week": 2.0, "sentiment_score": 8.0, "trust_score": 7.8},
-        {"week": "2026-03-28", "followers": 243000, "engagement_rate": 4.0, "posts_per_week": 2.0, "sentiment_score": 8.0, "trust_score": 7.8},
-        {"week": "2026-04-04", "followers": 246000, "engagement_rate": 4.0, "posts_per_week": 2.0, "sentiment_score": 8.0, "trust_score": 7.8},
-        {"week": "2026-04-11", "followers": 250000, "engagement_rate": 4.0, "posts_per_week": 2.0, "sentiment_score": 8.0, "trust_score": 7.9},
-        {"week": "2026-04-18", "followers": 253000, "engagement_rate": 4.1, "posts_per_week": 2.0, "sentiment_score": 8.1, "trust_score": 7.9},
-        {"week": "2026-04-25", "followers": 256000, "engagement_rate": 4.1, "posts_per_week": 2.0, "sentiment_score": 8.1, "trust_score": 7.9},
-        {"week": "2026-05-03", "followers": 259000, "engagement_rate": 4.1, "posts_per_week": 2.0, "sentiment_score": 8.1, "trust_score": 7.9},
-        {"week": "2026-05-10", "followers": 261000, "engagement_rate": 4.1, "posts_per_week": 2.0, "sentiment_score": 8.1, "trust_score": 8.0},
-        {"week": "2026-05-17", "followers": 263000, "engagement_rate": 4.1, "posts_per_week": 2.0, "sentiment_score": 8.2, "trust_score": 8.0},
-        {"week": "2026-05-24", "followers": 265000, "engagement_rate": 4.1, "posts_per_week": 2.0, "sentiment_score": 8.2, "trust_score": 8.0},
-        {"week": "2026-06-07", "followers": 267000, "engagement_rate": 4.1, "posts_per_week": 1.8, "sentiment_score": 8.2, "trust_score": 8.1}
+        {
+          "week": "2026-03-14",
+          "followers": 235000,
+          "engagement_rate": 4,
+          "posts_per_week": 2.2,
+          "sentiment_score": 8,
+          "trust_score": 7.8
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 240000,
+          "engagement_rate": 4,
+          "posts_per_week": 2,
+          "sentiment_score": 8,
+          "trust_score": 7.8
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 243000,
+          "engagement_rate": 4,
+          "posts_per_week": 2,
+          "sentiment_score": 8,
+          "trust_score": 7.8
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 246000,
+          "engagement_rate": 4,
+          "posts_per_week": 2,
+          "sentiment_score": 8,
+          "trust_score": 7.8
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 250000,
+          "engagement_rate": 4,
+          "posts_per_week": 2,
+          "sentiment_score": 8,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 253000,
+          "engagement_rate": 4.1,
+          "posts_per_week": 2,
+          "sentiment_score": 8.1,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-04-25",
+          "followers": 256000,
+          "engagement_rate": 4.1,
+          "posts_per_week": 2,
+          "sentiment_score": 8.1,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 259000,
+          "engagement_rate": 4.1,
+          "posts_per_week": 2,
+          "sentiment_score": 8.1,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 261000,
+          "engagement_rate": 4.1,
+          "posts_per_week": 2,
+          "sentiment_score": 8.1,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 263000,
+          "engagement_rate": 4.1,
+          "posts_per_week": 2,
+          "sentiment_score": 8.2,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 265000,
+          "engagement_rate": 4.1,
+          "posts_per_week": 2,
+          "sentiment_score": 8.2,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-06-07",
+          "followers": 267000,
+          "engagement_rate": 5.2,
+          "posts_per_week": 2.1,
+          "sentiment_score": 8.2,
+          "trust_score": 8.1
+        }
       ],
-      "trend_summary": {"follower_growth_12week": "+32K (13.6%)", "engagement_trend": "peak_engagement", "sentiment_trend": "very_strong_uptrend", "momentum": "new_venue_momentum"}
+      "trend_summary": {
+        "follower_growth_12week": "+32K (13.6%)",
+        "engagement_trend": "peak_engagement",
+        "sentiment_trend": "very_strong_uptrend",
+        "momentum": "new_venue_momentum"
+      }
     },
     "Zouk Nightclub": {
       "venue_name": "Zouk Nightclub",
       "current_followers": 247000,
       "weeks": [
-        {"week": "2026-03-14", "followers": 231000, "engagement_rate": 3.4, "posts_per_week": 5.3, "sentiment_score": 7.5, "trust_score": 7.2},
-        {"week": "2026-03-21", "followers": 233000, "engagement_rate": 3.4, "posts_per_week": 5.3, "sentiment_score": 7.5, "trust_score": 7.2},
-        {"week": "2026-03-28", "followers": 235000, "engagement_rate": 3.5, "posts_per_week": 5.4, "sentiment_score": 7.6, "trust_score": 7.3},
-        {"week": "2026-04-04", "followers": 237000, "engagement_rate": 3.5, "posts_per_week": 5.4, "sentiment_score": 7.6, "trust_score": 7.3},
-        {"week": "2026-04-11", "followers": 239000, "engagement_rate": 3.5, "posts_per_week": 5.4, "sentiment_score": 7.6, "trust_score": 7.4},
-        {"week": "2026-04-18", "followers": 241000, "engagement_rate": 3.5, "posts_per_week": 5.4, "sentiment_score": 7.7, "trust_score": 7.4},
-        {"week": "2026-04-25", "followers": 242000, "engagement_rate": 3.5, "posts_per_week": 5.4, "sentiment_score": 7.7, "trust_score": 7.5},
-        {"week": "2026-05-03", "followers": 243000, "engagement_rate": 3.5, "posts_per_week": 5.4, "sentiment_score": 7.7, "trust_score": 7.5},
-        {"week": "2026-05-10", "followers": 244000, "engagement_rate": 3.5, "posts_per_week": 5.4, "sentiment_score": 7.7, "trust_score": 7.5},
-        {"week": "2026-05-17", "followers": 245000, "engagement_rate": 3.5, "posts_per_week": 5.4, "sentiment_score": 7.7, "trust_score": 7.6},
-        {"week": "2026-05-24", "followers": 246000, "engagement_rate": 3.5, "posts_per_week": 5.4, "sentiment_score": 7.7, "trust_score": 7.6},
-        {"week": "2026-06-07", "followers": 247000, "engagement_rate": 3.5, "posts_per_week": 5.4, "sentiment_score": 7.7, "trust_score": 7.6}
+        {
+          "week": "2026-03-14",
+          "followers": 231000,
+          "engagement_rate": 3.4,
+          "posts_per_week": 5.3,
+          "sentiment_score": 7.5,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 233000,
+          "engagement_rate": 3.4,
+          "posts_per_week": 5.3,
+          "sentiment_score": 7.5,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 235000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 5.4,
+          "sentiment_score": 7.6,
+          "trust_score": 7.3
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 237000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 5.4,
+          "sentiment_score": 7.6,
+          "trust_score": 7.3
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 239000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 5.4,
+          "sentiment_score": 7.6,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 241000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 5.4,
+          "sentiment_score": 7.7,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-04-25",
+          "followers": 242000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 5.4,
+          "sentiment_score": 7.7,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 243000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 5.4,
+          "sentiment_score": 7.7,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 244000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 5.4,
+          "sentiment_score": 7.7,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 245000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 5.4,
+          "sentiment_score": 7.7,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 246000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 5.4,
+          "sentiment_score": 7.7,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-06-07",
+          "followers": 247000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 4,
+          "sentiment_score": 7.7,
+          "trust_score": 7.6
+        }
       ],
-      "trend_summary": {"follower_growth_12week": "+16K (6.9%)", "engagement_trend": "stable", "sentiment_trend": "stable_positive", "momentum": "steady_growth"}
+      "trend_summary": {
+        "follower_growth_12week": "+16K (6.9%)",
+        "engagement_trend": "stable",
+        "sentiment_trend": "stable_positive",
+        "momentum": "steady_growth"
+      }
     },
     "Hakkasan Nightclub": {
       "venue_name": "Hakkasan Nightclub",
       "current_followers": 254000,
       "weeks": [
-        {"week": "2026-03-14", "followers": 238000, "engagement_rate": 3.5, "posts_per_week": 5.8, "sentiment_score": 7.6, "trust_score": 7.3},
-        {"week": "2026-03-21", "followers": 240000, "engagement_rate": 3.5, "posts_per_week": 5.8, "sentiment_score": 7.6, "trust_score": 7.3},
-        {"week": "2026-03-28", "followers": 242000, "engagement_rate": 3.6, "posts_per_week": 5.9, "sentiment_score": 7.7, "trust_score": 7.4},
-        {"week": "2026-04-04", "followers": 244000, "engagement_rate": 3.6, "posts_per_week": 5.9, "sentiment_score": 7.7, "trust_score": 7.4},
-        {"week": "2026-04-11", "followers": 246000, "engagement_rate": 3.6, "posts_per_week": 5.9, "sentiment_score": 7.7, "trust_score": 7.5},
-        {"week": "2026-04-18", "followers": 248000, "engagement_rate": 3.6, "posts_per_week": 5.9, "sentiment_score": 7.8, "trust_score": 7.5},
-        {"week": "2026-04-25", "followers": 250000, "engagement_rate": 3.6, "posts_per_week": 5.9, "sentiment_score": 7.8, "trust_score": 7.5},
-        {"week": "2026-05-03", "followers": 251000, "engagement_rate": 3.6, "posts_per_week": 5.9, "sentiment_score": 7.8, "trust_score": 7.6},
-        {"week": "2026-05-10", "followers": 252000, "engagement_rate": 3.6, "posts_per_week": 5.9, "sentiment_score": 7.9, "trust_score": 7.6},
-        {"week": "2026-05-17", "followers": 253000, "engagement_rate": 3.6, "posts_per_week": 5.9, "sentiment_score": 7.9, "trust_score": 7.7},
-        {"week": "2026-05-24", "followers": 253500, "engagement_rate": 3.6, "posts_per_week": 5.9, "sentiment_score": 7.9, "trust_score": 7.7},
-        {"week": "2026-06-07", "followers": 254000, "engagement_rate": 3.6, "posts_per_week": 6.0, "sentiment_score": 7.9, "trust_score": 7.7}
+        {
+          "week": "2026-03-14",
+          "followers": 238000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 5.8,
+          "sentiment_score": 7.6,
+          "trust_score": 7.3
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 240000,
+          "engagement_rate": 3.5,
+          "posts_per_week": 5.8,
+          "sentiment_score": 7.6,
+          "trust_score": 7.3
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 242000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.7,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 244000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.7,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 246000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.7,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 248000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.8,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-04-25",
+          "followers": 250000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.8,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 251000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.8,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 252000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.9,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 253000,
+          "engagement_rate": 3.6,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.9,
+          "trust_score": 7.7
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 253500,
+          "engagement_rate": 3.6,
+          "posts_per_week": 5.9,
+          "sentiment_score": 7.9,
+          "trust_score": 7.7
+        },
+        {
+          "week": "2026-06-07",
+          "followers": 254000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 7.8,
+          "sentiment_score": 7.9,
+          "trust_score": 7.7
+        }
       ],
-      "trend_summary": {"follower_growth_12week": "+16K (6.7%)", "engagement_trend": "stable", "sentiment_trend": "slight_uptrend", "momentum": "consistent_performance"}
+      "trend_summary": {
+        "follower_growth_12week": "+16K (6.7%)",
+        "engagement_trend": "stable",
+        "sentiment_trend": "slight_uptrend",
+        "momentum": "consistent_performance"
+      }
     },
     "Palm Tree Beach Club": {
       "venue_name": "Palm Tree Beach Club",
       "current_followers": 233000,
       "weeks": [
-        {"week": "2026-03-14", "followers": 215000, "engagement_rate": 4.2, "posts_per_week": 1.5, "sentiment_score": 8.1, "trust_score": 7.8},
-        {"week": "2026-03-21", "followers": 217000, "engagement_rate": 4.2, "posts_per_week": 1.5, "sentiment_score": 8.1, "trust_score": 7.8},
-        {"week": "2026-03-28", "followers": 219000, "engagement_rate": 4.2, "posts_per_week": 1.5, "sentiment_score": 8.1, "trust_score": 7.9},
-        {"week": "2026-04-04", "followers": 221000, "engagement_rate": 4.2, "posts_per_week": 1.5, "sentiment_score": 8.2, "trust_score": 7.9},
-        {"week": "2026-04-11", "followers": 223000, "engagement_rate": 4.2, "posts_per_week": 1.5, "sentiment_score": 8.2, "trust_score": 7.9},
-        {"week": "2026-04-18", "followers": 225000, "engagement_rate": 4.2, "posts_per_week": 1.5, "sentiment_score": 8.2, "trust_score": 8.0},
-        {"week": "2026-04-25", "followers": 227000, "engagement_rate": 4.2, "posts_per_week": 1.5, "sentiment_score": 8.3, "trust_score": 8.0},
-        {"week": "2026-05-03", "followers": 228000, "engagement_rate": 4.2, "posts_per_week": 1.5, "sentiment_score": 8.3, "trust_score": 8.0},
-        {"week": "2026-05-10", "followers": 229000, "engagement_rate": 4.3, "posts_per_week": 1.5, "sentiment_score": 8.3, "trust_score": 8.0},
-        {"week": "2026-05-17", "followers": 230000, "engagement_rate": 4.3, "posts_per_week": 1.5, "sentiment_score": 8.3, "trust_score": 8.1},
-        {"week": "2026-05-24", "followers": 231500, "engagement_rate": 4.3, "posts_per_week": 1.5, "sentiment_score": 8.4, "trust_score": 8.1},
-        {"week": "2026-06-07", "followers": 233000, "engagement_rate": 4.3, "posts_per_week": 1.3, "sentiment_score": 8.4, "trust_score": 8.1}
+        {
+          "week": "2026-03-14",
+          "followers": 215000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 1.5,
+          "sentiment_score": 8.1,
+          "trust_score": 7.8
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 217000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 1.5,
+          "sentiment_score": 8.1,
+          "trust_score": 7.8
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 219000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 1.5,
+          "sentiment_score": 8.1,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 221000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 1.5,
+          "sentiment_score": 8.2,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 223000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 1.5,
+          "sentiment_score": 8.2,
+          "trust_score": 7.9
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 225000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 1.5,
+          "sentiment_score": 8.2,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-04-25",
+          "followers": 227000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 1.5,
+          "sentiment_score": 8.3,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 228000,
+          "engagement_rate": 4.2,
+          "posts_per_week": 1.5,
+          "sentiment_score": 8.3,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 229000,
+          "engagement_rate": 4.3,
+          "posts_per_week": 1.5,
+          "sentiment_score": 8.3,
+          "trust_score": 8
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 230000,
+          "engagement_rate": 4.3,
+          "posts_per_week": 1.5,
+          "sentiment_score": 8.3,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 231500,
+          "engagement_rate": 4.3,
+          "posts_per_week": 1.5,
+          "sentiment_score": 8.4,
+          "trust_score": 8.1
+        },
+        {
+          "week": "2026-06-07",
+          "followers": 233000,
+          "engagement_rate": 6.1,
+          "posts_per_week": 1.5,
+          "sentiment_score": 8.4,
+          "trust_score": 8.1
+        }
       ],
-      "trend_summary": {"follower_growth_12week": "+18K (8.4%)", "engagement_trend": "peak_engagement", "sentiment_trend": "strong_uptrend", "momentum": "luxury_positioning_paying_off"}
+      "trend_summary": {
+        "follower_growth_12week": "+18K (8.4%)",
+        "engagement_trend": "peak_engagement",
+        "sentiment_trend": "strong_uptrend",
+        "momentum": "luxury_positioning_paying_off"
+      }
     },
     "Tao Beach": {
       "venue_name": "Tao Beach",
       "current_followers": 95000,
       "weeks": [
-        {"week": "2026-03-14", "followers": 87000, "engagement_rate": 3.7, "posts_per_week": 3.0, "sentiment_score": 7.5, "trust_score": 7.2},
-        {"week": "2026-03-21", "followers": 88000, "engagement_rate": 3.7, "posts_per_week": 3.0, "sentiment_score": 7.5, "trust_score": 7.2},
-        {"week": "2026-03-28", "followers": 88500, "engagement_rate": 3.7, "posts_per_week": 3.0, "sentiment_score": 7.5, "trust_score": 7.3},
-        {"week": "2026-04-04", "followers": 89000, "engagement_rate": 3.7, "posts_per_week": 3.1, "sentiment_score": 7.6, "trust_score": 7.3},
-        {"week": "2026-04-11", "followers": 89500, "engagement_rate": 3.8, "posts_per_week": 3.1, "sentiment_score": 7.6, "trust_score": 7.4},
-        {"week": "2026-04-18", "followers": 90000, "engagement_rate": 3.8, "posts_per_week": 3.1, "sentiment_score": 7.6, "trust_score": 7.4},
-        {"week": "2026-04-25", "followers": 90500, "engagement_rate": 3.8, "posts_per_week": 3.1, "sentiment_score": 7.7, "trust_score": 7.5},
-        {"week": "2026-05-03", "followers": 91000, "engagement_rate": 3.8, "posts_per_week": 3.1, "sentiment_score": 7.7, "trust_score": 7.5},
-        {"week": "2026-05-10", "followers": 92000, "engagement_rate": 3.8, "posts_per_week": 3.1, "sentiment_score": 7.7, "trust_score": 7.6},
-        {"week": "2026-05-17", "followers": 92500, "engagement_rate": 3.8, "posts_per_week": 3.1, "sentiment_score": 7.8, "trust_score": 7.6},
-        {"week": "2026-05-24", "followers": 93500, "engagement_rate": 3.8, "posts_per_week": 3.1, "sentiment_score": 7.8, "trust_score": 7.6},
-        {"week": "2026-06-07", "followers": 95000, "engagement_rate": 3.8, "posts_per_week": 3.1, "sentiment_score": 7.8, "trust_score": 7.6}
+        {
+          "week": "2026-03-14",
+          "followers": 87000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 3,
+          "sentiment_score": 7.5,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-03-21",
+          "followers": 88000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 3,
+          "sentiment_score": 7.5,
+          "trust_score": 7.2
+        },
+        {
+          "week": "2026-03-28",
+          "followers": 88500,
+          "engagement_rate": 3.7,
+          "posts_per_week": 3,
+          "sentiment_score": 7.5,
+          "trust_score": 7.3
+        },
+        {
+          "week": "2026-04-04",
+          "followers": 89000,
+          "engagement_rate": 3.7,
+          "posts_per_week": 3.1,
+          "sentiment_score": 7.6,
+          "trust_score": 7.3
+        },
+        {
+          "week": "2026-04-11",
+          "followers": 89500,
+          "engagement_rate": 3.8,
+          "posts_per_week": 3.1,
+          "sentiment_score": 7.6,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-04-18",
+          "followers": 90000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 3.1,
+          "sentiment_score": 7.6,
+          "trust_score": 7.4
+        },
+        {
+          "week": "2026-04-25",
+          "followers": 90500,
+          "engagement_rate": 3.8,
+          "posts_per_week": 3.1,
+          "sentiment_score": 7.7,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-05-03",
+          "followers": 91000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 3.1,
+          "sentiment_score": 7.7,
+          "trust_score": 7.5
+        },
+        {
+          "week": "2026-05-10",
+          "followers": 92000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 3.1,
+          "sentiment_score": 7.7,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-05-17",
+          "followers": 92500,
+          "engagement_rate": 3.8,
+          "posts_per_week": 3.1,
+          "sentiment_score": 7.8,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-05-24",
+          "followers": 93500,
+          "engagement_rate": 3.8,
+          "posts_per_week": 3.1,
+          "sentiment_score": 7.8,
+          "trust_score": 7.6
+        },
+        {
+          "week": "2026-06-07",
+          "followers": 95000,
+          "engagement_rate": 3.8,
+          "posts_per_week": 3.1,
+          "sentiment_score": 7.8,
+          "trust_score": 7.6
+        }
       ],
-      "trend_summary": {"follower_growth_12week": "+8K (9.2%)", "engagement_trend": "stable", "sentiment_trend": "slight_uptrend", "momentum": "steady_reliable_performer"}
+      "trend_summary": {
+        "follower_growth_12week": "+8K (9.2%)",
+        "engagement_trend": "stable",
+        "sentiment_trend": "slight_uptrend",
+        "momentum": "steady_reliable_performer"
+      }
     }
   }
 }
