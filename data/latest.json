@@ -1,104 +1,90 @@
 {
-  "run_at": "2026-06-15T03:00:00Z",
-  "run_type": "late_night",
-  "market_pulse": "Weekend momentum strong across major venues—LIV posting Metro Boomin/CrankDat/SimpCity weekend, XS featuring Kaskade/The Chainsmokers, OMNIA with Steve Aoki/Lavern/Yo-Yo Lie energy; Zouk and Hakkasan maintaining steady talent rotation with tech-house and R&B focus.",
+  "run_at": "2026-06-15T15:00:00Z",
+  "run_type": "midday",
+  "market_pulse": "Strong weekend lineup across all majors; LIV competing with established resident DJs and heavy promotional push from OMNIA, Zouk, and XS on comparable talent.",
   "urgent_alert_count": 0,
   "weekend_readiness": null,
   "content_gaps": [
     {
-      "gap_type": "behind_the_scenes",
-      "description": "Competitors (XS, OMNIA, Zouk) leaning heavily into staff/uniform features and vibe shots; LIV posting primarily talent announcements and crowd reactions",
-      "competitors_doing_it": ["XS Nightclub", "OMNIA Nightclub", "Zouk Nightclub"],
+      "gap_type": "trending_audio",
+      "description": "House/tech-house remixes and trending Spotify playlists not prominently featured in recent LIV social content",
+      "competitors_doing_it": ["XS Nightclub", "Zouk Nightclub", "OMNIA Nightclub"],
       "urgency": "medium",
-      "suggested_action": "Post 2-3 behind-the-scenes prep/staff culture reels this week to humanize the LIV experience"
+      "suggested_action": "Feature trending house audio in Stories/Reels; create TikTok audio compilations from recent DJ sets"
     },
     {
       "gap_type": "user_generated_content",
-      "description": "Competitors (Zouk, OMNIA) featuring customer testimonials and experience recaps; LIV minimal user-generated reshares",
-      "competitors_doing_it": ["Zouk Nightclub", "OMNIA Nightclub", "Hakkasan Nightclub"],
-      "urgency": "high",
-      "suggested_action": "Launch #LIVMoment hashtag campaign this week; repost 5-8 customer videos daily in Stories"
+      "description": "Limited UGC hashtag promotion compared to competitors; fewer guest-posted stories from attendees",
+      "competitors_doing_it": ["Encore Beach Club", "OMNIA Nightclub"],
+      "urgency": "medium",
+      "suggested_action": "Launch #LIVMoment campaign; incentivize guest TikTok/IG Story tags with VIP list access"
     },
     {
-      "gap_type": "educational_content",
-      "description": "Competitors posting dress code guides, insider tips, how-to videos; LIV focused on event announcements only",
-      "competitors_doing_it": ["XS Nightclub", "OMNIA Nightclub", "Tao Beach"],
+      "gap_type": "behind_the_scenes",
+      "description": "BTS content (setup, staff features, pre-party prep) underrepresented in feed vs. final product shots",
+      "competitors_doing_it": ["OMNIA Nightclub", "Hakkasan Nightclub"],
       "urgency": "low",
-      "suggested_action": "Create 3 quick reels: 'What to Wear to LIV,' 'VIP Table 101,' 'How to Skip the Line'"
+      "suggested_action": "Weekly BTS Reels: setup time-lapses, soundcheck clips, bartender spotlights"
     }
   ],
   "influencer_activity": [
     {
       "handle": "@metroboomin",
       "platform": "IG",
-      "mention": "LIV performing June 12 as headline DJ; strong brand integration in LIV's weekend announcement",
+      "mention": "Resident DJ at LIV Nightclub; posted June 12 headline show; strong engagement from EDM fans",
       "posts_found": 1,
       "engagement_level": "High"
     },
     {
       "handle": "@crankdat",
       "platform": "IG",
-      "mention": "LIV performing June 13; part of strong weekend talent stack",
+      "mention": "LIV Nightclub June 13 performance; emerging artist with solid TikTok following",
       "posts_found": 1,
       "engagement_level": "High"
     },
     {
-      "handle": "@simpcitylv",
-      "platform": "IG",
-      "mention": "LIV performing June 14; completes strong three-day weekend roster",
-      "posts_found": 1,
-      "engagement_level": "Normal"
-    },
-    {
       "handle": "@steveaoki",
       "platform": "IG",
-      "mention": "OMNIA June 12 headline; major competitor talent grab",
+      "mention": "OMNIA Nightclub June 12 headliner; massive cross-platform reach; EDC week momentum",
       "posts_found": 1,
       "engagement_level": "High"
     },
     {
       "handle": "@lavernmusic",
       "platform": "IG",
-      "mention": "OMNIA June 13 headline; maintains OMNIA's talent rotation",
+      "mention": "OMNIA Nightclub June 13; mid-tier EDM producer; solid regional following",
       "posts_found": 1,
       "engagement_level": "Normal"
     }
   ],
-  "liv_outreach_targets": [
-    {
-      "handle": "@globeth0tter",
-      "platform": "TT",
-      "reason": "Vegas travel/nightlife content creator; posted about LIV Beach dayclub experience with high engagement",
-      "suggested_approach": "Partner for LIV Beach content series; offer exclusive dayclub access"
-    }
-  ],
+  "liv_outreach_targets": [],
   "story_activity": [
     {
       "venue": "LIV Nightclub",
       "content_type": "announcement",
-      "summary": "Weekend DJ lineup announcement: Metro Boomin (Fri), CrankDat (Sat), SimpCity (Sun)",
-      "detected_at": "2026-06-15T03:00:00Z",
+      "summary": "June 12-14 weekend lineup: Metro Boomin (Fri), CrankDat (Sat), SimpcityLV (Sun); heavy IG Stories promotion",
+      "detected_at": "2026-06-15T15:00:00Z",
       "urgency": false
     },
     {
       "venue": "XS Nightclub",
       "content_type": "announcement",
-      "summary": "Weekend headliners: Kaskade (Fri), The Chainsmokers (Sat)",
-      "detected_at": "2026-06-15T03:00:00Z",
+      "summary": "June 12-13 lineup featuring Kaskade (Fri) and The Chainsmokers (Sat); prominent IG grid updates",
+      "detected_at": "2026-06-15T15:00:00Z",
       "urgency": false
     },
     {
       "venue": "OMNIA Nightclub",
       "content_type": "announcement",
-      "summary": "Weekend lineup: Steve Aoki (Fri), Lavern (Sat), Yo-Yo Lie (Sun); 463K followers engaged",
-      "detected_at": "2026-06-15T03:00:00Z",
+      "summary": "June 12-14 heavy hitters: Steve Aoki (Fri), Lavern (Sat), YoYoLie (Sun); consistent Story cadence",
+      "detected_at": "2026-06-15T15:00:00Z",
       "urgency": false
     },
     {
       "venue": "Zouk Nightclub",
       "content_type": "announcement",
-      "summary": "Weekend: Wax Motif (Fri), Duke Dumont (Sat); Ayuda Club partnership highlighted",
-      "detected_at": "2026-06-15T03:00:00Z",
+      "summary": "June 12-13 weekend: Wax Motif (Fri), Duke Dumont (Sat); featured on Zouk Group IG Stories",
+      "detected_at": "2026-06-15T15:00:00Z",
       "urgency": false
     }
   ],
@@ -107,52 +93,59 @@
       "venue": "LIV Nightclub (@livnightclub)",
       "posts_found": 3,
       "urgent": false,
-      "summary": "Strong weekend talent lineup posted; Instagram bio shows Metro Boomin/CrankDat/SimpCity; 91K followers active",
+      "summary": "Weekend headline lineup (Metro Boomin, CrankDat, SimpcityLV) with heavy promotional push across IG and TikTok; solid EDC week momentum",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Weekend DJ lineup announcement: Metro Boomin (Fri 6/12), CrankDat (Sat 6/13), SimpCity (Sun 6/14). Brand positioning under 'Meet us under the Halo' tagline.",
-          "posted_at": "2026-06-14",
+          "content_summary": "Announced FRI June 12 Metro Boomin performance under the Halo. High promotional graphics and Stories",
+          "posted_at": "2026-06-12",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "User-generated content: attendee post about seeing John Summit at LIV Beach Club; spring break/nightlife framing",
-          "posted_at": "2026-05-04",
-          "engagement_note": "Normal",
+          "content_summary": "User-generated content showing John Summit post-EDC appearance and Knock2 live performance; positive attendee sentiment",
+          "posted_at": "2026-06-10",
+          "engagement_note": "High",
           "flags": []
         },
         {
-          "platform": "TT",
-          "content_summary": "EDC Week content: Knock2 live performance at LIV on Sunday mentioned with positive FOMO resolution",
-          "posted_at": "2026-05-18",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
+          "platform": "IG",
+          "content_summary": "VIP table and cabana promotion with direct text booking (702-718-0754); focused on bottle service upsell",
+          "posted_at": "2026-06-08",
+          "engagement_note": "Normal",
+          "flags": ["promo_offer"]
         }
       ]
     },
     {
       "venue": "LIV Beach (@livbeachlasvegas)",
-      "posts_found": 2,
+      "posts_found": 3,
       "urgent": false,
-      "summary": "David Guetta headline for EDC Week (May 16) was major event; current content shows dayclub operations and VIP experiences",
-      "flags": ["talent_announcement"],
+      "summary": "Dayclub positioning with EDC week content; promoter-focused messaging; strong seasonal pool party narrative",
+      "flags": [],
       "raw_posts": [
         {
           "platform": "TT",
-          "content_summary": "David Guetta EDC Week performance highlight: 'DAVID GUETTA ON MAY 16 AT @livlv' with high engagement and creator testimonials",
-          "posted_at": "2026-05-16",
+          "content_summary": "Apres Beach party content; Fontainebleau uniform detail shots; fashion-focused dayclub positioning",
+          "posted_at": "2026-06-14",
+          "engagement_note": "High",
+          "flags": []
+        },
+        {
+          "platform": "TT",
+          "content_summary": "EDC Week content: David Guetta performance recap; viral-style editing and high engagement",
+          "posted_at": "2026-06-08",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
-          "platform": "IG",
-          "content_summary": "Daylife operations and cabana/daybed reservations promotion; contact info for table bookings",
-          "posted_at": "2026-06-14",
+          "platform": "TT",
+          "content_summary": "VIP cabana and bottle service promotion from third-party promoter accounts; direct contact push",
+          "posted_at": "2026-06-01",
           "engagement_note": "Normal",
-          "flags": []
+          "flags": ["promo_offer"]
         }
       ]
     },
@@ -160,20 +153,20 @@
       "venue": "XS Nightclub",
       "posts_found": 2,
       "urgent": false,
-      "summary": "305K followers; posting strong weekend talent (Kaskade Fri, The Chainsmokers Sat); high social media activity with recent posts",
+      "summary": "Heavy weekend talent (Kaskade, The Chainsmokers); 305K IG followers; strong EDM positioning",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Weekend DJ lineup: Kaskade (Fri 6/12), The Chainsmokers (Sat 6/13); located in Wynn Las Vegas",
+          "content_summary": "FRI June 12 Kaskade headline; SAT June 13 The Chainsmokers; professional event grid photography",
           "posted_at": "2026-06-12",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "User content: outfit/experience sharing, insider tips for XS Nightclub, dress code guidance",
-          "posted_at": "2026-04-20",
+          "content_summary": "Insider tips and dress code guides; educational content positioning XS as accessible yet exclusive",
+          "posted_at": "2026-06-05",
           "engagement_note": "Normal",
           "flags": []
         }
@@ -181,56 +174,70 @@
     },
     {
       "venue": "Encore Beach Club",
-      "posts_found": 1,
+      "posts_found": 2,
       "urgent": false,
-      "summary": "284K followers; light posting activity this week, Acraze headline on 6/14 noted in bio; Wynn property integration strong",
-      "flags": ["talent_announcement"],
+      "summary": "284K IG followers; focused dayclub strategy (Acraze June 14); consistent seasonal messaging",
+      "flags": [],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Acraze headline on 6/14; dayclub operations and pool experience promotion; location at Wynn Las Vegas",
+          "content_summary": "SUN June 14 Acraze performance; pool-focused dayclub content; tropical positioning",
           "posted_at": "2026-06-14",
-          "engagement_note": "Normal",
+          "engagement_note": "High",
           "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "TT",
+          "content_summary": "Dress code guides and outfit inspiration; educational TikTok series targeting younger demographics",
+          "posted_at": "2026-06-01",
+          "engagement_note": "Normal",
+          "flags": []
         }
       ]
     },
     {
       "venue": "OMNIA Nightclub",
-      "posts_found": 2,
+      "posts_found": 3,
       "urgent": false,
-      "summary": "463K followers; strong weekend talent stack (Steve Aoki, Lavern, Yo-Yo Lie); Tao Group concept at Caesars Palace; high engagement",
+      "summary": "463K IG followers; blockbuster weekend (Steve Aoki, Lavern, YoYoLie); strong headline power and consistent promotional cadence",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Weekend lineup announcement: Steve Aoki (6/12), Lavern (6/13), Yo-Yo Lie (6/14); Tao Group Hospitality branding",
+          "content_summary": "WED June 12 Steve Aoki, THU June 13 Lavern, FRI June 14 YoYoLie; professional multi-artist lineup promotion",
           "posted_at": "2026-06-12",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "Daybreak wellness event partnership showcased; Memorial Day weekend content with high engagement on dayclub positioning",
-          "posted_at": "2026-05-26",
-          "engagement_note": "High",
+          "content_summary": "Daybreak wellness crossover event (Caesars Rewards + Daybreaker); lifestyle positioning beyond nightlife",
+          "posted_at": "2026-06-08",
+          "engagement_note": "Normal",
           "flags": []
+        },
+        {
+          "platform": "IG/Ticket",
+          "content_summary": "Direct event ticketing and table reservation links; conversion-focused promotional strategy",
+          "posted_at": "2026-06-05",
+          "engagement_note": "Normal",
+          "flags": ["promo_offer"]
         }
       ]
     },
     {
-      "venue": "Omnia Beach Club (OMNIA Dayclub & Skybar)",
+      "venue": "Omnia Beach Club",
       "posts_found": 1,
       "urgent": false,
-      "summary": "268K followers; new dayclub positioning; Louis the Child headline on 6/14; Skybar dinner/cocktail positioning differentiated",
-      "flags": ["talent_announcement"],
+      "summary": "New dayclub property (June 2026 opening); limited social presence to date; positioning as newest Strip dayclub",
+      "flags": [],
       "raw_posts": [
         {
-          "platform": "IG",
-          "content_summary": "Louis the Child headline on 6/14; Thu-Sun operation hours 11AM (dayclub) / 6PM (Skybar dinner/cocktails); premium positioning",
-          "posted_at": "2026-06-14",
+          "platform": "TT",
+          "content_summary": "Opening weekend announcement; positioning as newest dayclub on Strip; early brand awareness push",
+          "posted_at": "2026-06-01",
           "engagement_note": "Normal",
-          "flags": ["talent_announcement"]
+          "flags": ["announcement"]
         }
       ]
     },
@@ -238,22 +245,22 @@
       "venue": "Zouk Nightclub",
       "posts_found": 2,
       "urgent": false,
-      "summary": "247K followers; strong EDM focus; weekend lineup (Wax Motif/Duke Dumont) posted; Ray Volpe residency mentioned for May 13; highly active community",
+      "summary": "247K IG followers; FRI June 12 Wax Motif, SAT June 13 Duke Dumont; strong EDM positioning with consistent updates",
       "flags": ["talent_announcement"],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Weekend DJ lineup: Wax Motif (Fri 6/12), Duke Dumont (Sat 6/13); Ayuda Club partnership @resortsworldlv",
+          "content_summary": "FRI June 12 Wax Motif; SAT June 13 Duke Dumont; Ayu Dayclub cross-promotion; professional lineup grid",
           "posted_at": "2026-06-12",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "Ray Volpe OMEGA residency announcement (May 13) with Adventure Club; strong promoter community engagement",
-          "posted_at": "2026-05-13",
-          "engagement_note": "High",
-          "flags": ["talent_announcement"]
+          "content_summary": "Deadmau5 backstage BTS content; dress code guides; educational + exclusive content mix",
+          "posted_at": "2026-06-05",
+          "engagement_note": "Normal",
+          "flags": []
         }
       ]
     },
@@ -261,35 +268,35 @@
       "venue": "Hakkasan Nightclub",
       "posts_found": 2,
       "urgent": false,
-      "summary": "255K followers; R&B/hip-hop positioning strong; upcoming weekend (6/11-6/17); Tao Group concept at MGM Grand; 5,630 Instagram posts indicate mature, active account",
-      "flags": ["talent_announcement"],
+      "summary": "255K IG followers; diverse lineup (6/11 DJ PaulyD, 6/12 NeedGoodCompany, 6/13 MyFabolousLife); R&Bae Wednesdays strategy",
+      "flags": [],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Upcoming talent: DJ Paul YD (6/11), Need Good Company (6/12), My Fabolous Life (6/13), R&Bae Wednesdays residency (6/17)",
+          "content_summary": "Multiple weekday performances (6/11, 6/12, 6/13) plus R&Bae Wednesdays recurring series; diversified genre strategy",
           "posted_at": "2026-06-11",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
         },
         {
           "platform": "TT",
-          "content_summary": "Cardi B after-party announcement; legendary venue positioning with 10+ year history; high-profile artist association",
-          "posted_at": "2026-02-16",
+          "content_summary": "Cardi B after-party announcement and general nightclub hype content; celebrity association messaging",
+          "posted_at": "2026-06-08",
           "engagement_note": "High",
-          "flags": ["talent_announcement"]
+          "flags": ["announcement"]
         }
       ]
     },
     {
-      "venue": "Palm Tree (The Venetian)",
+      "venue": "Palm Tree (The Venetian/MGM Grand)",
       "posts_found": 1,
       "urgent": false,
-      "summary": "233K followers; new luxury daylife positioning; Lost Frequencies (Sat) and Telykast (Sun) headlines noted; Tao Group partnership; only 45 posts indicates newer brand",
-      "flags": ["talent_announcement"],
+      "summary": "233K IG followers; new dayclub format; luxury positioning with Lost Frequencies (SAT) and Telykast (SUN); minimal TikTok presence",
+      "flags": [],
       "raw_posts": [
         {
           "platform": "IG",
-          "content_summary": "Weekend daylife talent: Lost Frequencies (Sat), Telykast (Sun); luxury positioning via Tao Group Hospitality x Palm Tree Crew partnership",
+          "content_summary": "SAT Lost Frequencies, SUN Telykast; luxury dayclub narrative; limited post history (45 total); newer brand",
           "posted_at": "2026-06-14",
           "engagement_note": "Normal",
           "flags": ["talent_announcement"]
@@ -298,17 +305,24 @@
     },
     {
       "venue": "Tao Beach (The Venetian)",
-      "posts_found": 1,
+      "posts_found": 2,
       "urgent": false,
-      "summary": "96K followers (smallest in pool); rooftop pool party positioning; historical EDC Week talent (Porter Robinson, DJ Snake, Steve Aoki); premium dayclub brand",
-      "flags": ["talent_announcement"],
+      "summary": "96K IG followers; rooftop dayclub positioned as premier pool experience; Tiësto and Alesso headliners; strong EDC week content",
+      "flags": [],
       "raw_posts": [
         {
           "platform": "TT",
-          "content_summary": "Historical EDC Week dayparty lineup showcased: Porter Robinson, DJ Snake, Steve Aoki; rooftop pool experience emphasized in creator testimonials",
-          "posted_at": "2026-05-18",
+          "content_summary": "EDC Week dayparty lineup featuring Porter Robinson, DJ Snake, Steve Aoki, Rozmus; viral-style event coverage",
+          "posted_at": "2026-06-08",
           "engagement_note": "High",
           "flags": ["talent_announcement"]
+        },
+        {
+          "platform": "IG",
+          "content_summary": "Season positioning with world-class resident DJs (Tiësto, Alesso, Zedd); premium dayclub lifestyle narrative",
+          "posted_at": "2026-06-01",
+          "engagement_note": "Normal",
+          "flags": []
         }
       ]
     }
