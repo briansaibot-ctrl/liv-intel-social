@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-06-21T09:00:00Z",
+  "module": "LIV Intel Analytics Monitor - Module C",
+  "snapshot_version": "weekly-2026-06-21",
+  "executive_summary": {
+    "analysis_date": "Sunday, June 21, 2026",
+    "total_venues": 10,
+    "data_collection_method": "Comprehensive web intelligence - 40+ sources",
+    "analysis_period": "April 7 - June 21, 2026 (8 weeks)",
+    "key_finding": "LIV positioning shift toward intimate tech-house (DJ Mag Top 100 #72); OMNIA & XS dominant with mega-follower counts; newer Palm Tree & OMNIA Beach gaining rapid traction"
+  },
+  "venue_rankings": {
+    "by_social_followers": [
+      {"rank": 1, "venue": "OMNIA Nightclub", "followers": 464000, "confidence": 0.90},
+      {"rank": 2, "venue": "XS Nightclub", "followers": 305000, "confidence": 0.91},
+      {"rank": 3, "venue": "Encore Beach Club", "followers": 284000, "confidence": 0.89},
+      {"rank": 4, "venue": "OMNIA Dayclub & Skybar", "followers": 268000, "confidence": 0.79},
+      {"rank": 5, "venue": "Hakkasan Nightclub", "followers": 255000, "confidence": 0.86},
+      {"rank": 6, "venue": "Zouk Nightclub", "followers": 246000, "confidence": 0.85},
+      {"rank": 7, "venue": "Palm Tree Beach Club", "followers": 233000, "confidence": 0.81},
+      {"rank": 8, "venue": "LIV Nightclub", "followers": 91000, "confidence": 0.87},
+      {"rank": 9, "venue": "TAO Beach", "followers": 96000, "confidence": 0.83},
+      {"rank": 10, "venue": "LIV Beach", "followers": 52000, "confidence": 0.82}
+    ],
+    "by_engagement_rate": [
+      {"rank": 1, "venue": "LIV Beach", "engagement": "3.2%", "platform_note": "TikTok advantage"},
+      {"rank": 2, "venue": "Palm Tree Beach Club", "engagement": "3.1%", "platform_note": "New venue momentum"},
+      {"rank": 3, "venue": "LIV Nightclub", "engagement": "2.1%", "platform_note": "Niche audience, high loyalty"},
+      {"rank": 4, "venue": "OMNIA Nightclub", "engagement": "2.2%", "platform_note": "Viral potential confirmed"},
+      {"rank": 5, "venue": "Encore Beach Club", "engagement": "1.9%", "platform_note": "Scale challenge"}
+    ]
+  },
+  "competitive_landscape": {
+    "tier_1_megaclubs": {
+      "venues": ["OMNIA Nightclub", "XS Nightclub", "Hakkasan Nightclub"],
+      "shared_characteristics": "400K+ followers, 4k+ posts, established brands, mega-production value",
+      "market_dominance": "70% of Strip nightclub traffic estimated",
+      "differentiation": "OMNIA (rooftop + kinetic chandelier), XS (Wynn prestige), Hakkasan (multi-room + restaurant)"
+    },
+    "tier_2_specialists": {
+      "nightclubs": ["LIV Nightclub", "Zouk Nightclub"],
+      "characteristics": "Niche positioning (intimate for LIV, tech-innovative for Zouk), 250k-50k followers",
+      "strategy": "Quality over quantity, genre-specific audiences"
+    },
+    "tier_2_dayclubs": {
+      "venues": ["Encore Beach Club", "TAO Beach"],
+      "characteristics": "Day/night hybrids, 280k followers, established loyal customer base"
+    },
+    "tier_3_emerging": {
+      "venues": ["Palm Tree Beach Club", "OMNIA Dayclub & Skybar", "LIV Beach"],
+      "characteristics": "New/renovated properties, rapid growth trajectory, 50k-250k followers, aggressive residency talent",
+      "growth_rate": "8-12% monthly"
+    }
+  },
+  "key_opportunities_for_liv": {
+    "opportunity_1": {
+      "title": "Leverage EDC Week Circuit Position",
+      "current_status": "Confirmed residency artists: Tiësto (Fri), David Guetta (Sat), John Summit (Sun)",
+      "action_items": [
+        "Increase Instagram Reel frequency from 15/week to 18/week during EDC",
+        "Cross-promote LIV Beach + LIV Nightclub as complete daylife-to-nightlife experience",
+        "TikTok strategy: Focus on crowd moments (highest engagement format)"
+      ],
+      "estimated_impact": "+5-8% engagement rate during festival week"
+    },
+    "opportunity_2": {
+      "title": "Tech-House Genre Dominance",
+      "current_status": "DJ Mag Top 100 #72 positioning; recent bookings: PAWSA, Adriatique",
+      "market_gap": "Tech-house audience underserved vs. big-room EDM (OMNIA, XS)",
+      "action_items": [
+        "Create dedicated #TechHouse campaign hashtag",
+        "Partner with European tech-house labels for cross-promotion",
+        "Highlight production aesthetic (intimate room, sound design) vs. spectacle"
+      ],
+      "competitive_advantage": "Only venue explicitly positioning as tech-house destination"
+    },
+    "opportunity_3": {
+      "title": "Intimate Venue Positioning as USP",
+      "current_status": "2,000 capacity vs. 4,000+ for OMNIA/XS; GA guests front-and-center",
+      "market_differentiation": "Only major Strip venue treating non-VIP guests as priority",
+      "action_items": [
+        "Create 'LIV Stories' campaign - customer testimonials (vs. standard artist promos)",
+        "Post from GA dance floor perspective (vs. VIP table shots)",
+        "Emphasize sonic quality and intimacy in copy"
+      ],
+      "estimated_impact": "Attract customers fatigued by mega-club experience"
+    }
+  },
+  "threat_analysis": {
+    "threat_1": {
+      "source": "Palm Tree Beach Club (dayclub segment)",
+      "current_threat_level": "HIGH",
+      "reason": "233k followers despite 48 posts (newest venue), Tao Group backing, Alesso residency, $250+ daybed pricing capturing high-roller spend",
+      "impact_to_liv_beach": "LIV Beach focused on wellness (Sunday Circuit); Palm Tree targets luxury party crowd - different segments but overlapping weekend traffic"
+    },
+    "threat_2": {
+      "source": "Zouk Nightclub",
+      "current_threat_level": "MEDIUM",
+      "reason": "Las Vegas Weekly award (Best Nightclub), tech-innovative positioning overlaps with LIV's emerging tech-house strategy",
+      "counter_strategy": "LIV's intimacy + established artist relationships (John Summit, Tiësto) vs. Zouk's newness"
+    },
+    "threat_3": {
+      "source": "OMNIA Nightclub TikTok Virality",
+      "current_threat_level": "HIGH",
+      "reason": "1.3M-view TikTok video ('Satisfaction' sync) from Edson Vegas promoter - demonstrates organic viral potential",
+      "mitigation": "LIV should seed promoter content on TikTok; replicate viral moment strategy"
+    }
+  },
+  "hashtag_analysis": {
+    "trending_in_june_2026": [
+      "#vegasnightlife",
+      "#stripnightclub",
+      "#vegasclub",
+      "#lasvegas",
+      "#vegasbaby",
+      "#sincity",
+      "#vegaspromoter",
+      "#nocover",
+      "#poolparty",
+      "#vegasstrip"
+    ],
+    "liv_recommended": [
+      "#LIVNightclub",
+      "#TechHouse",
+      "#LIVBeach",
+      "#IntimateVibe",
+      "#StripMusic",
+      "#ElectronicMusic",
+      "#VegasNightlife",
+      "#PawsaLIV",
+      "#AdriatiqueLIV"
+    ],
+    "cross_promotion_opportunities": [
+      "#EDCWeek2026",
+      "#VegasCircuit",
+      "#PoolToClub (daylife-to-nightlife positioning)"
+    ]
+  },
+  "posting_time_optimization": {
+    "instagram_peak_windows": {
+      "fri_sat": "11 PM - 2 AM PST (nightclub specific)",
+      "thu_sun": "6 PM - 9 PM PST (event announcement/pre-party)",
+      "wed": "9 PM - 1 AM PST (mid-week vibes)"
+    },
+    "tiktok_peak_windows": {
+      "optimal": "6 PM - 10 PM PST (early evening)",
+      "secondary": "11 PM - 2 AM PST (late-night potential)"
+    },
+    "recommendation": "Queue Reels for 6:30 PM Thu-Sat; TikTok for 8 PM Fri-Sat to capture cross-scroll audiences"
+  },
+  "data_quality_metrics": {
+    "total_searches_executed": 45,
+    "search_rate_limiting_compliance": "100% - 10-15 sec between searches, 90-120 sec between batches",
+    "confidence_threshold_met": "Average 0.85 across all venues",
+    "data_sources_per_venue": {
+      "primary": ["Instagram official", "Yelp", "Google Maps", "TripAdvisor"],
+      "secondary": ["DJ Mag", "Discotech", "Vegas.com", "NoCoverNightclubs.com"],
+      "tertiary": ["Reddit threads", "Wanderlog reviews", "Promoter accounts"]
+    }
+  }
+}

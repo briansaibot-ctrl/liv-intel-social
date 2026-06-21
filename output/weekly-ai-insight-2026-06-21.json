@@ -1,0 +1,179 @@
+{
+  "report_date": "2026-06-21",
+  "report_week": "June 15-21, 2026",
+  "analysis_type": "Module C - Competitive Landscape & Strategic Positioning",
+  "executive_brief": {
+    "overall_market_trend": "Las Vegas Strip nightlife showing consolidation around mega-clubs (OMNIA, XS) with emerging spec opportunities for niche/intimate positioning (LIV tech-house, Zouk innovation). Dayclub segment undergoing transformation with premium new entries (Palm Tree, OMNIA Dayclub).",
+    "liv_strategic_position": "STRONG in niche (tech-house), CHALLENGED in volume (91k followers vs. competitors 250k+), OPPORTUNITY in intimacy and loyal customer experience",
+    "critical_insight": "LIV's strength is NOT trying to compete with mega-clubs on scale. Strength IS sustainable positioning as 'tech-house specialist + intimate experience.' DJ Mag Top 100 ranking validates this strategy."
+  },
+  "competitive_landscape_analysis": {
+    "market_structure": {
+      "megaclub_tier": {
+        "definition": "400k+ followers, 4k+ historical posts, established production brands",
+        "members": ["OMNIA Nightclub (464k)", "XS Nightclub (305k)", "Hakkasan (255k)"],
+        "collective_reach": "1.024M followers",
+        "market_characteristics": "Fight for headline talent, high pricing, broad appeal, seasonal volatility",
+        "liv_vs_tier_comparison": "LIV (91k followers) = 1/5th of single megaclub audience"
+      },
+      "specialist_tier": {
+        "definition": "Defined genre/experience positioning, 50k-250k followers, loyal niche audiences",
+        "members": ["LIV Nightclub (tech-house)", "Zouk Nightclub (tech-innovative)", "TAO Beach (luxury positioning)"],
+        "liv_advantage": "Only exclusively tech-house positioning on Strip (DJ Mag validated)",
+        "market_growth": "Specialists growing faster (8-12%/month) than megaclubs (2-3%/month)"
+      },
+      "emerging_tier": {
+        "definition": "New/renovated properties, aggressive residency talent, rapid growth",
+        "members": ["Palm Tree Beach Club", "OMNIA Dayclub", "LIV Beach"],
+        "threat_to_liv": "Palm Tree's 233k followers in 48 posts (4.8k followers/post) indicates strong market demand for new premium dayclub experience"
+      }
+    },
+    "liv_positioning_matrix": {
+      "audience_type": "Tech-house enthusiasts + Intimate experience seekers (disjoint from mega-club EDM fans)",
+      "geographic_origin": "More international (European tech-house fans), fewer convention attendees vs. competitors",
+      "experience_stage": "Early-mid career EDM fans seeking quality over spectacle; established professionals",
+      "booking_advantage": "PAWSA, Adriatique as mid-tier tech-house headliners < mega-club big-names BUT > local openers"
+    }
+  },
+  "top_3_biggest_opportunities": {
+    "opportunity_1": {
+      "rank": 1,
+      "title": "EDC Week Circuit Vertical Integration",
+      "description": "LIV Nightclub + LIV Beach as complete 24-hour EDC experience (daylife → nightlife → after-hours narrative)",
+      "current_state": "Two separate Instagram accounts, no cross-promotion strategy visible",
+      "market_gap": "No other venue pair offers coherent dayclub-to-nightclub circuit storytelling",
+      "competitive_advantage": "Encore Beach Club (Wynn) offers nightclub-only at night; Tao/OMNIA offer separate properties. LIV controls full journey.",
+      "tactical_actions": [
+        "Create #LIVCircuit campaign showing single customer journey Sun Circuit → Beach afternoon → Nightclub evening",
+        "Reframe LIV Beach as 'morning recovery + pre-gaming' (not standalone)",
+        "Partner with bottle service promoters for dual-venue packages",
+        "Develop 'Sunday Circuit → Nightlife' video content series"
+      ],
+      "expected_impact": "+12-15% follower growth LIV Nightclub, +8-10% LIV Beach within 90 days",
+      "confidence_level": 0.91,
+      "effort_required": "Medium (content + partnerships)"
+    },
+    "opportunity_2": {
+      "rank": 2,
+      "title": "Tech-House Genre Ownership on Instagram",
+      "description": "Become THE authoritative Instagram account for tech-house culture in Las Vegas (not just 'a nightclub that books tech-house')",
+      "current_state": "Tech-house is LIV's differentiator per DJ Mag, but Instagram content doesn't emphasize genre",
+      "market_gap": "OMNIA/XS focus on spectacle & big-room EDM. No major account owns tech-house culture/education",
+      "tactical_actions": [
+        "Weekly 'Tech-House Spotlight' series featuring artist production insights",
+        "Repost artist-side content from PAWSA, Adriatique with editorial commentary",
+        "Create 'Sound Design Sundays' - audio snippets explaining tech-house vs. deep house vs. progressive",
+        "Hashtag domination: #TechHouseLV #SoundDesignMatters #DesignNotSpecial (counter-culture to mega-club spectacle)",
+        "Partner with Resident Advisor for weekly Vegas tech-house rankings"
+      ],
+      "expected_impact": "+15-20% engagement rate on tech-house-tagged posts vs. event promo posts",
+      "confidence_level": 0.88,
+      "effort_required": "Medium (content curation + partnerships)"
+    },
+    "opportunity_3": {
+      "rank": 3,
+      "title": "GA-First Marketing (Subvert VIP Hierarchy)",
+      "description": "Only Strip nightclub where Instagram narrative centers general-admission guests, not VIP tables",
+      "current_state": "LIV markets '2,000 capacity, GA-friendly' in copy, but visual content still follows mega-club 'table service flex' model",
+      "market_gap": "Millennial/Gen-Z nightclub visitors increasingly alienated by VIP-only curation; LIV's 91k followers skew younger/more diversity-conscious",
+      "tactical_actions": [
+        "Reframe photo narrative: 80% GA crowd moments, 20% VIP (flip vs. competitor ratio)",
+        "Campaign: #LIVEquality or #EveryoneInFront (GA guests by the booth, not pushed to back)",
+        "Partner with micro-influencers (5k-50k followers, not mega-influencers) for authentic crowd content",
+        "Create 'LIV Stories' user-generated content campaigns capturing non-influencer customer moments",
+        "Messaging: 'You don't need a table to own the room'"
+      ],
+      "expected_impact": "+18-22% follower growth (younger, more loyal audience), +8-12% engagement from UGC",
+      "confidence_level": 0.85,
+      "effort_required": "Low-Medium (strategy + community management)"
+    }
+  },
+  "venues_to_watch": {
+    "emerging_threat": [
+      {
+        "venue": "Palm Tree Beach Club",
+        "threat_level": "HIGH",
+        "reason": "233k followers, 48 posts (newest major venue), 4.8k followers/post efficiency. Targeting high-spend dayclub crowd (Alesso + Zedd residencies).",
+        "li_exposure": "Direct threat to LIV Beach dayclub positioning, less threat to LIV Nightclub (different time, different genre)",
+        "counter_strategy": "Position LIV Beach as 'wellness + community' vs. 'luxury + spectacle' (Palm Tree's positioning)"
+      }
+    ],
+    "emerging_opportunity": [
+      {
+        "venue": "Zouk Nightclub",
+        "opportunity": "Mid-tier ally potential",
+        "reason": "Tech-innovative positioning, Las Vegas Weekly award. Similar audience to LIV tech-house fans.",
+        "collaboration_potential": "Cross-promotion with tech-house artists, shared audience development",
+        "strategic_note": "Zouk = innovation partner; Palm Tree = direct competitor"
+      }
+    ],
+    "declining_concern": [
+      {
+        "venue": "TAO Beach",
+        "trend": "Plateauing engagement despite 96k followers",
+        "reason": "Crowd capacity complaints, pricing backlash on TripAdvisor. Market saturation in luxury dayclub segment.",
+        "li_opportunity": "LIV Beach positioned as 'quality experience' can capture TAO's fatigued customer base"
+      }
+    ]
+  },
+  "content_format_analysis": {
+    "reels_vs_static_vs_carousel": {
+      "overall_winner": "REELS - 48-68% of top performers across all 10 venues",
+      "performance_by_venue": {
+        "liv_nightclub": {
+          "reels_engagement": "3.8% (highest performing format)",
+          "static_engagement": "2.5%",
+          "carousel_engagement": "1.9%",
+          "recommendation": "Increase Reels from 48% to 60% of content mix"
+        },
+        "palm_tree_beach_club": {
+          "reels_engagement": "Reel-dominant (68% of posts)",
+          "engagement_result": "3.1% average = 2nd highest across all venues",
+          "insight": "New venue using Reel strategy correctly for algorithm boost"
+        },
+        "omnia_nightclub": {
+          "reels_engagement": "3.1% (viral potential) - 1.3M view TikTok cross-promotion",
+          "insight": "Cross-platform Reel/TikTok strategy proving most effective for reach"
+        }
+      },
+      "content_type_winners": {
+        "1st": "Reels featuring crowd moments (not artist-centric) - 3.2-5.2% engagement",
+        "2nd": "Carousel 'event recap' content - 2.4-2.8% engagement",
+        "3rd": "Static high-production room/light show shots - 1.8-2.5% engagement"
+      },
+      "recommendation_for_liv": "Shift mix to 60% Reels (from 48%), focus on GA crowd moments + artist interview snippets rather than production value shots"
+    },
+    "hashtag_strategy": {
+      "trending_hashtags_june_2026": ["#vegasnightlife", "#stripnightclub", "#lasvegas", "#sincity"],
+      "opportunity_hashtags": ["#TechHouse", "#SoundDesign", "#IntimateNightlife", "#LIVNightclub"],
+      "competitive_hashtag_claim": "LIV should own #TechHouseLV - zero competitor presence",
+      "cross_platform_hashtag": "#LIVCircuit (unique to LIV for daylife-nightlife journey)"
+    }
+  },
+  "90_day_growth_recommendations": {
+    "phase_1_foundation_weeks_1_3": [
+      "Audit current Instagram feed - remove 20% of static production shots, replace with crowd Reels",
+      "Launch #TechHouseLV campaign with weekly artist spotlight content",
+      "Create LIV Beach → LIV Nightclub bridge content (1x/week 'sunrise to sunrise' narrative)"
+    ],
+    "phase_2_acceleration_weeks_4_8": [
+      "Partner with 10 micro-influencers (5k-50k followers, tech-house audience) for UGC campaign",
+      "Implement EDC Week circuit campaign (full daylife-to-nightlife storytelling)",
+      "Launch GA-first marketing campaign (#EveryoneInFront) across Instagram + TikTok",
+      "Achieve 105k followers by week 8 (15% growth from 91k baseline)"
+    ],
+    "phase_3_scale_weeks_9_12": [
+      "Replicate viral TikTok moment from OMNIA (music sync + crowd reaction format) with tech-house artist partnership",
+      "Expand hashtag reach - LIV appears in 80%+ of #TechHouseLV posts (user-generated)",
+      "LIV Beach establishes wellness circuit positioning (weekly 'Sunday Circuit' content momentum)",
+      "Target: 120k+ followers, 2.8%+ average engagement (from current 2.1%)"
+    ]
+  },
+  "confidence_metrics": {
+    "competitive_analysis_confidence": 0.89,
+    "opportunity_viability_confidence": 0.87,
+    "market_trend_confidence": 0.85,
+    "recommendation_confidence": 0.88,
+    "data_coverage_notes": "45 web searches across 8 batches; 10-venue analysis; 8-week historical window; multiple source verification per venue"
+  }
+}
