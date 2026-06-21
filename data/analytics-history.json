@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T16:04:46.675Z",
+  "last_updated": "2026-06-21T09:12:33.749432",
   "weeks_available": 12,
   "analysis_window": "2026-03-14 to 2026-06-07",
   "venues": {
@@ -7,14 +7,6 @@
       "venue_name": "LIV Nightclub",
       "current_followers": 91000,
       "weeks": [
-        {
-          "week": "2026-03-21",
-          "followers": 84000,
-          "engagement_rate": 3.2,
-          "posts_per_week": 4.4,
-          "sentiment_score": 7.4,
-          "trust_score": 6.7
-        },
         {
           "week": "2026-03-28",
           "followers": 85000,
@@ -102,6 +94,14 @@
           "posts_per_week": 4.2,
           "sentiment_score": 8.216575427239913,
           "trust_score": 7.89738801332373
+        },
+        {
+          "week": "2026-06-21",
+          "followers": 50000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 3.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.2
         }
       ],
       "trend_summary": {
@@ -115,14 +115,6 @@
       "venue_name": "LIV Beach",
       "current_followers": 42000,
       "weeks": [
-        {
-          "week": "2026-03-21",
-          "followers": 69000,
-          "engagement_rate": 3.6,
-          "posts_per_week": 3.9,
-          "sentiment_score": 7.4,
-          "trust_score": 7.1
-        },
         {
           "week": "2026-03-28",
           "followers": 70000,
@@ -210,6 +202,14 @@
           "posts_per_week": 3.1,
           "sentiment_score": 7.503405430392383,
           "trust_score": 7.838382387424858
+        },
+        {
+          "week": "2026-06-21",
+          "followers": 50000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 3.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.2
         }
       ],
       "trend_summary": {
@@ -223,14 +223,6 @@
       "venue_name": "XS Nightclub",
       "current_followers": 305000,
       "weeks": [
-        {
-          "week": "2026-03-21",
-          "followers": 288000,
-          "engagement_rate": 3.7,
-          "posts_per_week": 6.2,
-          "sentiment_score": 7.8,
-          "trust_score": 7.5
-        },
         {
           "week": "2026-03-28",
           "followers": 291000,
@@ -318,6 +310,14 @@
           "posts_per_week": 5.8,
           "sentiment_score": 7.742704201662265,
           "trust_score": 7.70287577595167
+        },
+        {
+          "week": "2026-06-21",
+          "followers": 50000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 3.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.2
         }
       ],
       "trend_summary": {
@@ -331,14 +331,6 @@
       "venue_name": "Encore Beach Club",
       "current_followers": 284000,
       "weeks": [
-        {
-          "week": "2026-03-21",
-          "followers": 273000,
-          "engagement_rate": 3.8,
-          "posts_per_week": 5.8,
-          "sentiment_score": 7.8,
-          "trust_score": 7.5
-        },
         {
           "week": "2026-03-28",
           "followers": 276000,
@@ -426,6 +418,14 @@
           "posts_per_week": 5.4,
           "sentiment_score": 7.937282488797438,
           "trust_score": 7.783514151601311
+        },
+        {
+          "week": "2026-06-21",
+          "followers": 50000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 3.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.2
         }
       ],
       "trend_summary": {
@@ -439,14 +439,6 @@
       "venue_name": "OMNIA Nightclub",
       "current_followers": 463000,
       "weeks": [
-        {
-          "week": "2026-03-21",
-          "followers": 440000,
-          "engagement_rate": 3.7,
-          "posts_per_week": 5.5,
-          "sentiment_score": 7.7,
-          "trust_score": 7.4
-        },
         {
           "week": "2026-03-28",
           "followers": 443000,
@@ -534,6 +526,14 @@
           "posts_per_week": 3.1,
           "sentiment_score": 7.583370589742182,
           "trust_score": 8.375862686885766
+        },
+        {
+          "week": "2026-06-21",
+          "followers": 50000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 3.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.2
         }
       ],
       "trend_summary": {
@@ -547,14 +547,6 @@
       "venue_name": "Omnia Beach Club",
       "current_followers": 267000,
       "weeks": [
-        {
-          "week": "2026-03-14",
-          "followers": 235000,
-          "engagement_rate": 4,
-          "posts_per_week": 2.2,
-          "sentiment_score": 8,
-          "trust_score": 7.8
-        },
         {
           "week": "2026-03-21",
           "followers": 240000,
@@ -642,6 +634,14 @@
           "posts_per_week": 2.1,
           "sentiment_score": 8.2,
           "trust_score": 8.1
+        },
+        {
+          "week": "2026-06-21",
+          "followers": 50000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 3.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.2
         }
       ],
       "trend_summary": {
@@ -655,14 +655,6 @@
       "venue_name": "Zouk Nightclub",
       "current_followers": 247000,
       "weeks": [
-        {
-          "week": "2026-03-21",
-          "followers": 233000,
-          "engagement_rate": 3.4,
-          "posts_per_week": 5.3,
-          "sentiment_score": 7.5,
-          "trust_score": 7.2
-        },
         {
           "week": "2026-03-28",
           "followers": 235000,
@@ -750,6 +742,14 @@
           "posts_per_week": 4,
           "sentiment_score": 7.793746175702175,
           "trust_score": 7.589371475383659
+        },
+        {
+          "week": "2026-06-21",
+          "followers": 50000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 3.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.2
         }
       ],
       "trend_summary": {
@@ -763,14 +763,6 @@
       "venue_name": "Hakkasan Nightclub",
       "current_followers": 255000,
       "weeks": [
-        {
-          "week": "2026-03-21",
-          "followers": 240000,
-          "engagement_rate": 3.5,
-          "posts_per_week": 5.8,
-          "sentiment_score": 7.6,
-          "trust_score": 7.3
-        },
         {
           "week": "2026-03-28",
           "followers": 242000,
@@ -858,6 +850,14 @@
           "posts_per_week": 7.8,
           "sentiment_score": 8.194143524569332,
           "trust_score": 7.762130605189221
+        },
+        {
+          "week": "2026-06-21",
+          "followers": 50000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 3.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.2
         }
       ],
       "trend_summary": {
@@ -980,14 +980,6 @@
       "current_followers": 95000,
       "weeks": [
         {
-          "week": "2026-03-14",
-          "followers": 87000,
-          "engagement_rate": 3.7,
-          "posts_per_week": 3,
-          "sentiment_score": 7.5,
-          "trust_score": 7.2
-        },
-        {
           "week": "2026-03-21",
           "followers": 88000,
           "engagement_rate": 3.7,
@@ -1074,6 +1066,14 @@
           "posts_per_week": 3.1,
           "sentiment_score": 7.8,
           "trust_score": 7.6
+        },
+        {
+          "week": "2026-06-21",
+          "followers": 50000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 3.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.2
         }
       ],
       "trend_summary": {
@@ -1110,6 +1110,20 @@
         }
       ],
       "current_followers": 96000
+    },
+    "Palm Tree": {
+      "venue_name": "Palm Tree",
+      "current_followers": 50000,
+      "weeks": [
+        {
+          "week": "2026-06-21",
+          "followers": 50000,
+          "engagement_rate": 3.2,
+          "posts_per_week": 3.5,
+          "sentiment_score": 7.6,
+          "trust_score": 7.2
+        }
+      ]
     }
   }
 }
