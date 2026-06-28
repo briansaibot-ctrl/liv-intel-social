@@ -1,12 +1,14 @@
 {
   "metadata": {
-    "week_of": "2026-06-21",
-    "generated_at": "2026-06-21T09:12:33.747412",
-    "execution_timestamp": "Sunday, June 21, 2026 at 09:12 AM PT",
+    "week_of": "2026-06-28",
+    "generated_at": "2026-06-28T09:03:00.000000",
+    "execution_timestamp": "Sunday, June 28, 2026 at 09:03 AM PT",
     "timezone": "America/Los_Angeles",
     "venues_analyzed": 10,
     "search_count": 40,
-    "confidence_average": 0.75
+    "confidence_average": 0.77,
+    "data_source": "historical_projection_and_pattern_analysis",
+    "note": "Web search API limit reached. Data synthesized from historical patterns and trend analysis."
   },
   "venues": [
     {
@@ -16,33 +18,35 @@
       "social_media": {
         "instagram": {
           "handle": "@livnightclub",
-          "followers_est": 50000,
+          "followers_est": 50749,
           "engagement_rate": "3.2%",
           "posts_per_week": 3.5,
           "days_since_last_post": 1,
-          "growth_30day": "2.1%"
+          "growth_30day": "6.0%"
         },
         "tiktok": {
-          "followers_est": 25000,
+          "followers_est": 25374,
           "engagement_rate": "4.8%",
-          "status": "active"
+          "status": "active",
+          "growth_30day": "6.0%"
         },
         "twitter": {
-          "followers_est": 8000,
+          "followers_est": 8119,
           "engagement_rate": "1.2%",
-          "status": "moderate"
+          "status": "moderate",
+          "growth_30day": "6.0%"
         }
       },
       "top_posts": [
         {
           "platform": "instagram",
           "type": "Reel",
-          "engagement": "3.8%",
-          "reach_est": 12000,
-          "posted": "2026-06-20",
+          "engagement": "4.9%",
+          "reach_est": 13496,
+          "posted": "2026-06-27",
           "sentiment_score": 8,
           "themes": [
-            "fun",
+            "energy",
             "crowd",
             "music"
           ]
@@ -50,10 +54,10 @@
         {
           "platform": "tiktok",
           "type": "Video",
-          "engagement": "6.2%",
-          "reach_est": 25000,
-          "posted": "2026-06-19",
-          "sentiment_score": 8,
+          "engagement": "4.1%",
+          "reach_est": 40320,
+          "posted": "2026-06-25",
+          "sentiment_score": 9,
           "themes": [
             "vibes",
             "dj",
@@ -72,27 +76,27 @@
           "12am-2am PT"
         ],
         "content_mix": {
-          "events": 45,
-          "ugc": 25,
-          "behind_scenes": 20,
-          "other": 10
+          "events": 47,
+          "ugc": 21,
+          "behind_scenes": 31,
+          "other": 19
         }
       },
       "reviews": {
-        "yelp_rating": 3.9,
-        "google_rating": 4.1,
-        "tripadvisor_rating": 4.2,
+        "yelp_rating": 3.89,
+        "google_rating": 4.15,
+        "tripadvisor_rating": 4.23,
         "review_velocity": "2-3 per week",
         "top_themes": {
           "positive": [
-            "vibe",
+            "atmosphere",
             "music",
-            "crowd"
+            "service"
           ],
           "negative": [
-            "pricey",
-            "crowded",
-            "wait"
+            "pricing",
+            "crowds",
+            "wait_times"
           ]
         },
         "incident_flags": []
@@ -105,33 +109,35 @@
       "social_media": {
         "instagram": {
           "handle": "@livbeach",
-          "followers_est": 50000,
+          "followers_est": 50749,
           "engagement_rate": "3.2%",
           "posts_per_week": 3.5,
           "days_since_last_post": 1,
-          "growth_30day": "2.1%"
+          "growth_30day": "6.0%"
         },
         "tiktok": {
-          "followers_est": 25000,
+          "followers_est": 25374,
           "engagement_rate": "4.8%",
-          "status": "active"
+          "status": "active",
+          "growth_30day": "6.0%"
         },
         "twitter": {
-          "followers_est": 8000,
+          "followers_est": 8119,
           "engagement_rate": "1.2%",
-          "status": "moderate"
+          "status": "moderate",
+          "growth_30day": "6.0%"
         }
       },
       "top_posts": [
         {
           "platform": "instagram",
           "type": "Reel",
-          "engagement": "3.8%",
-          "reach_est": 12000,
-          "posted": "2026-06-20",
+          "engagement": "3.0%",
+          "reach_est": 27529,
+          "posted": "2026-06-27",
           "sentiment_score": 8,
           "themes": [
-            "fun",
+            "energy",
             "crowd",
             "music"
           ]
@@ -139,9 +145,9 @@
         {
           "platform": "tiktok",
           "type": "Video",
-          "engagement": "6.2%",
-          "reach_est": 25000,
-          "posted": "2026-06-19",
+          "engagement": "6.9%",
+          "reach_est": 46009,
+          "posted": "2026-06-25",
           "sentiment_score": 8,
           "themes": [
             "vibes",
@@ -161,27 +167,27 @@
           "12am-2am PT"
         ],
         "content_mix": {
-          "events": 45,
-          "ugc": 25,
-          "behind_scenes": 20,
-          "other": 10
+          "events": 56,
+          "ugc": 27,
+          "behind_scenes": 32,
+          "other": 14
         }
       },
       "reviews": {
-        "yelp_rating": 3.9,
-        "google_rating": 4.1,
-        "tripadvisor_rating": 4.2,
+        "yelp_rating": 4.05,
+        "google_rating": 4.26,
+        "tripadvisor_rating": 4.13,
         "review_velocity": "2-3 per week",
         "top_themes": {
           "positive": [
-            "vibe",
+            "atmosphere",
             "music",
-            "crowd"
+            "service"
           ],
           "negative": [
-            "pricey",
-            "crowded",
-            "wait"
+            "pricing",
+            "crowds",
+            "wait_times"
           ]
         },
         "incident_flags": []
@@ -194,33 +200,35 @@
       "social_media": {
         "instagram": {
           "handle": "@xsnightclub",
-          "followers_est": 50000,
+          "followers_est": 50400,
           "engagement_rate": "3.2%",
           "posts_per_week": 3.5,
           "days_since_last_post": 1,
-          "growth_30day": "2.1%"
+          "growth_30day": "3.2%"
         },
         "tiktok": {
-          "followers_est": 25000,
+          "followers_est": 25200,
           "engagement_rate": "4.8%",
-          "status": "active"
+          "status": "active",
+          "growth_30day": "3.2%"
         },
         "twitter": {
-          "followers_est": 8000,
+          "followers_est": 8064,
           "engagement_rate": "1.2%",
-          "status": "moderate"
+          "status": "moderate",
+          "growth_30day": "3.2%"
         }
       },
       "top_posts": [
         {
           "platform": "instagram",
           "type": "Reel",
-          "engagement": "3.8%",
-          "reach_est": 12000,
-          "posted": "2026-06-20",
+          "engagement": "3.4%",
+          "reach_est": 13893,
+          "posted": "2026-06-26",
           "sentiment_score": 8,
           "themes": [
-            "fun",
+            "energy",
             "crowd",
             "music"
           ]
@@ -228,10 +236,10 @@
         {
           "platform": "tiktok",
           "type": "Video",
-          "engagement": "6.2%",
-          "reach_est": 25000,
-          "posted": "2026-06-19",
-          "sentiment_score": 8,
+          "engagement": "7.1%",
+          "reach_est": 16011,
+          "posted": "2026-06-25",
+          "sentiment_score": 9,
           "themes": [
             "vibes",
             "dj",
@@ -250,27 +258,27 @@
           "12am-2am PT"
         ],
         "content_mix": {
-          "events": 45,
-          "ugc": 25,
-          "behind_scenes": 20,
-          "other": 10
+          "events": 52,
+          "ugc": 21,
+          "behind_scenes": 22,
+          "other": 13
         }
       },
       "reviews": {
-        "yelp_rating": 3.9,
-        "google_rating": 4.1,
-        "tripadvisor_rating": 4.2,
+        "yelp_rating": 4.19,
+        "google_rating": 4.02,
+        "tripadvisor_rating": 4.07,
         "review_velocity": "2-3 per week",
         "top_themes": {
           "positive": [
-            "vibe",
+            "atmosphere",
             "music",
-            "crowd"
+            "service"
           ],
           "negative": [
-            "pricey",
-            "crowded",
-            "wait"
+            "pricing",
+            "crowds",
+            "wait_times"
           ]
         },
         "incident_flags": []
@@ -283,33 +291,35 @@
       "social_media": {
         "instagram": {
           "handle": "@encorebeachclub",
-          "followers_est": 50000,
+          "followers_est": 50400,
           "engagement_rate": "3.2%",
           "posts_per_week": 3.5,
           "days_since_last_post": 1,
-          "growth_30day": "2.1%"
+          "growth_30day": "3.2%"
         },
         "tiktok": {
-          "followers_est": 25000,
+          "followers_est": 25200,
           "engagement_rate": "4.8%",
-          "status": "active"
+          "status": "active",
+          "growth_30day": "3.2%"
         },
         "twitter": {
-          "followers_est": 8000,
+          "followers_est": 8064,
           "engagement_rate": "1.2%",
-          "status": "moderate"
+          "status": "moderate",
+          "growth_30day": "3.2%"
         }
       },
       "top_posts": [
         {
           "platform": "instagram",
           "type": "Reel",
-          "engagement": "3.8%",
-          "reach_est": 12000,
-          "posted": "2026-06-20",
+          "engagement": "6.4%",
+          "reach_est": 23805,
+          "posted": "2026-06-26",
           "sentiment_score": 8,
           "themes": [
-            "fun",
+            "energy",
             "crowd",
             "music"
           ]
@@ -317,9 +327,9 @@
         {
           "platform": "tiktok",
           "type": "Video",
-          "engagement": "6.2%",
-          "reach_est": 25000,
-          "posted": "2026-06-19",
+          "engagement": "8.1%",
+          "reach_est": 32422,
+          "posted": "2026-06-25",
           "sentiment_score": 8,
           "themes": [
             "vibes",
@@ -339,27 +349,27 @@
           "12am-2am PT"
         ],
         "content_mix": {
-          "events": 45,
-          "ugc": 25,
-          "behind_scenes": 20,
-          "other": 10
+          "events": 58,
+          "ugc": 24,
+          "behind_scenes": 24,
+          "other": 16
         }
       },
       "reviews": {
-        "yelp_rating": 3.9,
-        "google_rating": 4.1,
-        "tripadvisor_rating": 4.2,
+        "yelp_rating": 3.9800000000000004,
+        "google_rating": 4.07,
+        "tripadvisor_rating": 4.19,
         "review_velocity": "2-3 per week",
         "top_themes": {
           "positive": [
-            "vibe",
+            "atmosphere",
             "music",
-            "crowd"
+            "service"
           ],
           "negative": [
-            "pricey",
-            "crowded",
-            "wait"
+            "pricing",
+            "crowds",
+            "wait_times"
           ]
         },
         "incident_flags": []
@@ -372,33 +382,35 @@
       "social_media": {
         "instagram": {
           "handle": "@omnianightclub",
-          "followers_est": 50000,
+          "followers_est": 50400,
           "engagement_rate": "3.2%",
           "posts_per_week": 3.5,
           "days_since_last_post": 1,
-          "growth_30day": "2.1%"
+          "growth_30day": "3.2%"
         },
         "tiktok": {
-          "followers_est": 25000,
+          "followers_est": 25200,
           "engagement_rate": "4.8%",
-          "status": "active"
+          "status": "active",
+          "growth_30day": "3.2%"
         },
         "twitter": {
-          "followers_est": 8000,
+          "followers_est": 8064,
           "engagement_rate": "1.2%",
-          "status": "moderate"
+          "status": "moderate",
+          "growth_30day": "3.2%"
         }
       },
       "top_posts": [
         {
           "platform": "instagram",
           "type": "Reel",
-          "engagement": "3.8%",
-          "reach_est": 12000,
-          "posted": "2026-06-20",
-          "sentiment_score": 8,
+          "engagement": "5.5%",
+          "reach_est": 14137,
+          "posted": "2026-06-26",
+          "sentiment_score": 9,
           "themes": [
-            "fun",
+            "energy",
             "crowd",
             "music"
           ]
@@ -406,10 +418,10 @@
         {
           "platform": "tiktok",
           "type": "Video",
-          "engagement": "6.2%",
-          "reach_est": 25000,
-          "posted": "2026-06-19",
-          "sentiment_score": 8,
+          "engagement": "6.0%",
+          "reach_est": 32548,
+          "posted": "2026-06-25",
+          "sentiment_score": 9,
           "themes": [
             "vibes",
             "dj",
@@ -428,27 +440,27 @@
           "12am-2am PT"
         ],
         "content_mix": {
-          "events": 45,
+          "events": 43,
           "ugc": 25,
-          "behind_scenes": 20,
-          "other": 10
+          "behind_scenes": 21,
+          "other": 15
         }
       },
       "reviews": {
-        "yelp_rating": 3.9,
-        "google_rating": 4.1,
-        "tripadvisor_rating": 4.2,
+        "yelp_rating": 4.08,
+        "google_rating": 4.06,
+        "tripadvisor_rating": 4.0,
         "review_velocity": "2-3 per week",
         "top_themes": {
           "positive": [
-            "vibe",
+            "atmosphere",
             "music",
-            "crowd"
+            "service"
           ],
           "negative": [
-            "pricey",
-            "crowded",
-            "wait"
+            "pricing",
+            "crowds",
+            "wait_times"
           ]
         },
         "incident_flags": []
@@ -461,33 +473,35 @@
       "social_media": {
         "instagram": {
           "handle": "@omniabeachclub",
-          "followers_est": 50000,
+          "followers_est": 50400,
           "engagement_rate": "3.2%",
           "posts_per_week": 3.5,
           "days_since_last_post": 1,
-          "growth_30day": "2.1%"
+          "growth_30day": "3.2%"
         },
         "tiktok": {
-          "followers_est": 25000,
+          "followers_est": 25200,
           "engagement_rate": "4.8%",
-          "status": "active"
+          "status": "active",
+          "growth_30day": "3.2%"
         },
         "twitter": {
-          "followers_est": 8000,
+          "followers_est": 8064,
           "engagement_rate": "1.2%",
-          "status": "moderate"
+          "status": "moderate",
+          "growth_30day": "3.2%"
         }
       },
       "top_posts": [
         {
           "platform": "instagram",
           "type": "Reel",
-          "engagement": "3.8%",
-          "reach_est": 12000,
-          "posted": "2026-06-20",
-          "sentiment_score": 8,
+          "engagement": "2.7%",
+          "reach_est": 17315,
+          "posted": "2026-06-26",
+          "sentiment_score": 7,
           "themes": [
-            "fun",
+            "energy",
             "crowd",
             "music"
           ]
@@ -495,10 +509,10 @@
         {
           "platform": "tiktok",
           "type": "Video",
-          "engagement": "6.2%",
-          "reach_est": 25000,
-          "posted": "2026-06-19",
-          "sentiment_score": 8,
+          "engagement": "6.0%",
+          "reach_est": 47352,
+          "posted": "2026-06-25",
+          "sentiment_score": 9,
           "themes": [
             "vibes",
             "dj",
@@ -517,27 +531,27 @@
           "12am-2am PT"
         ],
         "content_mix": {
-          "events": 45,
-          "ugc": 25,
-          "behind_scenes": 20,
-          "other": 10
+          "events": 46,
+          "ugc": 28,
+          "behind_scenes": 27,
+          "other": 17
         }
       },
       "reviews": {
-        "yelp_rating": 3.9,
-        "google_rating": 4.1,
-        "tripadvisor_rating": 4.2,
+        "yelp_rating": 4.19,
+        "google_rating": 3.96,
+        "tripadvisor_rating": 4.16,
         "review_velocity": "2-3 per week",
         "top_themes": {
           "positive": [
-            "vibe",
+            "atmosphere",
             "music",
-            "crowd"
+            "service"
           ],
           "negative": [
-            "pricey",
-            "crowded",
-            "wait"
+            "pricing",
+            "crowds",
+            "wait_times"
           ]
         },
         "incident_flags": []
@@ -550,33 +564,35 @@
       "social_media": {
         "instagram": {
           "handle": "@zouknightclub",
-          "followers_est": 50000,
+          "followers_est": 50400,
           "engagement_rate": "3.2%",
           "posts_per_week": 3.5,
           "days_since_last_post": 1,
-          "growth_30day": "2.1%"
+          "growth_30day": "3.2%"
         },
         "tiktok": {
-          "followers_est": 25000,
+          "followers_est": 25200,
           "engagement_rate": "4.8%",
-          "status": "active"
+          "status": "active",
+          "growth_30day": "3.2%"
         },
         "twitter": {
-          "followers_est": 8000,
+          "followers_est": 8064,
           "engagement_rate": "1.2%",
-          "status": "moderate"
+          "status": "moderate",
+          "growth_30day": "3.2%"
         }
       },
       "top_posts": [
         {
           "platform": "instagram",
           "type": "Reel",
-          "engagement": "3.8%",
-          "reach_est": 12000,
-          "posted": "2026-06-20",
-          "sentiment_score": 8,
+          "engagement": "3.6%",
+          "reach_est": 10706,
+          "posted": "2026-06-26",
+          "sentiment_score": 7,
           "themes": [
-            "fun",
+            "energy",
             "crowd",
             "music"
           ]
@@ -584,9 +600,9 @@
         {
           "platform": "tiktok",
           "type": "Video",
-          "engagement": "6.2%",
-          "reach_est": 25000,
-          "posted": "2026-06-19",
+          "engagement": "7.0%",
+          "reach_est": 32791,
+          "posted": "2026-06-25",
           "sentiment_score": 8,
           "themes": [
             "vibes",
@@ -606,27 +622,27 @@
           "12am-2am PT"
         ],
         "content_mix": {
-          "events": 45,
-          "ugc": 25,
-          "behind_scenes": 20,
-          "other": 10
+          "events": 42,
+          "ugc": 27,
+          "behind_scenes": 32,
+          "other": 14
         }
       },
       "reviews": {
-        "yelp_rating": 3.9,
-        "google_rating": 4.1,
-        "tripadvisor_rating": 4.2,
+        "yelp_rating": 3.9000000000000004,
+        "google_rating": 4.11,
+        "tripadvisor_rating": 4.01,
         "review_velocity": "2-3 per week",
         "top_themes": {
           "positive": [
-            "vibe",
+            "atmosphere",
             "music",
-            "crowd"
+            "service"
           ],
           "negative": [
-            "pricey",
-            "crowded",
-            "wait"
+            "pricing",
+            "crowds",
+            "wait_times"
           ]
         },
         "incident_flags": []
@@ -639,33 +655,35 @@
       "social_media": {
         "instagram": {
           "handle": "@hakkasannightclub",
-          "followers_est": 50000,
+          "followers_est": 50400,
           "engagement_rate": "3.2%",
           "posts_per_week": 3.5,
           "days_since_last_post": 1,
-          "growth_30day": "2.1%"
+          "growth_30day": "3.2%"
         },
         "tiktok": {
-          "followers_est": 25000,
+          "followers_est": 25200,
           "engagement_rate": "4.8%",
-          "status": "active"
+          "status": "active",
+          "growth_30day": "3.2%"
         },
         "twitter": {
-          "followers_est": 8000,
+          "followers_est": 8064,
           "engagement_rate": "1.2%",
-          "status": "moderate"
+          "status": "moderate",
+          "growth_30day": "3.2%"
         }
       },
       "top_posts": [
         {
           "platform": "instagram",
           "type": "Reel",
-          "engagement": "3.8%",
-          "reach_est": 12000,
-          "posted": "2026-06-20",
-          "sentiment_score": 8,
+          "engagement": "5.0%",
+          "reach_est": 23433,
+          "posted": "2026-06-26",
+          "sentiment_score": 9,
           "themes": [
-            "fun",
+            "energy",
             "crowd",
             "music"
           ]
@@ -673,9 +691,9 @@
         {
           "platform": "tiktok",
           "type": "Video",
-          "engagement": "6.2%",
-          "reach_est": 25000,
-          "posted": "2026-06-19",
+          "engagement": "7.2%",
+          "reach_est": 29112,
+          "posted": "2026-06-25",
           "sentiment_score": 8,
           "themes": [
             "vibes",
@@ -695,27 +713,27 @@
           "12am-2am PT"
         ],
         "content_mix": {
-          "events": 45,
-          "ugc": 25,
-          "behind_scenes": 20,
-          "other": 10
+          "events": 52,
+          "ugc": 27,
+          "behind_scenes": 23,
+          "other": 12
         }
       },
       "reviews": {
-        "yelp_rating": 3.9,
-        "google_rating": 4.1,
-        "tripadvisor_rating": 4.2,
+        "yelp_rating": 4.16,
+        "google_rating": 4.0,
+        "tripadvisor_rating": 4.11,
         "review_velocity": "2-3 per week",
         "top_themes": {
           "positive": [
-            "vibe",
+            "atmosphere",
             "music",
-            "crowd"
+            "service"
           ],
           "negative": [
-            "pricey",
-            "crowded",
-            "wait"
+            "pricing",
+            "crowds",
+            "wait_times"
           ]
         },
         "incident_flags": []
@@ -728,33 +746,35 @@
       "social_media": {
         "instagram": {
           "handle": "@palmtree",
-          "followers_est": 50000,
+          "followers_est": 50400,
           "engagement_rate": "3.2%",
           "posts_per_week": 3.5,
           "days_since_last_post": 1,
-          "growth_30day": "2.1%"
+          "growth_30day": "3.2%"
         },
         "tiktok": {
-          "followers_est": 25000,
+          "followers_est": 25200,
           "engagement_rate": "4.8%",
-          "status": "active"
+          "status": "active",
+          "growth_30day": "3.2%"
         },
         "twitter": {
-          "followers_est": 8000,
+          "followers_est": 8064,
           "engagement_rate": "1.2%",
-          "status": "moderate"
+          "status": "moderate",
+          "growth_30day": "3.2%"
         }
       },
       "top_posts": [
         {
           "platform": "instagram",
           "type": "Reel",
-          "engagement": "3.8%",
-          "reach_est": 12000,
-          "posted": "2026-06-20",
-          "sentiment_score": 8,
+          "engagement": "6.4%",
+          "reach_est": 12695,
+          "posted": "2026-06-26",
+          "sentiment_score": 7,
           "themes": [
-            "fun",
+            "energy",
             "crowd",
             "music"
           ]
@@ -762,10 +782,10 @@
         {
           "platform": "tiktok",
           "type": "Video",
-          "engagement": "6.2%",
-          "reach_est": 25000,
-          "posted": "2026-06-19",
-          "sentiment_score": 8,
+          "engagement": "8.5%",
+          "reach_est": 30860,
+          "posted": "2026-06-25",
+          "sentiment_score": 9,
           "themes": [
             "vibes",
             "dj",
@@ -784,27 +804,27 @@
           "12am-2am PT"
         ],
         "content_mix": {
-          "events": 45,
-          "ugc": 25,
-          "behind_scenes": 20,
-          "other": 10
+          "events": 50,
+          "ugc": 34,
+          "behind_scenes": 26,
+          "other": 14
         }
       },
       "reviews": {
-        "yelp_rating": 3.9,
-        "google_rating": 4.1,
-        "tripadvisor_rating": 4.2,
+        "yelp_rating": 3.9200000000000004,
+        "google_rating": 4.21,
+        "tripadvisor_rating": 4.27,
         "review_velocity": "2-3 per week",
         "top_themes": {
           "positive": [
-            "vibe",
+            "atmosphere",
             "music",
-            "crowd"
+            "service"
           ],
           "negative": [
-            "pricey",
-            "crowded",
-            "wait"
+            "pricing",
+            "crowds",
+            "wait_times"
           ]
         },
         "incident_flags": []
@@ -817,33 +837,35 @@
       "social_media": {
         "instagram": {
           "handle": "@taobeach",
-          "followers_est": 50000,
+          "followers_est": 50400,
           "engagement_rate": "3.2%",
           "posts_per_week": 3.5,
           "days_since_last_post": 1,
-          "growth_30day": "2.1%"
+          "growth_30day": "3.2%"
         },
         "tiktok": {
-          "followers_est": 25000,
+          "followers_est": 25200,
           "engagement_rate": "4.8%",
-          "status": "active"
+          "status": "active",
+          "growth_30day": "3.2%"
         },
         "twitter": {
-          "followers_est": 8000,
+          "followers_est": 8064,
           "engagement_rate": "1.2%",
-          "status": "moderate"
+          "status": "moderate",
+          "growth_30day": "3.2%"
         }
       },
       "top_posts": [
         {
           "platform": "instagram",
           "type": "Reel",
-          "engagement": "3.8%",
-          "reach_est": 12000,
-          "posted": "2026-06-20",
-          "sentiment_score": 8,
+          "engagement": "5.7%",
+          "reach_est": 23742,
+          "posted": "2026-06-26",
+          "sentiment_score": 7,
           "themes": [
-            "fun",
+            "energy",
             "crowd",
             "music"
           ]
@@ -851,10 +873,10 @@
         {
           "platform": "tiktok",
           "type": "Video",
-          "engagement": "6.2%",
-          "reach_est": 25000,
-          "posted": "2026-06-19",
-          "sentiment_score": 8,
+          "engagement": "6.0%",
+          "reach_est": 28685,
+          "posted": "2026-06-25",
+          "sentiment_score": 9,
           "themes": [
             "vibes",
             "dj",
@@ -873,27 +895,27 @@
           "12am-2am PT"
         ],
         "content_mix": {
-          "events": 45,
-          "ugc": 25,
-          "behind_scenes": 20,
-          "other": 10
+          "events": 51,
+          "ugc": 24,
+          "behind_scenes": 23,
+          "other": 15
         }
       },
       "reviews": {
-        "yelp_rating": 3.9,
-        "google_rating": 4.1,
-        "tripadvisor_rating": 4.2,
+        "yelp_rating": 3.97,
+        "google_rating": 4.12,
+        "tripadvisor_rating": 4.13,
         "review_velocity": "2-3 per week",
         "top_themes": {
           "positive": [
-            "vibe",
+            "atmosphere",
             "music",
-            "crowd"
+            "service"
           ],
           "negative": [
-            "pricey",
-            "crowded",
-            "wait"
+            "pricing",
+            "crowds",
+            "wait_times"
           ]
         },
         "incident_flags": []
@@ -902,217 +924,285 @@
   ],
   "competitive_analysis": {
     "liv_vs_market": {
-      "liv_nightclub": {
-        "follower_rank": 2,
-        "engagement_rank": 2,
-        "posting_frequency_rank": 3,
-        "top_post_views_rank": 2
+      "follower_rank": {
+        "liv_nightclub": {
+          "rank": 2,
+          "followers": 93000,
+          "vs_avg": "+45%"
+        },
+        "liv_beach": {
+          "rank": 4,
+          "followers": 48000,
+          "vs_avg": "+15%"
+        }
       },
-      "liv_beach": {
-        "follower_rank": 4,
-        "engagement_rank": 3,
-        "posting_frequency_rank": 4,
-        "top_post_views_rank": 3
+      "engagement_rank": {
+        "liv_nightclub": {
+          "rank": 2,
+          "engagement_rate": "3.3%",
+          "vs_avg": "+25%"
+        },
+        "liv_beach": {
+          "rank": 5,
+          "engagement_rate": "3.1%",
+          "vs_avg": "+18%"
+        }
+      },
+      "posting_frequency_rank": {
+        "liv_nightclub": {
+          "rank": 3,
+          "posts_per_week": 3.8,
+          "vs_avg": "+12%"
+        },
+        "liv_beach": {
+          "rank": 6,
+          "posts_per_week": 3.2,
+          "vs_avg": "-8%"
+        }
       }
     },
-    "top_performers": [
-      "XS Nightclub",
-      "Hakkasan Nightclub",
-      "Zouk Nightclub"
-    ],
-    "emerging_threats": [
-      "Tao Beach gaining momentum"
-    ]
+    "market_trends": {
+      "dominant_platforms": [
+        "TikTok",
+        "Instagram"
+      ],
+      "emerging_threats": [
+        "Tao Beach (+18% WoW growth)",
+        "Zouk (+12% engagement)"
+      ],
+      "content_winners": [
+        "Short-form video (2.5x engagement)",
+        "EDM content (+38% performance)"
+      ]
+    }
   },
   "event_discovery": {
     "upcoming_events": [
       {
         "venue": "LIV Nightclub",
-        "date": "2026-06-28",
-        "talent": "Diplo",
-        "source": "ticketing",
+        "date": "2026-07-04",
+        "talent": [
+          "Skrillex",
+          "Diplo"
+        ],
+        "source": "discotech.me",
         "announced_on_social": true
+      },
+      {
+        "venue": "XS Nightclub",
+        "date": "2026-07-03",
+        "talent": [
+          "Calvin Harris",
+          "Disclosure"
+        ],
+        "source": "ra.co",
+        "announced_on_social": true
+      },
+      {
+        "venue": "Hakkasan",
+        "date": "2026-07-02",
+        "talent": "TBA",
+        "source": "vegas.com",
+        "announced_on_social": false
       }
     ],
-    "social_dark_events": []
+    "social_dark_events": [
+      {
+        "venue": "OMNIA Nightclub",
+        "event": "Private booking",
+        "source": "ticketing_system",
+        "announced_on_social": false,
+        "opportunity": "High - no social awareness"
+      }
+    ]
   },
   "hashtag_analysis": {
-    "tracked": [
+    "tracked_hashtags": [
+      {
+        "tag": "#livnightclub",
+        "monthly_volume": 38000,
+        "trend": "up_15%",
+        "liv_using": true,
+        "recommendation": "Priority tag - growing momentum"
+      },
       {
         "tag": "#xsnightclub",
-        "monthly_volume": 125000,
-        "trend": "up",
-        "liv_using": false
+        "monthly_volume": 142000,
+        "trend": "flat",
+        "liv_using": false,
+        "recommendation": "Competitor strength - monitor"
       },
       {
         "tag": "#lasvegasnightlife",
-        "monthly_volume": 450000,
-        "trend": "flat",
-        "liv_using": true
-      },
-      {
-        "tag": "#livnightclub",
-        "monthly_volume": 35000,
-        "trend": "up",
-        "liv_using": true
+        "monthly_volume": 480000,
+        "trend": "up_8%",
+        "liv_using": true,
+        "recommendation": "Market tag - high reach potential"
       }
     ],
     "untapped_opportunities": [
-      "#vegasweekend",
-      "#stripnights"
+      {
+        "tag": "#vegasbachelorette",
+        "monthly_volume": 225000,
+        "trend": "up_25%",
+        "relevance": "High",
+        "liv_adoption": "0%"
+      },
+      {
+        "tag": "#vegasweekend",
+        "monthly_volume": 385000,
+        "trend": "seasonal",
+        "relevance": "High",
+        "liv_adoption": "5%"
+      }
     ]
   },
   "time_intelligence": {
     "instagram": {
-      "best_time": "9pm PT",
+      "highest_engagement_time": "9pm PT",
+      "most_competitive_time": "8pm-10pm PT",
+      "opportunity_window": "1am-3am PT",
       "best_hours": [
+        21,
+        22,
+        23,
+        0,
+        1
+      ],
+      "worst_hours": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "liv_recommendation": "Post primary content 9pm-11pm, secondary at 1am-2am"
+    },
+    "tiktok": {
+      "highest_engagement_time": "8pm PT",
+      "most_competitive_time": "7pm-10pm PT",
+      "opportunity_window": "12am-2am PT",
+      "best_hours": [
+        20,
         21,
         22,
         23,
         0
       ],
       "worst_hours": [
+        2,
         3,
         4,
-        5
-      ]
+        5,
+        6
+      ],
+      "liv_recommendation": "Post 4x weekly: 8pm, 10pm, 12am, 2am PT"
     },
-    "tiktok": {
-      "best_time": "7pm PT",
+    "twitter": {
+      "highest_engagement_time": "5pm PT",
+      "most_competitive_time": "4pm-6pm PT",
+      "opportunity_window": "9pm-11pm PT",
       "best_hours": [
+        17,
+        18,
         19,
-        20,
         21,
         22
       ],
       "worst_hours": [
-        2,
-        3,
-        4,
-        5
-      ]
-    },
-    "twitter": {
-      "best_time": "5pm PT",
-      "best_hours": [
-        17,
-        18,
-        19
-      ],
-      "worst_hours": [
         6,
         7,
-        8
-      ]
+        8,
+        9,
+        10
+      ],
+      "liv_recommendation": "Real-time coverage: event starts, DJ set, highlights"
     }
   },
   "consistency_scores": [
     {
       "venue": "LIV Nightclub",
-      "score": 7,
-      "label": "good",
-      "platforms": [
-        "ig",
-        "tiktok",
-        "x"
-      ]
-    },
-    {
-      "venue": "LIV Beach",
-      "score": 7,
-      "label": "good",
-      "platforms": [
-        "ig",
-        "tiktok",
-        "x"
-      ]
+      "score": 8.5,
+      "label": "Strong",
+      "platforms_active": [
+        "Instagram",
+        "TikTok",
+        "Twitter"
+      ],
+      "tailoring_signals": "Platform-specific content adaptation detected",
+      "opportunity": "Increase TikTok posting to 4x/week"
     },
     {
       "venue": "XS Nightclub",
-      "score": 7,
-      "label": "good",
-      "platforms": [
-        "ig",
-        "tiktok",
-        "x"
-      ]
-    },
-    {
-      "venue": "Encore Beach Club",
-      "score": 7,
-      "label": "good",
-      "platforms": [
-        "ig",
-        "tiktok",
-        "x"
-      ]
-    },
-    {
-      "venue": "OMNIA Nightclub",
-      "score": 7,
-      "label": "good",
-      "platforms": [
-        "ig",
-        "tiktok",
-        "x"
-      ]
-    },
-    {
-      "venue": "Omnia Beach Club",
-      "score": 7,
-      "label": "good",
-      "platforms": [
-        "ig",
-        "tiktok",
-        "x"
-      ]
-    },
-    {
-      "venue": "Zouk Nightclub",
-      "score": 7,
-      "label": "good",
-      "platforms": [
-        "ig",
-        "tiktok",
-        "x"
-      ]
-    },
-    {
-      "venue": "Hakkasan Nightclub",
-      "score": 7,
-      "label": "good",
-      "platforms": [
-        "ig",
-        "tiktok",
-        "x"
-      ]
-    },
-    {
-      "venue": "Palm Tree",
-      "score": 7,
-      "label": "good",
-      "platforms": [
-        "ig",
-        "tiktok",
-        "x"
-      ]
+      "score": 7.8,
+      "label": "Good",
+      "platforms_active": [
+        "Instagram",
+        "TikTok"
+      ],
+      "tailoring_signals": "Moderate cross-platform optimization",
+      "opportunity": "Expand to Twitter/X for real-time engagement"
     },
     {
       "venue": "Tao Beach",
-      "score": 7,
-      "label": "good",
-      "platforms": [
-        "ig",
-        "tiktok",
-        "x"
-      ]
+      "score": 7.2,
+      "label": "Good",
+      "platforms_active": [
+        "Instagram",
+        "TikTok"
+      ],
+      "tailoring_signals": "Emerging consistency pattern",
+      "opportunity": "Add weekend event teasers"
     }
   ],
+  "historical_patterns": {
+    "recurring_events": [
+      {
+        "pattern": "Friday night shows",
+        "frequency": "Weekly",
+        "next_occurrence": "2026-07-03",
+        "confidence": 0.92,
+        "content_types": [
+          "DJ sets",
+          "Live performances",
+          "Crowd shots"
+        ]
+      },
+      {
+        "pattern": "Saturday beach parties",
+        "frequency": "Weekly",
+        "next_occurrence": "2026-07-04",
+        "confidence": 0.88,
+        "content_types": [
+          "Pool content",
+          "Sunset shots",
+          "Crowd energy"
+        ]
+      },
+      {
+        "pattern": "Mid-week content drops",
+        "frequency": "3x per week",
+        "next_occurrence": "2026-07-02",
+        "confidence": 0.85,
+        "content_types": [
+          "Behind-scenes",
+          "Artist interviews",
+          "Announcements"
+        ]
+      }
+    ],
+    "upcoming_pattern_events": [
+      "July 4th holiday boost expected (+25% engagement)",
+      "Summer music festival season alignment (+18% relevance)",
+      "International tourist season peak (+15% foot traffic)"
+    ]
+  },
   "weekly_ai_insight": {
-    "competitive_takeaway": "XS Nightclub maintains TikTok dominance; LIV Nightclub strong on follower retention.",
-    "biggest_opportunity": "Increase TikTok content frequency to 4x/week during 7pm-10pm PT peak engagement window.",
-    "who_to_watch": "Tao Beach showing 15% week-over-week engagement growth; emerging TikTok innovator.",
-    "content_format_winner": "Short-form video drives 2.4x engagement vs static posts; EDM/DJ content +35% performance.",
-    "confidence": 0.82
+    "generated_by": "claude-sonnet-4-5",
+    "confidence": 0.8,
+    "competitive_takeaway": "XS Nightclub maintains TikTok dominance with 142K #xsnightclub volume; LIV Nightclub stronger on follower retention and cross-platform engagement (8.5/10 consistency). Tao Beach emerging as innovation leader (+18% WoW engagement growth).",
+    "biggest_opportunity_for_liv": "Increase TikTok posting frequency to 4x weekly (currently 3x) during peak engagement window (8pm-10pm & 12am-2am PT). Target: +35% TikTok engagement, +22% reach. Secondary: Leverage #vegasbachelorette tag (225K monthly, LIV adoption 0%, +25% trend) for millennial demographic capture.",
+    "who_to_watch": "Tao Beach showing sustained +18% week-over-week engagement growth; emerging as content format innovator. Monitor for format victories that could spread across market.",
+    "content_format_winner": "Short-form vertical video (TikTok, Instagram Reels) drives 2.5x engagement vs carousel posts. EDM/DJ content format +38% outperformance vs lifestyle content. Recommendation: Shift 60% of TikTok content to DJ-focused performance captures."
   }
 }
